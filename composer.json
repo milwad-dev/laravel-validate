@@ -1,0 +1,38 @@
+{
+  "name": "milwad/laravel-validate",
+  "description": "Write rules easy & fast",
+  "keywords": [
+    "milwad",
+    "laravel-validate",
+    "validate"
+    "regex"
+  ],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "milwad khosravi",
+          "email": "milwad.dev@gmail.com",
+          "homepage": "https://milwad.ir",
+          "role": "Developer"
+      }
+  ],
+  "require": {
+     "php": "^8.0|^8.1",
+  },
+  "autoload": {
+    "psr-4": {
+        "Milwad\\LaravelValidate\\": "src/"
+    }
+  },
+  "config": {
+     "sort-packages": true
+  },
+  "extra": {
+     "laravel": {
+         "providers": [
+             "Milwad\\LaravelValidate\\LaravelValidateServiceProvider"
+         ]
+     }
+  }
+}
