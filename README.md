@@ -1,6 +1,6 @@
 # Laravel validate
 ***
-Laravel crod is a package for validate faster & easier.
+Laravel validate is a package for validate faster & easier.
 You can validate data easier.
 
 # Requirements
