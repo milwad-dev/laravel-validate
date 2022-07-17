@@ -39,6 +39,15 @@ return [
 | 12  | ValidUrl                   | Validate url for ex (https://www.google.com)                |
 | 13  | ValidUsername              | Validate username for ex (milwad)                           |
 | 14  | ValidUuid                  | Validate uuid for ex (123e4567-e89b-12d3-a456-426655440000) |
+| 15  | ValidHexColor              | Validate hex color for ex (#fcba03)                         |
+| 16  | ValidHtmlTag               | Validate html tags for ex (``<h1></h1>``)                   |
+| 17  | ValidNationalCard          | Validate national card for ex (015016437)                   |
+| 18  | ValidCarNumber             | Validate car number for ex (KA01AB1234)                     |
+| 19  | ValidNameDaysWeek          | Validate day week for ex (monday)                           |
+| 20  | ValidEvenNumber            | Validate number is even for ex (1024)                       |
+| 21  | ValidOddNumber             | Validate number is odd for ex (4321)                        |
+| 22  | ValidSlashEndOfString      | Validate write slash at the string for ex (milwad/)         |
+| 22  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)              |
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel >= 9 and is released under the MIT License.
