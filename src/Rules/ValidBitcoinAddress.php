@@ -35,6 +35,6 @@ class ValidBitcoinAddress implements Rule
      */
     public function message()
     {
-        return __('Bitcoin address in invalid');
+        return __('Bitcoin address is invalid');
     }
 }

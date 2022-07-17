@@ -35,6 +35,6 @@ class ValidEmoji implements Rule
      */
     public function message()
     {
-        return __('Emoji in invalid');
+        return __('Emoji is invalid');
     }
 }
