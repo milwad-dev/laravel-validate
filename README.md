@@ -14,7 +14,7 @@ composer require milwad/laravel-validate
 ```
 
 # Usage
-```
+```php
 use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
 
 return [
