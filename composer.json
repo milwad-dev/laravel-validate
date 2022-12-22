@@ -24,11 +24,15 @@
   },
   "autoload": {
     "psr-4": {
-        "Milwad\\LaravelValidate\\": "src/",
+        "Milwad\\LaravelValidate\\": "src/"
     }
   },
   "config": {
      "sort-packages": true
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
   },
   "extra": {
      "laravel": {
