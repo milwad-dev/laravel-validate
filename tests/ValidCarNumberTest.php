@@ -30,4 +30,19 @@ class ValidCarNumberTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test car number is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function car_number_is_not_valid()
+    {
+        $rules = ['capital_char_with_number' => [new ValidCarNumber()]];
+        $data = ['capital_char_with_number' => '854128'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
