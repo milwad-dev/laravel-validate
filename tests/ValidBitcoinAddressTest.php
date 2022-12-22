@@ -2,11 +2,20 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
-use Illuminate\Foundation\Testing\TestCase;
 use Milwad\LaravelValidate\Rules\ValidBitcoinAddress;
 
-class ValidBitcoinAddressTest extends TestCase
+class ValidBitcoinAddressTest extends BaseTest
 {
+    /**
+     * Set up.
+     *
+     * @return void
+     */
+    public function setUp(): void
+    {
+        parent::setUp();
+    }
+
     /**
      * Test bitcoin address is valid.
      *
@@ -15,7 +24,6 @@ class ValidBitcoinAddressTest extends TestCase
      */
     public function bitcoin_address_is_valid()
     {
-        $this->withoutExceptionHandling();
         $rules = [
             'bitcoin_address' => [new ValidBitcoinAddress()]
         ];
@@ -26,10 +34,5 @@ class ValidBitcoinAddressTest extends TestCase
 
         $passes = $this->app['validator']->make($data, $rules)->passes();
         $this->assertTrue($passes);
-    }
-
-    public function createApplication()
-    {
-        // TODO: Implement createApplication() method.
     }
 }
