@@ -30,4 +30,19 @@ class ValidCapitalCharWithNumberTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test capital chat with number is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function capital_char_with_number_is_not_valid()
+    {
+        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber()]];
+        $data = ['capital_char_with_number' => 'Milwad-84'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
