@@ -28,13 +28,12 @@ return [
 | 1   | ValidBitcoinAddress        | Validate bitcoin address                                    |
 | 2   | ValidCapitalCharWithNumber | Validate String for ex (MILWAD-84)                          |
 | 3   | ValidDiscordUsername       | Validate username discord for ex (Milwad#2134)              |
-| 4   | ValidEmoji                 | Validate emoji for ex (😍)                                  |
-| 5   | ValidHashtag               | Validate hashtag for ex (#milwad)                           |
-| 6   | ValidIpAddressIPV4         | Validate ip address IPV4                                    |
-| 7   | ValidIpAddressIPV6         | Validate ip address IPV6                                    |
-| 8   | ValidPhoneNumber           | Validate phone number for ex (09366000000)                  |
-| 9   | ValidPort                  | Validate port value for ex (8080)                           |
-| 10  | ValidSlug                  | Validate slug for ex (milwad-dev)                           |
+| 4   | ValidHashtag               | Validate hashtag for ex (#milwad)                           |
+| 5   | ValidIpAddressIPV4         | Validate ip address IPV4                                    |
+| 6   | ValidIpAddressIPV6         | Validate ip address IPV6                                    |
+| 7   | ValidPhoneNumber           | Validate phone number for ex (09366000000)                  |
+| 8   | ValidPort                  | Validate port value for ex (8080)                           |
+| 9   | ValidSlug                  | Validate slug for ex (milwad-dev)                           |
 | 11  | ValidStrongPassword        | Validate password for ex (Milwad123!)                       |
 | 12  | ValidUrl                   | Validate url for ex (https://www.google.com)                |
 | 13  | ValidUsername              | Validate username for ex (milwad)                           |
