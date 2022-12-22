@@ -24,8 +24,8 @@ class ValidCarNumberTest extends BaseTest
      */
     public function car_number_is_valid()
     {
-        $rules = ['capital_char_with_number' => [new ValidCarNumber()]];
-        $data = ['capital_char_with_number' => 'KA01AB1234'];
+        $rules = ['car_number' => [new ValidCarNumber()]];
+        $data = ['car_number' => 'KA01AB1234'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
@@ -39,8 +39,8 @@ class ValidCarNumberTest extends BaseTest
      */
     public function car_number_is_not_valid()
     {
-        $rules = ['capital_char_with_number' => [new ValidCarNumber()]];
-        $data = ['capital_char_with_number' => '854128'];
+        $rules = ['car_number' => [new ValidCarNumber()]];
+        $data = ['car_number' => '854128'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
