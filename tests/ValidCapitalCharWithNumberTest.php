@@ -17,7 +17,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
     }
 
     /**
-     * Test capital chat with number is valid.
+     * Test capital char with number is valid.
      *
      * @test
      * @return void
@@ -32,7 +32,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
     }
 
     /**
-     * Test capital chat with number is not valid.
+     * Test capital char with number is not valid.
      *
      * @test
      * @return void
