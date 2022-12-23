@@ -30,4 +30,19 @@ class ValidHtmlTagTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test html tag is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function html_tag_is_not_valid()
+    {
+        $rules = ['even_number' => [new ValidHtmlTag()]];
+        $data = ['even_number' => 'milwad-dev'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
