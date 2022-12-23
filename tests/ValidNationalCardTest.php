@@ -17,7 +17,7 @@ class ValidNationalCardTest extends BaseTest
     }
 
     /**
-     * Test national_code_is_valid
+     * Test national code is valid
      *
      * @test
      * @return void
@@ -29,5 +29,20 @@ class ValidNationalCardTest extends BaseTest
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
+    }
+
+    /**
+     * Test national code is not valid
+     *
+     * @test
+     * @return void
+     */
+    public function national_code_is_not_valid()
+    {
+        $rules = ['national_card' => [new ValidNationalCard()]];
+        $data = ['national_card' => '101010'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
     }
 }
