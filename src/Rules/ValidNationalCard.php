@@ -25,7 +25,7 @@ class ValidNationalCard implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('/^([0-9]){10}$/', $value);
+        return preg_match('/^[0-9]{10}$/', $value);
     }
 
     /**
