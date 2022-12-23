@@ -25,7 +25,7 @@ class ValidEvenNumber implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('//^\d*[02468]$/g/', $value);
+        return preg_match('/^\d*[02468]$/', $value);
     }
 
     /**
