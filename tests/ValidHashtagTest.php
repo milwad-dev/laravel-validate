@@ -24,8 +24,8 @@ class ValidHashtagTest extends BaseTest
      */
     public function text_has_hashtag()
     {
-        $rules = ['even_number' => [new ValidHashtag()]];
-        $data = ['even_number' => '#laravel'];
+        $rules = ['hashtag' => [new ValidHashtag()]];
+        $data = ['hashtag' => '#laravel'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
@@ -39,8 +39,8 @@ class ValidHashtagTest extends BaseTest
      */
     public function text_has_no_hashtag()
     {
-        $rules = ['even_number' => [new ValidHashtag()]];
-        $data = ['even_number' => 'laravel'];
+        $rules = ['hashtag' => [new ValidHashtag()]];
+        $data = ['hashtag' => 'laravel'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
