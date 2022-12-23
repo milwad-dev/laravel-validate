@@ -25,7 +25,7 @@ class ValidOddNumber implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('//^\d*[13679]$/g/', $value);
+        return preg_match('/^\d*[13579]$/', $value);
     }
 
     /**
