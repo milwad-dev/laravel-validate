@@ -30,4 +30,19 @@ class ValidHexColorTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test text is not valid hex code.
+     *
+     * @test
+     * @return void
+     */
+    public function text_is_not_valid_hex_code()
+    {
+        $rules = ['even_number' => [new ValidHexColor()]];
+        $data = ['even_number' => 'laravel-framework'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
