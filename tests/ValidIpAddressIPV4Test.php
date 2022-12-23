@@ -30,4 +30,19 @@ class ValidIpAddressIPV4Test extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test ipv4 address is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function ipv4_address_is_not_valid()
+    {
+        $rules = ['ipv4_address' => [new ValidIpAddressIPV4()]];
+        $data = ['ipv4_address' => '123456789'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
