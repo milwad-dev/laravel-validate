@@ -24,8 +24,8 @@ class ValidHexColorTest extends BaseTest
      */
     public function text_is_valid_hex_code()
     {
-        $rules = ['even_number' => [new ValidHexColor()]];
-        $data = ['even_number' => '#fcba03'];
+        $rules = ['hex_color' => [new ValidHexColor()]];
+        $data = ['hex_color' => '#fcba03'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
@@ -39,8 +39,8 @@ class ValidHexColorTest extends BaseTest
      */
     public function text_is_not_valid_hex_code()
     {
-        $rules = ['even_number' => [new ValidHexColor()]];
-        $data = ['even_number' => 'laravel-framework'];
+        $rules = ['hex_color' => [new ValidHexColor()]];
+        $data = ['hex_color' => 'laravel-framework'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
