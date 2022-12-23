@@ -28,12 +28,10 @@ jobs:
           tools: composer
 
       - name: Install PHP dependencies
-        run: |
-          composer require "illuminate/database=${{ matrix.laravel }}" --no-update
-          composer require "illuminate/events=${{ matrix.laravel }}" --no-update
-          composer update --prefer-dist --no-interaction --no-progress
+        run: composer install
+
       - name: Execute tests
         run: vendor/bin/phpunit --verbose
 
       - name: Run phpunit
-        run: composer test
+        run: ./vendor/bin/phpunit
