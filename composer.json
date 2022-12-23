@@ -19,8 +19,7 @@
       }
   ],
   "require": {
-     "php": "^7.3|^7.4|^8.0",
-     "illuminate/validation": "~7|~8|~9"
+    "laravel/framework": "^8.0|^9.0"
   },
   "require-dev": {
     "orchestra/testbench": "^5.0|^6.0|^7.0",
