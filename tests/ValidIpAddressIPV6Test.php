@@ -30,4 +30,19 @@ class ValidIpAddressIPV6Test extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test ipv6 address is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function ipv6_address_is_not_valid()
+    {
+        $rules = ['ipv6_address' => [new ValidIpAddressIPV6()]];
+        $data = ['ipv6_address' => '12345671213145131212'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
