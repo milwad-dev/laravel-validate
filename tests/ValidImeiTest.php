@@ -2,6 +2,8 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
+use Milwad\LaravelValidate\Rules\ValidImei;
+
 class ValidImeiTest extends BaseTest
 {
     /**
@@ -12,5 +14,20 @@ class ValidImeiTest extends BaseTest
     protected function setUp(): void
     {
         parent::setUp();
+    }
+
+    /**
+     * Test imei is valid.
+     *
+     * @test
+     * @return void
+     */
+    public function imei_is_valid()
+    {
+        $rules = ['imei' => [new ValidImei()]];
+        $data = ['imei' => '354809104295874'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
     }
 }
