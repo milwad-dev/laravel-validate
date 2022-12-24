@@ -30,4 +30,19 @@ class ValidUrlTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test url is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function url_is_nor_valid()
+    {
+        $rules = ['url' => [new ValidUrl()]];
+        $data = ['url' => 'milwad-dev'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
