@@ -15,4 +15,19 @@ class ValidSlugTest extends BaseTest
     {
         parent::setUp();
     }
+
+    /**
+     * Test slug is valid.
+     *
+     * @test
+     * @return void
+     */
+    public function slug_is_valid()
+    {
+        $rules = ['slug' => [new ValidSlug()]];
+        $data = ['slug' => 'milwad-dev'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
 }
