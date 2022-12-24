@@ -1,7 +1,6 @@
 # Laravel validate
 [![Latest Stable Version](http://poser.pugx.org/milwad/laravel-validate/v)](https://packagist.org/packages/milwad/laravel-validate)
 [![Total Downloads](http://poser.pugx.org/milwad/laravel-validate/downloads)](https://packagist.org/packages/milwad/laravel-validate)
-[![Latest Unstable Version](http://poser.pugx.org/milwad/laravel-validate/v/stable)](https://packagist.org/packages/milwad/laravel-validate)
 [![License](http://poser.pugx.org/milwad/laravel-validate/license)](https://packagist.org/packages/milwad/laravel-validate)
 [![PHP Version Require](http://poser.pugx.org/milwad/laravel-validate/require/php-7.3)](https://packagist.org/packages/milwad/laravel-validate)
 
