@@ -30,4 +30,19 @@ class ValidJwtTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test jwt is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function jwt_is_not_valid()
+    {
+        $rules = ['jwt' => [new ValidJwt()]];
+        $data = ['jwt' => '1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
