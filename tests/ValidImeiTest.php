@@ -30,4 +30,19 @@ class ValidImeiTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test imei is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function imei_is_not_valid()
+    {
+        $rules = ['imei' => [new ValidImei()]];
+        $data = ['imei' => '80484080484'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
