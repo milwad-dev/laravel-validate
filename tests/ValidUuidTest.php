@@ -30,4 +30,19 @@ class ValidUuidTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test uuid is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function uuid_is_not_valid()
+    {
+        $rules = ['uuid' => [new ValidUuid()]];
+        $data = ['uuid' => '5050'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
