@@ -5,7 +5,7 @@ You can validate data easier.
 
 # Requirements
 ***
-- PHP >= 8.0
+- PHP >= 7.3
 
 # Installation
 ***
