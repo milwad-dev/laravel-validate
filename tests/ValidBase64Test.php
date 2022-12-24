@@ -30,4 +30,19 @@ class ValidBase64Test extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test base64 is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function base64_is_not_valid()
+    {
+        $rules = ['base64' => [new ValidBase64()]];
+        $data = ['base64' => 'milwad'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
