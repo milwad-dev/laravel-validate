@@ -52,7 +52,7 @@ return [
 | 24  | ValidJwt                   | Validate jwt                                                             |
 
 # License
-* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel >= 9 and is released under the MIT License.
+* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
 
 # Contributing
 This project exists thanks to all the people who contribute. [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md)
