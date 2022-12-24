@@ -15,4 +15,19 @@ class ValidPortTest extends BaseTest
     {
         parent::setUp();
     }
+
+    /**
+     * Test port is valid.
+     *
+     * @test
+     * @return void
+     */
+    public function port_is_valid()
+    {
+        $rules = ['port' => [new ValidPort()]];
+        $data = ['port' => '8080'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
 }
