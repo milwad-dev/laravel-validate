@@ -15,4 +15,19 @@ class ValidSlashEndOfStringTest extends BaseTest
     {
         parent::setUp();
     }
+
+    /**
+     * Test slash end of string is valid.
+     *
+     * @test
+     * @return void
+     */
+    public function slash_end_of_string()
+    {
+        $rules = ['slash_string' => [new ValidSlashEndOfString()]];
+        $data = ['slash_string' => 'milwad/'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
 }
