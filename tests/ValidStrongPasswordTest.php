@@ -30,4 +30,19 @@ class ValidStrongPasswordTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test password is not strong.
+     *
+     * @test
+     * @return void
+     */
+    public function password_is_not_strong()
+    {
+        $rules = ['strong_password' => [new ValidStrongPassword()]];
+        $data = ['strong_password' => 'Milwad123'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
