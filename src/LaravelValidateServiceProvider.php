@@ -13,7 +13,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->publishes([__DIR__ . '/../validation' => lang_path('/')], 'lang');
+        $this->publishes([__DIR__ . '/../validation' => lang_path()], 'lang');
 
         $this->loadTranslationsFrom(__DIR__ . '/../lang', 'validation');
     }

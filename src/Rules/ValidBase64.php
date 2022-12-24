@@ -25,6 +25,6 @@ class ValidBase64 implements Rule
      */
     public function message()
     {
-        return __('valid.base64');
+        return __('base64');
     }
 }
