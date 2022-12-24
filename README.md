@@ -1,11 +1,19 @@
 # Laravel validate
+[![Latest Stable Version](http://poser.pugx.org/milwad/laravel-validate/v)](https://packagist.org/packages/milwad/laravel-validate)
+[![Total Downloads](http://poser.pugx.org/milwad/laravel-validate/downloads)](https://packagist.org/packages/milwad/laravel-validate)
+[![Latest Unstable Version](http://poser.pugx.org/milwad/laravel-validate/v/stable)](https://packagist.org/packages/milwad/laravel-validate)
+[![License](http://poser.pugx.org/milwad/laravel-validate/license)](https://packagist.org/packages/milwad/laravel-validate)
+[![PHP Version Require](http://poser.pugx.org/milwad/laravel-validate/require/php-7.3)](https://packagist.org/packages/milwad/laravel-validate)
+
 ***
-Laravel validate is a package for validate faster & easier.
-You can validate data easier.
+Laravel validate is a package for validate faster & easier. <br>
+You can validate data easier, Laravel validate have lots of rule class for validation. <br>
+This package support localization and you can use for most of the language (if some language didn't support you can merge request for new language)
 
 # Requirements
 ***
 - PHP >= 7.3
+- Laravel >= 8.0
 
 # Installation
 ***
