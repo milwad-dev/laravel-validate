@@ -25,7 +25,7 @@ class ValidJwt implements Rule
      */
     public function message()
     {
-        return __('jwt');
+        return __('validate.jwt');
     }
 
     private function base64url_encode($str)

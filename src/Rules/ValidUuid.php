@@ -35,6 +35,6 @@ class ValidUuid implements Rule
      */
     public function message()
     {
-        return __('UUID is invalid');
+        return __('validate.uuid');
     }
 }

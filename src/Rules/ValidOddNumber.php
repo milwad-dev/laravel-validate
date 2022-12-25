@@ -35,6 +35,6 @@ class ValidOddNumber implements Rule
      */
     public function message()
     {
-        return __('Number is not odd');
+        return __('validate.odd-number');
     }
 }

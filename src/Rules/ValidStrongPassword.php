@@ -35,6 +35,6 @@ class ValidStrongPassword implements Rule
      */
     public function message()
     {
-        return __('Password is invalid.');
+        return __('validate.strong-password');
     }
 }

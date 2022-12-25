@@ -35,6 +35,6 @@ class ValidPort implements Rule
      */
     public function message()
     {
-        return __('Port is invalid');
+        return __('validate.port');
     }
 }

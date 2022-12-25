@@ -35,6 +35,6 @@ class ValidIpAddressIPV4 implements Rule
      */
     public function message()
     {
-        return __('IP (ipv4) is invalid');
+        return __('validate.ipv4');
     }
 }

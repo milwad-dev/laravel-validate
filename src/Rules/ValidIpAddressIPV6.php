@@ -35,6 +35,6 @@ class ValidIpAddressIPV6 implements Rule
      */
     public function message()
     {
-        return __('IP (ipv6) is invalid');
+        return __('validate.ipv6');
     }
 }

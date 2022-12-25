@@ -35,6 +35,6 @@ class ValidCapitalCharWithNumber implements Rule
      */
     public function message()
     {
-        return __('Value is invalid');
+        return __('validate.capital-char-with-number');
     }
 }

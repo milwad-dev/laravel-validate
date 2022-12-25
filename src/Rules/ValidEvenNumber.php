@@ -35,6 +35,6 @@ class ValidEvenNumber implements Rule
      */
     public function message()
     {
-        return __('Number is not even');
+        return __('validate.even-number');
     }
 }

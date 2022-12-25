@@ -35,6 +35,6 @@ class ValidNameDaysWeek implements Rule
      */
     public function message()
     {
-        return __('Day is invalid');
+        return __('validate.name-days-week');
     }
 }

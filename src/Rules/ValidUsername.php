@@ -35,6 +35,6 @@ class ValidUsername implements Rule
      */
     public function message()
     {
-        return __('Username is invalid.');
+        return __('validate.username');
     }
 }

@@ -46,6 +46,6 @@ class ValidCartNumberIran implements Rule
      */
     public function message()
     {
-        return __('Cart number is invalid');
+        return __('validate.cart-number-iran');
     }
 }

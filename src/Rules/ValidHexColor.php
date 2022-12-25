@@ -35,6 +35,6 @@ class ValidHexColor implements Rule
      */
     public function message()
     {
-        return __('Hex color is invalid');
+        return __('validate.hex-color');
     }
 }

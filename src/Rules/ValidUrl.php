@@ -35,6 +35,6 @@ class ValidUrl implements Rule
      */
     public function message()
     {
-        return __('Url is invalid.');
+        return __('validate.url');
     }
 }

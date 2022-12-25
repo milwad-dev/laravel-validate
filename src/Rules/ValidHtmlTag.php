@@ -35,6 +35,6 @@ class ValidHtmlTag implements Rule
      */
     public function message()
     {
-        return __('Html tag is invalid');
+        return __('validate.html-tag');
     }
 }

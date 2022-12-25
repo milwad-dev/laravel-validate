@@ -35,6 +35,6 @@ class ValidSlashEndOfString implements Rule
      */
     public function message()
     {
-        return __('String doesnt have slash at the end of string');
+        return __('validate.slash-end-of-string');
     }
 }

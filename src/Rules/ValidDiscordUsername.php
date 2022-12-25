@@ -35,6 +35,6 @@ class ValidDiscordUsername implements Rule
      */
     public function message()
     {
-        return __('Discord username is invalid');
+        return __('validate.discord-username');
     }
 }

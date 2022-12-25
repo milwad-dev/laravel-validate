@@ -35,6 +35,6 @@ class ValidNationalCard implements Rule
      */
     public function message()
     {
-        return __('National card is invalid');
+        return __('validate.national-card');
     }
 }

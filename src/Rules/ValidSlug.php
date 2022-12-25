@@ -35,6 +35,6 @@ class ValidSlug implements Rule
      */
     public function message()
     {
-        return __('Slug is invalid');
+        return __('validate.slug');
     }
 }

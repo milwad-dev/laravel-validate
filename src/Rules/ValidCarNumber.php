@@ -35,6 +35,6 @@ class ValidCarNumber implements Rule
      */
     public function message()
     {
-        return __('Car number is invalid');
+        return __('validate.car-number');
     }
 }

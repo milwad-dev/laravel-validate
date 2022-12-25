@@ -45,6 +45,6 @@ class ValidImei implements Rule
      */
     public function message()
     {
-        return __('imei');
+        return __('validate.imei');
     }
 }
