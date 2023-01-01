@@ -11,8 +11,7 @@ This package support localization and you can use for most of the language (if s
 
 # Requirements
 ***
-- PHP >= 7.3
-- Laravel >= 8.0
+- ```Laravel >= 7.0```
 
 # Installation
 ***
