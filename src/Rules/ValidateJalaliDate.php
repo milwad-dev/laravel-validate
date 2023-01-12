@@ -16,6 +16,10 @@ class ValidateJalaliDate implements Rule
      */
     public function passes($attribute, $value)
     {
+        if (! is_string($value)) {
+            return false;
+        }
+
         $date = explode('/', $value);
 
         return CalendarUtils::checkDate(...$date);
