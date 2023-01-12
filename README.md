@@ -60,9 +60,10 @@ After you can see some option with start ```validate-lang```, you can select whi
 | 20  | ValidEvenNumber            | Validate number is even for ex (1024)                                    |
 | 21  | ValidOddNumber             | Validate number is odd for ex (4321)                                     |
 | 22  | ValidSlashEndOfString      | Validate write slash at the string for ex (milwad/)                      |
-| 22  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)                           |
-| 23  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                        |
-| 24  | ValidJwt                   | Validate jwt                                                             |
+| 23  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)                           |
+| 24  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                        |
+| 25  | ValidJwt                   | Validate jwt                                                             |
+| 26  | ValidateJalaliDate         | Validate jajali date for ex (1384/8/25)                                  |
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
