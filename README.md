@@ -69,7 +69,7 @@ After you can see some option with start ```validate-lang```, you can select whi
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
 
 # Contributing
-This project exists thanks to all the people who contribute. [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md)
+This project exists thanks to all the people who contribute. [CONTRIBUTING](https://github.com/milwad-dev/laravel-validate/graphs/contributors)
 
 # Security
 If you've found a bug regarding security please mail [milwad.dev@gmail.com](mailto:milwad.dev@gmail.com) instead of using the issue tracker.
