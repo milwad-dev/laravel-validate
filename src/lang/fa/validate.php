@@ -26,5 +26,6 @@ return [
     'url' => 'مقدار :attribute صحیح نمی باشد.',
     'username' => 'مقدار :attribute صحیح نمی باشد.',
     'uuid' => 'مقدار :attribute صحیح نمی باشد.',
-    'jalali_date' => 'مقدار :attribute صحیح نمی باشد.'
+    'jalali_date' => 'مقدار :attribute صحیح نمی باشد.',
+    'duplicate_nubmer' => 'مقدار :attribute صحیح نمی باشد.'
 ];
