@@ -5,7 +5,7 @@ namespace Milwad\LaravelValidate\Rules;
 use Illuminate\Contracts\Validation\Rule;
 use Morilog\Jalali\CalendarUtils;
 
-class ValidDuplicateNumber implements Rule
+class ValidDuplicateCharacter implements Rule
 {
     /**
      * Check base64.
@@ -16,9 +16,7 @@ class ValidDuplicateNumber implements Rule
      */
     public function passes($attribute, $value)
     {
-        collect($value);
 
-        return ;
     }
 
     /**
@@ -28,6 +26,6 @@ class ValidDuplicateNumber implements Rule
      */
     public function message()
     {
-        return __('validate.duplicate_nubmer');
+        return __('validate.duplicate_character');
     }
 }
