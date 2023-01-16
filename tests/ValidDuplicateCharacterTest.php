@@ -30,4 +30,19 @@ class ValidDuplicateCharacterTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test duplicate characters is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function duplicate_characters_is_not_valid()
+    {
+        $rules = ['duplicate_number' => [new ValidDuplicateCharacter()]];
+        $data = ['duplicate_number' => '1,2,2,3,3,3,4,5,6,7,8,9'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
