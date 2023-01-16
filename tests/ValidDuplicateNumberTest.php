@@ -17,15 +17,15 @@ class ValidDuplicateNumberTest extends BaseTest
     }
 
     /**
-     * Test base64 is valid.
+     * Test duplicate numbers is valid.
      *
      * @test
      * @return void
      */
-    public function base64_is_valid()
+    public function duplicate_numbers_is_valid()
     {
-        $rules = ['base64' => [new ValidDuplicateNumber()]];
-        $data = ['base64' => 'bWlsd2Fk']; // milwad
+        $rules = ['duplicate_number' => [new ValidDuplicateNumber()]];
+        $data = ['duplicate_number' => 123456789];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
