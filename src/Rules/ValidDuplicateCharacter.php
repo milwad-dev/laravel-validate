@@ -16,7 +16,9 @@ class ValidDuplicateCharacter implements Rule
      */
     public function passes($attribute, $value)
     {
+        $value = explode(',', $value);
 
+        return collect($value)->duplicates()->isEmpty();
     }
 
     /**
