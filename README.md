@@ -64,6 +64,7 @@ After you can see some option with start ```validate-lang```, you can select whi
 | 24  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                        |
 | 25  | ValidJwt                   | Validate jwt                                                             |
 | 26  | ValidateJalaliDate         | Validate jajali date for ex (1384/8/25)                                  |
+| 26  | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                 |
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
