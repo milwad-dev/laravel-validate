@@ -27,5 +27,5 @@ return [
     'username' => 'The :attribute is not valid',
     'uuid' => 'The :attribute is not valid',
     'jalali_date' => 'The :attribute is not valid',
-    'duplicate_nubmer' => 'The :attribute is not valid'
+    'duplicate_character' => 'The :attribute is not valid'
 ];
