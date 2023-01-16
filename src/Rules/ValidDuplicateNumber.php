@@ -5,7 +5,7 @@ namespace Milwad\LaravelValidate\Rules;
 use Illuminate\Contracts\Validation\Rule;
 use Morilog\Jalali\CalendarUtils;
 
-class ValidateDuplicateNumber implements Rule
+class ValidDuplicateNumber implements Rule
 {
     /**
      * Check base64.
