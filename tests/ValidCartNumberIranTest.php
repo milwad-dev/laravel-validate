@@ -2,8 +2,6 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
-use Milwad\LaravelValidate\Rules\ValidCartNumberIran;
-
 class ValidCartNumberIranTest extends BaseTest
 {
     /**
