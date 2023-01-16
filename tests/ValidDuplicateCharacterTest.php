@@ -4,7 +4,7 @@ namespace Milwad\LaravelValidate\Tests;
 
 use Milwad\LaravelValidate\Rules\ValidDuplicateCharacter;
 
-class ValidDuplicateNumberTest extends BaseTest
+class ValidDuplicateCharacterTest extends BaseTest
 {
     /**
      * Set up.
@@ -17,15 +17,15 @@ class ValidDuplicateNumberTest extends BaseTest
     }
 
     /**
-     * Test duplicate numbers is valid.
+     * Test duplicate characters is valid.
      *
      * @test
      * @return void
      */
-    public function duplicate_numbers_is_valid()
+    public function duplicate_characters_is_valid()
     {
         $rules = ['duplicate_number' => [new ValidDuplicateCharacter()]];
-        $data = ['duplicate_number' => 1223456789];
+        $data = ['duplicate_number' => '1,2,3,4,5,6,7,8,9'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
