@@ -11,7 +11,9 @@ This package support localization and you can use for most of the language (if s
 
 # Requirements
 ***
+- ```PHP >= 7.2.5```
 - ```Laravel >= 7.0```
+- ```Morilog-Jalali >= 3.0```
 
 # Installation
 ***
