@@ -20,7 +20,7 @@
   ],
   "require": {
     "php": "^7.2.5|^8.0",
-    "laravel/framework": "^7.0|^8.0|^9.0",
+    "laravel/framework": "^7.*|8.*|9.*|10.*",
     "morilog/jalali": "3.*"
   },
   "require-dev": {
