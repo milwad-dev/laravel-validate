@@ -39,8 +39,8 @@ class ValidUlidTest extends BaseTest
      */
     public function ulid_is_not_valid()
     {
-        $rules = ['slug' => [new ValidUlid()]];
-        $data = ['slug' => 'milwad_dev'];
+        $rules = ['ulid' => [new ValidUlid()]];
+        $data = ['ulid' => '01ARZ3NDEKTSV4RRFFQ69G5FA'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
