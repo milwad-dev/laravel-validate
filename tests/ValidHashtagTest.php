@@ -8,8 +8,6 @@ class ValidHashtagTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidHashtagTest extends BaseTest
      * Test text has hashtag.
      *
      * @test
+     *
      * @return void
      */
     public function text_has_hashtag()
@@ -35,6 +34,7 @@ class ValidHashtagTest extends BaseTest
      * Test text has no hashtag.
      *
      * @test
+     *
      * @return void
      */
     public function text_has_no_hashtag()

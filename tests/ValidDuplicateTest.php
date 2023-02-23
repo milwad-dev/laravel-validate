@@ -2,15 +2,12 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
-use Milwad\LaravelValidate\Rules\ValidBase64;
 use Milwad\LaravelValidate\Rules\ValidDuplicate;
 
 class ValidDuplicateTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -21,6 +18,7 @@ class ValidDuplicateTest extends BaseTest
      * Test duplicate number is valid.
      *
      * @test
+     *
      * @return void
      */
     public function duplicate_number_is_valid()
@@ -36,6 +34,7 @@ class ValidDuplicateTest extends BaseTest
      * Test duplicate number is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function duplicate_number_is_not_valid()
@@ -51,6 +50,7 @@ class ValidDuplicateTest extends BaseTest
      * Test duplicate string is valid.
      *
      * @test
+     *
      * @return void
      */
     public function duplicate_string_is_valid()
@@ -66,6 +66,7 @@ class ValidDuplicateTest extends BaseTest
      * Test duplicate string is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function duplicate_string_is_not_valid()

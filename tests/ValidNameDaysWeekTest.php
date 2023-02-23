@@ -8,8 +8,6 @@ class ValidNameDaysWeekTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidNameDaysWeekTest extends BaseTest
      * Test name day is valid.
      *
      * @test
+     *
      * @return void
      */
     public function name_day_is_valid()
@@ -35,6 +34,7 @@ class ValidNameDaysWeekTest extends BaseTest
      * Test name day is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function name_day_is_not_valid()

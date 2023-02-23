@@ -9,7 +9,8 @@ class ValidPattern implements Rule
     public function __construct(
         private int $length,
         private string $seperator = '-'
-    ) {}
+    ) {
+    }
 
     /**
      * Check texts with specific pattern.

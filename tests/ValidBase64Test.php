@@ -8,8 +8,6 @@ class ValidBase64Test extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidBase64Test extends BaseTest
      * Test base64 is valid.
      *
      * @test
+     *
      * @return void
      */
     public function base64_is_valid()
@@ -35,6 +34,7 @@ class ValidBase64Test extends BaseTest
      * Test base64 is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function base64_is_not_valid()

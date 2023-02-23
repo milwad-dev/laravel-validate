@@ -8,8 +8,6 @@ class ValidImeiTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidImeiTest extends BaseTest
      * Test imei is valid.
      *
      * @test
+     *
      * @return void
      */
     public function imei_is_valid()
@@ -35,6 +34,7 @@ class ValidImeiTest extends BaseTest
      * Test imei is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function imei_is_not_valid()

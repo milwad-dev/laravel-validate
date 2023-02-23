@@ -8,8 +8,6 @@ class ValidStrongPasswordTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidStrongPasswordTest extends BaseTest
      * Test password is strong.
      *
      * @test
+     *
      * @return void
      */
     public function password_is_strong()
@@ -35,6 +34,7 @@ class ValidStrongPasswordTest extends BaseTest
      * Test password is not strong.
      *
      * @test
+     *
      * @return void
      */
     public function password_is_not_strong()

@@ -8,8 +8,6 @@ class ValidJalaliDateTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidJalaliDateTest extends BaseTest
      * Test jalali date is correct.
      *
      * @test
+     *
      * @return void
      */
     public function jalali_date_is_correct()
@@ -35,6 +34,7 @@ class ValidJalaliDateTest extends BaseTest
      * Test jalali date is not correct.
      *
      * @test
+     *
      * @return void
      */
     public function jalali_date_is_not_correct()
