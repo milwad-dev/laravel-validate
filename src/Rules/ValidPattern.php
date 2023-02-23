@@ -16,7 +16,7 @@ class ValidPattern implements Rule
     }
 
     /**
-     * Check number is odd.
+     * Check texts with specific pattern.
      *
      * @param  string  $attribute
      * @param  mixed  $value
