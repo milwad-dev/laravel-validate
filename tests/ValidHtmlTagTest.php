@@ -8,8 +8,6 @@ class ValidHtmlTagTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidHtmlTagTest extends BaseTest
      * Test html tag is valid.
      *
      * @test
+     *
      * @return void
      */
     public function html_tag_is_valid()
@@ -35,6 +34,7 @@ class ValidHtmlTagTest extends BaseTest
      * Test html tag is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function html_tag_is_not_valid()

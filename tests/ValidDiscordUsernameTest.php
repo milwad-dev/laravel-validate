@@ -8,8 +8,6 @@ class ValidDiscordUsernameTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidDiscordUsernameTest extends BaseTest
      * Test discord username is valid.
      *
      * @test
+     *
      * @return void
      */
     public function discord_username_is_valid()

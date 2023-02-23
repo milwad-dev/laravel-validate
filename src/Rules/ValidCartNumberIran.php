@@ -26,7 +26,7 @@ class ValidCartNumberIran implements Rule
             }
         }
 
-        return ($cardTotal % 10 === 0);
+        return $cardTotal % 10 === 0;
     }
 
     /**

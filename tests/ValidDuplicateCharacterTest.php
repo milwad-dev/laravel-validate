@@ -8,8 +8,6 @@ class ValidDuplicateCharacterTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidDuplicateCharacterTest extends BaseTest
      * Test duplicate characters is valid.
      *
      * @test
+     *
      * @return void
      */
     public function duplicate_characters_is_valid()
@@ -35,6 +34,7 @@ class ValidDuplicateCharacterTest extends BaseTest
      * Test duplicate characters is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function duplicate_characters_is_not_valid()

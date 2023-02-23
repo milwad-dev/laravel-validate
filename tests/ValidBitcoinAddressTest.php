@@ -8,8 +8,6 @@ class ValidBitcoinAddressTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidBitcoinAddressTest extends BaseTest
      * Test bitcoin address is valid.
      *
      * @test
+     *
      * @return void
      */
     public function bitcoin_address_is_valid()
@@ -35,6 +34,7 @@ class ValidBitcoinAddressTest extends BaseTest
      * Test bitcoin address is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function bitcoin_address_is_not_valid()

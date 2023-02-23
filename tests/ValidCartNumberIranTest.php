@@ -6,8 +6,6 @@ class ValidCartNumberIranTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -18,6 +16,7 @@ class ValidCartNumberIranTest extends BaseTest
      * Test cart number iran is valid.
      *
      * @test
+     *
      * @return void
      */
     public function cart_number_iran_is_valid()

@@ -8,8 +8,6 @@ class ValidUsernameTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidUsernameTest extends BaseTest
      * Test username is valid.
      *
      * @test
+     *
      * @return void
      */
     public function username_is_valid()
@@ -35,6 +34,7 @@ class ValidUsernameTest extends BaseTest
      * Test username is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function username_is_not_valid()
