@@ -6,14 +6,10 @@ use Illuminate\Contracts\Validation\Rule;
 
 class ValidPattern implements Rule
 {
-    private $length;
-    private $seperator;
-
-    public function __construct(int $length, string $seperator = '-')
-    {
-        $this->length = $length;
-        $this->seperator = $seperator;
-    }
+    public function __construct(
+        private int $length,
+        private string $seperator = '-'
+    ) {}
 
     /**
      * Check texts with specific pattern.
