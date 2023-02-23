@@ -68,7 +68,8 @@ After you can see some option with start ```validate-lang```, you can select whi
 | 26  | ValidJalaliDate            | Validate jajali date for ex (1384/8/25)                                  |
 | 27  | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                 |
 | 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
-| 28  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
+| 29  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
+| 30  | ValidUlid                  | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                        |
 
 # Rules
 
