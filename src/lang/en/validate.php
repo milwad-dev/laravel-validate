@@ -29,5 +29,6 @@ return [
     'jalali_date' => 'The :attribute is not valid',
     'duplicate_character' => 'The :attribute is not valid',
     'pattern' => 'The :attribute is not valid',
-    'duplicate' => 'The :attribute is not valid'
+    'duplicate' => 'The :attribute is not valid',
+    'ulid' => 'The :attribute is not valid'
 ];

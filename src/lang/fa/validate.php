@@ -29,5 +29,6 @@ return [
     'jalali_date' => 'مقدار :attribute صحیح نمی باشد.',
     'duplicate_character' => 'مقدار :attribute صحیح نمی باشد.',
     'pattern' => 'مقدار :attribute صحیح نمی باشد.',
-    'duplicate' => 'مقدار :attribute صحیح نمی باشد.'
+    'duplicate' => 'مقدار :attribute صحیح نمی باشد.',
+    'ulid' => 'مقدار :attribute صحیح نمی باشد.'
 ];
