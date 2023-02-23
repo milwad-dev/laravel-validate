@@ -11,9 +11,9 @@ This package support localization and you can use for most of the language (if s
 
 # Requirements
 ***
-- ```PHP >= 7.2.5```
-- ```Laravel >= 7.0```
-- ```Morilog-Jalali >= 3.0```
+- ```PHP >= 8.0```
+- ```Laravel >= 9.0```
+- ```Morilog-Jalali >= 3.x```
 
 # Installation
 ***
@@ -68,6 +68,7 @@ After you can see some option with start ```validate-lang```, you can select whi
 | 26  | ValidJalaliDate            | Validate jajali date for ex (1384/8/25)                                  |
 | 27  | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                 |
 | 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
+| 28  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
 
 # Rules
 
