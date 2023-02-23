@@ -33,15 +33,15 @@ class ValidDuplicateTest extends BaseTest
     }
 
     /**
-     * Test base64 is not valid.
+     * Test duplicate number is not valid.
      *
      * @test
      * @return void
      */
-    public function base64_is_not_valid()
+    public function duplicate_number_is_not_valid()
     {
-        $rules = ['base64' => [new ValidBase64()]];
-        $data = ['base64' => 'milwad'];
+        $rules = ['duplicate' => [new ValidDuplicate()]];
+        $data = ['duplicate' => 1123456];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
