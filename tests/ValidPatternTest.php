@@ -26,22 +26,22 @@ class ValidPatternTest extends BaseTest
     public function pattern_is_valid()
     {
         $rules = ['numbers' => [new ValidPattern(4)]];
-        $data  = ['numbers' => '4444-4444-4444']; // milwad
+        $data  = ['numbers' => '4444-4444-4444'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
 
     /**
-     * Test base64 is not valid.
+     * Test pattern is not valid.
      *
      * @test
      * @return void
      */
-    public function base64_is_not_valid()
+    public function pattern_is_not_valid()
     {
-        $rules = ['base64' => [new ValidBase64()]];
-        $data = ['base64' => 'milwad'];
+        $rules = ['numbers' => [new ValidPattern(4)]];
+        $data  = ['numbers' => '44444-4444-44444'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
