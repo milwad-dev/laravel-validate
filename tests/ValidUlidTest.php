@@ -2,6 +2,8 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
+use Milwad\LaravelValidate\Rules\ValidUlid;
+
 class ValidUlidTest extends BaseTest
 {
     /**
@@ -15,29 +17,29 @@ class ValidUlidTest extends BaseTest
     }
 
     /**
-     * Test slug is valid.
+     * Test ulid is valid.
      *
      * @test
      * @return void
      */
-    public function slug_is_valid()
+    public function ulid_is_valid()
     {
-        $rules = ['slug' => [new ValidUlidTest()]];
-        $data = ['slug' => 'milwad-dev'];
+        $rules = ['ulid' => [new ValidUlid()]];
+        $data = ['ulid' => '01ARZ3NDEKTSV4RRFFQ69G5FAV'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
 
     /**
-     * Test slug is not valid.
+     * Test ulid is not valid.
      *
      * @test
      * @return void
      */
-    public function slug_is_not_valid()
+    public function ulid_is_not_valid()
     {
-        $rules = ['slug' => [new ValidUlidTest()]];
+        $rules = ['slug' => [new ValidUlid()]];
         $data = ['slug' => 'milwad_dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
