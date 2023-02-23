@@ -67,6 +67,22 @@ After you can see some option with start ```validate-lang```, you can select whi
 | 25  | ValidJwt                   | Validate jwt                                                             |
 | 26  | ValidJalaliDate            | Validate jajali date for ex (1384/8/25)                                  |
 | 27  | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                 |
+| 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
+
+# Rules
+
+### ValidPattern
+
+Sometimes you need to validate text with pattern, For example you want to validate a text like (4444-4444-4444).
+If you want to check the length of text is seperator after ```-``` is 4, You can use this Rule:
+```php
+use Milwad\LaravelValidate\Rules\ValidPattern;
+
+return [
+    'numbers' => ['required', new ValidPattern(4, '-')],
+];
+```
+
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
