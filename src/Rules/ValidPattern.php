@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Milwad\LaravelValidate\Rules;
@@ -7,6 +6,15 @@ use Illuminate\Contracts\Validation\Rule;
 
 class ValidPattern implements Rule
 {
+    private $length;
+    private $seperator;
+
+    public function __construct(int $length, string $seperator = '-')
+    {
+        $this->length = $length;
+        $this->seperator = $seperator;
+    }
+
     /**
      * Check number is odd.
      *
@@ -16,7 +24,15 @@ class ValidPattern implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('/^\d*[13579]$/', $value);
+        $texts = explode($this->seperator, $value);
+
+        foreach ($texts as $text) {
+            if (strlen($text) !== $this->length) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**
