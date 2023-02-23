@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidHtmlTag implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check html tag is valid.
      *
      * @param  string  $attribute

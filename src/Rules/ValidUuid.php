@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidUuid implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check uuid is valid.
      *
      * @param  string  $attribute

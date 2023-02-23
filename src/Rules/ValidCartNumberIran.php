@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidCartNumberIran implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check cart number is valid.
      *
      * @param  string  $attribute

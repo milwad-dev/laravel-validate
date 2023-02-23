@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidSlug implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check slug is valid.
      *
      * @param  string  $attribute

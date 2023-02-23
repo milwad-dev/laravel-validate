@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidHashtag implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check value contains hashtag.
      *
      * @param  string  $attribute

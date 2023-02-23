@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidCarNumber implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check car number is valid.
      *
      * @param  string  $attribute

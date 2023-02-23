@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidStrongPassword implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check password started by capital letters & contains lowercase letters & contains number.
      *
      * @param  string  $attribute
