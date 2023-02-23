@@ -46,4 +46,34 @@ class ValidDuplicateTest extends BaseTest
 
         $this->assertFalse($passes);
     }
+
+    /**
+     * Test duplicate string is valid.
+     *
+     * @test
+     * @return void
+     */
+    public function duplicate_string_is_valid()
+    {
+        $rules = ['duplicate' => [new ValidDuplicate()]];
+        $data = ['duplicate' => 'milwad'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test duplicate string is not valid.
+     *
+     * @test
+     * @return void
+     */
+    public function duplicate_string_is_not_valid()
+    {
+        $rules = ['duplicate' => [new ValidDuplicate()]];
+        $data = ['duplicate' => 'millwad'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
