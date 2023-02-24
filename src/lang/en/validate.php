@@ -25,5 +25,10 @@ return [
     'strong-password' => 'The :attribute is not valid',
     'url' => 'The :attribute is not valid',
     'username' => 'The :attribute is not valid',
-    'uuid' => 'The :attribute is not valid'
+    'uuid' => 'The :attribute is not valid',
+    'jalali_date' => 'The :attribute is not valid',
+    'duplicate_character' => 'The :attribute is not valid',
+    'pattern' => 'The :attribute is not valid',
+    'duplicate' => 'The :attribute is not valid',
+    'ulid' => 'The :attribute is not valid',
 ];

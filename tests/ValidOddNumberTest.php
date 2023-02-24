@@ -8,8 +8,6 @@ class ValidOddNumberTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidOddNumberTest extends BaseTest
      * Test number is odd.
      *
      * @test
+     *
      * @return void
      */
     public function number_is_odd()
@@ -35,6 +34,7 @@ class ValidOddNumberTest extends BaseTest
      * Test number is not odd.
      *
      * @test
+     *
      * @return void
      */
     public function number_is_not_odd()

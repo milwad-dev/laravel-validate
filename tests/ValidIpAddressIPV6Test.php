@@ -8,8 +8,6 @@ class ValidIpAddressIPV6Test extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidIpAddressIPV6Test extends BaseTest
      * Test ipv6 address is valid.
      *
      * @test
+     *
      * @return void
      */
     public function ipv6_address_is_valid()
@@ -35,6 +34,7 @@ class ValidIpAddressIPV6Test extends BaseTest
      * Test ipv6 address is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function ipv6_address_is_not_valid()

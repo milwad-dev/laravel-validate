@@ -8,8 +8,6 @@ class ValidUuidTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidUuidTest extends BaseTest
      * Test uuid is valid.
      *
      * @test
+     *
      * @return void
      */
     public function uuid_is_valid()
@@ -35,6 +34,7 @@ class ValidUuidTest extends BaseTest
      * Test uuid is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function uuid_is_not_valid()

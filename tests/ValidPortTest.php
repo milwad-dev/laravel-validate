@@ -8,8 +8,6 @@ class ValidPortTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidPortTest extends BaseTest
      * Test port is valid.
      *
      * @test
+     *
      * @return void
      */
     public function port_is_valid()
@@ -35,6 +34,7 @@ class ValidPortTest extends BaseTest
      * Test port is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function port_is_not_valid()

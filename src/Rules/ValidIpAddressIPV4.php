@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidIpAddressIPV4 implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check ip address (ipv4) is valid.
      *
      * @param  string  $attribute

@@ -8,8 +8,6 @@ class ValidCarNumberTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidCarNumberTest extends BaseTest
      * Test car number is valid.
      *
      * @test
+     *
      * @return void
      */
     public function car_number_is_valid()
@@ -35,6 +34,7 @@ class ValidCarNumberTest extends BaseTest
      * Test car number is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function car_number_is_not_valid()

@@ -11,7 +11,9 @@ This package support localization and you can use for most of the language (if s
 
 # Requirements
 ***
-- ```Laravel >= 7.0```
+- ```PHP >= 8.0```
+- ```Laravel >= 9.0```
+- ```Morilog-Jalali >= 3.x```
 
 # Installation
 ***
@@ -60,15 +62,35 @@ After you can see some option with start ```validate-lang```, you can select whi
 | 20  | ValidEvenNumber            | Validate number is even for ex (1024)                                    |
 | 21  | ValidOddNumber             | Validate number is odd for ex (4321)                                     |
 | 22  | ValidSlashEndOfString      | Validate write slash at the string for ex (milwad/)                      |
-| 22  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)                           |
-| 23  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                        |
-| 24  | ValidJwt                   | Validate jwt                                                             |
+| 23  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)                           |
+| 24  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                        |
+| 25  | ValidJwt                   | Validate jwt                                                             |
+| 26  | ValidJalaliDate            | Validate jajali date for ex (1384/8/25)                                  |
+| 27  | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                 |
+| 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
+| 29  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
+| 30  | ValidUlid                  | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                        |
+
+# Rules
+
+### ValidPattern
+
+Sometimes you need to validate text with pattern, For example you want to validate a text like (4444-4444-4444).
+If you want to check the length of text is seperator after ```-``` is 4, You can use this Rule:
+```php
+use Milwad\LaravelValidate\Rules\ValidPattern;
+
+return [
+    'numbers' => ['required', new ValidPattern(4, '-')],
+];
+```
+
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
 
 # Contributing
-This project exists thanks to all the people who contribute. [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md)
+This project exists thanks to all the people who contribute. [CONTRIBUTING](https://github.com/milwad-dev/laravel-validate/graphs/contributors)
 
 # Security
 If you've found a bug regarding security please mail [milwad.dev@gmail.com](mailto:milwad.dev@gmail.com) instead of using the issue tracker.

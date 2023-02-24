@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidSlashEndOfString implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check write slash at the end of string.
      *
      * @param  string  $attribute

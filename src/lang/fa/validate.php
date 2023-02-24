@@ -25,5 +25,10 @@ return [
     'strong-password' => 'مقدار :attribute صحیح نمی باشد.',
     'url' => 'مقدار :attribute صحیح نمی باشد.',
     'username' => 'مقدار :attribute صحیح نمی باشد.',
-    'uuid' => 'مقدار :attribute صحیح نمی باشد.'
+    'uuid' => 'مقدار :attribute صحیح نمی باشد.',
+    'jalali_date' => 'مقدار :attribute صحیح نمی باشد.',
+    'duplicate_character' => 'مقدار :attribute صحیح نمی باشد.',
+    'pattern' => 'مقدار :attribute صحیح نمی باشد.',
+    'duplicate' => 'مقدار :attribute صحیح نمی باشد.',
+    'ulid' => 'مقدار :attribute صحیح نمی باشد.',
 ];

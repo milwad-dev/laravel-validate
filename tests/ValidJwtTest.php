@@ -8,8 +8,6 @@ class ValidJwtTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidJwtTest extends BaseTest
      * Test jwt is valid.
      *
      * @test
+     *
      * @return void
      */
     public function jwt_is_valid()
@@ -35,6 +34,7 @@ class ValidJwtTest extends BaseTest
      * Test jwt is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function jwt_is_not_valid()

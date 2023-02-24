@@ -13,9 +13,9 @@ class LaravelValidateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->publishes([__DIR__ . '/lang/en' => base_path('lang/en')], 'validate-lang-en');
-        $this->publishes([__DIR__ . '/lang/fa' => base_path('lang/fa')], 'validate-lang-fa');
+        $this->publishes([__DIR__.'/Lang/en' => base_path('lang/en')], 'validate-lang-en');
+        $this->publishes([__DIR__.'/Lang/fa' => base_path('lang/fa')], 'validate-lang-fa');
 
-        $this->loadTranslationsFrom(__DIR__ . '/../lang', 'validation');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
     }
 }

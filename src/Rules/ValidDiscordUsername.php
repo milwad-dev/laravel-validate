@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidDiscordUsername implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check discord username is valid.
      *
      * @param  string  $attribute

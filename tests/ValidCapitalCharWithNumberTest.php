@@ -8,8 +8,6 @@ class ValidCapitalCharWithNumberTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
      * Test capital char with number is valid.
      *
      * @test
+     *
      * @return void
      */
     public function capital_char_with_number_is_valid()
@@ -35,6 +34,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
      * Test capital char with number is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function capital_char_with_number_is_not_valid()

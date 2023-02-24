@@ -8,8 +8,6 @@ class ValidUrlTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidUrlTest extends BaseTest
      * Test url is valid.
      *
      * @test
+     *
      * @return void
      */
     public function url_is_valid()
@@ -35,6 +34,7 @@ class ValidUrlTest extends BaseTest
      * Test url is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function url_is_nor_valid()

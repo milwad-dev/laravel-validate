@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidOddNumber implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check number is odd.
      *
      * @param  string  $attribute

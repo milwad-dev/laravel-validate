@@ -8,8 +8,6 @@ class ValidSlugTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidSlugTest extends BaseTest
      * Test slug is valid.
      *
      * @test
+     *
      * @return void
      */
     public function slug_is_valid()
@@ -35,6 +34,7 @@ class ValidSlugTest extends BaseTest
      * Test slug is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function slug_is_not_valid()

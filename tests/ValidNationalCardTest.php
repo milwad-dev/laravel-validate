@@ -8,8 +8,6 @@ class ValidNationalCardTest extends BaseTest
 {
     /**
      * Set up
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidNationalCardTest extends BaseTest
      * Test national code is valid
      *
      * @test
+     *
      * @return void
      */
     public function national_code_is_valid()
@@ -35,6 +34,7 @@ class ValidNationalCardTest extends BaseTest
      * Test national code is not valid
      *
      * @test
+     *
      * @return void
      */
     public function national_code_is_not_valid()

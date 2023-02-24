@@ -8,8 +8,6 @@ class ValidEvenNumberTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidEvenNumberTest extends BaseTest
      * Test number is even.
      *
      * @test
+     *
      * @return void
      */
     public function check_number_is_even()
@@ -35,6 +34,7 @@ class ValidEvenNumberTest extends BaseTest
      * Test number is not even.
      *
      * @test
+     *
      * @return void
      */
     public function check_number_is_not_even()

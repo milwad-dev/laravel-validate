@@ -8,8 +8,6 @@ class ValidHexColorTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidHexColorTest extends BaseTest
      * Test text is valid hex code.
      *
      * @test
+     *
      * @return void
      */
     public function text_is_valid_hex_code()
@@ -35,6 +34,7 @@ class ValidHexColorTest extends BaseTest
      * Test text is not valid hex code.
      *
      * @test
+     *
      * @return void
      */
     public function text_is_not_valid_hex_code()

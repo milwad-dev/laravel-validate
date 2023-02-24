@@ -8,8 +8,6 @@ class ValidSlashEndOfStringTest extends BaseTest
 {
     /**
      * Set up.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -20,6 +18,7 @@ class ValidSlashEndOfStringTest extends BaseTest
      * Test slash end of string is valid.
      *
      * @test
+     *
      * @return void
      */
     public function slash_end_of_string_is_valid()
@@ -35,6 +34,7 @@ class ValidSlashEndOfStringTest extends BaseTest
      * Test slash end of string is not valid.
      *
      * @test
+     *
      * @return void
      */
     public function slash_end_of_string_is_not_valid()

@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidPhoneNumber implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check phone number is valid.
      *
      * @param  string  $attribute

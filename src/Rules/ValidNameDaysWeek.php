@@ -7,16 +7,6 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidNameDaysWeek implements Rule
 {
     /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Check day is valid.
      *
      * @param  string  $attribute
