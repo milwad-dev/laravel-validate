@@ -3,7 +3,6 @@
 namespace Milwad\LaravelValidate;
 
 use Illuminate\Support\ServiceProvider;
-use Milwad\LaravelValidate\Lang\Lang;
 
 class LaravelValidateServiceProvider extends ServiceProvider
 {
