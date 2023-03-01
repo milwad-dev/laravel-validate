@@ -1,4 +1,7 @@
 # Laravel validate
+
+![milwad-dev laravel-validate](https://preview.dragon-code.pro/milwad-dev/laravel-validate.svg?brand=laravel&invert=1)
+
 [![Latest Stable Version](http://poser.pugx.org/milwad/laravel-validate/v)](https://packagist.org/packages/milwad/laravel-validate)
 [![Total Downloads](http://poser.pugx.org/milwad/laravel-validate/downloads)](https://packagist.org/packages/milwad/laravel-validate)
 [![License](http://poser.pugx.org/milwad/laravel-validate/license)](https://packagist.org/packages/milwad/laravel-validate)
