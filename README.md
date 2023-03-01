@@ -1,4 +1,4 @@
-# Laravel validate
+# Laravel Validate
 
 ![milwad-dev laravel-validate](https://preview.dragon-code.pro/milwad-dev/laravel-validate.svg?brand=laravel&invert=1)
 
