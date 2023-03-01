@@ -40,11 +40,13 @@ If you want to publish lang file for custom validation message you can run this 
 php artisan vendor:publish --tag="validate-lang-{$lang}"
 ```
 
-You can replace `$lang` to you lang name, for ex:
+You can replace `$lang` to your lang name, for ex:
 
 ```shell
 php artisan vendor:publish --tag="validate-lang-en"
 ```
+
+If you don't know about langs name you can go [Support Languages](#support-languages)
 
 # Rules
 | #   | Rule name                  | Usage                                                                    |
@@ -94,6 +96,7 @@ return [
 ];
 ```
 
+<a name="support-languages"></a>
 # Support Languages
 
 If a language is not supported, you can make <a href="https://github.com/milwad-dev/laravel-validate/issues/new/choose">issue</a> to add it. <br>

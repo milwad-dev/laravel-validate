@@ -3,6 +3,7 @@
 namespace Milwad\LaravelValidate;
 
 use Illuminate\Support\ServiceProvider;
+use Milwad\LaravelValidate\Lang\Lang;
 
 class LaravelValidateServiceProvider extends ServiceProvider
 {
@@ -13,8 +14,13 @@ class LaravelValidateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->publishes([__DIR__.'/Lang/en' => base_path('lang/en')], 'validate-lang-en');
-        $this->publishes([__DIR__.'/Lang/fa' => base_path('lang/fa')], 'validate-lang-fa');
+        if ($this->app->runningInConsole()) {
+            foreach ((new Lang) as $lang) {
+                $this->publishes([
+                    __DIR__."/Lang/$lang" => base_path("lang/$lang")
+                ], "validate-lang-$lang");
+            }
+        }
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
     }
