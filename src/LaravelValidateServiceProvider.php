@@ -35,7 +35,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             foreach ($this->langs as $lang) {
                 $this->publishes([
-                    __DIR__."/Lang/$lang" => base_path("lang/$lang")
+                    __DIR__."/Lang/$lang" => base_path("lang/$lang"),
                 ], "validate-lang-$lang");
             }
         }
