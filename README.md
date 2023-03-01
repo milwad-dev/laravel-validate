@@ -90,6 +90,9 @@ return [
 
 # Support Languages
 
+If a language is not supported, you can make <a href="https://github.com/milwad-dev/laravel-validate/issues/new/choose">issue</a> to add it. <br>
+Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> to add it.
+
 - [x] English
 - [x] Persian
 - [x] Arabic
