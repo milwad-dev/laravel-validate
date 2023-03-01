@@ -96,6 +96,7 @@ return [
 - [x] Italian
 - [x] Japanese
 - [x] Korean
+- [x] Russian
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 8 and is released under the MIT License.
