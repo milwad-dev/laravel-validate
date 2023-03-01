@@ -30,6 +30,7 @@
     "morilog/jalali": "3.*"
   },
   "require-dev": {
+    "roave/security-advisories": "dev-latest",
     "orchestra/testbench": "^7.0|8.*",
     "phpunit/phpunit": "^9.0"
   },
