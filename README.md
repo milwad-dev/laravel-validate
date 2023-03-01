@@ -34,11 +34,17 @@ return [
 ```
 
 # Publish
-If you want to publish lang file for custom validation message you can run this command in terminal.
-```php
-php artisan vendor:publish
+If you want to publish lang file for custom validation message you can run this command in terminal:
+
+```shell
+php artisan vendor:publish --tag="validate-lang-{$lang}"
 ```
-After you can see some option with start ```validate-lang```, you can select which of this option with select lang for ex: ```laravel-lang-en```.
+
+You can replace `$lang` to you lang name, for ex:
+
+```shell
+php artisan vendor:publish --tag="validate-lang-en"
+```
 
 # Rules
 | #   | Rule name                  | Usage                                                                    |
