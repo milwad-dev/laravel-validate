@@ -10,7 +10,8 @@
 ***
 Laravel validate is a package for validate faster & easier. <br>
 You can validate data easier, Laravel validate have lots of rule class for validation. <br>
-This package support localization and you can use for most of the language (if some language didn't support you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
+This package support localization and you can use for most of the language. <br>
+(If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
 # Requirements
 ***
