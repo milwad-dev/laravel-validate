@@ -6,6 +6,7 @@
 [![Total Downloads](http://poser.pugx.org/milwad/laravel-validate/downloads)](https://packagist.org/packages/milwad/laravel-validate)
 [![License](http://poser.pugx.org/milwad/laravel-validate/license)](https://packagist.org/packages/milwad/laravel-validate)
 [![Passed Tests](https://github.com/milwad-dev/laravel-validate/actions/workflows/run-tests.yml/badge.svg)](https://github.com/milwad-dev/laravel-validate/actions/workflows/run-tests.yml)
+[![PHP Version Require](http://poser.pugx.org/milwad/laravel-validate/require/php)](https://packagist.org/packages/milwad/laravel-validate)
 
 ***
 Laravel validate is a package for validate faster & easier. <br>
