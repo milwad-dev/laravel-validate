@@ -7,7 +7,7 @@ use Milwad\LaravelValidate\Rules\ValidNationalCard;
 class ValidNationalCardTest extends BaseTest
 {
     /**
-     * Set up
+     * Set up.
      */
     protected function setUp(): void
     {
@@ -15,7 +15,7 @@ class ValidNationalCardTest extends BaseTest
     }
 
     /**
-     * Test national code is valid
+     * Test national code is valid.
      *
      * @test
      *
@@ -31,7 +31,7 @@ class ValidNationalCardTest extends BaseTest
     }
 
     /**
-     * Test national code is not valid
+     * Test national code is not valid.
      *
      * @test
      *
