@@ -9,9 +9,8 @@ class ValidStrongPassword implements Rule
     /**
      * Check password started by capital letters & contains lowercase letters & contains number.
      *
-     * @param string $attribute
-     * @param mixed  $value
-     *
+     * @param  string  $attribute
+     * @param  mixed  $value
      * @return bool
      */
     public function passes($attribute, $value)
