@@ -9,8 +9,9 @@ class ValidIpAddressIPV4 implements Rule
     /**
      * Check ip address (ipv4) is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed  $value
+     *
      * @return bool
      */
     public function passes($attribute, $value)
