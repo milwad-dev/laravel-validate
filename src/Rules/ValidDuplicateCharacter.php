@@ -9,8 +9,9 @@ class ValidDuplicateCharacter implements Rule
     /**
      * Check base64.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed  $value
+     *
      * @return bool
      */
     public function passes($attribute, $value)
