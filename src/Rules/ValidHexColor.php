@@ -9,9 +9,8 @@ class ValidHexColor implements Rule
     /**
      * Check hex color is valid.
      *
-     * @param string $attribute
-     * @param mixed  $value
-     *
+     * @param  string  $attribute
+     * @param  mixed  $value
      * @return bool
      */
     public function passes($attribute, $value)

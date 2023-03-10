@@ -9,16 +9,15 @@ class ValidImei implements Rule
     /**
      * Check jwt is valid.
      *
-     * @param string $attribute
-     * @param mixed  $value
-     *
+     * @param  string  $attribute
+     * @param  mixed  $value
      * @return bool
      */
     public function passes($attribute, $value)
     {
         $imei = $value;
 
-        if (strlen($imei) != 15 || !ctype_digit($imei)) {
+        if (strlen($imei) != 15 || ! ctype_digit($imei)) {
             return false;
         }
 
