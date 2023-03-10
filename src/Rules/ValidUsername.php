@@ -9,9 +9,8 @@ class ValidUsername implements Rule
     /**
      * It checks that the length of the username must be between 3 and 15 characters without spaces.
      *
-     * @param string $attribute
-     * @param mixed  $value
-     *
+     * @param  string  $attribute
+     * @param  mixed  $value
      * @return bool
      */
     public function passes($attribute, $value)

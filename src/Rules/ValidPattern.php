@@ -15,9 +15,8 @@ class ValidPattern implements Rule
     /**
      * Check texts with specific pattern.
      *
-     * @param string $attribute
-     * @param mixed  $value
-     *
+     * @param  string  $attribute
+     * @param  mixed  $value
      * @return bool
      */
     public function passes($attribute, $value)
