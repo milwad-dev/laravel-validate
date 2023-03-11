@@ -7,6 +7,7 @@ return [
     'car-number' => ':attribute не действует.',
     'cart-number-iran' => ':attribute не действует.',
     'discord-username' => ':attribute не действует.',
+    'domain' => ':attribute не действует.',
     'even-number' => ':attribute не действует.',
     'hashtag' => ':attribute не действует.',
     'hex-color' => ':attribute не действует.',

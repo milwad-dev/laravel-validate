@@ -7,6 +7,7 @@ return [
     'car-number' => ':attributeमान्य नहीं है।.',
     'cart-number-iran' => ':attributeमान्य नहीं है।.',
     'discord-username' => ':attributeमान्य नहीं है।.',
+    'domain' => ':attributeमान्य नहीं है।.',
     'even-number' => ':attributeमान्य नहीं है।.',
     'hashtag' => ':attributeमान्य नहीं है।.',
     'hex-color' => ':attributeमान्य नहीं है।.',
