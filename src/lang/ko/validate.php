@@ -7,6 +7,7 @@ return [
     'car-number' => ':attribute유효하지 않습니다.',
     'cart-number-iran' => ':attribute유효하지 않습니다.',
     'discord-username' => ':attribute유효하지 않습니다.',
+    'domain' => ':attribute유효하지 않습니다.',
     'even-number' => ':attribute유효하지 않습니다.',
     'hashtag' => ':attribute유효하지 않습니다.',
     'hex-color' => ':attribute유효하지 않습니다.',

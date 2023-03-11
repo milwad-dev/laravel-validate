@@ -7,6 +7,7 @@ return [
     'car-number' => ':attribute无效.',
     'cart-number-iran' => ':attribute无效.',
     'discord-username' => ':attribute无效.',
+    'domain' => ':attribute无效.',
     'even-number' => ':attribute无效.',
     'hashtag' => ':attribute无效.',
     'hex-color' => ':attribute无效.',

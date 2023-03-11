@@ -7,6 +7,7 @@ return [
     'car-number' => ":attribute n'est pas valide.",
     'cart-number-iran' => ":attribute n'est pas valide.",
     'discord-username' => ":attribute n'est pas valide.",
+    'domain' => ":attribute n'est pas valide.",
     'even-number' => ":attribute n'est pas valide.",
     'hashtag' => ":attribute n'est pas valide.",
     'hex-color' => ":attribute n'est pas valide.",

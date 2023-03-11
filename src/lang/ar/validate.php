@@ -7,6 +7,7 @@ return [
     'car-number' => ':attribute غير صالح.',
     'cart-number-iran' => ':attribute غير صالح.',
     'discord-username' => ':attribute غير صالح.',
+    'domain' => ':attribute غير صالح.',
     'even-number' => ':attribute غير صالح.',
     'hashtag' => ':attribute غير صالح.',
     'hex-color' => ':attribute غير صالح.',
