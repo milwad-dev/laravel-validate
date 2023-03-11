@@ -90,7 +90,7 @@ If you don't know about langs name you can go [Support Languages](#support-langu
 | 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
 | 29  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
 | 30  | ValidUlid                  | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                        |
-| 30  | ValidDomain                | Validate domain name for ex (github.com)                                 |
+| 31  | ValidDomain                | Validate domain name for ex (github.com)                                 |
 
 # Rules
 
