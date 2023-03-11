@@ -90,6 +90,7 @@ If you don't know about langs name you can go [Support Languages](#support-langu
 | 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
 | 29  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
 | 30  | ValidUlid                  | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                        |
+| 30  | ValidDomain                | Validate domain name for ex (github.com)                                 |
 
 # Rules
 
@@ -121,6 +122,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Japanese (ja)
 - [x] Korean (Ko)
 - [x] Russian (ru)
+- [x] Azerbaijani (az)
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 9 and is released under the MIT License.
