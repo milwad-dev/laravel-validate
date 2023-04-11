@@ -4,7 +4,6 @@ namespace Milwad\LaravelValidate;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
-use Milwad\LaravelValidate\Rules\ValidBase64;
 
 class LaravelValidateServiceProvider extends ServiceProvider
 {
@@ -47,14 +46,12 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
     /**
      * Publish lang files.
-     *
-     * @return void
      */
     private function publishLangFiles(): void
     {
         foreach ($this->langs as $lang) {
             $this->publishes([
-                __DIR__ . "/Lang/$lang" => base_path("lang/$lang"),
+                __DIR__."/Lang/$lang" => base_path("lang/$lang"),
             ], "validate-lang-$lang");
         }
     }
@@ -67,7 +64,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
     private function publishConfigFile()
     {
         $this->publishes([
-            __DIR__ . '/../config/laravel-validate.php' => config_path('laravel-validate.php')
+            __DIR__.'/../config/laravel-validate.php' => config_path('laravel-validate.php'),
         ], 'laravel-validate-config');
     }
 
