@@ -33,13 +33,24 @@ class LaravelValidateServiceProvider extends ServiceProvider
     public function register()
     {
         if ($this->app->runningInConsole()) {
-            foreach ($this->langs as $lang) {
-                $this->publishes([
-                    __DIR__."/Lang/$lang" => base_path("lang/$lang"),
-                ], "validate-lang-$lang");
-            }
+            $this->publishLangFiles();
         }
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
+        $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');
+    }
+
+    /**
+     * Publish lang files.
+     *
+     * @return void
+     */
+    private function publishLangFiles(): void
+    {
+        foreach ($this->langs as $lang) {
+            $this->publishes([
+                __DIR__ . "/Lang/$lang" => base_path("lang/$lang"),
+            ], "validate-lang-$lang");
+        }
     }
 }
