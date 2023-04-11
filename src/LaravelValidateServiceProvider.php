@@ -55,6 +55,11 @@ class LaravelValidateServiceProvider extends ServiceProvider
         }
     }
 
+    /**
+     * Publish config file.
+     *
+     * @return void
+     */
     private function publishConfigFile()
     {
         $this->publishes([
