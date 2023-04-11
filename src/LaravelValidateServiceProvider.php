@@ -34,6 +34,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishLangFiles();
+            $this->publishConfigFile();
         }
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
@@ -52,5 +53,12 @@ class LaravelValidateServiceProvider extends ServiceProvider
                 __DIR__ . "/Lang/$lang" => base_path("lang/$lang"),
             ], "validate-lang-$lang");
         }
+    }
+
+    private function publishConfigFile()
+    {
+        $this->publishes([
+            __DIR__ . '/../config/laravel-validate.php' => config_path('laravel-validate.php')
+        ], 'laravel-validate-config');
     }
 }
