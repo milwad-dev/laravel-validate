@@ -2,7 +2,9 @@
 
 namespace Milwad\LaravelValidate;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Milwad\LaravelValidate\Rules\ValidBase64;
 
 class LaravelValidateServiceProvider extends ServiceProvider
 {
@@ -37,6 +39,8 @@ class LaravelValidateServiceProvider extends ServiceProvider
             $this->publishConfigFile();
         }
 
+        $this->loadValidations();
+
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');
     }
@@ -65,5 +69,19 @@ class LaravelValidateServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/laravel-validate.php' => config_path('laravel-validate.php')
         ], 'laravel-validate-config');
+    }
+
+    /**
+     * Load validation in container.
+     *
+     * @return void
+     */
+    private function loadValidations()
+    {
+        foreach (config('laravel-validate.rules', []) as $rule) {
+            Validator::extend($rule['name'], function ($attribute, $value, $parameters, $validator) {
+
+            });
+        }
     }
 }
