@@ -24,9 +24,10 @@ class ValidNationalCardTest extends BaseTest
     public function national_code_is_valid()
     {
         $rules = ['national_card' => [new ValidNationalCard()]];
+        $data = ['national_card' => '0151016437'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
 
-        $validator = $this->app['validator']->make(['national_card' => '0151016437'], $rules);
-        $this->assertTrue($validator->passes());
+        $this->assertTrue($passes);
     }
 
     /**
@@ -40,10 +41,10 @@ class ValidNationalCardTest extends BaseTest
     {
         $rules = ['national_card' => [new ValidNationalCard()]];
 
-        $validator = $this->app['validator']->make(['national_card' => '0151016438'], $rules);
-        $this->assertFalse($validator->passes());
+        $validator = $this->app['validator']->make(['national_card' => '0151016438'], $rules)->passes();
+        $this->assertFalse($validator);
 
-        $validator = $this->app['validator']->make(['national_card' => '101010'], $rules);
-        $this->assertFalse($validator->passes());
+        $validator = $this->app['validator']->make(['national_card' => '101010'], $rules)->passes();
+        $this->assertFalse($validator);
     }
 }
