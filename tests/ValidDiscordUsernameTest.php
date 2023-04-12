@@ -29,4 +29,20 @@ class ValidDiscordUsernameTest extends BaseTest
 
         $this->assertTrue($passes);
     }
+
+    /**
+     * Test discord username is not valid.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function discord_username_is_not_valid()
+    {
+        $rules = ['discord_username' => [new ValidDiscordUsername()]];
+        $data = ['discord_username' => '#2134'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }

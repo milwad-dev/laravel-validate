@@ -18,13 +18,13 @@ class ValidNationalCard implements Rule
         if (! preg_match('/^\d{10}$/', $value)) {
             return false;
         }
-    
+
         for ($i = 0; $i < 10; $i++) {
-            if (preg_match('/^' . $i . '{10}$/', $value)) {
+            if (preg_match('/^'.$i.'{10}$/', $value)) {
                 return false;
             }
         }
-    
+
         for ($i = 0, $sum = 0; $i < 9; $i++) {
             $sum += ((10 - $i) * intval(substr($value, $i, 1)));
             $ret = $sum % 11;
@@ -33,7 +33,7 @@ class ValidNationalCard implements Rule
                 return true;
             }
         }
-    
+
         return false;
     }
 
