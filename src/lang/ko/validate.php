@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute유효하지 않습니다.',
     'bitcoin-address' => ':attribute유효하지 않습니다.',
+    'camel-case' => ':attribute유효하지 않습니다.',
     'capital-char-with-number' => ':attribute유효하지 않습니다.',
     'car-number' => ':attribute유효하지 않습니다.',
     'cart-number-iran' => ':attribute유효하지 않습니다.',

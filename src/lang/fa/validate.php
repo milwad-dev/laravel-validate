@@ -3,6 +3,7 @@
 return [
     'base64' => 'مقدار :attribute صحیح نمی باشد.',
     'bitcoin-address' => 'مقدار :attribute صحیح نمی باشد.',
+    'camel-case' => 'مقدار :attribute صحیح نمی باشد.',
     'capital-char-with-number' => 'مقدار :attribute صحیح نمی باشد.',
     'car-number' => 'مقدار :attribute صحیح نمی باشد.',
     'cart-number-iran' => 'مقدار :attribute صحیح نمی باشد.',

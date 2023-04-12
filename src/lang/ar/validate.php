@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute غير صالح.',
     'bitcoin-address' => ':attribute غير صالح.',
+    'camel-case' => ':attribute غير صالح.',
     'capital-char-with-number' => ':attribute غير صالح.',
     'car-number' => ':attribute غير صالح.',
     'cart-number-iran' => ':attribute غير صالح.',

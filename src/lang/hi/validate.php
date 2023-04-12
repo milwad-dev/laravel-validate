@@ -3,6 +3,7 @@
 return [
     'base64' => ':attributeमान्य नहीं है।.',
     'bitcoin-address' => ':attributeमान्य नहीं है।.',
+    'camel-case' => ':attributeमान्य नहीं है।.',
     'capital-char-with-number' => ':attributeमान्य नहीं है।.',
     'car-number' => ':attributeमान्य नहीं है।.',
     'cart-number-iran' => ':attributeमान्य नहीं है।.',
