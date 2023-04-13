@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute无效.',
     'bitcoin-address' => ':attribute无效.',
+    'camel-case' => ':attribute无效.',
     'capital-char-with-number' => ':attribute无效.',
     'car-number' => ':attribute无效.',
     'cart-number-iran' => ':attribute无效.',

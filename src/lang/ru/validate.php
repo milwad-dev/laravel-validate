@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute не действует.',
     'bitcoin-address' => ':attribute не действует.',
+    'camel-case' => ':attribute не действует.',
     'capital-char-with-number' => ':attribute не действует.',
     'car-number' => ':attribute не действует.',
     'cart-number-iran' => ':attribute не действует.',

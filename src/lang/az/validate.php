@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute doğru deyil.',
     'bitcoin-address' => ':attribute doğru deyil.',
+    'camel-case' => ':attribute doğru deyil.',
     'capital-char-with-number' => ':attribute doğru deyil.',
     'car-number' => ':attribute doğru deyil.',
     'cart-number-iran' => ':attribute doğru deyil.',
