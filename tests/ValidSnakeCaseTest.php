@@ -2,9 +2,9 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
-use Milwad\LaravelValidate\Rules\ValidCamelCase;
+use Milwad\LaravelValidate\Rules\ValidSnakeCase;
 
-class ValidCamelCaseTest extends BaseTest
+class ValidSnakeCaseTest extends BaseTest
 {
     /**
      * Set up.
@@ -15,32 +15,32 @@ class ValidCamelCaseTest extends BaseTest
     }
 
     /**
-     * Test camel case is valid.
+     * Test snake case is valid.
      *
      * @test
      *
      * @return void
      */
-    public function camel_case_is_valid()
+    public function snake_case_is_valid()
     {
-        $rules = ['camel_case' => [new ValidCamelCase()]];
-        $data = ['camel_case' => 'milwadDev'];
+        $rules = ['snake_case' => [new ValidSnakeCase()]];
+        $data = ['snake_case' => 'milwad_dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
 
     /**
-     * Test camel case is not valid.
+     * Test snake case is not valid.
      *
      * @test
      *
      * @return void
      */
-    public function camel_case_is_not_valid()
+    public function snake_case_is_not_valid()
     {
-        $rules = ['camel_case' => [new ValidCamelCase()]];
-        $data = ['camel_case' => 'milwad_dev'];
+        $rules = ['snake_case' => [new ValidSnakeCase()]];
+        $data = ['snake_case' => 'milwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);

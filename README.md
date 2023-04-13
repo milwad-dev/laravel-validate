@@ -22,10 +22,11 @@ This package support localization and you can use for most of the language. <br>
 - ```Morilog-Jalali >= 3.x```
 
 
-| GitHub | L6                 | L7                 | L8                 | L9                 | L10                |
-|--------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 1.5    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| GitHub    | L6                 | L7                 | L8                 | L9                 | L10                |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 1.5       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
+| 1.6       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| 1.7 (dev) | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
 
 # Installation
 
@@ -93,6 +94,9 @@ If you don't know about langs name you can go [Support Languages](#support-langu
 | 30  | ValidUlid                  | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                        |
 | 31  | ValidDomain                | Validate domain name for ex (github.com)                                 |
 | 32  | ValidCamelCase             | Validate camel case for ex (milwadDev)                                   |
+| 33  | ValidPascalCase            | Validate pascal case for ex (MilwadDev)                                  |
+| 34  | ValidKebabCase             | Validate kebab case for ex (milwad-dev)                                  |
+| 35  | ValidSnakeCase             | Validate snake case for ex (milwad_dev)                                  |
 
 # Rules
 

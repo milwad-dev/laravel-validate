@@ -33,4 +33,7 @@ return [
     'pattern' => ':attribute无效.',
     'duplicate' => ':attribute无效.',
     'ulid' => ':attribute无效.',
+    'pascal-case' => ':attribute无效.',
+    'kebab-case' => ':attribute无效.',
+    'snake-case' => ':attribute无效.',
 ];

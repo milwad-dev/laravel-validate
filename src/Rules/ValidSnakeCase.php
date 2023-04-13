@@ -4,10 +4,10 @@ namespace Milwad\LaravelValidate\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
-class ValidCamelCase implements Rule
+class ValidSnakeCase implements Rule
 {
     /**
-     * Check value is camel case.
+     * Check value is snake case.
      *
      * @param  string  $attribute
      * @param  mixed  $value
@@ -15,7 +15,7 @@ class ValidCamelCase implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('/^(?:\p{Lu}?\p{Ll}+)(?:\p{Lu}\p{Ll}+)*$/u', $value);
+        return preg_match('/^(?:\p{Ll}+_)*\p{Ll}+$/u', $value);
     }
 
     /**
@@ -25,6 +25,6 @@ class ValidCamelCase implements Rule
      */
     public function message()
     {
-        return __('validate.camel-case');
+        return __('validate.snake-case');
     }
 }

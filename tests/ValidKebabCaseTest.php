@@ -2,9 +2,9 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
-use Milwad\LaravelValidate\Rules\ValidCamelCase;
+use Milwad\LaravelValidate\Rules\ValidKebabCase;
 
-class ValidCamelCaseTest extends BaseTest
+class ValidKebabCaseTest extends BaseTest
 {
     /**
      * Set up.
@@ -15,32 +15,32 @@ class ValidCamelCaseTest extends BaseTest
     }
 
     /**
-     * Test camel case is valid.
+     * Test kebab case is valid.
      *
      * @test
      *
      * @return void
      */
-    public function camel_case_is_valid()
+    public function kebab_case_is_valid()
     {
-        $rules = ['camel_case' => [new ValidCamelCase()]];
-        $data = ['camel_case' => 'milwadDev'];
+        $rules = ['kebab-case' => [new ValidKebabCase()]];
+        $data = ['kebab-case' => 'milwad-dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
 
     /**
-     * Test camel case is not valid.
+     * Test kebab case is not valid.
      *
      * @test
      *
      * @return void
      */
-    public function camel_case_is_not_valid()
+    public function kebab_case_is_not_valid()
     {
-        $rules = ['camel_case' => [new ValidCamelCase()]];
-        $data = ['camel_case' => 'milwad_dev'];
+        $rules = ['kebab-case' => [new ValidKebabCase()]];
+        $data = ['kebab-case' => 'milwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);

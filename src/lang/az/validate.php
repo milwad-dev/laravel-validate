@@ -33,4 +33,7 @@ return [
     'pattern' => ':attribute doğru deyil.',
     'duplicate' => ':attribute doğru deyil.',
     'ulid' => ':attribute doğru deyil.',
+    'pascal-case' => ':attribute doğru deyil.',
+    'kebab-case' => ':attribute doğru deyil.',
+    'snake-case' => ':attribute doğru deyil.',
 ];
