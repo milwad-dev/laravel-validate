@@ -35,4 +35,5 @@ return [
     'ulid' => ':attribute doğru deyil.',
     'pascal-case' => ':attribute doğru deyil.',
     'kebab-case' => ':attribute doğru deyil.',
+    'snake-case' => ':attribute doğru deyil.',
 ];

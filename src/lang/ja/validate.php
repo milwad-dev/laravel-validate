@@ -35,4 +35,5 @@ return [
     'ulid' => ':attribute有効じゃない。',
     'pascal-case' => ':attribute有効じゃない。',
     'kebab-case' => ':attribute有効じゃない。',
+    'snake-case' => ':attribute有効じゃない。',
 ];

@@ -96,6 +96,7 @@ If you don't know about langs name you can go [Support Languages](#support-langu
 | 32  | ValidCamelCase             | Validate camel case for ex (milwadDev)                                   |
 | 33  | ValidPascalCase            | Validate pascal case for ex (MilwadDev)                                  |
 | 34  | ValidKebabCase             | Validate kebab case for ex (milwad-dev)                                  |
+| 35  | ValidSnakeCase             | Validate snake case for ex (milwad_dev)                                  |
 
 # Rules
 

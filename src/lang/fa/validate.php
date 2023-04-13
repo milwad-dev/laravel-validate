@@ -35,4 +35,5 @@ return [
     'ulid' => 'مقدار :attribute صحیح نمی باشد.',
     'pascal-case' => 'مقدار :attribute صحیح نمی باشد.',
     'kebab-case' => 'مقدار :attribute صحیح نمی باشد.',
+    'snake-case' => 'مقدار :attribute صحیح نمی باشد.',
 ];
