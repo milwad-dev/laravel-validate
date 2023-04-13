@@ -22,10 +22,11 @@ This package support localization and you can use for most of the language. <br>
 - ```Morilog-Jalali >= 3.x```
 
 
-| GitHub | L6                 | L7                 | L8                 | L9                 | L10                |
-|--------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 1.5    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| GitHub    | L6                 | L7                 | L8                 | L9                 | L10                |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 1.5       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
+| 1.6       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| 1.7 (dev) | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
 
 # Installation
 
