@@ -33,4 +33,5 @@ return [
     'pattern' => ':attribute غير صالح.',
     'duplicate' => ':attribute غير صالح.',
     'ulid' => ':attribute غير صالح.',
+    'pascal-case' => ':attribute غير صالح.',
 ];

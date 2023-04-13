@@ -33,4 +33,5 @@ return [
     'pattern' => ':attributeमान्य नहीं है।.',
     'duplicate' => ':attributeमान्य नहीं है।.',
     'ulid' => ':attributeमान्य नहीं है।.',
+    'pascal-case' => ':attributeमान्य नहीं है।.',
 ];
