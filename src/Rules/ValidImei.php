@@ -7,7 +7,7 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidImei implements Rule
 {
     /**
-     * Check jwt is valid.
+     * Check IMEI is valid.
      *
      * @param  string  $attribute
      * @param  mixed  $value
