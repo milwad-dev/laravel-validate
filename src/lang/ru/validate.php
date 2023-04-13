@@ -34,4 +34,5 @@ return [
     'duplicate' => ':attribute не действует.',
     'ulid' => ':attribute не действует.',
     'pascal-case' => ':attribute не действует.',
+    'kebab-case' => ':attribute не действует.',
 ];

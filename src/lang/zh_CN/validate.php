@@ -34,4 +34,5 @@ return [
     'duplicate' => ':attribute无效.',
     'ulid' => ':attribute无效.',
     'pascal-case' => ':attribute无效.',
+    'kebab-case' => ':attribute无效.',
 ];

@@ -34,4 +34,5 @@ return [
     'duplicate' => ':attribute유효하지 않습니다.',
     'ulid' => ':attribute유효하지 않습니다.',
     'pascal-case' => ':attribute유효하지 않습니다.',
+    'kebab-case' => ':attribute유효하지 않습니다.',
 ];
