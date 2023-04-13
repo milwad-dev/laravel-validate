@@ -34,4 +34,5 @@ return [
     'duplicate' => ":attribute n'est pas valide.",
     'ulid' => ":attribute n'est pas valide.",
     'pascal-case' => ":attribute n'est pas valide.",
+    'kebab-case' => ":attribute n'est pas valide.",
 ];

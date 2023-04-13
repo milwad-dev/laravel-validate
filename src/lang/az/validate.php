@@ -34,4 +34,5 @@ return [
     'duplicate' => ':attribute doğru deyil.',
     'ulid' => ':attribute doğru deyil.',
     'pascal-case' => ':attribute doğru deyil.',
+    'kebab-case' => ':attribute doğru deyil.',
 ];
