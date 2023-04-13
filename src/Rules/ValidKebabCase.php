@@ -16,7 +16,7 @@ class ValidKebabCase implements Rule
      */
     public function passes($attribute, $value)
     {
-        return Str::kebab($value) === $value;
+        return Str::kebab($value) === $value; // TODO: Better
     }
 
     /**
