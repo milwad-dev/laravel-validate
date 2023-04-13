@@ -35,4 +35,5 @@ return [
     'ulid' => ':attributeमान्य नहीं है।.',
     'pascal-case' => ':attributeमान्य नहीं है।.',
     'kebab-case' => ':attributeमान्य नहीं है।.',
+    'snake-case' => ':attributeमान्य नहीं है।.',
 ];

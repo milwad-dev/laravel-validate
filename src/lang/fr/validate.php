@@ -35,4 +35,5 @@ return [
     'ulid' => ":attribute n'est pas valide.",
     'pascal-case' => ":attribute n'est pas valide.",
     'kebab-case' => ":attribute n'est pas valide.",
+    'snake-case' => ":attribute n'est pas valide.",
 ];
