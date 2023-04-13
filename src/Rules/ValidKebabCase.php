@@ -3,7 +3,6 @@
 namespace Milwad\LaravelValidate\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use Illuminate\Support\Str;
 
 class ValidKebabCase implements Rule
 {
@@ -16,7 +15,7 @@ class ValidKebabCase implements Rule
      */
     public function passes($attribute, $value)
     {
-        return Str::kebab($value) === $value; // TODO: Better
+        return preg_match('/^(?:\p{Ll}+\-)*\p{Ll}+$/u', $value);
     }
 
     /**
