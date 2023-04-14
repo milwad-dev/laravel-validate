@@ -7,7 +7,7 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidDuplicateCharacter implements Rule
 {
     /**
-     * Check base64.
+     * Check duplicate characters, splitted by comma.
      *
      * @param  string  $attribute
      * @param  mixed  $value
