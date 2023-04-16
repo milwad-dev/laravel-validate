@@ -29,19 +29,10 @@ This package support localization and you can use for most of the language. <br>
 | 1.7 (dev) | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
 
 # Installation
+You can install package with composer.
 
-***
 ```bash
 composer require milwad/laravel-validate
-```
-
-# Usage
-```php
-use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
-
-return [
-    'phone' => ['required', new ValidPhoneNumber()],
-];
 ```
 
 # Publish
@@ -58,6 +49,17 @@ php artisan vendor:publish --tag="validate-lang-en"
 ```
 
 If you don't know about langs name you can go [Support Languages](#support-languages)
+
+# Usage
+You can use `Laravel-Validate Rules` very simple.You can use `new` keyword before rule name.
+
+```php
+use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
+
+return [
+    'phone' => ['required', new ValidPhoneNumber()],
+];
+```
 
 # Rules
 | #   | Rule name                  | Usage                                                                    |
