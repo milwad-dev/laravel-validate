@@ -8,7 +8,7 @@ use Morilog\Jalali\CalendarUtils;
 class ValidJalaliDate implements Rule
 {
     /**
-     * Check base64.
+     * Check jalali date is valid.
      *
      * @param  string  $attribute
      * @param  mixed  $value
