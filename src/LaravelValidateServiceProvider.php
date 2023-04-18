@@ -12,11 +12,12 @@ class LaravelValidateServiceProvider extends ServiceProvider
      *
      * @var array|string[]
      */
-    protected array $langs = [
+    public array $langs = [
         'ar',
         'az',
         'de',
         'en',
+        'es',
         'es',
         'fa',
         'fr',
