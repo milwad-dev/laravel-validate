@@ -130,6 +130,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Japanese (ja)
 - [x] Korean (Ko)
 - [x] Russian (ru)
+- [x] Ukrainian (uk)
 - [x] Azerbaijani (az)
 
 # License
