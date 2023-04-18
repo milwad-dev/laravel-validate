@@ -44,7 +44,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
             $this->publishConfigFile();
         }
 
-        $this->loadValidations();
+//        $this->loadValidations();
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');

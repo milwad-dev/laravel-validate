@@ -24,4 +24,20 @@ class LaravelValidateServiceProviderTest extends BaseTest
             $this->assertDirectoryExists(lang_path($lang));
         }
     }
+
+    /**
+     * Test config file publish successful.
+     *
+     * @test
+     * @return void
+     */
+    public function config_file_publish_successful()
+    {
+        $this->withoutExceptionHandling();
+        $this->artisan('vendor:publish', [
+           '--tag' => 'laravel-validate-config'
+        ]);
+
+        $this->assertFileExists(config_path('laravel-validate.php'));
+    }
 }
