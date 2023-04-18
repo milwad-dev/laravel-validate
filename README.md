@@ -133,6 +133,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Ukrainian (uk)
 - [x] Azerbaijani (az)
 - [x] German (de)
+- [x] Spanish (es)
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 9 and is released under the MIT License.
