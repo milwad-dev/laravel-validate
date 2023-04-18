@@ -132,6 +132,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Russian (ru)
 - [x] Ukrainian (uk)
 - [x] Azerbaijani (az)
+- [x] German (de)
 - [x] Spanish (es)
 
 # License
