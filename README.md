@@ -120,22 +120,22 @@ return [
 If a language is not supported, you can make <a href="https://github.com/milwad-dev/laravel-validate/issues/new/choose">issue</a> to add it. <br>
 Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> to add it.
 
-- [x] English (en)
-- [x] Persian (fa)
 - [x] Arabic (ar)
-- [x] Chinese (zh_CN)
+- [x] Azerbaijani (az)
+- [x] German (de)
+- [x] English (en)
+- [x] Spanish (es)
+- [x] Persian (fa)
 - [x] French (fr)
 - [x] Hindi (hi)
 - [x] Italian (It)
 - [x] Japanese (ja)
-- [x] Korean (Ko)
-- [x] Russian (ru)
-- [x] Ukrainian (uk)
-- [x] Azerbaijani (az)
-- [x] German (de)
-- [x] Spanish (es)
-- [x] Sinhala (si)
+- [x] Korean (ko)
 - [x] Português Brasil (pt_BR)
+- [x] Russian (ru)
+- [x] Sinhala (si)
+- [x] Ukrainian (uk)
+- [x] Chinese (zh_CN)
 
 # License
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 9 and is released under the MIT License.
