@@ -82,9 +82,11 @@ class LaravelValidateServiceProvider extends ServiceProvider
     private function loadValidations()
     {
         foreach (config('laravel-validate.rules', []) as $rule) {
-            Validator::extend($rule['name'], function ($attribute, $value, $parameters, $validator) {
+            Validator::extend('validate-' . $rule['name'], function ($attribute, $value, $parameters, $validator) use ($rule) {
+                $rule = new $rule(...$parameters);
 
+                return $rule->passes($attribute, $value);
             });
-        }
+        } // Beta
     }
 }
