@@ -15,6 +15,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
     public array $langs = [
         'ar',
         'az',
+        'ca',
         'de',
         'en',
         'es',
