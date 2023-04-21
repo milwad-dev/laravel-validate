@@ -1,6 +1,6 @@
 # Laravel Validate
 
-![milwad-dev laravel-validate](https://preview.dragon-code.pro/milwad-dev/laravel-validate.svg?brand=laravel&invert=1)
+<img src="https://banners.beyondco.de/Laravel%20Validate.png?theme=dark&packageManager=composer+require&packageName=milwad%2Flaravel-validate&pattern=circuitBoard&style=style_1&description=Help+to+write+easy+%26+faster+advance+validation+for+Laravel&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" alt="laravel-validate-banner">
 
 [![PHP Version Require](http://poser.pugx.org/milwad/laravel-validate/require/php)](https://packagist.org/packages/milwad/laravel-validate)
 [![Latest Stable Version](http://poser.pugx.org/milwad/laravel-validate/v)](https://packagist.org/packages/milwad/laravel-validate)
