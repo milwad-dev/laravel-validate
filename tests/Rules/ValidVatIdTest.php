@@ -24,8 +24,8 @@ class ValidVatIdTest extends BaseTest
      */
     public function vatid_is_valid()
     {
-        $rules = ['vat' => [new ValidVatId()]];
-        $data = ['vat' => 'EL123456789123'];
+        $rules = ['vat_id' => [new ValidVatId()]];
+        $data = ['vat_id' => 'EL123456789'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
@@ -38,10 +38,10 @@ class ValidVatIdTest extends BaseTest
      *
      * @return void
      */
-    public function vat_is_not_valid()
+    public function vatid_is_not_valid()
     {
-        $rules = ['vat' => [new ValidVatId()]];
-        $data = ['vat' => '123456789123'];
+        $rules = ['vat_id' => [new ValidVatId()]];
+        $data = ['vat_id' => 'EL123456789123678912'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
@@ -56,8 +56,8 @@ class ValidVatIdTest extends BaseTest
      */
     public function vat_is_to_long_valid()
     {
-        $rules = ['vat' => [new ValidVatId()]];
-        $data = ['vat' => 'EL1234567891236789123'];
+        $rules = ['vat_id' => [new ValidVatId()]];
+        $data = ['vat_id' => 'EL1234567891236789123'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);

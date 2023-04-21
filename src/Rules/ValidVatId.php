@@ -16,9 +16,9 @@ class ValidVatId implements Rule
     public function passes($attribute, $value)
     {
         // Remove all characters except letters and numbers
-        $value = preg_replace("/[^a-zA-Z0-9]]/", "", $value);
+        $value = preg_replace('/[^a-zA-Z0-9]]/', '', $value);
 
-        return preg_match('/^[a-z]{2}[a-z0-9]{0,12}$/', $value);
+        return preg_match('/[a-zA-Z]{2}[0-9]{0,12}$/', $value);
     }
 
     /**
