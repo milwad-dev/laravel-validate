@@ -99,6 +99,7 @@ return [
 | 33  | ValidPascalCase            | Validate pascal case for ex (MilwadDev)                                  |
 | 34  | ValidKebabCase             | Validate kebab case for ex (milwad-dev)                                  |
 | 35  | ValidSnakeCase             | Validate snake case for ex (milwad_dev)                                  |
+| 36  | ValidVatId               | Validate european VAT ID ex (EL123456789123)                             |
 
 # Rules
 
