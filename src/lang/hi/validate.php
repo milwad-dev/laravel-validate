@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attributeमान्य नहीं है।.',
     'hex-color' => ':attributeमान्य नहीं है।.',
     'html-tag' => ':attributeमान्य नहीं है।.',
+    'iban' => ':attributeमान्य नहीं है।.',
     'imei' => ':attributeमान्य नहीं है।.',
     'ipv4' => ':attributeमान्य नहीं है।.',
     'ipv6' => ':attributeमान्य नहीं है।.',

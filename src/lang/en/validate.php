@@ -13,6 +13,7 @@ return [
     'hashtag' => 'The :attribute is not valid.',
     'hex-color' => 'The :attribute is not valid.',
     'html-tag' => 'The :attribute is not valid.',
+    'iban' => 'The :attribute is not valid.',
     'imei' => 'The :attribute is not valid.',
     'ipv4' => 'The :attribute is not valid.',
     'ipv6' => 'The :attribute is not valid.',

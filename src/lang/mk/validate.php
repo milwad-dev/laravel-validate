@@ -13,6 +13,7 @@ return [
     'hashtag' => 'Невалидна вредност :attribute',
     'hex-color' => 'Невалидна вредност :attribute',
     'html-tag' => 'Невалидна вредност :attribute',
+    'iban' => 'Невалидна вредност :attribute',
     'imei' => 'Невалидна вредност :attribute',
     'ipv4' => 'Невалидна вредност :attribute',
     'ipv6' => 'Невалидна вредност :attribute',

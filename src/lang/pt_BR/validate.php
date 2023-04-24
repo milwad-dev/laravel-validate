@@ -13,6 +13,7 @@ return [
     'hashtag' => 'O :attribute não é válido.',
     'hex-color' => 'O :attribute não é válido.',
     'html-tag' => 'O :attribute não é válido.',
+    'iban' => 'O :attribute não é válido.',
     'imei' => 'O :attribute não é válido.',
     'ipv4' => 'O :attribute não é válido.',
     'ipv6' => 'O :attribute não é válido.',

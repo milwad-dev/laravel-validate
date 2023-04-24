@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute не є дійсним.',
     'hex-color' => ':attribute не є дійсним.',
     'html-tag' => ':attribute не є дійсним.',
+    'iban' => ':attribute не є дійсним.',
     'imei' => ':attribute не є дійсним.',
     'ipv4' => ':attribute не є дійсним.',
     'ipv6' => ':attribute не є дійсним.',

@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute غير صالح.',
     'hex-color' => ':attribute غير صالح.',
     'html-tag' => ':attribute غير صالح.',
+    'iban' => ':attribute غير صالح.',
     'imei' => ':attribute غير صالح.',
     'ipv4' => ':attribute غير صالح.',
     'ipv6' => ':attribute غير صالح.',
