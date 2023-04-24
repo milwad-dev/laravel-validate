@@ -27,7 +27,8 @@
   "require": {
     "php": "^8.0",
     "laravel/framework": "9.*|10.*",
-    "morilog/jalali": "3.*"
+    "morilog/jalali": "3.*",
+    "ext-bcmath": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
