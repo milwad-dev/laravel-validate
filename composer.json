@@ -28,7 +28,8 @@
     "php": "^8.0",
     "laravel/framework": "9.*|10.*",
     "morilog/jalali": "3.*",
-    "ext-bcmath": "*"
+    "ext-bcmath": "*",
+    "ext-ctype": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
