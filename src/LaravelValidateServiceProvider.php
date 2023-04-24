@@ -27,6 +27,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
         'It',
         'ja',
         'ko',
+        'ku_so',
         'mk',
         'pt_BR',
         'ru',
