@@ -160,7 +160,7 @@ class ValidIban implements Rule
             return false;
         }
 
-        $parsedIban = substr($value, 4) . $value[0] . $value[1] . substr($value, 2, 2);
+        $parsedIban = substr($value, 4) . substr($value, 0, 4);
         $parsedIban = strtr($parsedIban, $this->characterMap);
 
         return bcmod($parsedIban, '97') === '1';
