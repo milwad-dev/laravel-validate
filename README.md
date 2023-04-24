@@ -135,6 +135,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Italian (It)
 - [x] Japanese (ja)
 - [x] Korean (ko)
+- [x] Kurdish Sorani (ku_so)
 - [x] Português Brasil (pt_BR)
 - [x] Russian (ru)
 - [x] Sinhala (si)
