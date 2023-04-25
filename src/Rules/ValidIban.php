@@ -156,7 +156,7 @@ class ValidIban implements Rule
         'XK' => 20, // Kosovo
     ];
 
-    public function __construct(private ?string $country) {}
+    public function __construct(private ?string $country) {} // TODO: Add $country into the progress
 
     /**
      * Check IBAN.
@@ -171,7 +171,14 @@ class ValidIban implements Rule
             return false;
         }
 
+        /*
+         * Connect Iban title with value (code) ex: 8330001234567NO .
+         */
         $parsedIban = substr($value, 4) . substr($value, 0, 4);
+
+        /*
+         * Replace iban value with character map.
+         */
         $parsedIban = strtr($parsedIban, $this->characterMap);
 
         return bcmod($parsedIban, '97') === '1';
@@ -195,11 +202,11 @@ class ValidIban implements Rule
      */
     private function isIbanValid(string $iban)
     {
-        $countryCode = substr($iban, 0, 2);
+        $countryCode = substr($iban, 0, 2); // Get character of value
 
         return ! empty($iban)
-            || function_exists('bcmod')
-            || ctype_alpha(substr($iban, 0, 2))
+            || function_exists('bcmod') // Check `bcmod` is exists
+            || ctype_alpha(substr($iban, 0, 2)) //
             || strlen($iban) !== $this->ibanLengthByCountry[$countryCode];
     }
 }
