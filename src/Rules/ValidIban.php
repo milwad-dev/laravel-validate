@@ -6,7 +6,12 @@ use Illuminate\Contracts\Validation\Rule;
 
 class ValidIban implements Rule
 {
-    private $characterMap = [
+    /**
+     * Character map
+     *
+     * @var array|int[]
+     */
+    private array $characterMap = [
         'A' => 10,
         'B' => 11,
         'C' => 12,
@@ -35,7 +40,12 @@ class ValidIban implements Rule
         'Z' => 35,
     ];
 
-    private $ibanLengthByCountry = [
+    /**
+     * Get country code with length.
+     *
+     * @var array|int[]
+     */
+    private array $ibanLengthByCountry = [
         'AD' => 24, // Andorra
         'AE' => 23, // United Arab Emirates
         'AL' => 28, // Albania
@@ -151,8 +161,8 @@ class ValidIban implements Rule
     /**
      * Check IBAN.
      *
-     * @param string $attribute
-     * @param mixed $value
+     * @param  string $attribute
+     * @param  mixed $value
      * @return bool
      */
     public function passes($attribute, $value)
@@ -177,7 +187,13 @@ class ValidIban implements Rule
         return __('validate.iban');
     }
 
-    private function isIbanValid($iban)
+    /**
+     * Check iban is valid.
+     *
+     * @param  string $iban
+     * @return bool
+     */
+    private function isIbanValid(string $iban)
     {
         $countryCode = substr($iban, 0, 2);
 
