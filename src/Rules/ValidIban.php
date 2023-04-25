@@ -6,7 +6,12 @@ use Illuminate\Contracts\Validation\Rule;
 
 class ValidIban implements Rule
 {
-    private $characterMap = [
+    /**
+     * Character map
+     *
+     * @var array|int[]
+     */
+    private array $characterMap = [
         'A' => 10,
         'B' => 11,
         'C' => 12,
@@ -35,7 +40,12 @@ class ValidIban implements Rule
         'Z' => 35,
     ];
 
-    private $ibanLengthByCountry = [
+    /**
+     * Get country code with length.
+     *
+     * @var array|int[]
+     */
+    private array $ibanLengthByCountry = [
         'AD' => 24, // Andorra
         'AE' => 23, // United Arab Emirates
         'AL' => 28, // Albania
@@ -147,6 +157,16 @@ class ValidIban implements Rule
     ];
 
     /**
+     * Country code from outside.
+     */
+    private string|null $country;
+
+    public function __construct(string|null $country = null) // TODO: Add $country into the progress
+    {
+        $this->country = $country;
+    }
+
+    /**
      * Check IBAN.
      *
      * @param  string  $attribute
@@ -156,11 +176,17 @@ class ValidIban implements Rule
     public function passes($attribute, $value)
     {
         if (! $this->isIbanValid($value)) {
-
             return false;
         }
 
+        /*
+         * Connect Iban title with value (code) ex: 8330001234567NO .
+         */
         $parsedIban = substr($value, 4).substr($value, 0, 4);
+
+        /*
+         * Replace iban value with character map.
+         */
         $parsedIban = strtr($parsedIban, $this->characterMap);
 
         return bcmod($parsedIban, '97') === '1';
@@ -176,11 +202,18 @@ class ValidIban implements Rule
         return __('validate.iban');
     }
 
-    private function isIbanValid($iban)
+    /**
+     * Check iban is valid.
+     *
+     * @return bool
+     */
+    private function isIbanValid(string $iban)
     {
-        $countryCode = substr($iban, 0, 2);
+        $countryCode = substr($iban, 0, 2); // Get character of value
 
-        return ! (! function_exists('bcmod') || empty($iban) || ! ctype_alpha(substr($iban, 0, 2)) ||
-            strlen($iban) != $this->ibanLengthByCountry[$countryCode]);
+        return ! empty($iban)
+            || function_exists('bcmod') // Check `bcmod` is exists
+            || ctype_alpha(substr($iban, 0, 2)) //
+            || strlen($iban) !== $this->ibanLengthByCountry[$countryCode];
     }
 }
