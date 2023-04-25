@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute doğru deyil.',
     'hex-color' => ':attribute doğru deyil.',
     'html-tag' => ':attribute doğru deyil.',
+    'iban' => ':attribute doğru deyil.',
     'imei' => ':attribute doğru deyil.',
     'ipv4' => ':attribute doğru deyil.',
     'ipv6' => ':attribute doğru deyil.',

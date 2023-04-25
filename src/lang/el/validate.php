@@ -13,6 +13,7 @@ return [
     'hashtag' => 'Το :attribute δεν είναι έγκυρο.',
     'hex-color' => 'Το :attribute δεν είναι έγκυρο.',
     'html-tag' => 'Το :attribute δεν είναι έγκυρο.',
+    'iban' => 'Το :attribute δεν είναι έγκυρο.',
     'imei' => 'Το :attribute δεν είναι έγκυρο.',
     'ipv4' => 'Το :attribute δεν είναι έγκυρο.',
     'ipv6' => 'Το :attribute δεν είναι έγκυρο.',

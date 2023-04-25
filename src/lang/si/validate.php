@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute වලංගු නොවේ.',
     'hex-color' => ':attribute වලංගු නොවේ.',
     'html-tag' => ':attribute වලංගු නොවේ.',
+    'iban' => ':attribute වලංගු නොවේ.',
     'imei' => ':attribute වලංගු නොවේ.',
     'ipv4' => ':attribute වලංගු නොවේ.',
     'ipv6' => ':attribute වලංගු නොවේ.',

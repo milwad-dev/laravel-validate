@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute无效.',
     'hex-color' => ':attribute无效.',
     'html-tag' => ':attribute无效.',
+    'iban' => ':attribute无效.',
     'imei' => ':attribute无效.',
     'ipv4' => ':attribute无效.',
     'ipv6' => ':attribute无效.',

@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute не действует.',
     'hex-color' => ':attribute не действует.',
     'html-tag' => ':attribute не действует.',
+    'iban' => ':attribute не действует.',
     'imei' => ':attribute не действует.',
     'ipv4' => ':attribute не действует.',
     'ipv6' => ':attribute не действует.',

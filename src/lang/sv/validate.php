@@ -13,6 +13,7 @@ return [
     'hashtag' => 'Värdet :attribute är inte korrekt.',
     'hex-color' => 'Värdet :attribute är inte korrekt.',
     'html-tag' => 'Värdet :attribute är inte korrekt.',
+    'iban' => 'Värdet :attribute är inte korrekt.',
     'imei' => 'Värdet :attribute är inte korrekt.',
     'ipv4' => 'Värdet :attribute är inte korrekt.',
     'ipv6' => 'Värdet :attribute är inte korrekt.',

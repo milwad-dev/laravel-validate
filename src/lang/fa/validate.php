@@ -13,6 +13,7 @@ return [
     'hashtag' => 'مقدار :attribute صحیح نمی باشد.',
     'hex-color' => 'مقدار :attribute صحیح نمی باشد.',
     'html-tag' => 'مقدار :attribute صحیح نمی باشد.',
+    'iban' => 'مقدار :attribute صحیح نمی باشد.',
     'imei' => 'مقدار :attribute صحیح نمی باشد.',
     'ipv4' => 'مقدار :attribute صحیح نمی باشد.',
     'ipv6' => 'مقدار :attribute صحیح نمی باشد.',

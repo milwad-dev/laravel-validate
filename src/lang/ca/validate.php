@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute no és vàlid.',
     'hex-color' => ':attribute no és vàlid.',
     'html-tag' => ':attribute no és vàlid.',
+    'iban' => ':attribute no és vàlid.',
     'imei' => ':attribute no és vàlid.',
     'ipv4' => ':attribute no és vàlid.',
     'ipv6' => ':attribute no és vàlid.',

@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute有効じゃない。',
     'hex-color' => ':attribute有効じゃない。',
     'html-tag' => ':attribute有効じゃない。',
+    'iban' => ':attribute有効じゃない。',
     'imei' => ':attribute有効じゃない。',
     'ipv4' => ':attribute有効じゃない。',
     'ipv6' => ':attribute有効じゃない。',

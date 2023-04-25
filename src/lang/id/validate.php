@@ -13,6 +13,7 @@ return [
     'hashtag' => ':attribute tidak valid.',
     'hex-color' => ':attribute tidak valid.',
     'html-tag' => ':attribute tidak valid.',
+    'iban' => ':attribute tidak valid.',
     'imei' => ':attribute tidak valid.',
     'ipv4' => ':attribute tidak valid.',
     'ipv6' => ':attribute tidak valid.',
