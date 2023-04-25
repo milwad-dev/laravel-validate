@@ -158,6 +158,8 @@ class ValidIban implements Rule
 
     /**
      * Country code from outside.
+     *
+     * @var string|null
      */
     private string|null $country;
 
@@ -169,20 +171,20 @@ class ValidIban implements Rule
     /**
      * Check IBAN.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param  string $attribute
+     * @param  mixed $value
      * @return bool
      */
     public function passes($attribute, $value)
     {
-        if (! $this->isIbanValid($value)) {
+        if (!$this->isIbanValid($value)) {
             return false;
         }
 
         /*
          * Connect Iban title with value (code) ex: 8330001234567NO .
          */
-        $parsedIban = substr($value, 4).substr($value, 0, 4);
+        $parsedIban = substr($value, 4) . substr($value, 0, 4);
 
         /*
          * Replace iban value with character map.
@@ -205,6 +207,7 @@ class ValidIban implements Rule
     /**
      * Check iban is valid.
      *
+     * @param  string $iban
      * @return bool
      */
     private function isIbanValid(string $iban)
