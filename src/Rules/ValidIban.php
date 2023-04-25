@@ -146,6 +146,8 @@ class ValidIban implements Rule
         'XK' => 20, // Kosovo
     ];
 
+    public function __construct(private ?string $country) {}
+
     /**
      * Check IBAN.
      *
