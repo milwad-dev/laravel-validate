@@ -156,7 +156,6 @@ class ValidIban implements Rule
     public function passes($attribute, $value)
     {
         if (!$this->isIbanValid($value)) {
-
             return false;
         }
 
@@ -180,7 +179,11 @@ class ValidIban implements Rule
     {
         $countryCode = substr($iban, 0, 2);
 
-        return !(!function_exists('bcmod') || empty($iban) || !ctype_alpha(substr($iban, 0, 2)) ||
-            strlen($iban) != $this->ibanLengthByCountry[$countryCode]);
+        return ! (
+            empty($iban)
+            || !function_exists('bcmod')
+            || !ctype_alpha(substr($iban, 0, 2))
+            || strlen($iban) !== $this->ibanLengthByCountry[$countryCode]
+        );
     }
 }
