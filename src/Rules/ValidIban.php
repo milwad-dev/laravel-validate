@@ -149,18 +149,18 @@ class ValidIban implements Rule
     /**
      * Check IBAN.
      *
-     * @param string $attribute
-     * @param mixed $value
+     * @param  string  $attribute
+     * @param  mixed  $value
      * @return bool
      */
     public function passes($attribute, $value)
     {
-        if (!$this->isIbanValid($value)) {
+        if (! $this->isIbanValid($value)) {
 
             return false;
         }
 
-        $parsedIban = substr($value, 4) . substr($value, 0, 4);
+        $parsedIban = substr($value, 4).substr($value, 0, 4);
         $parsedIban = strtr($parsedIban, $this->characterMap);
 
         return bcmod($parsedIban, '97') === '1';
@@ -180,7 +180,7 @@ class ValidIban implements Rule
     {
         $countryCode = substr($iban, 0, 2);
 
-        return !(!function_exists('bcmod') || empty($iban) || !ctype_alpha(substr($iban, 0, 2)) ||
+        return ! (! function_exists('bcmod') || empty($iban) || ! ctype_alpha(substr($iban, 0, 2)) ||
             strlen($iban) != $this->ibanLengthByCountry[$countryCode]);
     }
 }
