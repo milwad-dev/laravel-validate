@@ -118,6 +118,18 @@ return [
 ];
 ```
 
+### ValidIban
+
+Sometimes you need to validate Iban(International Bank Account Number) code.You can use `ValidIban` rule:
+
+```php
+use Milwad\LaravelValidate\Rules\ValidIban;
+
+return [
+    'iban' => ['required', new ValidIban()], // iban => SC74MCBL01031234567890123456USD
+];
+```
+
 <a name="support-languages"></a>
 # Support Languages
 

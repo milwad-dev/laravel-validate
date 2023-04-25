@@ -140,9 +140,9 @@ class ValidIbanTest extends BaseTest
         ];
 
         foreach ($ibans as $iban) {
-
             $data = ['iban' => $iban];
             $passes = $this->app['validator']->make($data, $rules)->passes();
+
             $this->assertTrue($passes);
         }
     }
@@ -165,9 +165,9 @@ class ValidIbanTest extends BaseTest
         ];
 
         foreach ($ibans as $iban) {
-
             $data = ['iban' => $iban];
             $passes = $this->app['validator']->make($data, $rules)->passes();
+
             $this->assertFalse($passes);
         }
     }
