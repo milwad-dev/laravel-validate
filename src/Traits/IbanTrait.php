@@ -26,7 +26,6 @@ trait IbanTrait
         }
     }
 
-
     /**
      * Check IBAN is valid.
      *
@@ -64,10 +63,10 @@ trait IbanTrait
 
         $ibanCountryCode = $this->getIbanCountryCode($iban);
 
-        return !(empty($this->checkIfBcmodIsAvailable())
-            || !$this->twoFirstCharactersValid($ibanCountryCode)
-            || !$this->isCountriesValid($ibanCountryCode)
-            || !$this->isIbanLengthValid($iban, $ibanCountryCode));
+        return ! (empty($this->checkIfBcmodIsAvailable())
+            || ! $this->twoFirstCharactersValid($ibanCountryCode)
+            || ! $this->isCountriesValid($ibanCountryCode)
+            || ! $this->isIbanLengthValid($iban, $ibanCountryCode));
     }
 
     /**
@@ -97,7 +96,7 @@ trait IbanTrait
      */
     private function twoFirstCharactersValid(string $countryCode)
     {
-        return !empty($countryCode) && ctype_alpha($countryCode);
+        return ! empty($countryCode) && ctype_alpha($countryCode);
     }
 
     /**
