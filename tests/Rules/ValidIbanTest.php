@@ -2,9 +2,9 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
-use Milwad\LaravelValidate\Rules\Country;
 use Milwad\LaravelValidate\Rules\ValidIban;
 use Milwad\LaravelValidate\Tests\BaseTest;
+use Milwad\LaravelValidate\Utils\Country;
 
 class ValidIbanTest extends BaseTest
 {
