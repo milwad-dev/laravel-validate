@@ -159,6 +159,8 @@ class ValidIban implements Rule
 
     /**
      * Set multiple country codes to validate IBAN (Optional).
+     *
+     * @var array
      */
     private array $countries;
 
@@ -248,16 +250,10 @@ class ValidIban implements Rule
 
         $ibanCountryCode = $this->getIbanCountryCode($iban);
 
-        if (
-            empty($this->checkIfBcmodIsAvailable())
-            || ! $this->twoFirstCharactersValid($ibanCountryCode)
-            || ! $this->isCountriesValid($ibanCountryCode)
-            || ! $this->isIbanLengthValid($iban, $ibanCountryCode)
-        ) {
-            return false;
-        }
-
-        return true;
+        return !(empty($this->checkIfBcmodIsAvailable())
+            || !$this->twoFirstCharactersValid($ibanCountryCode)
+            || !$this->isCountriesValid($ibanCountryCode)
+            || !$this->isIbanLengthValid($iban, $ibanCountryCode));
     }
 
     /**
@@ -273,7 +269,7 @@ class ValidIban implements Rule
     /**
      * Check if bcmod function is available.
      *
-     * @return string
+     * @return bool
      */
     private function checkIfBcmodIsAvailable()
     {
@@ -281,13 +277,13 @@ class ValidIban implements Rule
     }
 
     /**
-     * Check two first characters validity.
+     * Check two first character's validity.
      *
      * @return bool
      */
     private function twoFirstCharactersValid(string $countryCode)
     {
-        return empty($countryCode) ? false : ctype_alpha($countryCode);
+        return !empty($countryCode) && ctype_alpha($countryCode);
     }
 
     /**
