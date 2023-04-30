@@ -135,7 +135,7 @@ to one of the countries you pass to the validation class:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIban;
-use Milwad\LaravelValidate\Rules\Country;
+use Milwad\LaravelValidate\Utils\Country;
 
 return [
     'iban' => ['required', new ValidIban(Country::IRAN, Country::SEYCHELLES)], // iban => SC74MCBL01031234567890123456USD
