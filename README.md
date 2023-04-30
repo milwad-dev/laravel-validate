@@ -130,6 +130,18 @@ return [
 ];
 ```
 
+Also, You can use `Country` class and add a list of countries to `ValidIban` rule. By doing this your IBAN must belong
+to one of the countries you pass to the validation class:
+
+```php
+use Milwad\LaravelValidate\Rules\ValidIban;
+use Milwad\LaravelValidate\Rules\Country;
+
+return [
+    'iban' => ['required', new ValidIban(Country::IRAN, Country::SEYCHELLES)], // iban => SC74MCBL01031234567890123456USD
+];
+```
+
 <a name="support-languages"></a>
 # Support Languages
 
