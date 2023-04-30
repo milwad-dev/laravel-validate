@@ -162,6 +162,8 @@ class ValidIban implements Rule
 
     /**
      * Set multiple country codes to validate IBAN (Optional).
+     *
+     * @var array|null
      */
     private ?array $countries;
 
