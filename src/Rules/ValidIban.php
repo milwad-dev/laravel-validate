@@ -9,7 +9,7 @@ use Milwad\LaravelValidate\Utils\Country;
 class ValidIban implements Rule
 {
     use IbanTrait;
-    
+
     /**
      * Character map
      *
