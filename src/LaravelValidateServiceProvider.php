@@ -57,12 +57,14 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
     /**
      * Publish lang files.
+     *
+     * @return void
      */
     private function publishLangFiles(): void
     {
         foreach ($this->langs as $lang) {
             $this->publishes([
-                __DIR__."/Lang/$lang" => lang_path($lang),
+                __DIR__."/lang/$lang" => lang_path($lang),
             ], "validate-lang-$lang");
         }
     }
