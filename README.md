@@ -26,7 +26,7 @@ This package support localization and you can use for most of the language. <br>
 |-----------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | 1.5       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
 | 1.6       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
-| 1.7 (dev) | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| 1.7       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
 
 # Installation
 You can install package with composer.
