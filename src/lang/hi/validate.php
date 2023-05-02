@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attributeमान्य नहीं है।.',
     'phone-number' => ':attributeमान्य नहीं है।.',
     'port' => ':attributeमान्य नहीं है।.',
+    'postal-code' => ':attributeमान्य नहीं है।.',
     'slash-end-of-string' => ':attributeमान्य नहीं है।.',
     'slug' => ':attributeमान्य नहीं है।.',
     'strong-password' => ':attributeमान्य नहीं है।.',

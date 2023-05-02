@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute doğru deyil.',
     'phone-number' => ':attribute doğru deyil.',
     'port' => ':attribute doğru deyil.',
+    'postal-code' => ':attribute doğru deyil.',
     'slash-end-of-string' => ':attribute doğru deyil.',
     'slug' => ':attribute doğru deyil.',
     'strong-password' => ':attribute doğru deyil.',

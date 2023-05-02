@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute غير صالح.',
     'phone-number' => ':attribute غير صالح.',
     'port' => ':attribute غير صالح.',
+    'postal-code' => ':attribute غير صالح.',
     'slash-end-of-string' => ':attribute غير صالح.',
     'slug' => ':attribute غير صالح.',
     'strong-password' => ':attribute غير صالح.',

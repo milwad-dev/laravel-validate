@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute유효하지 않습니다.',
     'phone-number' => ':attribute유효하지 않습니다.',
     'port' => ':attribute유효하지 않습니다.',
+    'postal-code' => ':attribute유효하지 않습니다.',
     'slash-end-of-string' => ':attribute유효하지 않습니다.',
     'slug' => ':attribute유효하지 않습니다.',
     'strong-password' => ':attribute유효하지 않습니다.',

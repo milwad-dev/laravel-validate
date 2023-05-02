@@ -23,6 +23,7 @@ return [
     'odd-number' => 'مقدار :attribute صحیح نمی باشد.',
     'phone-number' => 'مقدار :attribute صحیح نمی باشد.',
     'port' => 'مقدار :attribute صحیح نمی باشد.',
+    'postal-code' => 'مقدار :attribute صحیح نمی باشد.',
     'slash-end-of-string' => 'مقدار :attribute صحیح نمی باشد.',
     'slug' => 'مقدار :attribute صحیح نمی باشد.',
     'strong-password' => 'مقدار :attribute صحیح نمی باشد.',

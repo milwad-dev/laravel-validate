@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute no és vàlid.',
     'phone-number' => ':attribute no és vàlid.',
     'port' => ':attribute no és vàlid.',
+    'postal-code' => ':attribute no és vàlid.',
     'slash-end-of-string' => ':attribute no és vàlid.',
     'slug' => ':attribute no és vàlid.',
     'strong-password' => ':attribute no és vàlid.',

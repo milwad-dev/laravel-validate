@@ -23,6 +23,7 @@ return [
     'odd-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'phone-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'port' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'postal-code' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'slash-end-of-string' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'slug' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'strong-password' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',

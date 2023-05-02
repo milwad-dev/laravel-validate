@@ -23,6 +23,7 @@ return [
     'odd-number' => 'Värdet :attribute är inte korrekt.',
     'phone-number' => 'Värdet :attribute är inte korrekt.',
     'port' => 'Värdet :attribute är inte korrekt.',
+    'postal-code' => 'Värdet :attribute är inte korrekt.',
     'slash-end-of-string' => 'Värdet :attribute är inte korrekt.',
     'slug' => 'Värdet :attribute är inte korrekt.',
     'strong-password' => 'Värdet :attribute är inte korrekt.',

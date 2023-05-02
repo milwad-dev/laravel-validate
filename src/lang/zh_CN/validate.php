@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute无效.',
     'phone-number' => ':attribute无效.',
     'port' => ':attribute无效.',
+    'postal-code' => ':attribute无效.',
     'slash-end-of-string' => ':attribute无效.',
     'slug' => ':attribute无效.',
     'strong-password' => ':attribute无效.',
