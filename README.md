@@ -102,6 +102,7 @@ return [
 | 35  | ValidSnakeCase             | Validate snake case for ex (milwad_dev)                                  |
 | 36  | ValidVatId                 | Validate european VAT ID ex (EL123456789123)                             |
 | 37  | ValidIban                  | Validate IBAN ex (IR062960000000100324200001)                            |
+| 38  | ValidIranPostalCode        | Validate Iran postal code ex (3354355599)                |
 
 # Rules
 
