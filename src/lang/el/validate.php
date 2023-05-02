@@ -23,6 +23,7 @@ return [
     'odd-number' => 'Το :attribute δεν είναι έγκυρο.',
     'phone-number' => 'Το :attribute δεν είναι έγκυρο.',
     'port' => 'Το :attribute δεν είναι έγκυρο.',
+    'postal-code' => 'Το :attribute δεν είναι έγκυρο.',
     'slash-end-of-string' => 'Το :attribute δεν είναι έγκυρο.',
     'slug' => 'Το :attribute δεν είναι έγκυρο.',
     'strong-password' => 'Το :attribute δεν είναι έγκυρο.',

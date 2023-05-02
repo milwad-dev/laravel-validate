@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute kein gültiger.',
     'phone-number' => ':attribute kein gültiger.',
     'port' => ':attribute kein gültiger.',
+    'postal-code' => ':attribute kein gültiger.',
     'slash-end-of-string' => ':attribute kein gültiger.',
     'slug' => ':attribute kein gültiger.',
     'strong-password' => ':attribute kein gültiger.',

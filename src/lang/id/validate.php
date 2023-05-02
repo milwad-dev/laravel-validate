@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute tidak valid.',
     'phone-number' => ':attribute tidak valid.',
     'port' => ':attribute tidak valid.',
+    'postal-code' => ':attribute tidak valid.',
     'slash-end-of-string' => ':attribute tidak valid.',
     'slug' => ':attribute tidak valid.',
     'strong-password' => ':attribute tidak valid.',

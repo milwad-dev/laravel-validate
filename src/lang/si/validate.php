@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute වලංගු නොවේ.',
     'phone-number' => ':attribute වලංගු නොවේ.',
     'port' => ':attribute වලංගු නොවේ.',
+    'postal-code' => ':attribute වලංගු නොවේ.',
     'slash-end-of-string' => ':attribute වලංගු නොවේ.',
     'slug' => ':attribute වලංගු නොවේ.',
     'strong-password' => ':attribute වලංගු නොවේ.',

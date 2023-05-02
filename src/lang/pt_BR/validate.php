@@ -23,6 +23,7 @@ return [
     'odd-number' => 'O :attribute não é válido.',
     'phone-number' => 'O :attribute não é válido.',
     'port' => 'O :attribute não é válido.',
+    'postal-code' => 'O :attribute não é válido.',
     'slash-end-of-string' => 'O :attribute não é válido.',
     'slug' => 'O :attribute não é válido.',
     'strong-password' => 'O :attribute não é válido.',

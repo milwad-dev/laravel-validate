@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute не є дійсним.',
     'phone-number' => ':attribute не є дійсним.',
     'port' => ':attribute не є дійсним.',
+    'postal-code' => ':attribute не є дійсним.',
     'slash-end-of-string' => ':attribute не є дійсним.',
     'slug' => ':attribute не є дійсним.',
     'strong-password' => ':attribute не є дійсним.',

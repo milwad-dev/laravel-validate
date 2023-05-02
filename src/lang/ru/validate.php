@@ -23,6 +23,7 @@ return [
     'odd-number' => ':attribute не действует.',
     'phone-number' => ':attribute не действует.',
     'port' => ':attribute не действует.',
+    'postal-code' => ':attribute не действует.',
     'slash-end-of-string' => ':attribute не действует.',
     'slug' => ':attribute не действует.',
     'strong-password' => ':attribute не действует.',

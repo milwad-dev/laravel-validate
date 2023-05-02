@@ -23,6 +23,7 @@ return [
     'odd-number' => 'Невалидна вредност :attribute',
     'phone-number' => 'Невалидна вредност :attribute',
     'port' => 'Невалидна вредност :attribute',
+    'postal-code' => 'Невалидна вредност :attribute',
     'slash-end-of-string' => 'Невалидна вредност :attribute',
     'slug' => 'Невалидна вредност :attribute',
     'strong-password' => 'Невалидна вредност :attribute',
