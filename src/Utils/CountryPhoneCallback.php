@@ -7,15 +7,13 @@ class CountryPhoneCallback
     /**
      * Create a new phone validator instance.
      *
-     * @param mixed $value The phone number to validate.
-     * @param string $code The country codes to validate against. String can be separated by comma
-     * @param string|null $attribute
+     * @param  mixed  $value The phone number to validate.
+     * @param  string  $code The country codes to validate against. String can be separated by comma
+     * @param  string|null  $attribute
      */
     public function __construct(protected $value, protected string $code, $attribute = null)
     {
     }
-
-
 
     protected function validateBJ(): bool
     {
@@ -25,9 +23,9 @@ class CountryPhoneCallback
     /**
      * Call the phone validator method for each country code and return the results.
      *
-     * @throws \BadMethodCallException if the validator method for a country code does not exist.
-     *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
+     *
+     * @throws \BadMethodCallException if the validator method for a country code does not exist.
      */
     public function callPhoneValidator(): array
     {
@@ -38,7 +36,7 @@ class CountryPhoneCallback
         $codes = array_map('strtoupper', $codes);
 
         foreach ($codes as $code) {
-            $methodName = 'validate' . $code;
+            $methodName = 'validate'.$code;
 
             if (method_exists($this, $methodName)) {
                 $results[$code] = $this->{$methodName}();

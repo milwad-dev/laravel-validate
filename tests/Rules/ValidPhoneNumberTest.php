@@ -27,9 +27,9 @@ class ValidPhoneNumberTest extends BaseTest
     {
         $rules = [
             'phone_number' => [new ValidPhoneNumber()],
-            'phone_bj' => [new ValidPhoneNumber(Country::BENIN)]
+            'phone_bj' => [new ValidPhoneNumber(Country::BENIN)],
         ];
-        $data = ['phone_number' => '09366000000', 'phone_bj' => "+22997000000"];
+        $data = ['phone_number' => '09366000000', 'phone_bj' => '+22997000000'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
@@ -46,11 +46,11 @@ class ValidPhoneNumberTest extends BaseTest
     {
         $rules = [
             'phone_number' => [new ValidPhoneNumber()],
-            'phone_bj' => [new ValidPhoneNumber(Country::BENIN)]
+            'phone_bj' => [new ValidPhoneNumber(Country::BENIN)],
         ];
         $data = [
             'phone_number' => '123456789',
-            'phone_bj' => "+22697000000"
+            'phone_bj' => '+22697000000',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

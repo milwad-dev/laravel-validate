@@ -8,5 +8,5 @@ return [
             'name' => 'base64',
             'class' => ValidBase64::class,
         ],
-    ]
+    ],
 ];
