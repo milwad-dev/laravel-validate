@@ -68,9 +68,11 @@ class ValidPhoneNumberTest extends BaseTest
     {
         $rules = [
             'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
+            'phone_ir' => [new ValidPhoneNumber(Country::IRAN)],
         ];
         $data = [
             'phone_ne' => '+22799123456',
+            'phone_ir' => '09125555555',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
