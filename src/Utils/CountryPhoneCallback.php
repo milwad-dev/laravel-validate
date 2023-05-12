@@ -26,6 +26,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Iran phone number.
+     *
+     * @return false|int
+     */
+    protected function validateIR()
+    {
+        return preg_match('/^(\+98|0)?9\d{9}$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
