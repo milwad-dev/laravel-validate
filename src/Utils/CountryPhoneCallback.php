@@ -11,16 +11,19 @@ class CountryPhoneCallback
      * @param  string  $code The country codes to validate against. String can be separated by comma
      * @param  string|null  $attribute
      */
-    public function __construct(private mixed $value, private string $code, string|null $attribute = null)
-    {
-    }
+    public function __construct(private mixed $value, private string $code, string|null $attribute = null) {}
 
     // TODO: Add a feature to add validate method for your own country!
-    protected function validateNE() // Nigeria
+
+    /**
+     * Validate Nigeria phone number.
+     *
+     * @return false|int
+     */
+    protected function validateNE()
     {
         return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
     }
-
 
     /**
      * Call the phone validator method for each country code and return the results.
