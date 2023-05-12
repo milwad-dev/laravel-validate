@@ -16,16 +16,6 @@ class CountryPhoneCallback
     // TODO: Add a feature to add validate method for your own country!
 
     /**
-     * Validate Nigeria phone number.
-     *
-     * @return false|int
-     */
-    protected function validateNE()
-    {
-        return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
-    }
-
-    /**
      * Validate Iran phone number.
      *
      * @return false|int
@@ -33,6 +23,26 @@ class CountryPhoneCallback
     protected function validateIR()
     {
         return preg_match('/^(\+98|0)?9\d{9}$/', $this->value);
+    }
+
+    /**
+     * Validate Iran phone number.
+     *
+     * @return false|int
+     */
+    protected function validateEN()
+    {
+        return preg_match('/^(?:\+44|0)7\d{9}$/', $this->value);
+    }
+
+    /**
+     * Validate Nigeria phone number.
+     *
+     * @return false|int
+     */
+    protected function validateNE()
+    {
+        return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
     }
 
     /**

@@ -67,12 +67,14 @@ class ValidPhoneNumberTest extends BaseTest
     public function all_phone_number_is_valid_by_specific_code()
     {
         $rules = [
-            'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
             'phone_ir' => [new ValidPhoneNumber(Country::IRAN)],
+            'phone_en' => [new ValidPhoneNumber(Country::ENGLAND)],
+            'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
         ];
         $data = [
-            'phone_ne' => '+22799123456',
             'phone_ir' => '09125555555',
+            'phone_en' => '+447975777666',
+            'phone_ne' => '+22799123456',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

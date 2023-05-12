@@ -64,6 +64,8 @@ class Country
 
     public const EL_SALVADOR = 'SV';
 
+    public const ENGLAND = 'EN';
+
     public const EQUATORIAL_GUINEA = 'GQ';
 
     public const ESTONIA = 'EE';
