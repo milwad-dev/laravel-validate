@@ -11,7 +11,9 @@ class CountryPhoneCallback
      * @param  string  $code The country codes to validate against. String can be separated by comma
      * @param  string|null  $attribute
      */
-    public function __construct(private mixed $value, private string $code, string|null $attribute = null) {}
+    public function __construct(private mixed $value, private string $code, string|null $attribute = null)
+    {
+    }
 
     // TODO: Add a feature to add validate method for your own country!
 
@@ -54,7 +56,6 @@ class CountryPhoneCallback
     {
         return preg_match('/^((\+966)|0)?5\d{8}$/', $this->value);
     }
-
 
     /**
      * Validate Germany phone number.
