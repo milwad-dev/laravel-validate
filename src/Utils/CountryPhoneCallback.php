@@ -11,49 +11,16 @@ class CountryPhoneCallback
      * @param  string  $code The country codes to validate against. String can be separated by comma
      * @param  string|null  $attribute
      */
-    public function __construct(protected $value, protected string $code, $attribute = null)
+    public function __construct(private mixed $value, private string $code, string|null $attribute = null)
     {
     }
 
-    protected function validateTG()
-    {
-        return preg_match('/^(\+228|00228|228)?\d{8}$/', $this->value);
-    }
-
-    protected function validateNE()
+    // TODO: Add a feature to add validate method for your own country!
+    protected function validateNE() // Nigeria
     {
         return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
     }
 
-    protected function validateGW()
-    {
-        return preg_match('/^(\+245|00245|245)?\d{7,8}$/', $this->value);
-    }
-
-    protected function validateTD()
-    {
-        return preg_match('/^(\+235|00235|235)?\d{8}$/', $this->value);
-    }
-
-    protected function validateCM()
-    {
-        return preg_match('/^(\+237|00237|237)?\d{8}$/', $this->value);
-    }
-
-    protected function validateBF()
-    {
-        return preg_match('/^(\+226|00226|226)?\d{8}$/', $this->value);
-    }
-
-    protected function validateAO(): bool
-    {
-        return preg_match('/^(\+244|00244|244)?[9,2][1-9]\d{7}$/', $this->value);
-    }
-
-    protected function validateBJ(): bool
-    {
-        return preg_match('/^(\+229|00229|229)?\d{8}$/', $this->value);
-    }
 
     /**
      * Call the phone validator method for each country code and return the results.
@@ -65,9 +32,7 @@ class CountryPhoneCallback
     public function callPhoneValidator(): array
     {
         $results = [];
-
         $codes = explode(',', $this->code);
-
         $codes = array_map('strtoupper', $codes);
 
         foreach ($codes as $code) {

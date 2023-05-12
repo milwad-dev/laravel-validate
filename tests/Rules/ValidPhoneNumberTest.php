@@ -56,4 +56,24 @@ class ValidPhoneNumberTest extends BaseTest
 
         $this->assertFalse($passes);
     }
+
+    /**
+     * Test all phone number is valid by specific code.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function all_phone_number_is_valid_by_specific_code()
+    {
+        $rules = [
+            'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
+        ];
+        $data = [
+            'phone_ne' => '+22799123456',
+        ];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
 }
