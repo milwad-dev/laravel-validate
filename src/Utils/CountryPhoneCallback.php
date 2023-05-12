@@ -46,6 +46,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Saudi Arabia phone number.
+     *
+     * @return false|int
+     */
+    protected function validateSA()
+    {
+        return preg_match('/^((\+966)|0)?5\d{8}$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
