@@ -15,42 +15,42 @@ class CountryPhoneCallback
     {
     }
 
-    protected function validateTG()
+    protected function validateTG() //Togo
     {
         return preg_match('/^(\+228|00228|228)?\d{8}$/', $this->value);
     }
 
-    protected function validateNE()
+    protected function validateNE() //Niger
     {
         return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
     }
 
-    protected function validateGW()
+    protected function validateGW() //Guinee-Biseau
     {
         return preg_match('/^(\+245|00245|245)?\d{7,8}$/', $this->value);
     }
 
-    protected function validateTD()
+    protected function validateTD() //Tchad
     {
         return preg_match('/^(\+235|00235|235)?\d{8}$/', $this->value);
     }
 
-    protected function validateCM()
+    protected function validateCM() //Cameroun
     {
         return preg_match('/^(\+237|00237|237)?\d{8}$/', $this->value);
     }
 
-    protected function validateBF()
+    protected function validateBF() //Burkinz-Faso
     {
         return preg_match('/^(\+226|00226|226)?\d{8}$/', $this->value);
     }
 
-    protected function validateAO(): bool
+    protected function validateAO() //Angola
     {
         return preg_match('/^(\+244|00244|244)?[9,2][1-9]\d{7}$/', $this->value);
     }
 
-    protected function validateBJ(): bool
+    protected function validateBJ() //Benin
     {
         return preg_match('/^(\+229|00229|229)?\d{8}$/', $this->value);
     }
@@ -71,7 +71,7 @@ class CountryPhoneCallback
         $codes = array_map('strtoupper', $codes);
 
         foreach ($codes as $code) {
-            $methodName = 'validate'.$code;
+            $methodName = 'validate' . $code;
 
             if (method_exists($this, $methodName)) {
                 $results[$code] = $this->{$methodName}();
