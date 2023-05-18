@@ -168,6 +168,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Russian (ru)
 - [x] Sinhala (si)
 - [x] Swedish (sv)
+- [x] Turkish (tr)
 - [x] Ukrainian (uk)
 - [x] Chinese (zh_CN)
 
