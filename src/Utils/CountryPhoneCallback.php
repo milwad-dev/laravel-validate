@@ -98,6 +98,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate India phone number.
+     *
+     * @return false|int
+     */
+    protected function validateIN()
+    {
+        return preg_match('/^(?:(?:\+|0{0,2})91(\s|-)?)?[6789]\d{9}$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
