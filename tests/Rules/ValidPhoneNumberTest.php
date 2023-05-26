@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use BadMethodCallException;
 use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
 use Milwad\LaravelValidate\Tests\BaseTest;
 use Milwad\LaravelValidate\Utils\Country;
@@ -92,5 +93,22 @@ class ValidPhoneNumberTest extends BaseTest
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
+    }
+
+    /**
+     * Test if phone number validate method is not exists, will be thrown an exception.
+     *
+     * @test
+     * @return void
+     */
+    public function if_phone_number_validate_method_is_not_exists()
+    {
+        $this->expectException(BadMethodCallException::class);
+        $this->expectExceptionMessage("Validator method 'validateAZ' does not exist.");
+
+        $rules = ['phone' => [new ValidPhoneNumber(Country::AZERBAIJAN)]];
+        $data = ['phone' => '+62812345678'];
+
+        $this->app['validator']->make($data, $rules)->passes();
     }
 }
