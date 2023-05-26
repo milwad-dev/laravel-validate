@@ -102,6 +102,8 @@ class Country
 
     public const INDIA = 'IN';
 
+    public const INDONESIA = 'ID';
+
     public const IRAN = 'IR';
 
     public const IRAQ = 'IQ';

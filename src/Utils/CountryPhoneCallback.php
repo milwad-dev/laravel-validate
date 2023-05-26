@@ -108,6 +108,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Indonesia phone number.
+     *
+     * @return false|int
+     */
+    protected function validateID()
+    {
+        return preg_match('/^(?:\+62|0)(?:\d{2,3}\s?){1,2}\d{4,8}$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
