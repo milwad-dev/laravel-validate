@@ -74,7 +74,7 @@ class CountryPhoneCallback
      */
     protected function validateGR()
     {
-        return preg_match('/^\+30\s[2-9]\d{2}\s\d{3}\s\d{4}$/', $this->value);
+        return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $this->value);
     }
 
     /**

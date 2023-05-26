@@ -80,7 +80,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_ne' => '+22799123456',
             'phone_sa' => '+966541234567',
             'phone_de' => '+4915123456789',
-            'phone_gr' => '+30 210 123 4567',
+            'phone_gr' => '+302101234567',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
