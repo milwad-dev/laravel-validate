@@ -76,6 +76,7 @@ class CountryPhoneCallback
     {
         return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $this->value);
     }
+
     /**
      * Validate Spain phone number.
      *
@@ -84,6 +85,16 @@ class CountryPhoneCallback
     protected function validateES()
     {
         return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/', $this->value);
+    }
+
+    /**
+     * Validate France phone number.
+     *
+     * @return false|int
+     */
+    protected function validateFR()
+    {
+        return preg_match('/^(?:\+33|0033|0)(?:(?:[1-9](?:\d{2}){4})|(?:[67]\d{8}))$/', $this->value);
     }
 
     /**
