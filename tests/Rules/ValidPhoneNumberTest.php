@@ -86,6 +86,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_sa' => '+966541234567',
             'phone_de' => '+4915123456789',
             'phone_gr' => '+302101234567',
+            'phone_es' => '+34678901234',
             'phone_fr' => '+33612345678',
             'phone_in' => '+919876543210',
             'phone_id' => '+62812345678',
