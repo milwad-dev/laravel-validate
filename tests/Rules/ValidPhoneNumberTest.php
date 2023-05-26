@@ -46,11 +46,11 @@ class ValidPhoneNumberTest extends BaseTest
     {
         $rules = [
             'phone_number' => [new ValidPhoneNumber()],
-            'phone_bj' => [new ValidPhoneNumber(Country::BENIN)],
+            'phone_bj' => [new ValidPhoneNumber(Country::IRAN)],
         ];
         $data = [
             'phone_number' => '123456789',
-            'phone_bj' => '+22697000000',
+            'phone_bj' => '09120000000',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -72,6 +72,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
             'phone_sa' => [new ValidPhoneNumber(Country::SAUDI_ARABIA)],
             'phone_de' => [new ValidPhoneNumber(Country::GERMANY)],
+            'phone_gr' => [new ValidPhoneNumber(Country::GREECE)],
         ];
         $data = [
             'phone_ir' => '09125555555',
@@ -79,6 +80,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_ne' => '+22799123456',
             'phone_sa' => '+966541234567',
             'phone_de' => '+4915123456789',
+            'phone_gr' => '+30 210 123 4567',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
