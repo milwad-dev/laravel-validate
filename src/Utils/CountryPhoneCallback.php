@@ -76,6 +76,15 @@ class CountryPhoneCallback
     {
         return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $this->value);
     }
+    /**
+     * Validate Spain phone number.
+     *
+     * @return false|int
+     */
+    protected function validateES()
+    {
+        return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/', $this->value);
+    }
 
     /**
      * Call the phone validator method for each country code and return the results.
