@@ -118,11 +118,15 @@ class Country
 
     public const JORDAN = 'JO';
 
+    public const JAPAN = 'JA';
+
     public const KAZAKHSTAN = 'KZ';
 
     public const KOSOVO = 'XK';
 
     public const KUWAIT = 'KW';
+
+    public const KOREAN = 'KO';
 
     public const LATVIA = 'LV';
 

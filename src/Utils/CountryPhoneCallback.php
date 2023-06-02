@@ -134,7 +134,17 @@ class CountryPhoneCallback
      */
     protected function validateJA()
     {
-        return preg_match('/^(?:\+81|0)[1-9]\d{8}$/', $this->value);
+        return preg_match('/(\d{2,3})-?(\d{3,4})-?(\d{4})/', $this->value);
+    }
+
+    /**
+     * Validate Korean phone number.
+     *
+     * @return false|int
+     */
+    protected function validateKO()
+    {
+        return preg_match('/^(?:\+82|0)(?:10|1[1-9])-?\d{3,4}-?\d{4}$/', $this->value);
     }
 
     /**
