@@ -168,6 +168,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Turkey phone number.
+     *
+     * @return false|int
+     */
+    protected function validateTR()
+    {
+        return preg_match('/^(?:\+90|0)(?:\s?[1-9]\d{2}\s?\d{3}\s?\d{2}\s?\d{2}|[1-9]\d{2}-?\d{3}-?\d{2}-?\d{2})$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
