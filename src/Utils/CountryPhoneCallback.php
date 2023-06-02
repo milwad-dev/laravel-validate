@@ -148,6 +148,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Russian phone number.
+     *
+     * @return false|int
+     */
+    protected function validateRU()
+    {
+        return preg_match('/^(?:\+7|8)(?:\s?\(?\d{3}\)?\s?\d{3}(?:-?\d{2}){2}|\s?\d{2}(?:\s?\d{2}){3})$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
