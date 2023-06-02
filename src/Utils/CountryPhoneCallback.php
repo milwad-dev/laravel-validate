@@ -178,6 +178,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Chinese phone number.
+     *
+     * @return false|int
+     */
+    protected function validateZH()
+    {
+        return preg_match('/^(?:\+86)?1[3-9]\d{9}$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.

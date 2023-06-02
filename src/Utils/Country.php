@@ -42,6 +42,8 @@ class Country
 
     public const CHAD = 'TD';
 
+    public const CHINA = 'zh';
+
     public const COMOROS = 'KM';
 
     public const CONGO = 'CG';
