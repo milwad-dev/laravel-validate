@@ -106,6 +106,7 @@ class ValidPhoneNumberTest extends BaseTest
      * Test if phone number validate method is not exists, will be thrown an exception.
      *
      * @test
+     *
      * @return void
      */
     public function if_phone_number_validate_method_is_not_exists()
