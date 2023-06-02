@@ -158,6 +158,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Sweden phone number.
+     *
+     * @return false|int
+     */
+    protected function validateSE()
+    {
+        return preg_match('/^(?:\+46|0) ?(?:[1-9]\d{1,2}-?\d{2}(?:\s?\d{2}){2}|7\d{2}-?\d{2}(?:\s?\d{2}){2})$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
