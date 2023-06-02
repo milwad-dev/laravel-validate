@@ -92,6 +92,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_in' => '+919876543210',
             'phone_id' => '+62812345678',
             'phone_it' => '+39123456789',
+            'phone_ja' => '+819012345678',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
