@@ -78,6 +78,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_fr' => [new ValidPhoneNumber(Country::FRANCE)],
             'phone_in' => [new ValidPhoneNumber(Country::INDIA)],
             'phone_id' => [new ValidPhoneNumber(Country::INDONESIA)],
+            'phone_it' => [new ValidPhoneNumber(Country::ITALY)],
         ];
         $data = [
             'phone_ir' => '09125555555',
@@ -90,6 +91,7 @@ class ValidPhoneNumberTest extends BaseTest
             'phone_fr' => '+33612345678',
             'phone_in' => '+919876543210',
             'phone_id' => '+62812345678',
+            'phone_it' => '+39123456789',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

@@ -118,6 +118,16 @@ class CountryPhoneCallback
     }
 
     /**
+     * Validate Italy phone number.
+     *
+     * @return false|int
+     */
+    protected function validateIT()
+    {
+        return preg_match('/^\+39\d{8,10}$/', $this->value);
+    }
+
+    /**
      * Call the phone validator method for each country code and return the results.
      *
      * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
