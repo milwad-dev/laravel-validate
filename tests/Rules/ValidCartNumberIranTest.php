@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
 class ValidCartNumberIranTest extends BaseTest
@@ -25,7 +26,7 @@ class ValidCartNumberIranTest extends BaseTest
     {
         //        $rules = ['cart_number_iran' => [new ValidCartNumberIran()]];
         //        $data = ['cart_number_iran' => '1234123412341234']; # Todo have a bug
-        //        $passes = $this->app['validator']->make($data, $rules)->passes();
+        //        $passes = Validator::make($data, $rules)->passes();
         //
         //        $this->assertTrue($passes);
     }
