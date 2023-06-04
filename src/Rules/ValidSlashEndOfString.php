@@ -2,29 +2,23 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidSlashEndOfString implements Rule
+class ValidSlashEndOfString implements ValidationRule
 {
     /**
      * Check write slash at the end of string.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/\/+$/', $value);
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.slash-end-of-string');
+        if (! preg_match('/\/+$/', $value)) {
+            $fail('validate.slash-end-of-string')->translate();
+        }
     }
 }
