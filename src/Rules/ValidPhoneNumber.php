@@ -2,10 +2,11 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
-class ValidPhoneNumber implements Rule
+class ValidPhoneNumber implements ValidationRule
 {
     public function __construct(protected ?string $code = null)
     {
@@ -14,11 +15,25 @@ class ValidPhoneNumber implements Rule
     /**
      * Check phone number is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isPhoneNumberValid($value)) {
+            $fail('validate.phone-number')->translate();
+        }
+    }
+
+    /**
+     * Check phone number validity.
+     *
+     * @param $value
+     * @return bool|int
+     */
+    private function isPhoneNumberValid($value): bool|int
     {
         if (is_string($this->code)) {
             $passes = (new CountryPhoneCallback($value, $this->code))->callPhoneValidator();
@@ -27,15 +42,5 @@ class ValidPhoneNumber implements Rule
         }
 
         return preg_match('/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/', $value);
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.phone-number');
     }
 }
