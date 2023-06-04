@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidPascalCase;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidPascalCaseTest extends BaseTest
     {
         $rules = ['pascal-case' => [new ValidPascalCase()]];
         $data = ['pascal-case' => 'MilwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidPascalCaseTest extends BaseTest
     {
         $rules = ['pascal-case' => [new ValidPascalCase()]];
         $data = ['pascal-case' => 'milwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
