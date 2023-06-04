@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidHtmlTag;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidHtmlTagTest extends BaseTest
     {
         $rules = ['html_tag' => [new ValidHtmlTag()]];
         $data = ['html_tag' => '<h1></h1>'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidHtmlTagTest extends BaseTest
     {
         $rules = ['html_tag' => [new ValidHtmlTag()]];
         $data = ['html_tag' => 'milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
