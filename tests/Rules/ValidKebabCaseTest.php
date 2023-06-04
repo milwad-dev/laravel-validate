@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidKebabCase;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidKebabCaseTest extends BaseTest
     {
         $rules = ['kebab-case' => [new ValidKebabCase()]];
         $data = ['kebab-case' => 'milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidKebabCaseTest extends BaseTest
     {
         $rules = ['kebab-case' => [new ValidKebabCase()]];
         $data = ['kebab-case' => 'milwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
