@@ -2,21 +2,34 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidImei implements Rule
+class ValidImei implements ValidationRule
 {
     /**
      * Check IMEI is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
+     */
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isImeiValid($value)) {
+            $fail('validate.imei')->translate();
+        }
+    }
+
+    /**
+     * Check IMEI validity.
+     *
+     * @param $imei
      * @return bool
      */
-    public function passes($attribute, $value)
+    private function isImeiValid($imei): bool
     {
-        $imei = $value;
-
         if (strlen($imei) != 15 || ! ctype_digit($imei)) {
             return false;
         }
@@ -36,15 +49,5 @@ class ValidImei implements Rule
         $sum = array_sum($log) * 9; // Sum log & multiply by 9
 
         return substr($sum, -1) === $imei_last;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.imei');
     }
 }
