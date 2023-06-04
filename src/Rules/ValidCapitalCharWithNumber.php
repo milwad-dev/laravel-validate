@@ -2,29 +2,23 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidCapitalCharWithNumber implements Rule
+class ValidCapitalCharWithNumber implements ValidationRule
 {
     /**
      * Check all words are capital & with hyphen & number.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/[A-Z]{2,}-\d+/', $value);
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.capital-char-with-number');
+        if (! preg_match('/[A-Z]{2,}-\d+/', $value)) {
+            $fail('validate.capital-char-with-number')->translate();
+        }
     }
 }

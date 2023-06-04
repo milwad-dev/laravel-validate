@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidCapitalCharWithNumber;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,8 +27,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
     {
         $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber()]];
         $data = ['capital_char_with_number' => 'MILWAD-84'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertTrue($passes);
     }
 
@@ -42,8 +42,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
     {
         $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber()]];
         $data = ['capital_char_with_number' => 'Milwad-84'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertFalse($passes);
     }
 }
