@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidIpAddressIPV4;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidIpAddressIPV4Test extends BaseTest
     {
         $rules = ['ipv4_address' => [new ValidIpAddressIPV4()]];
         $data = ['ipv4_address' => '129.144.50.56'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidIpAddressIPV4Test extends BaseTest
     {
         $rules = ['ipv4_address' => [new ValidIpAddressIPV4()]];
         $data = ['ipv4_address' => '123456789'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }

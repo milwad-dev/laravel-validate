@@ -2,29 +2,23 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidIpAddressIPV4 implements Rule
+class ValidIpAddressIPV4 implements ValidationRule
 {
     /**
      * Check ip address (ipv4) is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/', $value);
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.ipv4');
+        if (! preg_match('/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/', $value)) {
+            $fail('validate.ipv4')->translate();
+        }
     }
 }
