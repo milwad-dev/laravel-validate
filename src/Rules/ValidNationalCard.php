@@ -2,18 +2,33 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidNationalCard implements Rule
+class ValidNationalCard implements ValidationRule
 {
     /**
      * Check national card is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
+     */
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isNationalCardValid($value)) {
+            $fail('validate.national-card')->translate();
+        }
+    }
+
+    /**
+     * Check national card validity.
+     *
+     * @param $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    private function isNationalCardValid($value): bool
     {
         if (! preg_match('/^\d{10}$/', $value)) {
             return false;
@@ -35,15 +50,5 @@ class ValidNationalCard implements Rule
         }
 
         return false;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.national-card');
     }
 }

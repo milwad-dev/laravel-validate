@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidNationalCard;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidNationalCardTest extends BaseTest
     {
         $rules = ['national_card' => [new ValidNationalCard()]];
         $data = ['national_card' => '0151016437'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,10 +43,10 @@ class ValidNationalCardTest extends BaseTest
     {
         $rules = ['national_card' => [new ValidNationalCard()]];
 
-        $validator = $this->app['validator']->make(['national_card' => '0151016438'], $rules)->passes();
+        $validator = Validator::make(['national_card' => '0151016438'], $rules)->passes();
         $this->assertFalse($validator);
 
-        $validator = $this->app['validator']->make(['national_card' => '101010'], $rules)->passes();
+        $validator = Validator::make(['national_card' => '101010'], $rules)->passes();
         $this->assertFalse($validator);
     }
 }
