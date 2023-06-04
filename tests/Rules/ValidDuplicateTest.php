@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidDuplicate;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidDuplicateTest extends BaseTest
     {
         $rules = ['duplicate' => [new ValidDuplicate()]];
         $data = ['duplicate' => 123456];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidDuplicateTest extends BaseTest
     {
         $rules = ['duplicate' => [new ValidDuplicate()]];
         $data = ['duplicate' => 1123456];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
@@ -58,7 +59,7 @@ class ValidDuplicateTest extends BaseTest
     {
         $rules = ['duplicate' => [new ValidDuplicate()]];
         $data = ['duplicate' => 'milwad'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -74,7 +75,7 @@ class ValidDuplicateTest extends BaseTest
     {
         $rules = ['duplicate' => [new ValidDuplicate()]];
         $data = ['duplicate' => 'millwad'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
