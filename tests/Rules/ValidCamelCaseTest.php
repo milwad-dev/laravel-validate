@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidCamelCase;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,8 +27,7 @@ class ValidCamelCaseTest extends BaseTest
     {
         $rules = ['camel_case' => [new ValidCamelCase()]];
         $data = ['camel_case' => 'milwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertTrue($passes);
     }
 
@@ -42,8 +42,7 @@ class ValidCamelCaseTest extends BaseTest
     {
         $rules = ['camel_case' => [new ValidCamelCase()]];
         $data = ['camel_case' => 'milwad_dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertFalse($passes);
     }
 }
