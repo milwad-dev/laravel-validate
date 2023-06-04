@@ -2,29 +2,23 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidBase64 implements Rule
+class ValidBase64 implements ValidationRule
 {
     /**
-     * Check base64.
+     * Check base64 is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return base64_encode(base64_decode($value, true)) === $value;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.base64');
+        if (base64_encode(base64_decode($value, true)) !== $value) {
+            $fail('validate.base64')->translate();
+        }
     }
 }

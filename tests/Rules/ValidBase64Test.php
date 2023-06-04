@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidBase64;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,8 +27,7 @@ class ValidBase64Test extends BaseTest
     {
         $rules = ['base64' => [new ValidBase64()]];
         $data = ['base64' => 'bWlsd2Fk']; // milwad
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertTrue($passes);
     }
 
@@ -42,8 +42,7 @@ class ValidBase64Test extends BaseTest
     {
         $rules = ['base64' => [new ValidBase64()]];
         $data = ['base64' => 'milwad'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertFalse($passes);
     }
 }
