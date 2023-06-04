@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidNameDaysWeek;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidNameDaysWeekTest extends BaseTest
     {
         $rules = ['name_day' => [new ValidNameDaysWeek()]];
         $data = ['name_day' => 'monday'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidNameDaysWeekTest extends BaseTest
     {
         $rules = ['name_day' => [new ValidNameDaysWeek()]];
         $data = ['name_day' => 'day'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
