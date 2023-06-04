@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidJalaliDate;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidJalaliDateTest extends BaseTest
     {
         $rules = ['jalali_date' => [new ValidJalaliDate()]];
         $data = ['jalali_date' => '1384/8/25'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidJalaliDateTest extends BaseTest
     {
         $rules = ['jalali_date' => [new ValidJalaliDate()]];
         $data = ['jalali_date' => '2016/15/25'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
@@ -58,7 +59,7 @@ class ValidJalaliDateTest extends BaseTest
     {
         $rules = ['jalali_date' => [new ValidJalaliDate()]];
         $data = ['jalali_date' => ['2016/15/25']];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
