@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidVatId;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidVatIdTest extends BaseTest
     {
         $rules = ['vat_id' => [new ValidVatId()]];
         $data = ['vat_id' => 'EL123456789'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidVatIdTest extends BaseTest
     {
         $rules = ['vat_id' => [new ValidVatId()]];
         $data = ['vat_id' => 'EL123456789123678912'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
@@ -58,7 +59,7 @@ class ValidVatIdTest extends BaseTest
     {
         $rules = ['vat_id' => [new ValidVatId()]];
         $data = ['vat_id' => 'EL1234567891236789123'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }

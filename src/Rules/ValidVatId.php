@@ -2,32 +2,26 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidVatId implements Rule
+class ValidVatId implements ValidationRule
 {
     /**
      * Check VAT ID for validity.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         // Remove all characters except letters and numbers
         $value = preg_replace('/[^a-zA-Z0-9]]/', '', $value);
 
-        return preg_match('/[a-zA-Z]{2}[0-9]{0,12}$/', $value);
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.vat-id');
+        if (! preg_match('/[a-zA-Z]{2}[0-9]{0,12}$/', $value)) {
+            $fail('validate.vat-id')->translate();
+        }
     }
 }
