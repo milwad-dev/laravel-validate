@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidCarNumber;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,8 +27,7 @@ class ValidCarNumberTest extends BaseTest
     {
         $rules = ['car_number' => [new ValidCarNumber()]];
         $data = ['car_number' => 'KA01AB1234'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertTrue($passes);
     }
 
@@ -42,8 +42,7 @@ class ValidCarNumberTest extends BaseTest
     {
         $rules = ['car_number' => [new ValidCarNumber()]];
         $data = ['car_number' => '854128'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertFalse($passes);
     }
 }
