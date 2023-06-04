@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidIpAddressIPV6;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidIpAddressIPV6Test extends BaseTest
     {
         $rules = ['ipv6_address' => [new ValidIpAddressIPV6()]];
         $data = ['ipv6_address' => '2001:db8:3333:4444:5555:6666:7777:8888'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidIpAddressIPV6Test extends BaseTest
     {
         $rules = ['ipv6_address' => [new ValidIpAddressIPV6()]];
         $data = ['ipv6_address' => '12345671213145131212'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
