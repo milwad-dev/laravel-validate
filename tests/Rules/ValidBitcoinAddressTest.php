@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidBitcoinAddress;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,8 +27,7 @@ class ValidBitcoinAddressTest extends BaseTest
     {
         $rules = ['bitcoin_address' => [new ValidBitcoinAddress()]];
         $data = ['bitcoin_address' => '1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertTrue($passes);
     }
 
@@ -42,8 +42,7 @@ class ValidBitcoinAddressTest extends BaseTest
     {
         $rules = ['bitcoin_address' => [new ValidBitcoinAddress()]];
         $data = ['bitcoin_address' => 'loremipsum'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
+        $passes = Validator::make($data, $rules)->passes();
         $this->assertFalse($passes);
     }
 }
