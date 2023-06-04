@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidIban;
 use Milwad\LaravelValidate\Tests\BaseTest;
 use Milwad\LaravelValidate\Utils\Country;
@@ -143,7 +144,7 @@ class ValidIbanTest extends BaseTest
         foreach ($ibans as $iban) {
 
             $data = ['iban' => $iban];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
+            $passes = Validator::make($data, $rules)->passes();
             $this->assertTrue($passes);
         }
     }
@@ -168,7 +169,7 @@ class ValidIbanTest extends BaseTest
         foreach ($ibans as $iban) {
 
             $data = ['iban' => $iban];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
+            $passes = Validator::make($data, $rules)->passes();
             $this->assertTrue($passes);
         }
     }
@@ -194,7 +195,7 @@ class ValidIbanTest extends BaseTest
         foreach ($ibans as $iban) {
 
             $data = ['iban' => $iban];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
+            $passes = Validator::make($data, $rules)->passes();
             $this->assertTrue($passes);
         }
     }
@@ -219,7 +220,7 @@ class ValidIbanTest extends BaseTest
         foreach ($ibans as $iban) {
 
             $data = ['iban' => $iban];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
+            $passes = Validator::make($data, $rules)->passes();
             $this->assertFalse($passes);
         }
     }
@@ -244,7 +245,7 @@ class ValidIbanTest extends BaseTest
         foreach ($ibans as $iban) {
 
             $data = ['iban' => $iban];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
+            $passes = Validator::make($data, $rules)->passes();
             $this->assertFalse($passes);
         }
     }
@@ -270,7 +271,7 @@ class ValidIbanTest extends BaseTest
         foreach ($ibans as $iban) {
 
             $data = ['iban' => $iban];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
+            $passes = Validator::make($data, $rules)->passes();
             $this->assertFalse($passes);
         }
     }
