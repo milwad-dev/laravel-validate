@@ -2,31 +2,25 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidDuplicateCharacter implements Rule
+class ValidDuplicateCharacter implements ValidationRule
 {
     /**
      * Check duplicate characters, splitted by comma.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         $value = explode(',', $value);
 
-        return collect($value)->duplicates()->isEmpty();
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.duplicate_character');
+        if (! collect($value)->duplicates()->isEmpty()) {
+            $fail('validate.duplicate_character')->translate();
+        }
     }
 }

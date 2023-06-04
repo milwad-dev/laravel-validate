@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Illuminate\Support\Facades\Validator;
 use Milwad\LaravelValidate\Rules\ValidDuplicateCharacter;
 use Milwad\LaravelValidate\Tests\BaseTest;
 
@@ -26,7 +27,7 @@ class ValidDuplicateCharacterTest extends BaseTest
     {
         $rules = ['duplicate_number' => [new ValidDuplicateCharacter()]];
         $data = ['duplicate_number' => '1,2,3,4,5,6,7,8,9'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertTrue($passes);
     }
@@ -42,7 +43,7 @@ class ValidDuplicateCharacterTest extends BaseTest
     {
         $rules = ['duplicate_number' => [new ValidDuplicateCharacter()]];
         $data = ['duplicate_number' => '1,2,2,3,3,3,4,5,6,7,8,9'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+        $passes = Validator::make($data, $rules)->passes();
 
         $this->assertFalse($passes);
     }
