@@ -71,7 +71,7 @@ class CountryPhoneCallback
         $codes = array_map('strtoupper', $codes);
 
         foreach ($codes as $code) {
-            $methodName = 'validate' . $code;
+            $methodName = 'validate'.$code;
 
             if (method_exists($this, $methodName)) {
                 $results[$code] = $this->{$methodName}();
