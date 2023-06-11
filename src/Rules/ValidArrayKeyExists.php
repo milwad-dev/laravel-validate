@@ -16,7 +16,7 @@ class ValidArrayKeyExists implements Rule
     public function passes($attribute, $value)
     {
         \Illuminate\Validation\Rule::forEach(function (string $value, string $attribute) {
-dd($value, $attribute);
+            dd($value, $attribute);
         });
     }
 
