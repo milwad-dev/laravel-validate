@@ -29,20 +29,20 @@ This package support localization and you can use it for most of the language. <
 | 1.7       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
 
 # Installation
-You can install package with composer.
+You can install the package with Composer.
 
 ```bash
 composer require milwad/laravel-validate
 ```
 
 # Publish
-If you want to publish lang file for custom validation message you can run this command in terminal:
+If you want to publish a lang file for a custom validation message you can run this command in the terminal:
 
 ```shell
 php artisan vendor:publish --tag="validate-lang-{$lang}"
 ```
 
-You can replace `$lang` to your lang name, for ex:
+You can replace `$lang` with your lang name, for ex:
 
 ```shell
 php artisan vendor:publish --tag="validate-lang-en"
@@ -51,7 +51,7 @@ php artisan vendor:publish --tag="validate-lang-en"
 If you don't know about langs name you can go [Support Languages](#support-languages)
 
 # Usage
-You can use `Laravel-Validate Rules` very simple.You can use `new` keyword before rule name.
+You can use `Laravel-Validate Rules` very simply. You can use the `new` keyword before the rule name.
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
@@ -108,8 +108,8 @@ return [
 
 ### ValidPattern
 
-Sometimes you need to validate text with pattern, For example you want to validate a text like (4444-4444-4444).
-If you want to check the length of text is seperator after `-` is 4, You can use this Rule:
+Sometimes you need to validate text with a pattern, For example, you want to validate a text like (4444-4444-4444).
+If you want to check the length of the text is separate after `-` is 4, You can use this Rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPattern;
@@ -121,7 +121,7 @@ return [
 
 ### ValidIban
 
-Sometimes you need to validate Iban(International Bank Account Number) code.You can use `ValidIban` rule:
+Sometimes you need to validate Iban(International Bank Account Number) code. You can use the `ValidIban` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIban;
@@ -131,7 +131,7 @@ return [
 ];
 ```
 
-Also, You can use `Country` class and add a list of countries to `ValidIban` rule. By doing this your IBAN must belong
+Also, You can use the `Country` class and add a list of countries to the `ValidIban` rule. By doing this your IBAN must belong
 to one of the countries you pass to the validation class:
 
 ```php
