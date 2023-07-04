@@ -10,9 +10,9 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/milwad-dev/laravel-validate.svg?style=flat-square)](https://scrutinizer-ci.com/g/milwad-dev/laravel-validate)
 
 ***
-Laravel validate is a package for validate faster & easier. <br>
+Laravel validate is a package for validation faster & easier. <br>
 You can validate data easier, Laravel validate have lots of rule class for validation. <br>
-This package support localization and you can use for most of the language. <br>
+This package support localization and you can use it for most of the language. <br>
 (If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
 # Requirements
@@ -182,3 +182,8 @@ This project exists thanks to all the people who contribute. [CONTRIBUTING](http
 
 # Security
 If you've found a bug regarding security please mail [milwad.dev@gmail.com](mailto:milwad.dev@gmail.com) instead of using the issue tracker.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=milwad-dev/laravel-validate&type=Date)](https://star-history.com/#milwad-dev/laravel-validate&Date)
+
