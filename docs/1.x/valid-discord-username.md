@@ -6,6 +6,6 @@ If you may to validation bitcoin address you can use `ValidDiscordUsername` rule
 use Milwad\LaravelValidate\Rules\ValidDiscordUsername;
 
 return [
-    'bitcoin-address' => ['required', new ValidDiscordUsername()], // discord-username => Milwad#2134
+    'discord-username' => ['required', new ValidDiscordUsername()], // discord-username => Milwad#2134
 ];
 ```
