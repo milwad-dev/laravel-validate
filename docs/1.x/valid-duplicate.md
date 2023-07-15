@@ -1,6 +1,6 @@
 ## ValidDuplicate
 
-If you want to validate duplicate character, you can use `ValidDuplicate` rule:
+If you want to validate duplicate character, you can use the `ValidDuplicate` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidDuplicate;
