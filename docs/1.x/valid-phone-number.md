@@ -22,18 +22,20 @@ return [
 ```
 
 > **Note**  
-> If you want to know which country's codes are supported by the `ValidPhoneNumbers` Rule, you can search your country on this [Countries Phone Number](#support-countries) list.
+> If you want to know which country's codes are supported by the `ValidPhoneNumbers` Rule, you can search your country
+> on this [Countries Phone Number](#support-countries) list.
 
 <a name="support-countries"></a>
+
 ## Support Countries Phone Number
 
 ✅ IRAN <br>
 ✅ ENGLAND <br>
 ✅ NIGER <br>
 ✅ SAUDI_ARABIA <br>
-✅ GERMANY <br> 
-✅ GREECE <br> 
-✅ SPAIN <br> 
+✅ GERMANY <br>
+✅ GREECE <br>
+✅ SPAIN <br>
 ✅ FRANCE <br>
 ✅ INDIA <br>
 ✅ INDONESIA <br>

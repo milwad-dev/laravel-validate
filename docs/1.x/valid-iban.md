@@ -10,7 +10,8 @@ return [
 ];
 ```
 
-Also, You can use the `Country` class and add a list of countries to the `ValidIban` rule. By doing this your IBAN must belong
+Also, You can use the `Country` class and add a list of countries to the `ValidIban` rule. By doing this your IBAN must
+belong
 to one of the countries you pass to the validation class:
 
 ```php
