@@ -1,6 +1,6 @@
 ## ValidCartNumberIran
 
-If you want to validate cart iran number, you can use `ValidCartNumberIran` rule:
+If you want to validate the cart Iran number, you can use the `ValidCartNumberIran` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidCartNumberIran;
