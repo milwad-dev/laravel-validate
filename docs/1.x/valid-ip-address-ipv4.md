@@ -1,6 +1,6 @@
 ## ValidIpAddressIPV4
 
-If you want to validation ipv4 address, you can use `ValidIpAddressIPV4` rule:
+If you want to validate the ipv4 address, you can use the `ValidIpAddressIPV4` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIpAddressIPV4;
