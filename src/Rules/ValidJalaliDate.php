@@ -20,7 +20,7 @@ class ValidJalaliDate implements Rule
             return false;
         }
 
-        $date = explode('/', $value);
+        $date = explode('/', $value); // TODO: Add contruct for jalali date
 
         return CalendarUtils::checkDate(...$date);
     }
