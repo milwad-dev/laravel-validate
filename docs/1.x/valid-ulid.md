@@ -1,6 +1,6 @@
 ## ValidUlid
 
-If you want to validate ulid, you can use `ValidUlid` rule:
+If you want to validate ulid, you can use the `ValidUlid` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidUlid;
