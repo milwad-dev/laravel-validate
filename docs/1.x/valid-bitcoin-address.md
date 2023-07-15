@@ -1,6 +1,6 @@
 ## ValidBitcoinAddress
 
-If you want to validate bitcoin address you can use `ValidBitcoinAddress` rule: 
+If you want to validate Bitcoin address you can use the `ValidBitcoinAddress` rule: 
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidBitcoinAddress;
