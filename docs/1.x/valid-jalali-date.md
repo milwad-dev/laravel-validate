@@ -1,6 +1,6 @@
 ## ValidJalaliDate
 
-If you want to validate jalali date, you can use `ValidJalaliDate` rule:
+If you want to validate the Jalali date, you can use the `ValidJalaliDate` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidJalaliDate;
