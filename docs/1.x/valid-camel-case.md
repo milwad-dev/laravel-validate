@@ -1,6 +1,6 @@
 ## ValidCamelCase
 
-If you want to validate camel-case string, you can use `ValidCamelCase` rule:
+If you want to validate the camel-case string, you can use the `ValidCamelCase` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidCamelCase;
