@@ -1,6 +1,6 @@
 ## ValidIranPostalCode
 
-If you want to validate iran postal code, you can use `ValidIranPostalCode` rule:
+If you want to validate Iran postal code, you can use the `ValidIranPostalCode` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIranPostalCode;
