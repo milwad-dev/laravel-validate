@@ -1,6 +1,6 @@
 ## ValidUuid
 
-If you want to validate uuid, you can use `ValidUuid` rule:
+If you want to validate uuid, you can use the `ValidUuid` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidUuid;
