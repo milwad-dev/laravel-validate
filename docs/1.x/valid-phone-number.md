@@ -1,6 +1,6 @@
 ## ValidPhoneNumber
 
-If you want to validation phone number, you can use `ValidPhoneNumber` rule:
+If you want to validate the phone number, you can use the `ValidPhoneNumber` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
@@ -10,7 +10,7 @@ return [
 ];
 ```
 
-Also `ValidPhoneNumber` have ability to validation phone number with specific country code:
+Also `ValidPhoneNumber` have the ability to validate phone number with specific country code:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
@@ -22,7 +22,7 @@ return [
 ```
 
 > **Note**  
-> If you want to know which country's codes are supported by `ValidPhoneNumbers` Rule, you can search your country on this [Countries Phone Number](#support-countries) lists.
+> If you want to know which country's codes are supported by the `ValidPhoneNumbers` Rule, you can search your country on this [Countries Phone Number](#support-countries) list.
 
 <a name="support-countries"></a>
 ## Support Countries Phone Number
