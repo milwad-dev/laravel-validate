@@ -1,6 +1,6 @@
 ## ValidDomain
 
-If you want to validate domain, you can use `ValidDomain` rule:
+If you want to validate the domain, you can use the `ValidDomain` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidDomain;
