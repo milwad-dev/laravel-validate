@@ -1,6 +1,6 @@
 ## ValidPascalCase
 
-If you want to validate pascal-case string, you can use `ValidPascalCase` rule:
+If you want to validate the Pascal-case string, you can use the `ValidPascalCase` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPascalCase;
