@@ -1,6 +1,6 @@
 ## ValidIpAddressIPV6
 
-If you want to validation ipv6 address, you can use `ValidIpAddressIPV6` rule:
+If you want to validate the ipv6 address, you can use the `ValidIpAddressIPV6` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIpAddressIPV6;
