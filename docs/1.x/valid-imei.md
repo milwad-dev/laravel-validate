@@ -1,6 +1,6 @@
 ## ValidImei
 
-If you may to validation imei, you can use `ValidImei` rule:
+If you want to validate imei, you can use `ValidImei` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidImei;

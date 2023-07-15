@@ -1,6 +1,6 @@
 ## ValidHtmlTag
 
-If you may to validation html tag, you can use `ValidHtmlTag` rule:
+If you want to validate html tag, you can use `ValidHtmlTag` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidHtmlTag;

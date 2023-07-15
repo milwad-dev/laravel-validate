@@ -1,6 +1,6 @@
 ## ValidUrl
 
-If you may to validation url, you can use `ValidUrl` rule:
+If you want to validate url, you can use `ValidUrl` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidUrl;

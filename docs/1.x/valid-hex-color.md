@@ -1,6 +1,6 @@
 ## ValidHexColor
 
-If you may to validation hex color code, you can use `ValidHexColor` rule:
+If you want to validate hex color code, you can use `ValidHexColor` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidHexColor;

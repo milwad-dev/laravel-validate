@@ -1,6 +1,6 @@
 ## ValidCapitalCharWithNumber
 
-If you may to validation a capital character with number you can use `ValidCapitalCharWithNumber` rule:
+If you want to validate a capital character with number you can use `ValidCapitalCharWithNumber` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidCapitalCharWithNumber;

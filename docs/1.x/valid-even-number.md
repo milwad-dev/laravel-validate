@@ -1,6 +1,6 @@
 ## ValidEvenNumber
 
-If you may to validation even numbers, you can use `ValidEvenNumber` rule:
+If you want to validate even numbers, you can use `ValidEvenNumber` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidEvenNumber;

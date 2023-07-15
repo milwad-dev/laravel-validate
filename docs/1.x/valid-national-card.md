@@ -1,6 +1,6 @@
 ## ValidNationalCard
 
-If you may to validation national card, you can use `ValidNationalCard` rule:
+If you want to validate national card, you can use `ValidNationalCard` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidNationalCard;

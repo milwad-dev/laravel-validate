@@ -1,6 +1,6 @@
 ## ValidCarNumber
 
-If you may to validation car number, you can use `ValidCarNumber` rule:
+If you want to validate car number, you can use `ValidCarNumber` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidCarNumber;

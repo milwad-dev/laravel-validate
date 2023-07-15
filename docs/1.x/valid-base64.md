@@ -1,6 +1,6 @@
 ## ValidBase64
 
-If you may to validation base64, you can use `ValidBase64` rule:
+If you want to validate base64, you can use `ValidBase64` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidBase64;

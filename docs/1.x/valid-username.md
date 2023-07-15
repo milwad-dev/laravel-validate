@@ -1,6 +1,6 @@
 ## ValidUsername
 
-If you may to validation username, you can use `ValidUsername` rule:
+If you want to validate username, you can use `ValidUsername` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidUsername;

@@ -1,6 +1,6 @@
 ## ValidPort
 
-If you may to validation port, you can use `ValidPort` rule:
+If you want to validate port, you can use `ValidPort` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPort;

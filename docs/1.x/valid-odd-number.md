@@ -1,6 +1,6 @@
 ## ValidOddNumber
 
-If you may to validation odd numbers, you can use `ValidOddNumber` rule:
+If you want to validate odd numbers, you can use `ValidOddNumber` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidOddNumber;
