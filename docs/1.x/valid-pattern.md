@@ -10,7 +10,7 @@ return [
 ];
 ```
 
-And also you can change pattern character:
+And also you can change the pattern character:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPattern;
