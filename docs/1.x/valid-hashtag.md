@@ -1,6 +1,6 @@
 ## ValidHashtag
 
-If you need to validation hashtag for example tags input, you can use `ValidHashtag` rule:
+If you need to validate a hashtag for example tags input, you can use the `ValidHashtag` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidHashtag;
