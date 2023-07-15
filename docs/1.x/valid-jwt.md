@@ -1,6 +1,6 @@
 ## ValidJwt
 
-If you want to validate jwt (Json Web Token), you can use `ValidJwt` rule:
+If you want to validate the jwt (JSON Web Token), you can use the `ValidJwt` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidJwt;
