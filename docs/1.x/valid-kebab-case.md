@@ -1,6 +1,6 @@
 ## ValidKebabCase
 
-If you want to validate kebab-case string, you can use `ValidKebabCase` rule:
+If you want to validate the kebab-case string, you can use the `ValidKebabCase` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidKebabCase;
