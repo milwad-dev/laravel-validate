@@ -6,6 +6,6 @@ If you are using the `ValidStrongPassword` rule, the password must be contain a 
 use Milwad\LaravelValidate\Rules\ValidStrongPassword;
 
 return [
-    'imei' => ['required', new ValidStrongPassword()], // password => Milwad123!
+    'password' => ['required', new ValidStrongPassword()], // password => Milwad123!
 ];
 ```
