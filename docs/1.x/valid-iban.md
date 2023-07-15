@@ -1,6 +1,6 @@
 ## ValidIban
 
-Sometimes you need to validate Iban(International Bank Account Number) code.You can use `ValidIban` rule:
+Sometimes you need to validate Iban(International Bank Account Number) code. You can use the `ValidIban` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIban;
@@ -10,7 +10,7 @@ return [
 ];
 ```
 
-Also, You can use `Country` class and add a list of countries to `ValidIban` rule. By doing this your IBAN must belong
+Also, You can use the `Country` class and add a list of countries to the `ValidIban` rule. By doing this your IBAN must belong
 to one of the countries you pass to the validation class:
 
 ```php
