@@ -90,7 +90,7 @@ return [
 | 23  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)                           |
 | 24  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                        |
 | 25  | ValidJwt                   | Validate jwt                                                             |
-| 26  | ValidJalaliDate            | Validate jajali date for ex (1384/8/25)                                  |
+| 26  | ValidJalaliDate            | Validate jalali date for ex (1384/8/25)                                  |
 | 27  | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                 |
 | 28  | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)          |
 | 29  | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                      |
