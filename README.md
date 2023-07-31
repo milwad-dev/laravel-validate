@@ -190,7 +190,13 @@ This project exists thanks to all the people who contribute. [CONTRIBUTING](http
 
 If you've found a bug regarding security please mail [milwad.dev@gmail.com](mailto:milwad.dev@gmail.com) instead of using the issue tracker.
 
-## Star History
+# Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=milwad-dev/laravel-validate&type=Date)](https://star-history.com/#milwad-dev/laravel-validate&Date)
 
+# Donate
+
+If this package is helpful for you, you can buy a coffee for me :) ❤️
+
+Iranina Gateway: https://payping.ir/@milwad-dev
+Paypal Gateway: SOON
