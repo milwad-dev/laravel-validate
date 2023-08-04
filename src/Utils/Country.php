@@ -42,6 +42,8 @@ class Country
 
     public const CHAD = 'TD';
 
+    public const CHINA = 'zh';
+
     public const COMOROS = 'KM';
 
     public const CONGO = 'CG';
@@ -63,6 +65,8 @@ class Country
     public const EGYPT = 'EG';
 
     public const EL_SALVADOR = 'SV';
+
+    public const ENGLAND = 'EN';
 
     public const EQUATORIAL_GUINEA = 'GQ';
 
@@ -98,6 +102,10 @@ class Country
 
     public const ICELAND = 'IS';
 
+    public const INDIA = 'IN';
+
+    public const INDONESIA = 'ID';
+
     public const IRAN = 'IR';
 
     public const IRAQ = 'IQ';
@@ -112,11 +120,15 @@ class Country
 
     public const JORDAN = 'JO';
 
+    public const JAPAN = 'JA';
+
     public const KAZAKHSTAN = 'KZ';
 
     public const KOSOVO = 'XK';
 
     public const KUWAIT = 'KW';
+
+    public const KOREAN = 'KO';
 
     public const LATVIA = 'LV';
 
