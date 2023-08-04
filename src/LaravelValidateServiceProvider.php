@@ -33,6 +33,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
         'ru',
         'si',
         'sv',
+        'tr',
         'uk',
         'zh_CN',
     ];
@@ -51,7 +52,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         //        $this->loadValidations();
 
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'validation');
+        $this->loadTranslationsFrom(__DIR__.'/lang', 'validation');
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');
     }
 

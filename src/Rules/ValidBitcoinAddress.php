@@ -15,7 +15,7 @@ class ValidBitcoinAddress implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('/^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/', $value);
+        return preg_match('/^(?:bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/', $value);
     }
 
     /**

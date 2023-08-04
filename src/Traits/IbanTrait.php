@@ -9,7 +9,7 @@ trait IbanTrait
      *
      * @return void
      */
-    private function setCountries(array|null $countries)
+    private function setCountries(?array $countries)
     {
         if (empty($countries)) {
             $this->countries = [];
