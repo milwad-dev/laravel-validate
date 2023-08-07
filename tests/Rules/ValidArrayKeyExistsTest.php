@@ -28,8 +28,8 @@ class ValidArrayKeyExistsTest extends BaseTest
         $data = ['array' => [
             [
                 'name' => 'milwad',
-                'content' => 'laravel'
-            ]
+                'content' => 'laravel',
+            ],
         ]];
         dd((new ValidArrayKeyExists())->passes('array', $data));
 
