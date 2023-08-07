@@ -23,10 +23,9 @@ return [
 
 > **Note**  
 > If you want to know which country's codes are supported by the `ValidPhoneNumbers` Rule, you can search your country
-> on this [Countries Phone Number](#support-countries) list.
+> on this [Countries Phone Number](#support-countries-phone-number) list.
 
-<a name="support-countries"></a>
-
+<a name="support-countries-phone-number"></a>
 ## Support Countries Phone Number
 
 ✅ IRAN <br>
