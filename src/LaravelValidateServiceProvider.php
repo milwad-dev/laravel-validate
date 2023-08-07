@@ -2,7 +2,6 @@
 
 namespace Milwad\LaravelValidate;
 
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelValidateServiceProvider extends ServiceProvider
@@ -79,5 +78,4 @@ class LaravelValidateServiceProvider extends ServiceProvider
             __DIR__.'/../config/laravel-validate.php' => config_path('laravel-validate.php'),
         ], 'laravel-validate-config');
     }
-
 }

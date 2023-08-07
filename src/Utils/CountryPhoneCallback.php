@@ -9,7 +9,6 @@ class CountryPhoneCallback
      *
      * @param  mixed  $value The phone number to validate.
      * @param  string  $code The country codes to validate against. String can be separated by comma
-     * @param  string|null  $attribute
      */
     public function __construct(private mixed $value, private string $code, string $attribute = null)
     {
