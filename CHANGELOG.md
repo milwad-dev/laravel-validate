@@ -1,3 +1,6 @@
+## Release Notes
+<hr>
+
 ## v1.7.2 - 2023-08-07
 
 ### What's Changed
@@ -31,5 +34,3 @@
 - [@alisalehi0930](https://github.com/alisalehi0930) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/65
 
 **Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.7.1...v1.7.2
-
-## Release Notes
