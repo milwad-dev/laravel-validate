@@ -8,7 +8,7 @@ use Morilog\Jalali\CalendarUtils;
 class ValidJalaliDate implements Rule
 {
     /**
-     * Check base64.
+     * Check jalali date is valid.
      *
      * @param  string  $attribute
      * @param  mixed  $value
@@ -20,7 +20,7 @@ class ValidJalaliDate implements Rule
             return false;
         }
 
-        $date = explode('/', $value);
+        $date = explode('/', $value); // TODO: Add contruct for jalali date
 
         return CalendarUtils::checkDate(...$date);
     }
