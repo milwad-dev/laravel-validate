@@ -155,6 +155,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 
 - [x] Arabic (ar)
 - [x] Azerbaijani (az)
+- [x] Bangla (bn)
 - [x] Catalan (ca)
 - [x] German (de)
 - [x] Greek (el)
