@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => 'Το :attribute δεν είναι έγκυρο.',
     'car-number' => 'Το :attribute δεν είναι έγκυρο.',
     'cart-number-iran' => 'Το :attribute δεν είναι έγκυρο.',
+    'credit-card' => 'Το :attribute δεν είναι έγκυρο.',
     'discord-username' => 'Το :attribute δεν είναι έγκυρο.',
     'domain' => 'Το :attribute δεν είναι έγκυρο.',
     'even-number' => 'Το :attribute δεν είναι έγκυρο.',

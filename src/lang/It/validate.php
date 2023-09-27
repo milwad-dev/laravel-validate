@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute non è valido.',
     'car-number' => ':attribute non è valido.',
     'cart-number-iran' => ':attribute non è valido.',
+    'credit-card' => ':attribute non è valido.',
     'discord-username' => ':attribute non è valido.',
     'domain' => ':attribute non è valido.',
     'even-number' => ':attribute non è valido.',

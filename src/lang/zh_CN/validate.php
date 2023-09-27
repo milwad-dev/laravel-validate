@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute无效.',
     'car-number' => ':attribute无效.',
     'cart-number-iran' => ':attribute无效.',
+    'credit-card' => ':attribute无效.',
     'discord-username' => ':attribute无效.',
     'domain' => ':attribute无效.',
     'even-number' => ':attribute无效.',

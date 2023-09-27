@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute有効じゃない。',
     'car-number' => ':attribute有効じゃない。',
     'cart-number-iran' => ':attribute有効じゃない。',
+    'credit-card' => ':attribute有効じゃない。',
     'discord-username' => ':attribute有効じゃない。',
     'domain' => ':attribute有効じゃない。',
     'even-number' => ':attribute有効じゃない。',

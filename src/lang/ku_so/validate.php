@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'car-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'cart-number-iran' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'credit-card' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'discord-username' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'domain' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'even-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
