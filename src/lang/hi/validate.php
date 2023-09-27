@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attributeमान्य नहीं है।.',
     'car-number' => ':attributeमान्य नहीं है।.',
     'cart-number-iran' => ':attributeमान्य नहीं है।.',
+    'credit-card' => ':attributeमान्य नहीं है।.',
     'discord-username' => ':attributeमान्य नहीं है।.',
     'domain' => ':attributeमान्य नहीं है।.',
     'even-number' => ':attributeमान्य नहीं है।.',

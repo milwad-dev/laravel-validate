@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute غير صالح.',
     'car-number' => ':attribute غير صالح.',
     'cart-number-iran' => ':attribute غير صالح.',
+    'credit-card' => ':attribute غير صالح.',
     'discord-username' => ':attribute غير صالح.',
     'domain' => ':attribute غير صالح.',
     'even-number' => ':attribute غير صالح.',

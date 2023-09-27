@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute doğru değil.',
     'car-number' => ':attribute doğru değil.',
     'cart-number-iran' => ':attribute doğru değil.',
+    'credit-card' => ':attribute doğru değil.',
     'discord-username' => ':attribute doğru değil.',
     'domain' => ':attribute doğru değil.',
     'even-number' => ':attribute doğru değil.',

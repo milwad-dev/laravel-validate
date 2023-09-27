@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute no és vàlid.',
     'car-number' => ':attribute no és vàlid.',
     'cart-number-iran' => ':attribute no és vàlid.',
+    'credit-card' => ':attribute no és vàlid.',
     'discord-username' => ':attribute no és vàlid.',
     'domain' => ':attribute no és vàlid.',
     'even-number' => ':attribute no és vàlid.',
