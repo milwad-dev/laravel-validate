@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => 'مقدار :attribute صحیح نمی باشد.',
     'car-number' => 'مقدار :attribute صحیح نمی باشد.',
     'cart-number-iran' => 'مقدار :attribute صحیح نمی باشد.',
+    'company-id' => 'مقدار :attribute صحیح نمی باشد.',
     'credit-card' => 'مقدار :attribute صحیح نمی باشد.',
     'discord-username' => 'مقدار :attribute صحیح نمی باشد.',
     'domain' => 'مقدار :attribute صحیح نمی باشد.',

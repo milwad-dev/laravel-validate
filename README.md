@@ -107,6 +107,7 @@ return [
 | 36 | ValidVatId                 | Validate european VAT ID ex (EL123456789123)                             |
 | 37 | ValidIban                  | Validate IBAN ex (IR062960000000100324200001)                            |
 | 38 | ValidIranPostalCode        | Validate Iran postal code ex (3354355599)                                |
+| 39 | ValidIranCompanyId         | Validate Iran company id ex (14007650912)                                |
 
 # Rules
 

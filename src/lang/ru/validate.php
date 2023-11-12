@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute не действует.',
     'car-number' => ':attribute не действует.',
     'cart-number-iran' => ':attribute не действует.',
+    'company-id' => ':attribute не действует.',
     'credit-card' => ':attribute не действует.',
     'discord-username' => ':attribute не действует.',
     'domain' => ':attribute не действует.',

@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => 'Невалидна вредност :attribute',
     'car-number' => 'Невалидна вредност :attribute',
     'cart-number-iran' => 'Невалидна вредност :attribute',
+    'company-id' => 'Невалидна вредност :attribute',
     'credit-card' => 'Невалидна вредност :attribute',
     'discord-username' => 'Невалидна вредност :attribute',
     'domain' => 'Невалидна вредност :attribute',

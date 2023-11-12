@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute වලංගු නොවේ.',
     'car-number' => ':attribute වලංගු නොවේ.',
     'cart-number-iran' => ':attribute වලංගු නොවේ.',
+    'company-id' => ':attribute වලංගු නොවේ.',
     'credit-card' => ':attribute වලංගු නොවේ.',
     'discord-username' => ':attribute වලංගු නොවේ.',
     'domain' => ':attribute වලංගු නොවේ.',

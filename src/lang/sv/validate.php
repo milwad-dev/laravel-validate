@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => 'Värdet :attribute är inte korrekt.',
     'car-number' => 'Värdet :attribute är inte korrekt.',
     'cart-number-iran' => 'Värdet :attribute är inte korrekt.',
+    'company-id' => 'Värdet :attribute är inte korrekt.',
     'credit-card' => 'Värdet :attribute är inte korrekt.',
     'discord-username' => 'Värdet :attribute är inte korrekt.',
     'domain' => 'Värdet :attribute är inte korrekt.',

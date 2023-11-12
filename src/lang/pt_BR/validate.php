@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => 'O :attribute não é válido.',
     'car-number' => 'O :attribute não é válido.',
     'cart-number-iran' => 'O :attribute não é válido.',
+    'company-id' => 'O :attribute não é válido.',
     'credit-card' => 'O :attribute não é válido.',
     'discord-username' => 'O :attribute não é válido.',
     'domain' => 'O :attribute não é válido.',

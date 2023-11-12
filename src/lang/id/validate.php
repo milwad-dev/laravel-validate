@@ -7,6 +7,7 @@ return [
     'capital-char-with-number' => ':attribute tidak valid.',
     'car-number' => ':attribute tidak valid.',
     'cart-number-iran' => ':attribute tidak valid.',
+    'company-id' => ':attribute tidak valid.',
     'credit-card' => ':attribute tidak valid.',
     'discord-username' => ':attribute tidak valid.',
     'domain' => ':attribute tidak valid.',
