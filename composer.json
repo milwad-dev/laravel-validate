@@ -33,6 +33,7 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
+    "imanghafoori/php-imports-analyzer": "1.0.*",
     "orchestra/testbench": "^7.0|8.*",
     "phpunit/phpunit": "^9.0"
   },
