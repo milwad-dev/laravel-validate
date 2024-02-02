@@ -2,29 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidUlid implements Rule
+class ValidUlid implements ValidationRule
 {
     /**
      * Check ulid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/[0-7][0-9A-HJKMNP-TV-Z]{25}/', $value);
-    }
+        if (! preg_match('/[0-7][0-9A-HJKMNP-TV-Z]{25}/', $value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.ulid');
+            $fail('validate.ulid')->translate();
+        }
     }
 }
