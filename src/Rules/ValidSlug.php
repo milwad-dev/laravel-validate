@@ -2,29 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidSlug implements Rule
+class ValidSlug implements ValidationRule
 {
     /**
      * Check slug is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $value);
-    }
+        if (! preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.slug');
+            $fail('validate.slug')->translate();
+        }
     }
 }

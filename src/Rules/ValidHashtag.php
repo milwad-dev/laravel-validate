@@ -2,29 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidHashtag implements Rule
+class ValidHashtag implements ValidationRule
 {
     /**
      * Check value contains hashtag.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/^#[^ !@#$%^&*(),.?":{}|<>]*$/', $value);
-    }
+        if (! preg_match('/^#[^ !@#$%^&*(),.?":{}|<>]*$/', $value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.hashtag');
+            $fail('validate.hashtag')->translate();
+        }
     }
 }

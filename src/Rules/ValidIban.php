@@ -2,11 +2,12 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 use Milwad\LaravelValidate\Traits\IbanTrait;
 use Milwad\LaravelValidate\Utils\Country;
 
-class ValidIban implements Rule
+class ValidIban implements ValidationRule
 {
     use IbanTrait;
 
@@ -163,7 +164,7 @@ class ValidIban implements Rule
     /**
      * Set multiple country codes to validate IBAN (Optional).
      */
-    private ?array $countries;
+    private array $countries;
 
     public function __construct(array|string $countries = [])
     {
@@ -173,22 +174,16 @@ class ValidIban implements Rule
     /**
      * Check IBAN.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return $this->isIbanValid($value);
-    }
+        if (! $this->isIbanValid($value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.iban');
+            $fail('validate.iban')->translate();
+        }
     }
 }

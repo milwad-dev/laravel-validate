@@ -2,36 +2,36 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 use Morilog\Jalali\CalendarUtils;
 
-class ValidJalaliDate implements Rule
+class ValidJalaliDate implements ValidationRule
 {
     /**
      * Check jalali date is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isJalaliDateValid($value)) {
+
+            $fail('validate.jalali_date')->translate();
+        }
+    }
+
+    private function isJalaliDateValid(mixed $value): bool
     {
         if (! is_string($value)) {
             return false;
         }
 
-        $date = explode('/', $value); // TODO: Add contruct for jalali date
+        $date = explode('/', $value); // TODO: Add construct for jalali date
 
         return CalendarUtils::checkDate(...$date);
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.jalali_date');
     }
 }

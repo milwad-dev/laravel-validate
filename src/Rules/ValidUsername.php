@@ -2,29 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidUsername implements Rule
+class ValidUsername implements ValidationRule
 {
     /**
      * It checks that the length of the username must be between 3 and 15 characters without spaces.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/^[a-z0-9_-]{3,15}$/', $value);
-    }
+        if (! preg_match('/^[a-z0-9_-]{3,15}$/', $value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.username');
+            $fail('validate.username')->translate();
+        }
     }
 }

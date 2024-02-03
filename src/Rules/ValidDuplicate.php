@@ -2,31 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidDuplicate implements Rule
+class ValidDuplicate implements ValidationRule
 {
     /**
      * Check duplicate value.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        $value = str_split($value);
+        if (collect(str_split($value))->duplicates()->isNotEmpty()) {
 
-        return collect($value)->duplicates()->isEmpty();
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.duplicate');
+            $fail('validate.duplicate')->translate();
+        }
     }
 }

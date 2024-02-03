@@ -2,29 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidSnakeCase implements Rule
+class ValidSnakeCase implements ValidationRule
 {
     /**
      * Check value is snake case.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/^(?:\p{Ll}+_)*\p{Ll}+$/u', $value);
-    }
+        if (! preg_match('/^(?:\p{Ll}+_)*\p{Ll}+$/u', $value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.snake-case');
+            $fail('validate.snake-case')->translate();
+        }
     }
 }

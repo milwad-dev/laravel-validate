@@ -2,26 +2,41 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidPattern implements Rule
+class ValidPattern implements ValidationRule
 {
     public function __construct(
         private int $length,
-        private string $seperator = '-'
-    ) {
-    }
+        private string $separator = '-'
+    ) {}
 
     /**
      * Check texts with specific pattern.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
+     */
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isPatternValid($value)) {
+
+            $fail('validate.pattern')->translate();
+        }
+    }
+
+    /**
+     * Check if texts with specific pattern is valid
+     *
+     * @param mixed $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    private function isPatternValid(mixed $value): bool
     {
-        $texts = explode($this->seperator, $value);
+        $texts = explode($this->separator, $value);
 
         foreach ($texts as $text) {
             if (strlen($text) !== $this->length) {
@@ -30,15 +45,5 @@ class ValidPattern implements Rule
         }
 
         return true;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.pattern');
     }
 }

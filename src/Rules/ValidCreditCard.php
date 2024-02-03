@@ -2,18 +2,34 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidCreditCard implements Rule
+class ValidCreditCard implements ValidationRule
 {
     /**
      * Check if the credit card number is valid using the Luhn algorithm.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
+     */
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isCreditCardValid($value)) {
+
+            $fail('validate.credit-card')->translate();
+        }
+    }
+
+    /**
+     * Check if credit card number is valid using th Luhn algorithm
+     *
+     * @param mixed $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    private function isCreditCardValid(mixed $value): bool
     {
         $value = preg_replace('/\D/', '', $value);
 
@@ -33,15 +49,5 @@ class ValidCreditCard implements Rule
         }
 
         return $sum % 10 == 0;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.credit-card');
     }
 }

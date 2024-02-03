@@ -2,29 +2,24 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidPascalCase implements Rule
+class ValidPascalCase implements ValidationRule
 {
     /**
      * Check pascal-case.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
      */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        return preg_match('/^[A-Z][a-z]+(?:[A-Z][a-z]+)*$/', $value);
-    }
+        if (! preg_match('/^[A-Z][a-z]+(?:[A-Z][a-z]+)*$/', $value)) {
 
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.pascal-case');
+            $fail('validate.pascal-case')->translate();
+        }
     }
 }

@@ -2,18 +2,34 @@
 
 namespace Milwad\LaravelValidate\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class ValidCartNumberIran implements Rule
+class ValidCartNumberIran implements ValidationRule
 {
     /**
      * Check cart number is valid.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed $value
+     * @param Closure $fail
+     * @return void
+     */
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (! $this->isCartNumberValid($value)) {
+
+            $fail('validate.cart-number-iran')->translate();
+        }
+    }
+
+    /**
+     * Check if cart number is valid
+     *
+     * @param string $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    private function isCartNumberValid(mixed $value): bool
     {
         $cardToArr = str_split($value);
         $cardTotal = 0;
@@ -27,15 +43,5 @@ class ValidCartNumberIran implements Rule
         }
 
         return $cardTotal % 10 === 0;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return __('validate.cart-number-iran');
     }
 }
