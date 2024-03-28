@@ -3,40 +3,57 @@ name: "Run Tests"
 on: [push, pull_request]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        php: [8.2, 8.1, 8.0]
-        laravel: [10.*, 9.*]
-        dependency-version: [prefer-lowest, prefer-stable]
-        include:
-          - laravel: 10.*
-            testbench: 8.*
-          - laravel: 9.*
-            testbench: 7.*
+    test:
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                php: [8.0, 8.1, 8.2, 8.3]
+                laravel: [9.*, 10.*, 11.*]
+                dependency-version: [prefer-lowest, prefer-stable]
+                include:
+                    - laravel: 11.*
+                      testbench: 9.*
+                      phpunit: 11.*
 
-        exclude:
-          - laravel: 10.*
-            php: 8.0
+                    - laravel: 10.*
+                      testbench: 8.*
+                      phpunit: 11.*
 
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
+                    - laravel: 9.*
+                      testbench: 7.*
+                      phpunit: 10.*
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+                exclude:
+                    - laravel: 11.*
+                      php: 8.1
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php }}
-          extensions: curl, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, iconv
-          coverage: none
+                    - laravel: 11.*
+                      php: 8.0
 
-      - name: Install dependencies
-        run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "symfony/console:>=4.3.4" "mockery/mockery:^1.3.2" "nesbot/carbon:>=2.62.1" --no-interaction --no-update
-          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
-      - name: Execute tests
-        run: vendor/bin/phpunit
+                    - laravel: 10.*
+                      php: 8.0
+
+                    - laravel: 9.*
+                      php: 8.3
+
+        name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: ${{ matrix.php }}
+                  extensions: curl, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, iconv
+                  coverage: none
+
+            - name: Install dependencies
+              run: |
+                  composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "symfony/console:>=4.3.4" "mockery/mockery:^1.3.2" "nesbot/carbon:>=2.62.1" --no-interaction --no-update
+                  composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
+
+            - name: Execute tests
+              run: vendor/bin/phpunit
