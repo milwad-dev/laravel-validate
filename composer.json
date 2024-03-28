@@ -34,7 +34,7 @@
   "require-dev": {
     "imanghafoori/php-imports-analyzer": "1.0.*",
     "orchestra/testbench": "^7.0|^8.0|^9.0",
-    "phpunit/phpunit": "^9.0"
+    "phpunit/phpunit": "^9.0|^10.0|^11.0"
   },
   "autoload": {
     "psr-4": {
