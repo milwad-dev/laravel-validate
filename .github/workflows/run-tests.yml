@@ -14,12 +14,15 @@ jobs:
                 include:
                     - laravel: 11.*
                       testbench: 9.*
+                      phpunit: 11.*
 
                     - laravel: 10.*
                       testbench: 8.*
+                      phpunit: 11.*
 
                     - laravel: 9.*
                       testbench: 7.*
+                      phpunit: 10.*
 
                 exclude:
                     - laravel: 11.*
