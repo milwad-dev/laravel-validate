@@ -2,4 +2,5 @@ vendor
 composer.lock
 .idea
 .phpunit.result.cache
+phpunit.xml
 coverage
