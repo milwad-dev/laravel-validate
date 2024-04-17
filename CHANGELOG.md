@@ -1,6 +1,34 @@
-## Release Notes
-<hr>
+## v1.8.0 - 2024-03-28
 
+### What's Changed
+
+* [1.x] Fix Update Changelog on releases by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/68
+* Bump actions/checkout from 3 to 4 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/71
+* [1.x] Add `Bangla(BN)` language by [@45h1f](https://github.com/45h1f) in https://github.com/milwad-dev/laravel-validate/pull/72
+* [1.x] Fix regex typo by [@salehhashemi1992](https://github.com/salehhashemi1992) in https://github.com/milwad-dev/laravel-validate/pull/73
+* [1.x] Implement Credit Card Rule by [@salehhashemi1992](https://github.com/salehhashemi1992) in https://github.com/milwad-dev/laravel-validate/pull/74
+* [1.x] Sort lang file keys alphabetically by [@salehhashemi1992](https://github.com/salehhashemi1992) in https://github.com/milwad-dev/laravel-validate/pull/75
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/76
+* [1.x] Added imports analyzer workflow by [@imanghafoori1](https://github.com/imanghafoori1) in https://github.com/milwad-dev/laravel-validate/pull/78
+* [1.x] Fix imports badge by [@imanghafoori1](https://github.com/imanghafoori1) in https://github.com/milwad-dev/laravel-validate/pull/79
+* Bump actions/checkout from 3 to 4 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/80
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/81
+* Bump actions/cache from 3 to 4 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/82
+* [1.x] Improve repetitive character regex in ValidNationalCard rule by [@kiankamgar](https://github.com/kiankamgar) in https://github.com/milwad-dev/laravel-validate/pull/83
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/86
+* [1.x] Support Laravel 11 by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/85
+
+### New Contributors
+
+* [@45h1f](https://github.com/45h1f) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/72
+* [@salehhashemi1992](https://github.com/salehhashemi1992) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/73
+* [@imanghafoori1](https://github.com/imanghafoori1) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/78
+
+**Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.7.2...v1.8.0
+
+## Release Notes
+
+<hr>
 ## v1.7.2 - 2023-08-07
 
 ### What's Changed

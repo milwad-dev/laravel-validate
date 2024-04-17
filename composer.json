@@ -26,16 +26,15 @@
   ],
   "require": {
     "php": "^8.0",
-    "laravel/framework": "9.*|10.*",
+    "laravel/framework": "9.*|10.*|11.*",
     "morilog/jalali": "3.*",
     "ext-bcmath": "*",
     "ext-ctype": "*"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
     "imanghafoori/php-imports-analyzer": "1.0.*",
-    "orchestra/testbench": "^7.0|8.*",
-    "phpunit/phpunit": "^9.0"
+    "orchestra/testbench": "^7.0|^8.0|^9.0",
+    "phpunit/phpunit": "^9.0|^10.0|^11.0"
   },
   "autoload": {
     "psr-4": {
