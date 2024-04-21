@@ -55,7 +55,6 @@ class ValidJalaliDateTest extends BaseTest
         $this->assertFalse($passes);
     }
 
-
     /**
      * Test jalali date is correct with special separator.
      *
