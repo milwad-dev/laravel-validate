@@ -8,14 +8,6 @@ use Milwad\LaravelValidate\Tests\BaseTest;
 class ValidJalaliDateTest extends BaseTest
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test jalali date is correct.
      *
      * @test
