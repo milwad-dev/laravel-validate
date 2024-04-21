@@ -27,7 +27,6 @@
   "require": {
     "php": "^8.0",
     "laravel/framework": "9.*|10.*|11.*",
-    "morilog/jalali": "3.*",
     "ext-bcmath": "*",
     "ext-ctype": "*"
   },

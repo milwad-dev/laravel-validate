@@ -3,7 +3,6 @@
 namespace Milwad\LaravelValidate\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use Morilog\Jalali\CalendarUtils;
 
 class ValidJalaliDate implements Rule
 {
@@ -22,7 +21,7 @@ class ValidJalaliDate implements Rule
 
         $date = explode('/', $value); // TODO: Add contruct for jalali date
 
-        return CalendarUtils::checkDate(...$date);
+        return $this->checkValidDate(...$date);
     }
 
     /**
@@ -33,5 +32,27 @@ class ValidJalaliDate implements Rule
     public function message()
     {
         return __('validate.jalali_date');
+    }
+
+    /**
+     * Checking whether the date is a Jalali date or not.
+     */
+    protected function checkValidDate(string $year, string $month, string $day): bool
+    {
+        return ($year >= -61 && $year <= 3177)
+            && ($month >= 1 && $month <= 12)
+            && $day >= 1 && $day <= $this->jalaliMonthLength((int) $month);
+    }
+
+    /**
+     * Getting the number of days through the length of the month.
+     */
+    protected function jalaliMonthLength(int $month): int
+    {
+        if ($month <= 6) {
+            return 31;
+        }
+
+        return 30; // TODO: Add 29 or 30 for some years
     }
 }
