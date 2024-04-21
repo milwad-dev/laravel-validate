@@ -1,3 +1,12 @@
+## v1.8.1 - 2024-04-21
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/87
+* [1.x] Remove `Morilog` dependency by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/88
+
+**Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.8.0...v1.8.1
+
 ## v1.8.0 - 2024-03-28
 
 ### What's Changed
@@ -30,7 +39,6 @@
 
 <hr>
 ## v1.7.2 - 2023-08-07
-
 ### What's Changed
 
 - [1.x] Add country property to `ValidIban` rule by [@kiankamgar](https://github.com/kiankamgar) in https://github.com/milwad-dev/laravel-validate/pull/45
