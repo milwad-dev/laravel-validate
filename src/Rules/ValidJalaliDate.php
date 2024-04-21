@@ -6,6 +6,11 @@ use Illuminate\Contracts\Validation\Rule;
 
 class ValidJalaliDate implements Rule
 {
+    public function __construct(
+        protected string $separator = '/',
+    ) {
+    }
+
     /**
      * Check jalali date is valid.
      *
@@ -19,7 +24,7 @@ class ValidJalaliDate implements Rule
             return false;
         }
 
-        $date = explode('/', $value); // TODO: Add contruct for jalali date
+        $date = explode($this->separator, $value);
 
         return $this->checkValidDate(...$date);
     }
