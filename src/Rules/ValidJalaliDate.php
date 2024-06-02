@@ -25,6 +25,10 @@ class ValidJalaliDate implements Rule
 
         $date = explode($this->character, $value);
 
+        if (count($date) <= 1) {
+            return false;
+        }
+
         return $this->checkValidDate(...$date);
     }
 

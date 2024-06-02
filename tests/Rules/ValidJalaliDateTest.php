@@ -79,4 +79,19 @@ class ValidJalaliDateTest extends BaseTest
         $this->assertTrue($passes);
     }
 
+    /**
+     * Test jalali date is not correct with different default character.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function jalali_date_is_not_correct_with_different_default_character()
+    {
+        $rules = ['jalali_date' => [new ValidJalaliDate('-')]];
+        $data = ['jalali_date' => '2016/15/25'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
