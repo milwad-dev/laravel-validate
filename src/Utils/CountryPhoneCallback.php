@@ -18,170 +18,136 @@ class CountryPhoneCallback
 
     /**
      * Validate Iran phone number.
-     *
-     * @return false|int
      */
-    protected function validateIR()
+    protected function validateIR(): false|int
     {
         return preg_match('/^(\+98|0)?9\d{9}$/', $this->value);
     }
 
     /**
      * Validate Iran phone number.
-     *
-     * @return false|int
      */
-    protected function validateEN()
+    protected function validateEN(): false|int
     {
         return preg_match('/^(?:\+44|0)7\d{9}$/', $this->value);
     }
 
     /**
      * Validate Nigeria phone number.
-     *
-     * @return false|int
      */
-    protected function validateNE()
+    protected function validateNE(): false|int
     {
         return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
     }
 
     /**
      * Validate Saudi Arabia phone number.
-     *
-     * @return false|int
      */
-    protected function validateSA()
+    protected function validateSA(): false|int
     {
         return preg_match('/^((\+966)|0)?5\d{8}$/', $this->value);
     }
 
     /**
      * Validate Germany phone number.
-     *
-     * @return false|int
      */
-    protected function validateDE()
+    protected function validateDE(): false|int
     {
         return preg_match('/^((\+49)|(0))(1|15|16|17|19|30|31|32|33|34|40|41|42|43|44|49|151|152|153|155|156|157|159|160|162|163|180|181|182|183|184|185|186|187|188|170|171|172|173|174|175|176|177|178|179)\d{7,8}$/', $this->value);
     }
 
     /**
      * Validate Greece phone number.
-     *
-     * @return false|int
      */
-    protected function validateGR()
+    protected function validateGR(): false|int
     {
         return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $this->value);
     }
 
     /**
      * Validate Spain phone number.
-     *
-     * @return false|int
      */
-    protected function validateES()
+    protected function validateES(): false|int
     {
         return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/', $this->value);
     }
 
     /**
      * Validate France phone number.
-     *
-     * @return false|int
      */
-    protected function validateFR()
+    protected function validateFR(): false|int
     {
         return preg_match('/^(?:\+33|0033|0)(?:(?:[1-9](?:\d{2}){4})|(?:[67]\d{8}))$/', $this->value);
     }
 
     /**
      * Validate India phone number.
-     *
-     * @return false|int
      */
-    protected function validateIN()
+    protected function validateIN(): false|int
     {
         return preg_match('/^(?:(?:\+|0{0,2})91(\s|-)?)?[6789]\d{9}$/', $this->value);
     }
 
     /**
      * Validate Indonesia phone number.
-     *
-     * @return false|int
      */
-    protected function validateID()
+    protected function validateID(): false|int
     {
         return preg_match('/^(?:\+62|0)(?:\d{2,3}\s?){1,2}\d{4,8}$/', $this->value);
     }
 
     /**
      * Validate Italy phone number.
-     *
-     * @return false|int
      */
-    protected function validateIT()
+    protected function validateIT(): false|int
     {
         return preg_match('/^\+39\d{8,10}$/', $this->value);
     }
 
     /**
      * Validate Japanese phone number.
-     *
-     * @return false|int
      */
-    protected function validateJA()
+    protected function validateJA(): false|int
     {
         return preg_match('/(\d{2,3})-?(\d{3,4})-?(\d{4})/', $this->value);
     }
 
     /**
      * Validate Korean phone number.
-     *
-     * @return false|int
      */
-    protected function validateKO()
+    protected function validateKO(): false|int
     {
         return preg_match('/^(?:\+82|0)(?:10|1[1-9])-?\d{3,4}-?\d{4}$/', $this->value);
     }
 
     /**
      * Validate Russian phone number.
-     *
-     * @return false|int
      */
-    protected function validateRU()
+    protected function validateRU(): false|int
     {
         return preg_match('/^(?:\+7|8)(?:\s?\(?\d{3}\)?\s?\d{3}(?:-?\d{2}){2}|\s?\d{2}(?:\s?\d{2}){3})$/', $this->value);
     }
 
     /**
      * Validate Sweden phone number.
-     *
-     * @return false|int
      */
-    protected function validateSE()
+    protected function validateSE(): false|int
     {
         return preg_match('/^(?:\+46|0) ?(?:[1-9]\d{1,2}-?\d{2}(?:\s?\d{2}){2}|7\d{2}-?\d{2}(?:\s?\d{2}){2})$/', $this->value);
     }
 
     /**
      * Validate Turkey phone number.
-     *
-     * @return false|int
      */
-    protected function validateTR()
+    protected function validateTR(): false|int
     {
         return preg_match('/^(?:\+90|0)(?:\s?[1-9]\d{2}\s?\d{3}\s?\d{2}\s?\d{2}|[1-9]\d{2}-?\d{3}-?\d{2}-?\d{2})$/', $this->value);
     }
 
     /**
      * Validate Chinese phone number.
-     *
-     * @return false|int
      */
-    protected function validateZH()
+    protected function validateZH(): false|int
     {
         return preg_match('/^(?:\+86)?1[3-9]\d{9}$/', $this->value);
     }
