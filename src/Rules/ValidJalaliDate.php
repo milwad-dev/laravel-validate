@@ -8,7 +8,8 @@ class ValidJalaliDate implements Rule
 {
     public function __construct(
         public string $character = '/',
-    ) {}
+    ) {
+    }
 
     /**
      * Check jalali date is valid.
