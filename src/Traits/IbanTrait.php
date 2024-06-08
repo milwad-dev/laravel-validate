@@ -6,10 +6,8 @@ trait IbanTrait
 {
     /**
      * Set value of $countries property.
-     *
-     * @return void
      */
-    private function setCountries(?array $countries)
+    private function setCountries(?array $countries): void
     {
         if (empty($countries)) {
             $this->countries = [];
@@ -28,10 +26,8 @@ trait IbanTrait
 
     /**
      * Check IBAN is valid.
-     *
-     * @return bool
      */
-    private function isIbanValid(string $iban)
+    private function isIbanValid(string $iban): bool
     {
         if (! $this->checkIbanFormat($iban)) {
             return false;
@@ -52,10 +48,8 @@ trait IbanTrait
 
     /**
      * Check IBAN format is valid.
-     *
-     * @return bool
      */
-    private function checkIbanFormat(string $iban)
+    private function checkIbanFormat(string $iban): bool
     {
         if (empty($iban)) {
             return false;
@@ -71,40 +65,32 @@ trait IbanTrait
 
     /**
      * Get IBAN country code.
-     *
-     * @return string
      */
-    private function getIbanCountryCode(string $iban)
+    private function getIbanCountryCode(string $iban): string
     {
         return substr($iban, 0, 2);
     }
 
     /**
      * Check if bcmod function is available.
-     *
-     * @return bool
      */
-    private function checkIfBcmodIsAvailable()
+    private function checkIfBcmodIsAvailable(): bool
     {
         return function_exists('bcmod');
     }
 
     /**
      * Check two first character's validity.
-     *
-     * @return bool
      */
-    private function twoFirstCharactersValid(string $countryCode)
+    private function twoFirstCharactersValid(string $countryCode): bool
     {
         return ! empty($countryCode) && ctype_alpha($countryCode);
     }
 
     /**
      * Check countries of the IBAN.
-     *
-     * @return bool
      */
-    private function isCountriesValid(string $ibanCountryCode)
+    private function isCountriesValid(string $ibanCountryCode): bool
     {
         if (empty($this->countries)) {
             return true;
@@ -121,10 +107,8 @@ trait IbanTrait
 
     /**
      * Check country of the IBAN.
-     *
-     * @return bool
      */
-    private function isCountryValid(string $country, string $ibanCountryCode)
+    private function isCountryValid(string $country, string $ibanCountryCode): bool
     {
         return ! empty($country)
             && isset($this->ibanLengthByCountry[$country])
@@ -133,10 +117,8 @@ trait IbanTrait
 
     /**
      * Check country of the IBAN.
-     *
-     * @return bool
      */
-    private function isIbanLengthValid(string $iban, string $ibanCountryCode)
+    private function isIbanLengthValid(string $iban, string $ibanCountryCode): bool
     {
         return strlen($iban) === $this->ibanLengthByCountry[$ibanCountryCode];
     }

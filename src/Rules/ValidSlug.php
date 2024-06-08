@@ -8,22 +8,16 @@ class ValidSlug implements Rule
 {
     /**
      * Check slug is valid.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         return preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $value);
     }
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.slug');
     }

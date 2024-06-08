@@ -8,22 +8,16 @@ class ValidOddNumber implements Rule
 {
     /**
      * Check number is odd.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         return preg_match('/^\d*[13579]$/', $value);
     }
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.odd-number');
     }

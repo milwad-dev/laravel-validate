@@ -8,12 +8,8 @@ class ValidCartNumberIran implements Rule
 {
     /**
      * Check cart number is valid.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $cardToArr = str_split($value);
         $cardTotal = 0;
@@ -31,10 +27,8 @@ class ValidCartNumberIran implements Rule
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.cart-number-iran');
     }

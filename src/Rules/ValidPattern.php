@@ -8,20 +8,16 @@ class ValidPattern implements Rule
 {
     public function __construct(
         private int $length,
-        private string $seperator = '-'
+        private string $separator = '-'
     ) {
     }
 
     /**
-     * Check texts with specific pattern.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * Check text with specific pattern.
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
-        $texts = explode($this->seperator, $value);
+        $texts = explode($this->separator, $value);
 
         foreach ($texts as $text) {
             if (strlen($text) !== $this->length) {
@@ -34,10 +30,8 @@ class ValidPattern implements Rule
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.pattern');
     }

@@ -40,10 +40,8 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
     /**
      * Register files.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishLangFiles();
@@ -68,10 +66,8 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
     /**
      * Publish config file.
-     *
-     * @return void
      */
-    private function publishConfigFile()
+    private function publishConfigFile(): void
     {
         $this->publishes([
             __DIR__.'/../config/laravel-validate.php' => config_path('laravel-validate.php'),
