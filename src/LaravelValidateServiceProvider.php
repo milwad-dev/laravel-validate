@@ -3,6 +3,7 @@
 namespace Milwad\LaravelValidate;
 
 use Illuminate\Support\ServiceProvider;
+use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
 class LaravelValidateServiceProvider extends ServiceProvider
 {
@@ -72,5 +73,17 @@ class LaravelValidateServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/laravel-validate.php' => config_path('laravel-validate.php'),
         ], 'laravel-validate-config');
+    }
+
+    /**
+     * Boot applications.
+     */
+    public function boot(): void
+    {
+        $countries = config('laravel-validate.phone-country', []);
+        
+        foreach ($countries as $code => $country) {
+            CountryPhoneCallback::addValidator($code, $country);
+        }
     }
 }

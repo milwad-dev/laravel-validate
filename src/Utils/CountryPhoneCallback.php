@@ -11,14 +11,14 @@ class CountryPhoneCallback
      *
      * @var array
      */
-    protected array $validators = [];
+    protected static array $validators = [];
 
     /**
      * Add new country validator
      */
-    public function addValidator(string $code, CountryPhoneValidator $validator): void
+    public static function addValidator(string $code, CountryPhoneValidator $validator): void
     {
-        $this->validators[$code] = $validator;
+        self::$validators[$code] = $validator;
     }
 
     /**
