@@ -6,9 +6,6 @@ class CountryPhoneCallback
 {
     /**
      * Create a new phone validator instance.
-     *
-     * @param  mixed  $value  The phone number to validate.
-     * @param  string  $code  The country codes to validate against. String can be separated by comma
      */
     public function __construct(private mixed $value, private string $code, ?string $attribute = null)
     {
@@ -154,8 +151,6 @@ class CountryPhoneCallback
 
     /**
      * Call the phone validator method for each country code and return the results.
-     *
-     * @return array An array of validation results, where each key is a country code and the value is either `true` or `false`.
      *
      * @throws \BadMethodCallException if the validator method for a country code does not exist.
      */
