@@ -172,6 +172,8 @@ class ValidIban implements Rule
 
     /**
      * Check IBAN is valid.
+     *
+     * @see https://en.wikipedia.org/wiki/International_Bank_Account_Number
      */
     public function passes($attribute, $value): bool
     {
