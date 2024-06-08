@@ -54,11 +54,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Italy phone number.
+     * Validate  phone number.
      */
     protected function validateIT(): false|int
     {
-        return preg_match('/^\+39\d{8,10}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
