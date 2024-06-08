@@ -45,7 +45,7 @@ class ValidJalaliDate implements Rule
     {
         return ($year >= -61 && $year <= 3177)
             && ($month >= 1 && $month <= 12)
-            && $day >= 1 && $day <= $this->jalaliMonthLength($year, $month, $year);
+            && $day >= 1 && $day <= $this->jalaliMonthLength($year, $month, $day);
     }
 
     /**
