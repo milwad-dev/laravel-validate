@@ -46,11 +46,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Indonesia phone number.
+     * Validate  phone number.
      */
     protected function validateID(): false|int
     {
-        return preg_match('/^(?:\+62|0)(?:\d{2,3}\s?){1,2}\d{4,8}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
