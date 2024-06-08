@@ -21,14 +21,6 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Saudi Arabia phone number.
-     */
-    protected function validateSA(): false|int
-    {
-        return preg_match('/^((\+966)|0)?5\d{8}$/', $this->value);
-    }
-
-    /**
      * Validate Germany phone number.
      */
     protected function validateDE(): false|int
