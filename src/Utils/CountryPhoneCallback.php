@@ -94,11 +94,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Turkey phone number.
+     * Validate  phone number.
      */
     protected function validateTR(): false|int
     {
-        return preg_match('/^(?:\+90|0)(?:\s?[1-9]\d{2}\s?\d{3}\s?\d{2}\s?\d{2}|[1-9]\d{2}-?\d{3}-?\d{2}-?\d{2})$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
