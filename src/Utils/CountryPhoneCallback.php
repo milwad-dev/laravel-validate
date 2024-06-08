@@ -21,14 +21,6 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Iran phone number.
-     */
-    protected function validateEN(): false|int
-    {
-        return preg_match('/^(?:\+44|0)7\d{9}$/', $this->value);
-    }
-
-    /**
      * Validate Nigeria phone number.
      */
     protected function validateNE(): false|int
