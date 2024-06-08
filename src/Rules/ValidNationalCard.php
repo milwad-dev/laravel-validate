@@ -8,12 +8,8 @@ class ValidNationalCard implements Rule
 {
     /**
      * Check national card is valid.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         if (! preg_match('/^\d{10}$/', $value)) {
             return false;
@@ -37,10 +33,8 @@ class ValidNationalCard implements Rule
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.national-card');
     }

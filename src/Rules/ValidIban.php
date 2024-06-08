@@ -15,7 +15,7 @@ class ValidIban implements Rule
      *
      * @var array|int[]
      */
-    private array $characterMap = [
+    protected array $characterMap = [
         'A' => 10,
         'B' => 11,
         'C' => 12,
@@ -171,23 +171,17 @@ class ValidIban implements Rule
     }
 
     /**
-     * Check IBAN.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * Check IBAN is valid.
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         return $this->isIbanValid($value);
     }
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.iban');
     }

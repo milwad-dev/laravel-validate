@@ -7,23 +7,17 @@ use Illuminate\Contracts\Validation\Rule;
 class ValidUlid implements Rule
 {
     /**
-     * Check ulid.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
+     * Check ulid is valid.
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         return preg_match('/[0-7][0-9A-HJKMNP-TV-Z]{25}/', $value);
     }
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.ulid');
     }

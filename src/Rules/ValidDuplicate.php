@@ -8,12 +8,8 @@ class ValidDuplicate implements Rule
 {
     /**
      * Check duplicate value.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $value = str_split($value);
 
@@ -22,10 +18,8 @@ class ValidDuplicate implements Rule
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
-    public function message()
+    public function message(): string
     {
         return __('validate.duplicate');
     }
