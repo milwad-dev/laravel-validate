@@ -22,11 +22,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Spain phone number.
+     * Validate  phone number.
      */
     protected function validateES(): false|int
     {
-        return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
