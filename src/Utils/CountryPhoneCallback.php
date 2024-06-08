@@ -11,14 +11,7 @@ class CountryPhoneCallback
      *
      * @var array
      */
-    protected $validators = [];
-
-    /**
-     * Create a new phone validator instance.
-     */
-    public function __construct(private mixed $value, private string $code, ?string $attribute = null)
-    {
-    }
+    protected array $validators = [];
 
     /**
      * Validate Greece phone number.
