@@ -38,11 +38,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate India phone number.
+     * Validate  phone number.
      */
     protected function validateIN(): false|int
     {
-        return preg_match('/^(?:(?:\+|0{0,2})91(\s|-)?)?[6789]\d{9}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
