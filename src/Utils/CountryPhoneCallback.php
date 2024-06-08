@@ -70,11 +70,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Korean phone number.
+     * Validate  phone number.
      */
     protected function validateKO(): false|int
     {
-        return preg_match('/^(?:\+82|0)(?:10|1[1-9])-?\d{3,4}-?\d{4}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
