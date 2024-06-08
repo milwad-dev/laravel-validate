@@ -78,11 +78,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Russian phone number.
+     * Validate  phone number.
      */
     protected function validateRU(): false|int
     {
-        return preg_match('/^(?:\+7|8)(?:\s?\(?\d{3}\)?\s?\d{3}(?:-?\d{2}){2}|\s?\d{2}(?:\s?\d{2}){3})$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
