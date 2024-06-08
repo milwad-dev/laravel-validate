@@ -77,6 +77,8 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
     /**
      * Boot applications.
+     *
+     * @throws \Throwable
      */
     public function boot(): void
     {
