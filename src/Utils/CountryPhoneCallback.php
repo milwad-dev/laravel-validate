@@ -2,15 +2,24 @@
 
 namespace Milwad\LaravelValidate\Utils;
 
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator\CountryPhoneValidator;
+
 class CountryPhoneCallback
 {
+    /**
+     * Country Validate classes.
+     *
+     * @var array
+     */
+    protected $validators = [];
+
     /**
      * Create a new phone validator instance.
      */
     public function __construct(private mixed $value, private string $code, ?string $attribute = null)
     {
     }
-    
+
     /**
      * Validate Iran phone number.
      */
@@ -140,26 +149,22 @@ class CountryPhoneCallback
     }
 
     /**
-     * Call the phone validator method for each country code and return the results.
-     *
-     * @throws \BadMethodCallException if the validator method for a country code does not exist.
+     * Add new country validator
      */
-    public function callPhoneValidator(): array
+    public function addValidator(string $code, CountryPhoneValidator $validator): void
     {
-        $results = [];
-        $codes = explode(',', $this->code);
-        $codes = array_map('strtoupper', $codes);
+        $this->validators[$code] = $validator;
+    }
 
-        foreach ($codes as $code) {
-            $methodName = 'validate'.$code;
-
-            if (method_exists($this, $methodName)) {
-                $results[$code] = $this->{$methodName}();
-            } else {
-                throw new \BadMethodCallException("Validator method '{$methodName}' does not exist.");
-            }
+    /**
+     * Call country validate class.
+     */
+    public function callPhoneValidator(string $code, $value)
+    {
+        if (isset($this->validators[$code])) {
+            return $this->validators[$code]->validate($value);
+        } else {
+            throw new \BadMethodCallException("Validator method for '$code' does not exist.");
         }
-
-        return $results;
     }
 }
