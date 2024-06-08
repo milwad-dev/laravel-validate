@@ -21,14 +21,6 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Nigeria phone number.
-     */
-    protected function validateNE(): false|int
-    {
-        return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
-    }
-
-    /**
      * Validate Saudi Arabia phone number.
      */
     protected function validateSA(): false|int
