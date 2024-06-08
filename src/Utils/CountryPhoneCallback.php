@@ -86,11 +86,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Sweden phone number.
+     * Validate  phone number.
      */
     protected function validateSE(): false|int
     {
-        return preg_match('/^(?:\+46|0) ?(?:[1-9]\d{1,2}-?\d{2}(?:\s?\d{2}){2}|7\d{2}-?\d{2}(?:\s?\d{2}){2})$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
