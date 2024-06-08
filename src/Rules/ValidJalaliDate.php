@@ -3,6 +3,7 @@
 namespace Milwad\LaravelValidate\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
+use Illuminate\Support\Carbon;
 
 class ValidJalaliDate implements Rule
 {
@@ -40,22 +41,25 @@ class ValidJalaliDate implements Rule
     /**
      * Checking whether the date is a Jalali date or not.
      */
-    protected function checkValidDate(string $year, string $month, string $day): bool
+    protected function checkValidDate(int $year, int $month, int $day): bool
     {
         return ($year >= -61 && $year <= 3177)
             && ($month >= 1 && $month <= 12)
-            && $day >= 1 && $day <= $this->jalaliMonthLength((int) $month);
+            && $day >= 1 && $day <= $this->jalaliMonthLength($year, $month, $year);
     }
 
     /**
      * Getting the number of days through the length of the month.
      */
-    protected function jalaliMonthLength(int $month): int
+    protected function jalaliMonthLength(int $year, int $month, int $day): int
     {
+        if (Carbon::createFromDate($year, $month, $day)->isLeapYear() && $month === 12) {
+            return 29;
+        }
         if ($month <= 6) {
             return 31;
         }
 
-        return 30; // TODO: Add 29 or 30 for some years
+        return 30;
     }
 }
