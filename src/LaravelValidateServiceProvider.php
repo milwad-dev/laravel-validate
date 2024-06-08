@@ -81,7 +81,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $countries = config('laravel-validate.phone-country', []);
-        
+
         foreach ($countries as $code => $country) {
             CountryPhoneCallback::addValidator($code, $country);
         }

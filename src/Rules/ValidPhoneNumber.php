@@ -17,7 +17,7 @@ class ValidPhoneNumber implements Rule
     public function passes($attribute, $value): bool
     {
         if (is_string($this->code)) {
-            $passes = (new CountryPhoneCallback($value, $this->code))->callPhoneValidator();
+            $passes = CountryPhoneCallback::callPhoneValidator($this->code, $value);
 
             return collect($passes)->some(fn ($passe) => $passe);
         }
