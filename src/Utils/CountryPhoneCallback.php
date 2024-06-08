@@ -27,7 +27,7 @@ class CountryPhoneCallback
     public function callPhoneValidator(string $code, $value)
     {
         if (isset($this->validators[$code])) {
-            return $this->validators[$code]->validate($value);
+            return (new $this->validators[$code])->validate($value);
         } else {
             throw new \BadMethodCallException("Validator method for '$code' does not exist.");
         }
