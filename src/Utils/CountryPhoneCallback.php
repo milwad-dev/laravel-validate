@@ -14,11 +14,11 @@ class CountryPhoneCallback
     protected array $validators = [];
 
     /**
-     * Validate Greece phone number.
+     * Validate  phone number.
      */
     protected function validateGR(): false|int
     {
-        return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
