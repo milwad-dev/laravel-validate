@@ -62,11 +62,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Japanese phone number.
+     * Validate  phone number.
      */
     protected function validateJA(): false|int
     {
-        return preg_match('/(\d{2,3})-?(\d{3,4})-?(\d{4})/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
