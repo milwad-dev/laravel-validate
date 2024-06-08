@@ -10,17 +10,7 @@ class CountryPhoneCallback
     public function __construct(private mixed $value, private string $code, ?string $attribute = null)
     {
     }
-
-    // TODO: Add a feature to add validate method for your own country!
-
-    /**
-     * Validate Iran phone number.
-     */
-    protected function validateIR(): false|int
-    {
-        return preg_match('/^(\+98|0)?9\d{9}$/', $this->value);
-    }
-
+    
     /**
      * Validate Iran phone number.
      */
