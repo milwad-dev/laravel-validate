@@ -30,11 +30,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate France phone number.
+     * Validate  phone number.
      */
     protected function validateFR(): false|int
     {
-        return preg_match('/^(?:\+33|0033|0)(?:[1-9](?:\d{2}){4}|[67]\d{8})$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
