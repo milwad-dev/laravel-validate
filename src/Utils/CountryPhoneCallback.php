@@ -102,11 +102,11 @@ class CountryPhoneCallback
     }
 
     /**
-     * Validate Chinese phone number.
+     * Validate  phone number.
      */
     protected function validateZH(): false|int
     {
-        return preg_match('/^(?:\+86)?1[3-9]\d{9}$/', $this->value);
+        return preg_match(, $this->value);
     }
 
     /**
