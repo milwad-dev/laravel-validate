@@ -9,8 +9,6 @@ class CountryPhoneCallback
 {
     /**
      * Country Validate classes.
-     *
-     * @var array
      */
     protected static array $validators = [];
 
