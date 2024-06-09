@@ -1,3 +1,12 @@
+## v1.8.2 - 2024-06-08
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/89
+* [1.x] Refactor by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/90
+
+**Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.8.1...v1.8.2
+
 ## v1.8.1 - 2024-04-21
 
 ### What's Changed
@@ -40,7 +49,6 @@
 <hr>
 ## v1.7.2 - 2023-08-07
 ### What's Changed
-
 - [1.x] Add country property to `ValidIban` rule by [@kiankamgar](https://github.com/kiankamgar) in https://github.com/milwad-dev/laravel-validate/pull/45
 - [1.]x Fix PR by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/46
 - Update README.md by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/47
