@@ -46,7 +46,7 @@ class ValidPhoneNumberTest extends BaseTest
     public function phone_number_is_not_valid()
     {
         $rules = [
-            'phone_number' => [new ValidPhoneNumber()],
+            'phone_number' => [new ValidPhoneNumber],
             'phone_bj' => [new ValidPhoneNumber(Country::IRAN)],
         ];
         $data = [
@@ -120,7 +120,7 @@ class ValidPhoneNumberTest extends BaseTest
     public function if_phone_number_validate_method_is_not_exists()
     {
         $this->expectException(BadMethodCallException::class);
-        $this->expectExceptionMessage("Validator method 'validateAZ' does not exist.");
+        $this->expectExceptionMessage("Validator method for 'AZ' does not exist.");
 
         $rules = ['phone' => [new ValidPhoneNumber(Country::AZERBAIJAN)]];
         $data = ['phone' => '+62812345678'];

@@ -2,174 +2,39 @@
 
 namespace Milwad\LaravelValidate\Utils;
 
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator\CountryPhoneValidator;
+use RuntimeException;
+
 class CountryPhoneCallback
 {
     /**
-     * Create a new phone validator instance.
+     * Country Validate classes.
      */
-    public function __construct(private mixed $value, private string $code, ?string $attribute = null)
-    {
-    }
-
-    // TODO: Add a feature to add validate method for your own country!
+    protected static array $validators = [];
 
     /**
-     * Validate Iran phone number.
-     */
-    protected function validateIR(): false|int
-    {
-        return preg_match('/^(\+98|0)?9\d{9}$/', $this->value);
-    }
-
-    /**
-     * Validate Iran phone number.
-     */
-    protected function validateEN(): false|int
-    {
-        return preg_match('/^(?:\+44|0)7\d{9}$/', $this->value);
-    }
-
-    /**
-     * Validate Nigeria phone number.
-     */
-    protected function validateNE(): false|int
-    {
-        return preg_match('/^(\+227|00227|227)?\d{8}$/', $this->value);
-    }
-
-    /**
-     * Validate Saudi Arabia phone number.
-     */
-    protected function validateSA(): false|int
-    {
-        return preg_match('/^((\+966)|0)?5\d{8}$/', $this->value);
-    }
-
-    /**
-     * Validate Germany phone number.
-     */
-    protected function validateDE(): false|int
-    {
-        return preg_match('/^((\+49)|(0))(1|15|16|17|19|30|31|32|33|34|40|41|42|43|44|49|151|152|153|155|156|157|159|160|162|163|180|181|182|183|184|185|186|187|188|170|171|172|173|174|175|176|177|178|179)\d{7,8}$/', $this->value);
-    }
-
-    /**
-     * Validate Greece phone number.
-     */
-    protected function validateGR(): false|int
-    {
-        return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $this->value);
-    }
-
-    /**
-     * Validate Spain phone number.
-     */
-    protected function validateES(): false|int
-    {
-        return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/', $this->value);
-    }
-
-    /**
-     * Validate France phone number.
-     */
-    protected function validateFR(): false|int
-    {
-        return preg_match('/^(?:\+33|0033|0)(?:[1-9](?:\d{2}){4}|[67]\d{8})$/', $this->value);
-    }
-
-    /**
-     * Validate India phone number.
-     */
-    protected function validateIN(): false|int
-    {
-        return preg_match('/^(?:(?:\+|0{0,2})91(\s|-)?)?[6789]\d{9}$/', $this->value);
-    }
-
-    /**
-     * Validate Indonesia phone number.
-     */
-    protected function validateID(): false|int
-    {
-        return preg_match('/^(?:\+62|0)(?:\d{2,3}\s?){1,2}\d{4,8}$/', $this->value);
-    }
-
-    /**
-     * Validate Italy phone number.
-     */
-    protected function validateIT(): false|int
-    {
-        return preg_match('/^\+39\d{8,10}$/', $this->value);
-    }
-
-    /**
-     * Validate Japanese phone number.
-     */
-    protected function validateJA(): false|int
-    {
-        return preg_match('/(\d{2,3})-?(\d{3,4})-?(\d{4})/', $this->value);
-    }
-
-    /**
-     * Validate Korean phone number.
-     */
-    protected function validateKO(): false|int
-    {
-        return preg_match('/^(?:\+82|0)(?:10|1[1-9])-?\d{3,4}-?\d{4}$/', $this->value);
-    }
-
-    /**
-     * Validate Russian phone number.
-     */
-    protected function validateRU(): false|int
-    {
-        return preg_match('/^(?:\+7|8)(?:\s?\(?\d{3}\)?\s?\d{3}(?:-?\d{2}){2}|\s?\d{2}(?:\s?\d{2}){3})$/', $this->value);
-    }
-
-    /**
-     * Validate Sweden phone number.
-     */
-    protected function validateSE(): false|int
-    {
-        return preg_match('/^(?:\+46|0) ?(?:[1-9]\d{1,2}-?\d{2}(?:\s?\d{2}){2}|7\d{2}-?\d{2}(?:\s?\d{2}){2})$/', $this->value);
-    }
-
-    /**
-     * Validate Turkey phone number.
-     */
-    protected function validateTR(): false|int
-    {
-        return preg_match('/^(?:\+90|0)(?:\s?[1-9]\d{2}\s?\d{3}\s?\d{2}\s?\d{2}|[1-9]\d{2}-?\d{3}-?\d{2}-?\d{2})$/', $this->value);
-    }
-
-    /**
-     * Validate Chinese phone number.
-     */
-    protected function validateZH(): false|int
-    {
-        return preg_match('/^(?:\+86)?1[3-9]\d{9}$/', $this->value);
-    }
-
-    /**
-     * Call the phone validator method for each country code and return the results.
+     * Add new country validator.
      *
-     * @throws \BadMethodCallException if the validator method for a country code does not exist.
+     * @throws \Throwable
      */
-    public function callPhoneValidator(): array
+    public static function addValidator(string $code, string $validator): void
     {
-        $results = [];
-        $codes = explode(',', $this->code);
-        $codes = array_map('strtoupper', $codes);
-
-        foreach ($codes as $code) {
-            $methodName = 'validate'.$code;
-
-            if (method_exists($this, $methodName)) {
-                $results[$code] = $this->{$methodName}();
-            } else {
-                throw new \BadMethodCallException("Validator method '{$methodName}' does not exist.");
-            }
+        if (! new $validator instanceof CountryPhoneValidator) {
+            throw new RuntimeException('The validator is not instance of CountryPhoneValidator');
         }
 
-        return $results;
+        self::$validators[$code] = $validator;
+    }
+
+    /**
+     * Call country validate class.
+     */
+    public static function callPhoneValidator(string $code, $value)
+    {
+        if (isset(self::$validators[$code])) {
+            return (new self::$validators[$code])->validate($value);
+        } else {
+            throw new \BadMethodCallException("Validator method for '$code' does not exist.");
+        }
     }
 }
