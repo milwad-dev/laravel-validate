@@ -11,9 +11,9 @@
 [![Check Imports](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml/badge.svg?branch=1.x)](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml)
 
 ***
-Laravel validate is a package for validation faster & easier. <br>
-You can validate data easier, Laravel validate have lots of rule class for validation. <br>
-This package support localization and you can use it for most of the language. <br>
+The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation logic. <br>
+You can validate data more easily, Laravel validate has lots of rule classes for validation. <br>
+This package supports localization and can be used for most of the language. <br>
 (If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
 # Requirements
@@ -126,7 +126,7 @@ return [
 
 ### ValidIban
 
-Sometimes you need to validate Iban(International Bank Account Number) code. You can use the `ValidIban` rule:
+Sometimes you need to validate the Iban(International Bank Account Number) code. You can use the `ValidIban` rule:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidIban;
@@ -136,7 +136,7 @@ return [
 ];
 ```
 
-Also, You can use the `Country` class and add a list of countries to the `ValidIban` rule. By doing this your IBAN must belong
+Also, you can use the `Country` class to add a list of countries to the `ValidIban` rule. By doing this your IBAN must belong
 to one of the countries you pass to the validation class:
 
 ```php
@@ -180,7 +180,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 
 # License
 
-* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 9 and is released under the MIT License.
+* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 9 and has been released under the MIT License.
 
 # Contributing
 
