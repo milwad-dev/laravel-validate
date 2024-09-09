@@ -24,7 +24,7 @@ class ValidSlashEndOfStringTest extends BaseTest
      */
     public function slash_end_of_string_is_valid()
     {
-        $rules = ['slash_string' => [new ValidSlashEndOfString()]];
+        $rules = ['slash_string' => [new ValidSlashEndOfString]];
         $data = ['slash_string' => 'milwad/'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidSlashEndOfStringTest extends BaseTest
      */
     public function slash_end_of_string_is_not_valid()
     {
-        $rules = ['slash_string' => [new ValidSlashEndOfString()]];
+        $rules = ['slash_string' => [new ValidSlashEndOfString]];
         $data = ['slash_string' => 'milwad'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

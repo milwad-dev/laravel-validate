@@ -8,8 +8,7 @@ class ValidJalaliDate implements Rule
 {
     public function __construct(
         protected string $separator = '/',
-    ) {
-    }
+    ) {}
 
     /**
      * Check jalali date is valid.

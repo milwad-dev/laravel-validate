@@ -24,7 +24,7 @@ class ValidEvenNumberTest extends BaseTest
      */
     public function check_number_is_even()
     {
-        $rules = ['even_number' => [new ValidEvenNumber()]];
+        $rules = ['even_number' => [new ValidEvenNumber]];
         $data = ['even_number' => '1024'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidEvenNumberTest extends BaseTest
      */
     public function check_number_is_not_even()
     {
-        $rules = ['even_number' => [new ValidEvenNumber()]];
+        $rules = ['even_number' => [new ValidEvenNumber]];
         $data = ['even_number' => '1025'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

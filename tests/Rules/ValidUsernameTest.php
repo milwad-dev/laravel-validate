@@ -24,7 +24,7 @@ class ValidUsernameTest extends BaseTest
      */
     public function username_is_valid()
     {
-        $rules = ['username' => [new ValidUsername()]];
+        $rules = ['username' => [new ValidUsername]];
         $data = ['username' => 'milwad'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidUsernameTest extends BaseTest
      */
     public function username_is_not_valid()
     {
-        $rules = ['username' => [new ValidUsername()]];
+        $rules = ['username' => [new ValidUsername]];
         $data = ['username' => 'milwad!@!'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

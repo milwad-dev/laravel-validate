@@ -24,7 +24,7 @@ class ValidDuplicateCharacterTest extends BaseTest
      */
     public function duplicate_characters_is_valid()
     {
-        $rules = ['duplicate_number' => [new ValidDuplicateCharacter()]];
+        $rules = ['duplicate_number' => [new ValidDuplicateCharacter]];
         $data = ['duplicate_number' => '1,2,3,4,5,6,7,8,9'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidDuplicateCharacterTest extends BaseTest
      */
     public function duplicate_characters_is_not_valid()
     {
-        $rules = ['duplicate_number' => [new ValidDuplicateCharacter()]];
+        $rules = ['duplicate_number' => [new ValidDuplicateCharacter]];
         $data = ['duplicate_number' => '1,2,2,3,3,3,4,5,6,7,8,9'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

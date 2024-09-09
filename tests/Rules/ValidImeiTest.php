@@ -24,7 +24,7 @@ class ValidImeiTest extends BaseTest
      */
     public function imei_is_valid()
     {
-        $rules = ['imei' => [new ValidImei()]];
+        $rules = ['imei' => [new ValidImei]];
         $data = ['imei' => '354809104295874'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidImeiTest extends BaseTest
      */
     public function imei_is_not_valid()
     {
-        $rules = ['imei' => [new ValidImei()]];
+        $rules = ['imei' => [new ValidImei]];
         $data = ['imei' => '80484080484'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

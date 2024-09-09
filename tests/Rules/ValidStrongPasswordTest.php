@@ -24,7 +24,7 @@ class ValidStrongPasswordTest extends BaseTest
      */
     public function password_is_strong()
     {
-        $rules = ['strong_password' => [new ValidStrongPassword()]];
+        $rules = ['strong_password' => [new ValidStrongPassword]];
         $data = ['strong_password' => 'Milwad123!'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidStrongPasswordTest extends BaseTest
      */
     public function password_is_not_strong()
     {
-        $rules = ['strong_password' => [new ValidStrongPassword()]];
+        $rules = ['strong_password' => [new ValidStrongPassword]];
         $data = ['strong_password' => 'Milwad123'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

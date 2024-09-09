@@ -24,7 +24,7 @@ class ValidBase64Test extends BaseTest
      */
     public function base64_is_valid()
     {
-        $rules = ['base64' => [new ValidBase64()]];
+        $rules = ['base64' => [new ValidBase64]];
         $data = ['base64' => 'bWlsd2Fk']; // milwad
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidBase64Test extends BaseTest
      */
     public function base64_is_not_valid()
     {
-        $rules = ['base64' => [new ValidBase64()]];
+        $rules = ['base64' => [new ValidBase64]];
         $data = ['base64' => 'milwad'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

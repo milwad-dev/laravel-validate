@@ -24,7 +24,7 @@ class ValidIranPostalCodeTest extends BaseTest
      */
     public function postal_code_is_valid()
     {
-        $rules = ['postal_code' => [new ValidIranPostalCode()]];
+        $rules = ['postal_code' => [new ValidIranPostalCode]];
         $data = ['postal_code' => '3354355599'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidIranPostalCodeTest extends BaseTest
      */
     public function postal_code_is_not_valid()
     {
-        $rules = ['postal_code' => [new ValidIranPostalCode()]];
+        $rules = ['postal_code' => [new ValidIranPostalCode]];
         $data = ['postal_code' => '1111111111'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

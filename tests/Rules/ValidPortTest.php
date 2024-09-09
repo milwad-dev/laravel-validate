@@ -24,7 +24,7 @@ class ValidPortTest extends BaseTest
      */
     public function port_is_valid()
     {
-        $rules = ['port' => [new ValidPort()]];
+        $rules = ['port' => [new ValidPort]];
         $data = ['port' => '8080'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidPortTest extends BaseTest
      */
     public function port_is_not_valid()
     {
-        $rules = ['port' => [new ValidPort()]];
+        $rules = ['port' => [new ValidPort]];
         $data = ['port' => '158754'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

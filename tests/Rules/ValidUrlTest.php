@@ -24,7 +24,7 @@ class ValidUrlTest extends BaseTest
      */
     public function url_is_valid()
     {
-        $rules = ['url' => [new ValidUrl()]];
+        $rules = ['url' => [new ValidUrl]];
         $data = ['url' => 'https://github.com/milwad-dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidUrlTest extends BaseTest
      */
     public function url_is_nor_valid()
     {
-        $rules = ['url' => [new ValidUrl()]];
+        $rules = ['url' => [new ValidUrl]];
         $data = ['url' => 'milwad-dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

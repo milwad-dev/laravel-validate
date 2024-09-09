@@ -24,7 +24,7 @@ class ValidIpAddressIPV6Test extends BaseTest
      */
     public function ipv6_address_is_valid()
     {
-        $rules = ['ipv6_address' => [new ValidIpAddressIPV6()]];
+        $rules = ['ipv6_address' => [new ValidIpAddressIPV6]];
         $data = ['ipv6_address' => '2001:db8:3333:4444:5555:6666:7777:8888'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidIpAddressIPV6Test extends BaseTest
      */
     public function ipv6_address_is_not_valid()
     {
-        $rules = ['ipv6_address' => [new ValidIpAddressIPV6()]];
+        $rules = ['ipv6_address' => [new ValidIpAddressIPV6]];
         $data = ['ipv6_address' => '12345671213145131212'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

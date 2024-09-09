@@ -24,7 +24,7 @@ class ValidHtmlTagTest extends BaseTest
      */
     public function html_tag_is_valid()
     {
-        $rules = ['html_tag' => [new ValidHtmlTag()]];
+        $rules = ['html_tag' => [new ValidHtmlTag]];
         $data = ['html_tag' => '<h1></h1>'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidHtmlTagTest extends BaseTest
      */
     public function html_tag_is_not_valid()
     {
-        $rules = ['html_tag' => [new ValidHtmlTag()]];
+        $rules = ['html_tag' => [new ValidHtmlTag]];
         $data = ['html_tag' => 'milwad-dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
