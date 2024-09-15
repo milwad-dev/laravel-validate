@@ -200,5 +200,5 @@ If you've found a bug regarding security please mail [milwad.dev@gmail.com](mail
 
 If this package is helpful for you, you can buy a coffee for me :) ❤️
 
-Iranina Gateway: https://payping.ir/@milwad-dev
+Iranina Gateway: https://daramet.com/milwad_khosravi
 Paypal Gateway: SOON
