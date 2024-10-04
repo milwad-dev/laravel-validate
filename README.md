@@ -180,7 +180,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 
 # License
 
-* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel upper more than 9 and has been released under the MIT License.
+* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel over more than 9 and has been released under the MIT License.
 
 # Contributing
 
@@ -202,3 +202,4 @@ If this package is helpful for you, you can buy a coffee for me :) ❤️
 
 Iranina Gateway: https://daramet.com/milwad_khosravi
 Paypal Gateway: SOON
+MetaMask Address: `0xf208a562c5a93DEf8450b656c3dbc1d0a53BDE58`
