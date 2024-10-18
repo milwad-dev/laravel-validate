@@ -1,6 +1,6 @@
 {
   "name": "milwad/laravel-validate",
-  "description": "Write rules easy & fast",
+  "description": "The Laravel-Validate package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation logic.",
   "keywords": [
     "milwad",
     "laravel",
