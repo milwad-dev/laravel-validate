@@ -10,7 +10,7 @@ class ValidSnakeCaseTest extends BaseTest
     /**
      * Set up.
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
     }
@@ -24,7 +24,7 @@ class ValidSnakeCaseTest extends BaseTest
      */
     public function snake_case_is_valid()
     {
-        $rules = ['snake_case' => [new ValidSnakeCase()]];
+        $rules = ['snake_case' => [new ValidSnakeCase]];
         $data = ['snake_case' => 'milwad_dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidSnakeCaseTest extends BaseTest
      */
     public function snake_case_is_not_valid()
     {
-        $rules = ['snake_case' => [new ValidSnakeCase()]];
+        $rules = ['snake_case' => [new ValidSnakeCase]];
         $data = ['snake_case' => 'milwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

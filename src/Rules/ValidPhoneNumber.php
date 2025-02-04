@@ -7,9 +7,7 @@ use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
 class ValidPhoneNumber implements Rule
 {
-    public function __construct(protected ?string $code = null)
-    {
-    }
+    public function __construct(protected ?string $code = null) {}
 
     /**
      * Check phone number is valid.

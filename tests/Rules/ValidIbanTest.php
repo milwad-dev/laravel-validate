@@ -25,7 +25,7 @@ class ValidIbanTest extends BaseTest
      */
     public function iban_is_valid_without_country()
     {
-        $rules = ['iban' => [new ValidIban()]];
+        $rules = ['iban' => [new ValidIban]];
 
         // Valid IBANs from all countries
         $ibans = [
@@ -208,7 +208,7 @@ class ValidIbanTest extends BaseTest
      */
     public function iban_is_not_valid_without_country()
     {
-        $rules = ['iban' => [new ValidIban()]];
+        $rules = ['iban' => [new ValidIban]];
 
         // Some invalid IBANs
         $ibans = [

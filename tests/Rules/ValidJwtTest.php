@@ -24,7 +24,7 @@ class ValidJwtTest extends BaseTest
      */
     public function jwt_is_valid()
     {
-        $rules = ['jwt' => [new ValidJwt()]];
+        $rules = ['jwt' => [new ValidJwt]];
         $data = ['jwt' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidJwtTest extends BaseTest
      */
     public function jwt_is_not_valid()
     {
-        $rules = ['jwt' => [new ValidJwt()]];
+        $rules = ['jwt' => [new ValidJwt]];
         $data = ['jwt' => '1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

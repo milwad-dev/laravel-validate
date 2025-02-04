@@ -24,7 +24,7 @@ class ValidJalaliDateTest extends BaseTest
      */
     public function jalali_date_is_correct()
     {
-        $rules = ['jalali_date' => [new ValidJalaliDate()]];
+        $rules = ['jalali_date' => [new ValidJalaliDate]];
         $data = ['jalali_date' => '1384/8/25'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidJalaliDateTest extends BaseTest
      */
     public function jalali_date_is_not_correct()
     {
-        $rules = ['jalali_date' => [new ValidJalaliDate()]];
+        $rules = ['jalali_date' => [new ValidJalaliDate]];
         $data = ['jalali_date' => '2016/15/25'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -56,7 +56,7 @@ class ValidJalaliDateTest extends BaseTest
      */
     public function jalali_date_is_not_string()
     {
-        $rules = ['jalali_date' => [new ValidJalaliDate()]];
+        $rules = ['jalali_date' => [new ValidJalaliDate]];
         $data = ['jalali_date' => ['2016/15/25']];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

@@ -10,7 +10,7 @@ class ValidKebabCaseTest extends BaseTest
     /**
      * Set up.
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
     }
@@ -24,7 +24,7 @@ class ValidKebabCaseTest extends BaseTest
      */
     public function kebab_case_is_valid()
     {
-        $rules = ['kebab-case' => [new ValidKebabCase()]];
+        $rules = ['kebab-case' => [new ValidKebabCase]];
         $data = ['kebab-case' => 'milwad-dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidKebabCaseTest extends BaseTest
      */
     public function kebab_case_is_not_valid()
     {
-        $rules = ['kebab-case' => [new ValidKebabCase()]];
+        $rules = ['kebab-case' => [new ValidKebabCase]];
         $data = ['kebab-case' => 'milwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

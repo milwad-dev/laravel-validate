@@ -24,7 +24,7 @@ class ValidPascalCaseTest extends BaseTest
      */
     public function pascal_case_is_valid()
     {
-        $rules = ['pascal-case' => [new ValidPascalCase()]];
+        $rules = ['pascal-case' => [new ValidPascalCase]];
         $data = ['pascal-case' => 'MilwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidPascalCaseTest extends BaseTest
      */
     public function pascal_case_is_not_valid()
     {
-        $rules = ['pascal-case' => [new ValidPascalCase()]];
+        $rules = ['pascal-case' => [new ValidPascalCase]];
         $data = ['pascal-case' => 'milwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

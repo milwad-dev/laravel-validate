@@ -27,7 +27,7 @@ class ValidPhoneNumberTest extends BaseTest
     public function phone_number_is_valid()
     {
         $rules = [
-            'phone_number' => [new ValidPhoneNumber()],
+            'phone_number' => [new ValidPhoneNumber],
             'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
         ];
         $data = ['phone_number' => '09366000000', 'phone_ne' => '+22799123456'];

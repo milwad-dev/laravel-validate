@@ -10,7 +10,7 @@ class ValidCamelCaseTest extends BaseTest
     /**
      * Set up.
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
     }
@@ -24,7 +24,7 @@ class ValidCamelCaseTest extends BaseTest
      */
     public function camel_case_is_valid()
     {
-        $rules = ['camel_case' => [new ValidCamelCase()]];
+        $rules = ['camel_case' => [new ValidCamelCase]];
         $data = ['camel_case' => 'milwadDev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidCamelCaseTest extends BaseTest
      */
     public function camel_case_is_not_valid()
     {
-        $rules = ['camel_case' => [new ValidCamelCase()]];
+        $rules = ['camel_case' => [new ValidCamelCase]];
         $data = ['camel_case' => 'milwad_dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

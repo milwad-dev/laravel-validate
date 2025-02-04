@@ -24,7 +24,7 @@ class ValidCarNumberTest extends BaseTest
      */
     public function car_number_is_valid()
     {
-        $rules = ['car_number' => [new ValidCarNumber()]];
+        $rules = ['car_number' => [new ValidCarNumber]];
         $data = ['car_number' => 'KA01AB1234'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidCarNumberTest extends BaseTest
      */
     public function car_number_is_not_valid()
     {
-        $rules = ['car_number' => [new ValidCarNumber()]];
+        $rules = ['car_number' => [new ValidCarNumber]];
         $data = ['car_number' => '854128'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
