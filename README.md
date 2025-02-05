@@ -21,7 +21,6 @@ This package supports localization and can be used for most of the language. <br
 ***
 - ```PHP >= 8.0```
 - ```Laravel >= 9.0```
-- ```Morilog-Jalali >= 3.x```
 
 
 | GitHub    | L6                 | L7                 | L8                 | L9                 | L10                | L11               |
