@@ -5,6 +5,7 @@ namespace Milwad\LaravelValidate;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
 class LaravelValidateServiceProvider extends ServiceProvider
@@ -31,6 +32,10 @@ class LaravelValidateServiceProvider extends ServiceProvider
         $langs = File::directories(__DIR__.'/lang');
 
         foreach ($langs as $lang) {
+            $lang = Str::after($lang, 'lang');
+            $lang = Str::replace('\\', '', $lang);
+            $lang = Str::replace('/', '', $lang);
+
             $this->publishes([
                 __DIR__."/lang/$lang" => lang_path($lang),
             ], "validate-lang-$lang");
