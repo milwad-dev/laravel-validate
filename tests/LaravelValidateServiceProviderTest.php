@@ -2,6 +2,8 @@
 
 namespace Milwad\LaravelValidate\Tests;
 
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use Milwad\LaravelValidate\LaravelValidateServiceProvider;
 
 class LaravelValidateServiceProviderTest extends TestCase
@@ -11,9 +13,13 @@ class LaravelValidateServiceProviderTest extends TestCase
      */
     public function test_all_lang_folders_publish_successfully()
     {
-        $langs = (new LaravelValidateServiceProvider(app()))->langs;
+        $langs = File::directories(__DIR__ . '/../src/lang');
 
         foreach ($langs as $lang) {
+            $lang = Str::after($lang, "lang");
+            $lang = Str::replace('\\', '', $lang);
+            $lang = Str::replace('/', '', $lang);
+
             $this->artisan('vendor:publish', [
                 '--tag' => "validate-lang-$lang",
             ]);

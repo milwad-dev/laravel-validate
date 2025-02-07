@@ -19,23 +19,29 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\TRPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ZHPhoneValidator;
 
 return [
+/*
+ * Mapping of country codes to their respective phone number validator classes.
+ * Each validator enforces country-specific phone number formatting and validation rules.
+ *
+ * You can add custom country phone validator.
+ */
     'phone-country' => [
-        'DE' => DEPhoneValidator::class,
-        'EN' => ENPhoneValidator::class,
-        'ES' => ESPhoneValidator::class,
-        'FR' => FRPhoneValidator::class,
-        'GR' => GRPhoneValidator::class,
-        'ID' => IDPhoneValidator::class,
-        'IN' => INPhoneValidator::class,
-        'IR' => IRPhoneValidator::class,
-        'IT' => ITPhoneValidator::class,
-        'JA' => JAPhoneValidator::class,
-        'KO' => KOPhoneValidator::class,
-        'NE' => NEPhoneValidator::class,
-        'RU' => RUPhoneValidator::class,
-        'SA' => SAPhoneValidator::class,
-        'SE' => SEPhoneValidator::class,
-        'TR' => TRPhoneValidator::class,
-        'ZH' => ZHPhoneValidator::class,
+        'DE' => DEPhoneValidator::class, // Germany
+        'EN' => ENPhoneValidator::class, // England
+        'ES' => ESPhoneValidator::class, // Spain
+        'FR' => FRPhoneValidator::class, // France
+        'GR' => GRPhoneValidator::class, // Greece
+        'ID' => IDPhoneValidator::class, // Indonesia
+        'IN' => INPhoneValidator::class, // India
+        'IR' => IRPhoneValidator::class, // Iran
+        'IT' => ITPhoneValidator::class, // Italy
+        'JA' => JAPhoneValidator::class, // Japan
+        'KO' => KOPhoneValidator::class, // South Korea
+        'NE' => NEPhoneValidator::class, // Netherlands
+        'RU' => RUPhoneValidator::class, // Russia
+        'SA' => SAPhoneValidator::class, // Saudi Arabia
+        'SE' => SEPhoneValidator::class, // Sweden
+        'TR' => TRPhoneValidator::class, // Turkey
+        'ZH' => ZHPhoneValidator::class, // China
     ],
 ];
