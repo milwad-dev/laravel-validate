@@ -1,0 +1,33 @@
+<?php
+
+namespace Milwad\LaravelValidate\Tests\Rules;
+
+use Milwad\LaravelValidate\Rules\ValidHexColor;
+use Milwad\LaravelValidate\Tests\TestCase;
+
+class ValidHexColorTest extends TestCase
+{
+    /**
+     * Test text is valid hex code.
+     */
+    public function test_text_is_valid_hex_code()
+    {
+        $rules = ['hex_color' => [new ValidHexColor]];
+        $data = ['hex_color' => '#fcba03'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test text is not valid hex code.
+     */
+    public function test_text_is_not_valid_hex_code()
+    {
+        $rules = ['hex_color' => [new ValidHexColor]];
+        $data = ['hex_color' => 'laravel-framework'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+}

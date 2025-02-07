@@ -1,0 +1,33 @@
+<?php
+
+namespace Milwad\LaravelValidate\Tests\Rules;
+
+use Milwad\LaravelValidate\Rules\ValidJwt;
+use Milwad\LaravelValidate\Tests\TestCase;
+
+class ValidJwtTest extends TestCase
+{
+    /**
+     * Test jwt is valid.
+     */
+    public function test_jwt_is_valid()
+    {
+        $rules = ['jwt' => [new ValidJwt]];
+        $data = ['jwt' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test jwt is not valid.
+     */
+    public function test_jwt_is_not_valid()
+    {
+        $rules = ['jwt' => [new ValidJwt]];
+        $data = ['jwt' => '1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+}

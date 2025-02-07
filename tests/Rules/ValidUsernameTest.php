@@ -1,0 +1,33 @@
+<?php
+
+namespace Milwad\LaravelValidate\Tests\Rules;
+
+use Milwad\LaravelValidate\Rules\ValidUsername;
+use Milwad\LaravelValidate\Tests\TestCase;
+
+class ValidUsernameTest extends TestCase
+{
+    /**
+     * Test username is valid.
+     */
+    public function test_username_is_valid()
+    {
+        $rules = ['username' => [new ValidUsername]];
+        $data = ['username' => 'milwad'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test username is not valid.
+     */
+    public function test_username_is_not_valid()
+    {
+        $rules = ['username' => [new ValidUsername]];
+        $data = ['username' => 'milwad!@!'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+}

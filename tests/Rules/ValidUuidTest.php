@@ -1,0 +1,33 @@
+<?php
+
+namespace Milwad\LaravelValidate\Tests\Rules;
+
+use Milwad\LaravelValidate\Rules\ValidUuid;
+use Milwad\LaravelValidate\Tests\TestCase;
+
+class ValidUuidTest extends TestCase
+{
+    /**
+     * Test uuid is valid.
+     */
+    public function test_uuid_is_valid()
+    {
+        $rules = ['uuid' => [new ValidUuid]];
+        $data = ['uuid' => '123e4567-e89b-12d3-a456-426655440000'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test uuid is not valid.
+     */
+    public function test_uuid_is_not_valid()
+    {
+        $rules = ['uuid' => [new ValidUuid]];
+        $data = ['uuid' => '5050'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+}

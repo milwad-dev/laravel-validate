@@ -8,10 +8,6 @@ class LaravelValidateServiceProviderTestCase extends TestCase
 {
     /**
      * Test all lang folders publish successfully.
-     *
-     * @test
-     *
-     * @return void
      */
     public function test_all_lang_folders_publish_successfully()
     {
@@ -28,10 +24,6 @@ class LaravelValidateServiceProviderTestCase extends TestCase
 
     /**
      * Test config file publish successful.
-     *
-     * @test
-     *
-     * @return void
      */
     public function test_config_file_publish_successful()
     {

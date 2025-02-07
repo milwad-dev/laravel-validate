@@ -1,0 +1,33 @@
+<?php
+
+namespace Milwad\LaravelValidate\Tests\Rules;
+
+use Milwad\LaravelValidate\Rules\ValidDuplicateCharacter;
+use Milwad\LaravelValidate\Tests\TestCase;
+
+class ValidDuplicateCharacterTest extends TestCase
+{
+    /**
+     * Test duplicate characters is valid.
+     */
+    public function test_duplicate_characters_is_valid()
+    {
+        $rules = ['duplicate_number' => [new ValidDuplicateCharacter]];
+        $data = ['duplicate_number' => '1,2,3,4,5,6,7,8,9'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test duplicate characters is not valid.
+     */
+    public function test_duplicate_characters_is_not_valid()
+    {
+        $rules = ['duplicate_number' => [new ValidDuplicateCharacter]];
+        $data = ['duplicate_number' => '1,2,2,3,3,3,4,5,6,7,8,9'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+}
