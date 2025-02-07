@@ -65,7 +65,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
             $rules = File::files(__DIR__.'/Rules');
 
             foreach ($rules as $rule) {
-                $className = 'Milwad\\LaravelValidate\\Rules\\' . $rule->getBasename('.php');
+                $className = 'Milwad\\LaravelValidate\\Rules\\'.$rule->getBasename('.php');
 
                 Validator::extend(
                     $rule->getFilenameWithoutExtension(),
