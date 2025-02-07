@@ -8,14 +8,6 @@ use Milwad\LaravelValidate\Tests\TestCase;
 class ValidIranPostalCodeTestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test postal code is valid.
      *
      * @test

@@ -8,14 +8,6 @@ use Milwad\LaravelValidate\Tests\TestCase;
 class ValidCartNumberIranTestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test cart number iran is valid.
      *
      * @test

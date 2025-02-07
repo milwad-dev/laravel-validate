@@ -8,14 +8,6 @@ use Milwad\LaravelValidate\Tests\TestCase;
 class ValidUlidTestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test ulid is valid.
      *
      * @test

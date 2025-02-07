@@ -8,14 +8,6 @@ use Milwad\LaravelValidate\Tests\TestCase;
 class ValidUrlTestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test url is valid.
      *
      * @test

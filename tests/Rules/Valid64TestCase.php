@@ -8,14 +8,6 @@ use Milwad\LaravelValidate\Tests\TestCase;
 class Valid64TestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test base64 is valid.
      *
      * @test

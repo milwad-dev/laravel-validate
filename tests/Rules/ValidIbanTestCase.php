@@ -9,14 +9,6 @@ use Milwad\LaravelValidate\Utils\Country;
 class ValidIbanTestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test IBAN is valid without passing country.
      *
      * @test

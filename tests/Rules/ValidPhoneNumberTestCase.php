@@ -10,14 +10,6 @@ use Milwad\LaravelValidate\Utils\Country;
 class ValidPhoneNumberTestCase extends TestCase
 {
     /**
-     * Set up.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    /**
      * Test phone number is valid.
      *
      * @test
