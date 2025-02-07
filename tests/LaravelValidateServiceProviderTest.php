@@ -4,7 +4,7 @@ namespace Milwad\LaravelValidate\Tests;
 
 use Milwad\LaravelValidate\LaravelValidateServiceProvider;
 
-class LaravelValidateServiceProviderTestCase extends TestCase
+class LaravelValidateServiceProviderTest extends TestCase
 {
     /**
      * Test all lang folders publish successfully.
