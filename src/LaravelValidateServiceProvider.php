@@ -2,43 +2,12 @@
 
 namespace Milwad\LaravelValidate;
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
 class LaravelValidateServiceProvider extends ServiceProvider
 {
-    /**
-     * Languages names.
-     *
-     * @var array|string[]
-     */
-    public array $langs = [
-        'ar',
-        'az',
-        'bn',
-        'ca',
-        'de',
-        'el',
-        'en',
-        'es',
-        'fa',
-        'fr',
-        'hi',
-        'id',
-        'It',
-        'ja',
-        'ko',
-        'ku_so',
-        'mk',
-        'pt_BR',
-        'ru',
-        'si',
-        'sv',
-        'tr',
-        'uk',
-        'zh_CN',
-    ];
-
     /**
      * Register files.
      */
@@ -56,9 +25,11 @@ class LaravelValidateServiceProvider extends ServiceProvider
     /**
      * Publish lang files.
      */
-    private function publishLangFiles(): void
+    protected function publishLangFiles(): void
     {
-        foreach ($this->langs as $lang) {
+        $langs = File::directories(__DIR__.'/lang');
+
+        foreach ($langs as $lang) {
             $this->publishes([
                 __DIR__."/lang/$lang" => lang_path($lang),
             ], "validate-lang-$lang");
@@ -68,7 +39,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
     /**
      * Publish config file.
      */
-    private function publishConfigFile(): void
+    protected function publishConfigFile(): void
     {
         $this->publishes([
             __DIR__.'/../config/laravel-validate.php' => config_path('laravel-validate.php'),
