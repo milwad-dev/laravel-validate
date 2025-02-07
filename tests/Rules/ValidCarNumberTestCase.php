@@ -14,7 +14,7 @@ class ValidCarNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function car_number_is_valid()
+    public function test_car_number_is_valid()
     {
         $rules = ['car_number' => [new ValidCarNumber]];
         $data = ['car_number' => 'KA01AB1234'];
@@ -30,7 +30,7 @@ class ValidCarNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function car_number_is_not_valid()
+    public function test_car_number_is_not_valid()
     {
         $rules = ['car_number' => [new ValidCarNumber]];
         $data = ['car_number' => '854128'];

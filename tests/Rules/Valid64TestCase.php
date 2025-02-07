@@ -9,12 +9,8 @@ class Valid64TestCase extends TestCase
 {
     /**
      * Test base64 is valid.
-     *
-     * @test
-     *
-     * @return void
      */
-    public function base64_is_valid()
+    public function test_base64_is_valid(): void
     {
         $rules = ['base64' => [new ValidBase64]];
         $data = ['base64' => 'bWlsd2Fk']; // milwad
@@ -25,12 +21,8 @@ class Valid64TestCase extends TestCase
 
     /**
      * Test base64 is not valid.
-     *
-     * @test
-     *
-     * @return void
      */
-    public function base64_is_not_valid()
+    public function test_base64_is_not_valid(): void
     {
         $rules = ['base64' => [new ValidBase64]];
         $data = ['base64' => 'milwad'];

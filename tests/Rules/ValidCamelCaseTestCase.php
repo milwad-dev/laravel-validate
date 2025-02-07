@@ -14,7 +14,7 @@ class ValidCamelCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function camel_case_is_valid()
+    public function test_camel_case_is_valid()
     {
         $rules = ['camel_case' => [new ValidCamelCase]];
         $data = ['camel_case' => 'milwadDev'];
@@ -30,7 +30,7 @@ class ValidCamelCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function camel_case_is_not_valid()
+    public function test_camel_case_is_not_valid()
     {
         $rules = ['camel_case' => [new ValidCamelCase]];
         $data = ['camel_case' => 'milwad_dev'];

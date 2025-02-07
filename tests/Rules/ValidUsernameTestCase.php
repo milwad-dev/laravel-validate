@@ -14,7 +14,7 @@ class ValidUsernameTestCase extends TestCase
      *
      * @return void
      */
-    public function username_is_valid()
+    public function test_username_is_valid()
     {
         $rules = ['username' => [new ValidUsername]];
         $data = ['username' => 'milwad'];
@@ -30,7 +30,7 @@ class ValidUsernameTestCase extends TestCase
      *
      * @return void
      */
-    public function username_is_not_valid()
+    public function test_username_is_not_valid()
     {
         $rules = ['username' => [new ValidUsername]];
         $data = ['username' => 'milwad!@!'];

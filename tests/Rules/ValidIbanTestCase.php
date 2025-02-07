@@ -15,7 +15,7 @@ class ValidIbanTestCase extends TestCase
      *
      * @return void
      */
-    public function iban_is_valid_without_country()
+    public function test_iban_is_valid_without_country()
     {
         $rules = ['iban' => [new ValidIban]];
 
@@ -147,7 +147,7 @@ class ValidIbanTestCase extends TestCase
      *
      * @return void
      */
-    public function iban_is_valid_with_a_country()
+    public function test_iban_is_valid_with_a_country()
     {
         $rules = ['iban' => [new ValidIban(Country::IRAN)]];
 
@@ -172,7 +172,7 @@ class ValidIbanTestCase extends TestCase
      *
      * @return void
      */
-    public function iban_is_valid_with_multiple_countries()
+    public function test_iban_is_valid_with_multiple_countries()
     {
         $rules = ['iban' => [new ValidIban(Country::IRAN, Country::ICELAND)]];
 
@@ -198,7 +198,7 @@ class ValidIbanTestCase extends TestCase
      *
      * @return void
      */
-    public function iban_is_not_valid_without_country()
+    public function test_iban_is_not_valid_without_country()
     {
         $rules = ['iban' => [new ValidIban]];
 
@@ -223,7 +223,7 @@ class ValidIbanTestCase extends TestCase
      *
      * @return void
      */
-    public function iban_is_not_valid_with_a_country()
+    public function test_iban_is_not_valid_with_a_country()
     {
         $rules = ['iban' => [new ValidIban(Country::ICELAND)]];
 
@@ -248,7 +248,7 @@ class ValidIbanTestCase extends TestCase
      *
      * @return void
      */
-    public function iban_is_not_valid_with_multiple_countries()
+    public function test_iban_is_not_valid_with_multiple_countries()
     {
         $rules = ['iban' => [new ValidIban([Country::IRAQ, Country::UKRAINE])]];
 

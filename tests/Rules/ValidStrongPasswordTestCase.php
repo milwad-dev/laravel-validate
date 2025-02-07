@@ -14,7 +14,7 @@ class ValidStrongPasswordTestCase extends TestCase
      *
      * @return void
      */
-    public function password_is_strong()
+    public function test_password_is_strong()
     {
         $rules = ['strong_password' => [new ValidStrongPassword]];
         $data = ['strong_password' => 'Milwad123!'];
@@ -30,7 +30,7 @@ class ValidStrongPasswordTestCase extends TestCase
      *
      * @return void
      */
-    public function password_is_not_strong()
+    public function test_password_is_not_strong()
     {
         $rules = ['strong_password' => [new ValidStrongPassword]];
         $data = ['strong_password' => 'Milwad123'];

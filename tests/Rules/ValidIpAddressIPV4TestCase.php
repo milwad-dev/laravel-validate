@@ -14,7 +14,7 @@ class ValidIpAddressIPV4TestCase extends TestCase
      *
      * @return void
      */
-    public function ipv4_address_is_valid()
+    public function test_ipv4_address_is_valid()
     {
         $rules = ['ipv4_address' => [new ValidIpAddressIPV4]];
         $data = ['ipv4_address' => '129.144.50.56'];
@@ -30,7 +30,7 @@ class ValidIpAddressIPV4TestCase extends TestCase
      *
      * @return void
      */
-    public function ipv4_address_is_not_valid()
+    public function test_ipv4_address_is_not_valid()
     {
         $rules = ['ipv4_address' => [new ValidIpAddressIPV4]];
         $data = ['ipv4_address' => '123456789'];

@@ -14,7 +14,7 @@ class ValidHtmlTagTestCase extends TestCase
      *
      * @return void
      */
-    public function html_tag_is_valid()
+    public function test_html_tag_is_valid()
     {
         $rules = ['html_tag' => [new ValidHtmlTag]];
         $data = ['html_tag' => '<h1></h1>'];
@@ -30,7 +30,7 @@ class ValidHtmlTagTestCase extends TestCase
      *
      * @return void
      */
-    public function html_tag_is_not_valid()
+    public function test_html_tag_is_not_valid()
     {
         $rules = ['html_tag' => [new ValidHtmlTag]];
         $data = ['html_tag' => 'milwad-dev'];

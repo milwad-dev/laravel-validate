@@ -11,12 +11,10 @@ class ValidPhoneNumberTestCase extends TestCase
 {
     /**
      * Test phone number is valid.
-     *
-     * @test
-     *
-     * @return void
+
      */
-    public function phone_number_is_valid()
+     */
+    public function test_phone_number_is_valid()
     {
         $rules = [
             'phone_number' => [new ValidPhoneNumber],
@@ -35,7 +33,7 @@ class ValidPhoneNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function phone_number_is_not_valid()
+    public function test_phone_number_is_not_valid()
     {
         $rules = [
             'phone_number' => [new ValidPhoneNumber],
@@ -57,7 +55,7 @@ class ValidPhoneNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function all_phone_number_is_valid_by_specific_code()
+    public function test_all_phone_number_is_valid_by_specific_code()
     {
         $rules = [
             'phone_ir' => [new ValidPhoneNumber(Country::IRAN)],
@@ -109,7 +107,7 @@ class ValidPhoneNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function if_phone_number_validate_method_is_not_exists()
+    public function test_if_phone_number_validate_method_is_not_exists()
     {
         $this->expectException(BadMethodCallException::class);
         $this->expectExceptionMessage("Validator method for 'AZ' does not exist.");

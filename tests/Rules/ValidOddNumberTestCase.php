@@ -14,7 +14,7 @@ class ValidOddNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function number_is_odd()
+    public function test_number_is_odd()
     {
         $rules = ['hashtag' => [new ValidOddNumber]];
         $data = ['hashtag' => '1025'];
@@ -30,7 +30,7 @@ class ValidOddNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function number_is_not_odd()
+    public function test_number_is_not_odd()
     {
         $rules = ['hashtag' => [new ValidOddNumber]];
         $data = ['hashtag' => '1024'];

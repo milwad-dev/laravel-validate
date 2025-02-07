@@ -14,7 +14,7 @@ class ValidUlidTestCase extends TestCase
      *
      * @return void
      */
-    public function ulid_is_valid()
+    public function test_ulid_is_valid()
     {
         $rules = ['ulid' => [new ValidUlid]];
         $data = ['ulid' => '01ARZ3NDEKTSV4RRFFQ69G5FAV'];
@@ -30,7 +30,7 @@ class ValidUlidTestCase extends TestCase
      *
      * @return void
      */
-    public function ulid_is_not_valid()
+    public function test_ulid_is_not_valid()
     {
         $rules = ['ulid' => [new ValidUlid]];
         $data = ['ulid' => '01ARZ3NDEKTSV4RRFFQ69G5FA'];

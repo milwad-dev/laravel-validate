@@ -14,7 +14,7 @@ class ValidPascalCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function pascal_case_is_valid()
+    public function test_pascal_case_is_valid()
     {
         $rules = ['pascal-case' => [new ValidPascalCase]];
         $data = ['pascal-case' => 'MilwadDev'];
@@ -30,7 +30,7 @@ class ValidPascalCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function pascal_case_is_not_valid()
+    public function test_pascal_case_is_not_valid()
     {
         $rules = ['pascal-case' => [new ValidPascalCase]];
         $data = ['pascal-case' => 'milwadDev'];

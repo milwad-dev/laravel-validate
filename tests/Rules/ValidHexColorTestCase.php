@@ -14,7 +14,7 @@ class ValidHexColorTestCase extends TestCase
      *
      * @return void
      */
-    public function text_is_valid_hex_code()
+    public function test_text_is_valid_hex_code()
     {
         $rules = ['hex_color' => [new ValidHexColor]];
         $data = ['hex_color' => '#fcba03'];
@@ -30,7 +30,7 @@ class ValidHexColorTestCase extends TestCase
      *
      * @return void
      */
-    public function text_is_not_valid_hex_code()
+    public function test_text_is_not_valid_hex_code()
     {
         $rules = ['hex_color' => [new ValidHexColor]];
         $data = ['hex_color' => 'laravel-framework'];

@@ -14,7 +14,7 @@ class ValidCapitalCharWithNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function capital_char_with_number_is_valid()
+    public function test_capital_char_with_number_is_valid()
     {
         $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber]];
         $data = ['capital_char_with_number' => 'MILWAD-84'];
@@ -30,7 +30,7 @@ class ValidCapitalCharWithNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function capital_char_with_number_is_not_valid()
+    public function test_capital_char_with_number_is_not_valid()
     {
         $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber]];
         $data = ['capital_char_with_number' => 'Milwad-84'];

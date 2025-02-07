@@ -14,7 +14,7 @@ class ValidNameDaysWeekTestCase extends TestCase
      *
      * @return void
      */
-    public function name_day_is_valid()
+    public function test_name_day_is_valid()
     {
         $rules = ['name_day' => [new ValidNameDaysWeek]];
         $data = ['name_day' => 'monday'];
@@ -30,7 +30,7 @@ class ValidNameDaysWeekTestCase extends TestCase
      *
      * @return void
      */
-    public function name_day_is_not_valid()
+    public function test_name_day_is_not_valid()
     {
         $rules = ['name_day' => [new ValidNameDaysWeek]];
         $data = ['name_day' => 'day'];

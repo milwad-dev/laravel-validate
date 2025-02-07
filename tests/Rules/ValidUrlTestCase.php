@@ -14,7 +14,7 @@ class ValidUrlTestCase extends TestCase
      *
      * @return void
      */
-    public function url_is_valid()
+    public function test_url_is_valid()
     {
         $rules = ['url' => [new ValidUrl]];
         $data = ['url' => 'https://github.com/milwad-dev'];
@@ -30,7 +30,7 @@ class ValidUrlTestCase extends TestCase
      *
      * @return void
      */
-    public function url_is_nor_valid()
+    public function test_url_is_nor_valid()
     {
         $rules = ['url' => [new ValidUrl]];
         $data = ['url' => 'milwad-dev'];

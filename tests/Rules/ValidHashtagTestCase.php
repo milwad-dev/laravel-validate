@@ -14,7 +14,7 @@ class ValidHashtagTestCase extends TestCase
      *
      * @return void
      */
-    public function text_has_hashtag()
+    public function test_text_has_hashtag()
     {
         $rules = ['hashtag' => [new ValidHashtag]];
         $data = ['hashtag' => '#laravel'];
@@ -30,7 +30,7 @@ class ValidHashtagTestCase extends TestCase
      *
      * @return void
      */
-    public function text_has_no_hashtag()
+    public function test_text_has_no_hashtag()
     {
         $rules = ['hashtag' => [new ValidHashtag]];
         $data = ['hashtag' => 'laravel'];

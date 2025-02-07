@@ -14,7 +14,7 @@ class ValidBitcoinAddressTestCase extends TestCase
      *
      * @return void
      */
-    public function bitcoin_address_is_valid()
+    public function test_bitcoin_address_is_valid()
     {
         $rules = ['bitcoin_address' => [new ValidBitcoinAddress]];
         $data = ['bitcoin_address' => '1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY'];
@@ -30,7 +30,7 @@ class ValidBitcoinAddressTestCase extends TestCase
      *
      * @return void
      */
-    public function bitcoin_address_is_not_valid()
+    public function test_bitcoin_address_is_not_valid()
     {
         $rules = ['bitcoin_address' => [new ValidBitcoinAddress]];
         $data = ['bitcoin_address' => 'loremipsum'];

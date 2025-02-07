@@ -14,7 +14,7 @@ class ValidSnakeCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function snake_case_is_valid()
+    public function test_snake_case_is_valid()
     {
         $rules = ['snake_case' => [new ValidSnakeCase]];
         $data = ['snake_case' => 'milwad_dev'];
@@ -30,7 +30,7 @@ class ValidSnakeCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function snake_case_is_not_valid()
+    public function test_snake_case_is_not_valid()
     {
         $rules = ['snake_case' => [new ValidSnakeCase]];
         $data = ['snake_case' => 'milwadDev'];

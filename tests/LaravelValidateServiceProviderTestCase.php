@@ -13,7 +13,7 @@ class LaravelValidateServiceProviderTestCase extends TestCase
      *
      * @return void
      */
-    public function all_lang_folders_publish_successfully()
+    public function test_all_lang_folders_publish_successfully()
     {
         $langs = (new LaravelValidateServiceProvider(app()))->langs;
 
@@ -33,7 +33,7 @@ class LaravelValidateServiceProviderTestCase extends TestCase
      *
      * @return void
      */
-    public function config_file_publish_successful()
+    public function test_config_file_publish_successful()
     {
         $this->withoutExceptionHandling();
         $this->artisan('vendor:publish', [

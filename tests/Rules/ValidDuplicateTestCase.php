@@ -14,7 +14,7 @@ class ValidDuplicateTestCase extends TestCase
      *
      * @return void
      */
-    public function duplicate_number_is_valid()
+    public function test_duplicate_number_is_valid()
     {
         $rules = ['duplicate' => [new ValidDuplicate]];
         $data = ['duplicate' => 123456];
@@ -30,7 +30,7 @@ class ValidDuplicateTestCase extends TestCase
      *
      * @return void
      */
-    public function duplicate_number_is_not_valid()
+    public function test_duplicate_number_is_not_valid()
     {
         $rules = ['duplicate' => [new ValidDuplicate]];
         $data = ['duplicate' => 1123456];
@@ -46,7 +46,7 @@ class ValidDuplicateTestCase extends TestCase
      *
      * @return void
      */
-    public function duplicate_string_is_valid()
+    public function test_duplicate_string_is_valid()
     {
         $rules = ['duplicate' => [new ValidDuplicate]];
         $data = ['duplicate' => 'milwad'];
@@ -62,7 +62,7 @@ class ValidDuplicateTestCase extends TestCase
      *
      * @return void
      */
-    public function duplicate_string_is_not_valid()
+    public function test_duplicate_string_is_not_valid()
     {
         $rules = ['duplicate' => [new ValidDuplicate]];
         $data = ['duplicate' => 'millwad'];

@@ -14,7 +14,7 @@ class ValidCartNumberIranTestCase extends TestCase
      *
      * @return void
      */
-    public function cart_number_iran_is_valid()
+    public function test_cart_number_iran_is_valid()
     {
         $rules = ['cart_number_iran' => [new ValidCartNumberIran]];
         $data = ['cart_number_iran' => '6280231331655562'];
@@ -30,7 +30,7 @@ class ValidCartNumberIranTestCase extends TestCase
      *
      * @return void
      */
-    public function cart_number_iran_is_invalid()
+    public function test_cart_number_iran_is_invalid()
     {
         $rules = ['cart_number_iran' => [new ValidCartNumberIran]];
         $data = ['cart_number_iran' => '1234123412341234'];

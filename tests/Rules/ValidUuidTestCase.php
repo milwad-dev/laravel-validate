@@ -14,7 +14,7 @@ class ValidUuidTestCase extends TestCase
      *
      * @return void
      */
-    public function uuid_is_valid()
+    public function test_uuid_is_valid()
     {
         $rules = ['uuid' => [new ValidUuid]];
         $data = ['uuid' => '123e4567-e89b-12d3-a456-426655440000'];
@@ -30,7 +30,7 @@ class ValidUuidTestCase extends TestCase
      *
      * @return void
      */
-    public function uuid_is_not_valid()
+    public function test_uuid_is_not_valid()
     {
         $rules = ['uuid' => [new ValidUuid]];
         $data = ['uuid' => '5050'];

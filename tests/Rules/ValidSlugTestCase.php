@@ -14,7 +14,7 @@ class ValidSlugTestCase extends TestCase
      *
      * @return void
      */
-    public function slug_is_valid()
+    public function test_slug_is_valid()
     {
         $rules = ['slug' => [new ValidSlug]];
         $data = ['slug' => 'milwad-dev'];
@@ -30,7 +30,7 @@ class ValidSlugTestCase extends TestCase
      *
      * @return void
      */
-    public function slug_is_not_valid()
+    public function test_slug_is_not_valid()
     {
         $rules = ['slug' => [new ValidSlug]];
         $data = ['slug' => 'milwad_dev'];

@@ -14,7 +14,7 @@ class ValidNationalCardTestCase extends TestCase
      *
      * @return void
      */
-    public function national_code_is_valid()
+    public function test_national_code_is_valid()
     {
         $rules = ['national_card' => [new ValidNationalCard]];
         $data = ['national_card' => '0151016437'];
@@ -30,7 +30,7 @@ class ValidNationalCardTestCase extends TestCase
      *
      * @return void
      */
-    public function national_code_is_not_valid()
+    public function test_national_code_is_not_valid()
     {
         $rules = ['national_card' => [new ValidNationalCard]];
 

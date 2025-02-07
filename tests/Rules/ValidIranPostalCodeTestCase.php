@@ -14,7 +14,7 @@ class ValidIranPostalCodeTestCase extends TestCase
      *
      * @return void
      */
-    public function postal_code_is_valid()
+    public function test_postal_code_is_valid()
     {
         $rules = ['postal_code' => [new ValidIranPostalCode]];
         $data = ['postal_code' => '3354355599'];
@@ -30,7 +30,7 @@ class ValidIranPostalCodeTestCase extends TestCase
      *
      * @return void
      */
-    public function postal_code_is_not_valid()
+    public function test_postal_code_is_not_valid()
     {
         $rules = ['postal_code' => [new ValidIranPostalCode]];
         $data = ['postal_code' => '1111111111'];

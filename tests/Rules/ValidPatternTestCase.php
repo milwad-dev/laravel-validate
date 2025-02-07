@@ -14,7 +14,7 @@ class ValidPatternTestCase extends TestCase
      *
      * @return void
      */
-    public function pattern_is_valid()
+    public function test_pattern_is_valid()
     {
         $rules = ['numbers' => [new ValidPattern(4)]];
         $data = ['numbers' => '4444-4444-4444'];
@@ -30,7 +30,7 @@ class ValidPatternTestCase extends TestCase
      *
      * @return void
      */
-    public function pattern_is_not_valid()
+    public function test_pattern_is_not_valid()
     {
         $rules = ['numbers' => [new ValidPattern(4)]];
         $data = ['numbers' => '44444-4444-44444'];

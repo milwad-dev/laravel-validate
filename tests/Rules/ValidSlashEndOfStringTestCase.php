@@ -14,7 +14,7 @@ class ValidSlashEndOfStringTestCase extends TestCase
      *
      * @return void
      */
-    public function slash_end_of_string_is_valid()
+    public function test_slash_end_of_string_is_valid()
     {
         $rules = ['slash_string' => [new ValidSlashEndOfString]];
         $data = ['slash_string' => 'milwad/'];
@@ -30,7 +30,7 @@ class ValidSlashEndOfStringTestCase extends TestCase
      *
      * @return void
      */
-    public function slash_end_of_string_is_not_valid()
+    public function test_slash_end_of_string_is_not_valid()
     {
         $rules = ['slash_string' => [new ValidSlashEndOfString]];
         $data = ['slash_string' => 'milwad'];

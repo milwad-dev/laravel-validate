@@ -14,7 +14,7 @@ class ValidKebabCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function kebab_case_is_valid()
+    public function test_kebab_case_is_valid()
     {
         $rules = ['kebab-case' => [new ValidKebabCase]];
         $data = ['kebab-case' => 'milwad-dev'];
@@ -30,7 +30,7 @@ class ValidKebabCaseTestCase extends TestCase
      *
      * @return void
      */
-    public function kebab_case_is_not_valid()
+    public function test_kebab_case_is_not_valid()
     {
         $rules = ['kebab-case' => [new ValidKebabCase]];
         $data = ['kebab-case' => 'milwadDev'];

@@ -14,7 +14,7 @@ class ValidPortTestCase extends TestCase
      *
      * @return void
      */
-    public function port_is_valid()
+    public function test_port_is_valid()
     {
         $rules = ['port' => [new ValidPort]];
         $data = ['port' => '8080'];
@@ -30,7 +30,7 @@ class ValidPortTestCase extends TestCase
      *
      * @return void
      */
-    public function port_is_not_valid()
+    public function test_port_is_not_valid()
     {
         $rules = ['port' => [new ValidPort]];
         $data = ['port' => '158754'];

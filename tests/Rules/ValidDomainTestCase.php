@@ -14,7 +14,7 @@ class ValidDomainTestCase extends TestCase
      *
      * @return void
      */
-    public function domain_is_valid()
+    public function test_domain_is_valid()
     {
         $rules = ['domain' => [new ValidDomain]];
         $data = ['domain' => 'github.com'];
@@ -30,7 +30,7 @@ class ValidDomainTestCase extends TestCase
      *
      * @return void
      */
-    public function domain_is_not_valid()
+    public function test_domain_is_not_valid()
     {
         $rules = ['domain' => [new ValidDomain]];
         $data = ['domain' => 'github/com'];

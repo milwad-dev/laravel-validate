@@ -14,7 +14,7 @@ class ValidVatIdTestCase extends TestCase
      *
      * @return void
      */
-    public function vatid_is_valid()
+    public function test_vatid_is_valid()
     {
         $rules = ['vat_id' => [new ValidVatId]];
         $data = ['vat_id' => 'EL123456789'];
@@ -30,7 +30,7 @@ class ValidVatIdTestCase extends TestCase
      *
      * @return void
      */
-    public function vatid_is_not_valid()
+    public function test_vatid_is_not_valid()
     {
         $rules = ['vat_id' => [new ValidVatId]];
         $data = ['vat_id' => 'EL123456789123678912'];
@@ -46,7 +46,7 @@ class ValidVatIdTestCase extends TestCase
      *
      * @return void
      */
-    public function vat_is_to_long_valid()
+    public function test_vat_is_to_long_valid()
     {
         $rules = ['vat_id' => [new ValidVatId]];
         $data = ['vat_id' => 'EL1234567891236789123'];

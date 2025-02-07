@@ -14,7 +14,7 @@ class ValidDiscordUsernameTestCase extends TestCase
      *
      * @return void
      */
-    public function discord_username_is_valid()
+    public function test_discord_username_is_valid()
     {
         $rules = ['discord_username' => [new ValidDiscordUsername]];
         $data = ['discord_username' => 'Milwad#2134'];
@@ -30,7 +30,7 @@ class ValidDiscordUsernameTestCase extends TestCase
      *
      * @return void
      */
-    public function discord_username_is_not_valid()
+    public function test_discord_username_is_not_valid()
     {
         $rules = ['discord_username' => [new ValidDiscordUsername]];
         $data = ['discord_username' => '#2134'];

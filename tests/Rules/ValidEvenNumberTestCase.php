@@ -14,7 +14,7 @@ class ValidEvenNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function check_number_is_even()
+    public function test_check_number_is_even()
     {
         $rules = ['even_number' => [new ValidEvenNumber]];
         $data = ['even_number' => '1024'];
@@ -30,7 +30,7 @@ class ValidEvenNumberTestCase extends TestCase
      *
      * @return void
      */
-    public function check_number_is_not_even()
+    public function test_check_number_is_not_even()
     {
         $rules = ['even_number' => [new ValidEvenNumber]];
         $data = ['even_number' => '1025'];
