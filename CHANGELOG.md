@@ -1,3 +1,16 @@
+## v1.8.3 - 2025-02-07
+
+### What's Changed
+
+* [1.x] Feat/add dynamic phone validator by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/91
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/92
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/94
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by [@dependabot](https://github.com/dependabot) in https://github.com/milwad-dev/laravel-validate/pull/96
+* [1.x] Update validate.php | ID Locale by [@mjamilasfihani](https://github.com/mjamilasfihani) in https://github.com/milwad-dev/laravel-validate/pull/95
+* [1.x] Register rules in container by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/97
+
+**Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.8.2...v1.8.3
+
 ## v1.8.2 - 2024-06-08
 
 ### What's Changed
@@ -68,7 +81,6 @@
 - Update README.md by [@alisalehi0930](https://github.com/alisalehi0930) in https://github.com/milwad-dev/laravel-validate/pull/65
 - Add FUNDING by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/66
 - [1.x] Add validate phone number methods for Langs by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/53
-
 ### New Contributors
 
 - [@Claudye](https://github.com/Claudye) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/49
