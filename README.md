@@ -68,86 +68,48 @@ return [
 
 # Rules
 
-| #  | Rule name                  | Usage                                                                                                                                                                                             |
-|----|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | ValidBase64                | Validate base64 for ex (bWlsd2Fk)                                                                                                                                                                 |
-| 2  | ValidBitcoinAddress        | Validate bitcoin address for ex (1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY)                                                                                                                              |
-| 3  | ValidCamelCase             | Validate camel case for ex (milwadDev)                                                                                                                                                            |
-| 4  | ValidCapitalCharWithNumber | Validate String for ex (MILWAD-84)                                                                                                                                                                |
-| 5  | ValidCarNumber             | Validate car number for ex (KA01AB1234)                                                                                                                                                           |
-| 6  | ValidCartNumberIran        | Validate cart number for ex (1234123412341234)                                                                                                                                                    |
-| 7  | ValidCreditCard            | Validate credit card for ex (4111111111111111)                                                                                                                                                    |
-| 8  | ValidDiscordUsername       | Validate username discord for ex (Milwad#2134)                                                                                                                                                    |
-| 9  | ValidDomain                | Validate domain name for ex (github.com)                                                                                                                                                          |
-| 10 | ValidDuplicate             | Validate duplicate string, numbers for ex (1123456)                                                                                                                                               |
-| 11 | ValidDuplicateCharacter    | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                                                                                                                                          |
-| 12 | ValidEvenNumber            | Validate number is even for ex (1024)                                                                                                                                                             |
-| 13 | ValidHashtag               | Validate hashtag for ex (#milwad)                                                                                                                                                                 |
-| 14 | ValidHexColor              | Validate hex color for ex (#fcba03)                                                                                                                                                               |
-| 15 | ValidHtmlTag               | Validate html tags for ex (`<h1></h1>`)                                                                                                                                                           |
-| 16 | ValidIban                  | Validate IBAN ex (IR062960000000100324200001)                                                                                                                                                     |
-| 17 | ValidImei                  | Validate imei phone for ex (354809104295874)                                                                                                                                                      |
-| 18 | ValidIpAddressIPV4         | Validate ip address IPV4 for ex (129.144.50.56)                                                                                                                                                   |
-| 19 | ValidIpAddressIPV6         | Validate ip address IPV6 for ex (2001:db8:3333:4444:5555:6666:7777:8888)                                                                                                                          |
-| 20 | ValidIranPostalCode        | Validate Iran postal code ex (3354355599)                                                                                                                                                         |
-| 21 | ValidJalaliDate            | Validate jalali date for ex (1384/8/25)                                                                                                                                                           |
-| 22 | ValidJwt                   | Validate jwt for ex (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334) |
-| 23 | ValidKebabCase             | Validate kebab case for ex (milwad-dev)                                                                                                                                                           |
-| 24 | ValidNameDaysWeek          | Validate day week for ex (monday)                                                                                                                                                                 |
-| 25 | ValidNationalCard          | Validate national card for ex (015016437)                                                                                                                                                         |
-| 26 | ValidOddNumber             | Validate number is odd for ex (4321)                                                                                                                                                              |
-| 27 | ValidPascalCase            | Validate pascal case for ex (MilwadDev)                                                                                                                                                           |
-| 28 | ValidPattern               | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)                                                                                                                                   |
-| 29 | ValidPhoneNumber           | Validate phone number for ex (09366000000)                                                                                                                                                        |
-| 30 | ValidPort                  | Validate port value for ex (8080)                                                                                                                                                                 |
-| 31 | ValidSlashEndOfString      | Validate write slash at the string for ex (milwad/)                                                                                                                                               |
-| 32 | ValidSlug                  | Validate slug for ex (milwad-dev)                                                                                                                                                                 |
-| 33 | ValidSnakeCase             | Validate snake case for ex (milwad_dev)                                                                                                                                                           |
-| 34 | ValidStrongPassword        | Validate password for ex (Milwad123!)                                                                                                                                                             |
-| 35 | ValidUlid                  | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                                                                                                                                                 |
-| 36 | ValidUrl                   | Validate url for ex (https://www.google.com)                                                                                                                                                      |
-| 37 | ValidUsername              | Validate username for ex (milwad)                                                                                                                                                                 |
-| 38 | ValidUuid                  | Validate uuid for ex (123e4567-e89b-12d3-a456-426655440000)                                                                                                                                       |
-| 39 | ValidVatId                 | Validate european VAT ID ex (EL123456789123)                                                                                                                                                      |
+| #  | Rule name                                                                                                                        | Usage                                                                                                                                                                                             |
+|----|----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | [ValidBase64](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-base64.md)                                  | Validate base64 for ex (bWlsd2Fk)                                                                                                                                                                 |
+| 2  | [ValidBitcoinAddress](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-bitcoin-address.md)                 | Validate bitcoin address for ex (1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY)                                                                                                                              |
+| 3  | [ValidCamelCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-camel-case.md)                           | Validate camel case for ex (milwadDev)                                                                                                                                                            |
+| 4  | [ValidCapitalCharWithNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-capital-char-with-number.md) | Validate String for ex (MILWAD-84)                                                                                                                                                                |
+| 5  | [ValidCarNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-car-number.md)                           | Validate car number for ex (KA01AB1234)                                                                                                                                                           |
+| 6  | [ValidCartNumberIran](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-cart-number-iran.md)                | Validate cart number for ex (1234123412341234)                                                                                                                                                    |
+| 7  | [ValidCreditCard](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-credit-card.md)                         | Validate credit card for ex (4111111111111111)                                                                                                                                                    |
+| 8  | [ValidDiscordUsername](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-discord-username.md)               | Validate username discord for ex (Milwad#2134)                                                                                                                                                    |
+| 9  | [ValidDomain](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-domain.md)                                  | Validate domain name for ex (github.com)                                                                                                                                                          |
+| 10 | [ValidDuplicate](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-duplicate.md)                            | Validate duplicate string, numbers for ex (1123456)                                                                                                                                               |
+| 11 | [ValidDuplicateCharacter](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-duplicate-character.md)         | Validate duplicate characters for ex (1,2,3,4,5,6,7,8,9)                                                                                                                                          |
+| 12 | [ValidEvenNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-even-number.md)                         | Validate number is even for ex (1024)                                                                                                                                                             |
+| 13 | [ValidHashtag](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-hashtag.md)                                | Validate hashtag for ex (#milwad)                                                                                                                                                                 |
+| 14 | [ValidHexColor](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-hex-color.md)                             | Validate hex color for ex (#fcba03)                                                                                                                                                               |
+| 15 | [ValidHtmlTag](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-html-tag.md)                               | Validate html tags for ex (`<h1></h1>`)                                                                                                                                                           |
+| 16 | [ValidIban](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-iban.md)                                      | Validate IBAN ex (IR062960000000100324200001)                                                                                                                                                     |
+| 17 | [ValidImei](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-imei.md)                                      | Validate imei phone for ex (354809104295874)                                                                                                                                                      |
+| 18 | [ValidIpAddressIPV4](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-ip-address-ipv4.md)                  | Validate ip address IPV4 for ex (129.144.50.56)                                                                                                                                                   |
+| 19 | [ValidIpAddressIPV6](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-ip-address-ipv6.md)                  | Validate ip address IPV6 for ex (2001:db8:3333:4444:5555:6666:7777:8888)                                                                                                                          |
+| 20 | [ValidIranPostalCode](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-iran-postal-code.md)                | Validate Iran postal code ex (3354355599)                                                                                                                                                         |
+| 21 | [ValidJalaliDate](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-jalali-date.md)                         | Validate jalali date for ex (1384/8/25)                                                                                                                                                           |
+| 22 | [ValidJwt](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-jwt.md)                                        | Validate jwt for ex (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiZXhwIjoxNTgyNjE2MDA1fQ.umEYVDP_kZJGCI3tkU9dmq7CIumEU8Zvftc-klp-334) |
+| 23 | [ValidKebabCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-kebab-case.md)                           | Validate kebab case for ex (milwad-dev)                                                                                                                                                           |
+| 24 | [ValidNameDaysWeek](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-name-days-week.md)                    | Validate day week for ex (monday)                                                                                                                                                                 |
+| 25 | [ValidNationalCard](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-national-card.md)                     | Validate national card for ex (015016437)                                                                                                                                                         |
+| 26 | [ValidOddNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-odd-number.md)                           | Validate number is odd for ex (4321)                                                                                                                                                              |
+| 27 | [ValidPascalCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-pascal-case.md)                         | Validate pascal case for ex (MilwadDev)                                                                                                                                                           |
+| 28 | [ValidPattern](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-pattern.md)                                | Validate texts with specific pattern 🔥 for ex (4444-4444-4444)                                                                                                                                   |
+| 29 | [ValidPhoneNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-phone-number.md)                       | Validate phone number for ex (09366000000)                                                                                                                                                        |
+| 30 | [ValidPort](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-port.md)                                      | Validate port value for ex (8080)                                                                                                                                                                 |
+| 31 | [ValidSlashEndOfString](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-slash-end-of-string.md)           | Validate write slash at the string for ex (milwad/)                                                                                                                                               |
+| 32 | [ValidSlug](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-slug.md)                                      | Validate slug for ex (milwad-dev)                                                                                                                                                                 |
+| 33 | [ValidSnakeCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-snake-case.md)                           | Validate snake case for ex (milwad_dev)                                                                                                                                                           |
+| 34 | [ValidStrongPassword](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-strong-password.md)                 | Validate password for ex (Milwad123!)                                                                                                                                                             |
+| 35 | [ValidUlid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-ulid.md)                                      | Validate ulid for ex (01ARZ3NDEKTSV4RRFFQ69G5FAV)                                                                                                                                                 |
+| 36 | [ValidUrl](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-url.md)                                        | Validate url for ex (https://www.google.com)                                                                                                                                                      |
+| 37 | [ValidUsername](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-username.md)                              | Validate username for ex (milwad)                                                                                                                                                                 |
+| 38 | [ValidUuid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-uuid.md)                                      | Validate uuid for ex (123e4567-e89b-12d3-a456-426655440000)                                                                                                                                       |
+| 39 | [ValidVatId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-vatid.md)                                    | Validate european VAT ID ex (EL123456789123)                                                                                                                                                      |
 
-# Rules
-
-### ValidPattern
-
-Sometimes you need to validate text with a pattern, For example, you want to validate a text like (4444-4444-4444).
-If you want to check the length of the text is separate after `-` is 4, You can use this Rule:
-
-```php
-use Milwad\LaravelValidate\Rules\ValidPattern;
-
-return [
-    'numbers' => ['required', new ValidPattern(4, '-')],
-];
-```
-
-### ValidIban
-
-Sometimes you need to validate the Iban(International Bank Account Number) code. You can use the `ValidIban` rule:
-
-```php
-use Milwad\LaravelValidate\Rules\ValidIban;
-
-return [
-    'iban' => ['required', new ValidIban()], // iban => SC74MCBL01031234567890123456USD
-];
-```
-
-Also, you can use the `Country` class to add a list of countries to the `ValidIban` rule. By doing this your IBAN must belong
-to one of the countries you pass to the validation class:
-
-```php
-use Milwad\LaravelValidate\Rules\ValidIban;
-use Milwad\LaravelValidate\Utils\Country;
-
-return [
-    'iban' => ['required', new ValidIban(Country::IRAN, Country::SEYCHELLES)], // iban => SC74MCBL01031234567890123456USD
-];
-```
 
 <a name="support-languages"></a>
 # Support Languages
