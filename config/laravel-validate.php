@@ -19,12 +19,12 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\TRPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ZHPhoneValidator;
 
 return [
-/*
- * Mapping of country codes to their respective phone number validator classes.
- * Each validator enforces country-specific phone number formatting and validation rules.
- *
- * You can add custom country phone validator.
- */
+    /*
+     * Mapping of country codes to their respective phone number validator classes.
+     * Each validator enforces country-specific phone number formatting and validation rules.
+     *
+     * You can add custom country phone validator.
+     */
     'phone-country' => [
         'DE' => DEPhoneValidator::class, // Germany
         'EN' => ENPhoneValidator::class, // England
