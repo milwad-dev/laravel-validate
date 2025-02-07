@@ -3,6 +3,7 @@
 namespace Milwad\LaravelValidate;
 
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
@@ -57,6 +58,22 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         foreach ($countries as $code => $country) {
             CountryPhoneCallback::addValidator($code, $country);
+        }
+
+        // Register rules in container
+        if (config('laravel-validate.using_container', false)) {
+            $rules = File::files(__DIR__.'/Rules');
+
+            foreach ($rules as $rule) {
+                $className = 'Milwad\\LaravelValidate\\Rules\\' . $rule->getBasename('.php');
+
+                Validator::extend(
+                    $rule->getFilenameWithoutExtension(),
+                    function ($attribute, $value, $parameters, $validator) use ($className) {
+                        return (new $className($parameters))->passes($attribute, $value);
+                    }
+                );
+            }
         }
     }
 }
