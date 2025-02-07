@@ -32,7 +32,6 @@ class LaravelValidateServiceProviderTest extends TestCase
      */
     public function test_config_file_publish_successful()
     {
-        $this->withoutExceptionHandling();
         $this->artisan('vendor:publish', [
             '--tag' => 'laravel-validate-config',
         ]);
