@@ -44,4 +44,9 @@ return [
         'TR' => TRPhoneValidator::class, // Turkey
         'ZH' => ZHPhoneValidator::class, // China
     ],
+
+    /*
+     * If you want to use rules like 'required|ValidPhone' in your validations, you can change it to true.
+     */
+    'using_container' => false,
 ];

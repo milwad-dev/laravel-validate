@@ -12,7 +12,7 @@ class LaravelValidateServiceProviderTest extends TestCase
      */
     public function test_all_lang_folders_publish_successfully()
     {
-        $langs = File::directories(__DIR__.'/../src/lang');
+        $langs = File::directories(realpath(__DIR__.'/../src/lang'));
 
         foreach ($langs as $lang) {
             $lang = Str::after($lang, 'lang');
@@ -32,7 +32,6 @@ class LaravelValidateServiceProviderTest extends TestCase
      */
     public function test_config_file_publish_successful()
     {
-        $this->withoutExceptionHandling();
         $this->artisan('vendor:publish', [
             '--tag' => 'laravel-validate-config',
         ]);

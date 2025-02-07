@@ -3,7 +3,9 @@
 namespace Milwad\LaravelValidate;
 
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
 class LaravelValidateServiceProvider extends ServiceProvider
@@ -30,6 +32,10 @@ class LaravelValidateServiceProvider extends ServiceProvider
         $langs = File::directories(__DIR__.'/lang');
 
         foreach ($langs as $lang) {
+            $lang = Str::after($lang, 'lang');
+            $lang = Str::replace('\\', '', $lang);
+            $lang = Str::replace('/', '', $lang);
+
             $this->publishes([
                 __DIR__."/lang/$lang" => lang_path($lang),
             ], "validate-lang-$lang");
@@ -57,6 +63,22 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         foreach ($countries as $code => $country) {
             CountryPhoneCallback::addValidator($code, $country);
+        }
+
+        // Register rules in container
+        if (config('laravel-validate.using_container', false)) {
+            $rules = File::files(__DIR__.'/Rules');
+
+            foreach ($rules as $rule) {
+                $className = 'Milwad\\LaravelValidate\\Rules\\'.$rule->getBasename('.php');
+
+                Validator::extend(
+                    $rule->getFilenameWithoutExtension(),
+                    function ($attribute, $value, $parameters, $validator) use ($className) {
+                        return (new $className($parameters))->passes($attribute, $value);
+                    }
+                );
+            }
         }
     }
 }
