@@ -24,7 +24,7 @@ class ValidNameDaysWeekTest extends BaseTest
      */
     public function name_day_is_valid()
     {
-        $rules = ['name_day' => [new ValidNameDaysWeek()]];
+        $rules = ['name_day' => [new ValidNameDaysWeek]];
         $data = ['name_day' => 'monday'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidNameDaysWeekTest extends BaseTest
      */
     public function name_day_is_not_valid()
     {
-        $rules = ['name_day' => [new ValidNameDaysWeek()]];
+        $rules = ['name_day' => [new ValidNameDaysWeek]];
         $data = ['name_day' => 'day'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

@@ -24,7 +24,7 @@ class ValidHashtagTest extends BaseTest
      */
     public function text_has_hashtag()
     {
-        $rules = ['hashtag' => [new ValidHashtag()]];
+        $rules = ['hashtag' => [new ValidHashtag]];
         $data = ['hashtag' => '#laravel'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidHashtagTest extends BaseTest
      */
     public function text_has_no_hashtag()
     {
-        $rules = ['hashtag' => [new ValidHashtag()]];
+        $rules = ['hashtag' => [new ValidHashtag]];
         $data = ['hashtag' => 'laravel'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

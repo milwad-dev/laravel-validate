@@ -24,7 +24,7 @@ class ValidDomainTest extends BaseTest
      */
     public function domain_is_valid()
     {
-        $rules = ['domain' => [new ValidDomain()]];
+        $rules = ['domain' => [new ValidDomain]];
         $data = ['domain' => 'github.com'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidDomainTest extends BaseTest
      */
     public function domain_is_not_valid()
     {
-        $rules = ['domain' => [new ValidDomain()]];
+        $rules = ['domain' => [new ValidDomain]];
         $data = ['domain' => 'github/com'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

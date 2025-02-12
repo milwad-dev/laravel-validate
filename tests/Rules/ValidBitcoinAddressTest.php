@@ -10,7 +10,7 @@ class ValidBitcoinAddressTest extends BaseTest
     /**
      * Set up.
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
     }
@@ -24,7 +24,7 @@ class ValidBitcoinAddressTest extends BaseTest
      */
     public function bitcoin_address_is_valid()
     {
-        $rules = ['bitcoin_address' => [new ValidBitcoinAddress()]];
+        $rules = ['bitcoin_address' => [new ValidBitcoinAddress]];
         $data = ['bitcoin_address' => '1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidBitcoinAddressTest extends BaseTest
      */
     public function bitcoin_address_is_not_valid()
     {
-        $rules = ['bitcoin_address' => [new ValidBitcoinAddress()]];
+        $rules = ['bitcoin_address' => [new ValidBitcoinAddress]];
         $data = ['bitcoin_address' => 'loremipsum'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

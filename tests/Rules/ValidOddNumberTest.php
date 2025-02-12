@@ -24,7 +24,7 @@ class ValidOddNumberTest extends BaseTest
      */
     public function number_is_odd()
     {
-        $rules = ['hashtag' => [new ValidOddNumber()]];
+        $rules = ['hashtag' => [new ValidOddNumber]];
         $data = ['hashtag' => '1025'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidOddNumberTest extends BaseTest
      */
     public function number_is_not_odd()
     {
-        $rules = ['hashtag' => [new ValidOddNumber()]];
+        $rules = ['hashtag' => [new ValidOddNumber]];
         $data = ['hashtag' => '1024'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

@@ -24,7 +24,7 @@ class ValidSlugTest extends BaseTest
      */
     public function slug_is_valid()
     {
-        $rules = ['slug' => [new ValidSlug()]];
+        $rules = ['slug' => [new ValidSlug]];
         $data = ['slug' => 'milwad-dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidSlugTest extends BaseTest
      */
     public function slug_is_not_valid()
     {
-        $rules = ['slug' => [new ValidSlug()]];
+        $rules = ['slug' => [new ValidSlug]];
         $data = ['slug' => 'milwad_dev'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 

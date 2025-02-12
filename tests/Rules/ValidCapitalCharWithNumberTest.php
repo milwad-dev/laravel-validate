@@ -10,7 +10,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
     /**
      * Set up.
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
     }
@@ -24,7 +24,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
      */
     public function capital_char_with_number_is_valid()
     {
-        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber()]];
+        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber]];
         $data = ['capital_char_with_number' => 'MILWAD-84'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -40,7 +40,7 @@ class ValidCapitalCharWithNumberTest extends BaseTest
      */
     public function capital_char_with_number_is_not_valid()
     {
-        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber()]];
+        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber]];
         $data = ['capital_char_with_number' => 'Milwad-84'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
