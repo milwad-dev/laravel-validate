@@ -40,7 +40,7 @@ class ValidEvenNumberTest extends TestCase
      */
     public function check_float_number_is_even()
     {
-        $rules = ['even_number' => [new ValidEvenNumber()]];
+        $rules = ['even_number' => [new ValidEvenNumber]];
         $data = ['even_number' => '754.00'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
@@ -56,7 +56,7 @@ class ValidEvenNumberTest extends TestCase
      */
     public function check_float_number_is_not_even()
     {
-        $rules = ['even_number' => [new ValidEvenNumber()]];
+        $rules = ['even_number' => [new ValidEvenNumber]];
         $data = ['even_number' => '333.13'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
