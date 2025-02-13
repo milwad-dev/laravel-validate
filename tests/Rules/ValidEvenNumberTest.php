@@ -30,4 +30,52 @@ class ValidEvenNumberTest extends TestCase
 
         $this->assertFalse($passes);
     }
+
+    /**
+     * Test float number is even.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_float_number_is_even()
+    {
+        $rules = ['even_number' => [new ValidEvenNumber]];
+        $data = ['even_number' => '754.00'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test float number is not even.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_float_number_is_not_even()
+    {
+        $rules = ['even_number' => [new ValidEvenNumber]];
+        $data = ['even_number' => '333.13'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+
+    /**
+     * Test non-numeric values.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_non_numeric_values()
+    {
+        $rules = ['even_number' => [new ValidEvenNumber]];
+        $data = ['even_number' => 'abc'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
