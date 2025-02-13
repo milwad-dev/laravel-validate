@@ -61,6 +61,12 @@ class ValidOddNumberTest extends TestCase
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertFalse($passes);
+
+        $rules = ['odd_number' => [new ValidOddNumber]];
+        $data = ['odd_number' => '322.00'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
     }
 
     /**
