@@ -18,6 +18,7 @@ class ValidEvenNumber implements Rule
         $number = strval($value);
         $number = explode('.', $number);
 
+        // Check if there is a decimal part and it's not zero
         if (isset($number[1]) && $number[1] != 0) {
             return false;
         }

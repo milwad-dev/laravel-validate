@@ -9,3 +9,5 @@ return [
     'number' => ['required', new ValidEvenNumber()], // number => 1024
 ];
 ```
+
+> Consider installing the `gmp` extension to significantly enhance performance when working with large numbers. It can greatly optimize your calculations and improve efficiency.
