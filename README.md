@@ -158,6 +158,56 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Ukrainian (uk)
 - [x] Chinese (zh_CN)
 
+# Adding Custom Phone Country Validator
+
+If you need to add a custom phone number validator for a specific country, follow the steps below.
+
+### 1. Create Your Custom Validator Class
+First, you need to create a custom validator class that implements the `Milwad\LaravelValidate\Utils\CountryPhoneValidator` contract. This contract ensures that your custom validator adheres to the required structure and functionality.
+
+```php
+namespace App\Validators;
+
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator;
+
+class CustomPhoneValidator implements CountryPhoneValidator
+{
+    /**
+     * Validate the phone number for the custom country.
+     */
+    public function validate(string $phoneNumber): bool
+    {
+        // Implement the phone number validation logic for your country
+        // Example: Check if the phone number matches a specific pattern
+        return preg_match('/^\+1234\d{10}$/', $phoneNumber);
+    }
+}
+```
+
+### 2. Add the Validator to the Configuration File
+Once you've created the custom validator class, add it to the configuration file (`config/phone-country.php`) under the `'phone-country'` array.
+
+For example, if you're adding a validator for the country `XY`:
+
+```php
+'phone-country' => [
+    // Existing validators...
+    'XY' => \App\Validators\CustomPhoneValidator::class, // Custom country
+],
+```
+
+This tells the system to use your custom validator for phone numbers from country `XY`.
+
+### 3. Validation Usage
+
+Once your custom validator is set up, you can use it in your application like any other validator:
+
+```php
+return [
+    'phone_ir' => [new ValidPhoneNumber('XY')],
+];
+```
+
 # License
 
 * This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel over more than 9 and has been released under the MIT License.
