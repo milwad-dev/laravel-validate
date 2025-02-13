@@ -71,6 +71,13 @@ If you may use rules with string like `ValidPhone`, you need to change the confi
 'using_container' => false,
 ```
 
+If `using_container` is set to true, you might have rules like this:
+
+```php
+'phone_number' => 'required|ValidPhone',
+```
+And `ValidPhone` would be a class that is resolved via the service container to check the validity of the phone number.
+
 # Usage
 
 You can use `Laravel-Validate Rules` very simply. You can use the `new` keyword before the rule name.
