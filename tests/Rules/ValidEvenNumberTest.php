@@ -62,4 +62,20 @@ class ValidEvenNumberTest extends TestCase
 
         $this->assertFalse($passes);
     }
+
+    /**
+     * Test non-numeric values.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_non_numeric_values()
+    {
+        $rules = ['even_number' => [new ValidEvenNumber]];
+        $data = ['even_number' => 'abc'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
