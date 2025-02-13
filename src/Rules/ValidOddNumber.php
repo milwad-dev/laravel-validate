@@ -28,6 +28,7 @@ class ValidOddNumber implements Rule
         if (extension_loaded('gmp')) {
             return gmp_cmp(gmp_mod($number, '2'), '0') !== 0;
         }
+
         return $number % 2 !== 0;
     }
 
