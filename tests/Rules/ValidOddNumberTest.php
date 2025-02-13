@@ -30,4 +30,52 @@ class ValidOddNumberTest extends TestCase
 
         $this->assertFalse($passes);
     }
+
+    /**
+     * Test float number is odd.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_float_number_is_odd()
+    {
+        $rules = ['odd_number' => [new ValidOddNumber]];
+        $data = ['odd_number' => '753.00'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertTrue($passes);
+    }
+
+    /**
+     * Test float number is not odd.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_float_number_is_not_odd()
+    {
+        $rules = ['odd_number' => [new ValidOddNumber]];
+        $data = ['odd_number' => '333.14'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
+
+    /**
+     * Test non-numeric values.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function check_non_numeric_values()
+    {
+        $rules = ['odd_number' => [new ValidOddNumber]];
+        $data = ['odd_number' => 'abc'];
+        $passes = $this->app['validator']->make($data, $rules)->passes();
+
+        $this->assertFalse($passes);
+    }
 }
