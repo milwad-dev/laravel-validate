@@ -11,7 +11,20 @@ class ValidEvenNumber implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^\d*[02468]$/', $value);
+        $number = strval($value);
+        $number = explode('.', $number);
+
+        if (isset($number[1]) && $number[1] != 0) {
+            return false;
+        }
+
+        $number = $number[0];
+
+        if (extension_loaded('gmp')) {
+            return gmp_cmp(gmp_mod($number, '2'), '0') === 0;
+        }
+
+        return $number % 2 === 0;
     }
 
     /**
