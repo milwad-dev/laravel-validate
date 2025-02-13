@@ -60,6 +60,17 @@ php artisan vendor:publish --tag="validate-lang-en"
 
 If you don't know about langs name you can see [Support Languages](#support-languages) section.
 
+# Configurations
+
+If you may use rules with string like `ValidPhone`, you need to change the config option to `true`:
+
+```php
+/*
+ * If you want to use rules like 'required|ValidPhone' in your validations, you can change it to true.
+ */
+'using_container' => false,
+```
+
 # Usage
 
 You can use `Laravel-Validate Rules` very simply. You can use the `new` keyword before the rule name.
