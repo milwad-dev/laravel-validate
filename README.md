@@ -23,12 +23,13 @@ This package supports localization and can be used for most of the language. <br
 - ```Laravel >= 9.0```
 
 
-| GitHub | L6                 | L7                 | L8                 | L9                 | L10                | L11                |
-|--------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 1.5    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
-| 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.7    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.8    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| GitHub   | L6                 | L7                 | L8                 | L9                 | L10                | L11                | L12                |
+|----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 1.5      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
+| 1.6      | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 1.7      | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 1.8.4 <= | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
+| 1.8.5 >= | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 # Installation
 
