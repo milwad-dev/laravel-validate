@@ -11,6 +11,10 @@ class ValidEvenNumber implements Rule
      */
     public function passes($attribute, $value): bool
     {
+        if (! is_numeric($value)) {
+            return false;
+        }
+
         $number = strval($value);
         $number = explode('.', $number);
 
