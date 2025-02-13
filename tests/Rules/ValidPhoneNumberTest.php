@@ -31,11 +31,11 @@ class ValidPhoneNumberTest extends TestCase
     {
         $rules = [
             'phone_number' => [new ValidPhoneNumber],
-            'phone_bj' => [new ValidPhoneNumber(Country::IRAN)],
+            'phone_ir' => [new ValidPhoneNumber(Country::IRAN)],
         ];
         $data = [
             'phone_number' => '123456789',
-            'phone_bj' => '09120000000',
+            'phone_ir' => '09120000000',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
