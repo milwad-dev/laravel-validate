@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute no és vàlid.',
     'cart-number-iran' => ':attribute no és vàlid.',
     'credit-card' => ':attribute no és vàlid.',
+    'country' => ':attribute no és vàlid.',
     'discord-username' => ':attribute no és vàlid.',
     'domain' => ':attribute no és vàlid.',
     'duplicate' => ':attribute no és vàlid.',

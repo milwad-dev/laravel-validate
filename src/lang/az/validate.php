@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute doğru deyil.',
     'cart-number-iran' => ':attribute doğru deyil.',
     'credit-card' => ':attribute doğru deyil.',
+    'country' => ':attribute doğru deyil.',
     'discord-username' => ':attribute doğru deyil.',
     'domain' => ':attribute doğru deyil.',
     'duplicate' => ':attribute doğru deyil.',

@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute无效.',
     'cart-number-iran' => ':attribute无效.',
     'credit-card' => ':attribute无效.',
+    'country' => ':attribute无效.',
     'discord-username' => ':attribute无效.',
     'domain' => ':attribute无效.',
     'duplicate' => ':attribute无效.',

@@ -8,6 +8,7 @@ return [
     'car-number' => ':Attribute tidak valid.',
     'cart-number-iran' => ':Attribute tidak valid.',
     'credit-card' => ':Attribute tidak valid.',
+    'country' => ':Attribute tidak valid.',
     'discord-username' => ':Attribute tidak valid.',
     'domain' => ':Attribute tidak valid.',
     'duplicate' => ':Attribute tidak valid.',

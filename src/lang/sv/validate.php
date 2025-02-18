@@ -8,6 +8,7 @@ return [
     'car-number' => 'Värdet :attribute är inte korrekt.',
     'cart-number-iran' => 'Värdet :attribute är inte korrekt.',
     'credit-card' => 'Värdet :attribute är inte korrekt.',
+    'country' => 'Värdet :attribute är inte korrekt.',
     'discord-username' => 'Värdet :attribute är inte korrekt.',
     'domain' => 'Värdet :attribute är inte korrekt.',
     'duplicate' => 'Värdet :attribute är inte korrekt.',

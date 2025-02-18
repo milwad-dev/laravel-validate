@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute বৈধ নয়.',
     'cart-number-iran' => ':attribute বৈধ নয়.',
     'credit-card' => ':attribute বৈধ নয়.',
+    'country' => ':attribute বৈধ নয়.',
     'discord-username' => ':attribute বৈধ নয়.',
     'domain' => ':attribute বৈধ নয়.',
     'duplicate' => ':attribute বৈধ নয়.',

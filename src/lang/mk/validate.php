@@ -8,6 +8,7 @@ return [
     'car-number' => 'Невалидна вредност :attribute',
     'cart-number-iran' => 'Невалидна вредност :attribute',
     'credit-card' => 'Невалидна вредност :attribute',
+    'country' => 'Невалидна вредност :attribute',
     'discord-username' => 'Невалидна вредност :attribute',
     'domain' => 'Невалидна вредност :attribute',
     'duplicate' => 'Невалидна вредност :attribute',

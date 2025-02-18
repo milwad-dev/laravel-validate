@@ -8,6 +8,7 @@ return [
     'car-number' => 'Το :attribute δεν είναι έγκυρο.',
     'cart-number-iran' => 'Το :attribute δεν είναι έγκυρο.',
     'credit-card' => 'Το :attribute δεν είναι έγκυρο.',
+    'country' => 'Το :attribute δεν είναι έγκυρο.',
     'discord-username' => 'Το :attribute δεν είναι έγκυρο.',
     'domain' => 'Το :attribute δεν είναι έγκυρο.',
     'duplicate' => 'Το :attribute δεν είναι έγκυρο.',

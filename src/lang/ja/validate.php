@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute有効じゃない。',
     'cart-number-iran' => ':attribute有効じゃない。',
     'credit-card' => ':attribute有効じゃない。',
+    'country' => ':attribute有効じゃない。',
     'discord-username' => ':attribute有効じゃない。',
     'domain' => ':attribute有効じゃない。',
     'duplicate' => ':attribute有効じゃない。',

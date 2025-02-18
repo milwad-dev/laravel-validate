@@ -8,6 +8,7 @@ return [
     'car-number' => 'مقدار :attribute صحیح نمی باشد.',
     'cart-number-iran' => 'مقدار :attribute صحیح نمی باشد.',
     'credit-card' => 'مقدار :attribute صحیح نمی باشد.',
+    'country' => 'مقدار :attribute صحیح نمی باشد.',
     'discord-username' => 'مقدار :attribute صحیح نمی باشد.',
     'domain' => 'مقدار :attribute صحیح نمی باشد.',
     'duplicate' => 'مقدار :attribute صحیح نمی باشد.',

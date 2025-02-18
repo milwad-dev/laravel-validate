@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute не действует.',
     'cart-number-iran' => ':attribute не действует.',
     'credit-card' => ':attribute не действует.',
+    'country' => ':attribute не действует.',
     'discord-username' => ':attribute не действует.',
     'domain' => ':attribute не действует.',
     'duplicate' => ':attribute не действует.',

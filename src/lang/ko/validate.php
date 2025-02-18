@@ -8,6 +8,7 @@ return [
     'car-number' => ':attribute유효하지 않습니다.',
     'cart-number-iran' => ':attribute유효하지 않습니다.',
     'credit-card' => ':attribute유효하지 않습니다.',
+    'country' => ':attribute유효하지 않습니다.',
     'discord-username' => ':attribute유효하지 않습니다.',
     'domain' => ':attribute유효하지 않습니다.',
     'duplicate' => ':attribute유효하지 않습니다.',

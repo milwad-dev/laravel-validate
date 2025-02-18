@@ -8,6 +8,7 @@ return [
     'car-number' => ":attribute n'est pas valide.",
     'cart-number-iran' => ":attribute n'est pas valide.",
     'credit-card' => ":attribute n'est pas valide.",
+    'country' => ":attribute n'est pas valide.",
     'discord-username' => ":attribute n'est pas valide.",
     'domain' => ":attribute n'est pas valide.",
     'duplicate' => ":attribute n'est pas valide.",
