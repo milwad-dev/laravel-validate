@@ -1,3 +1,19 @@
+## v1.9.0 - 2025-03-01
+
+### What's Changed
+
+* [1.x] Improvment even number rule performance by [@amirhossein-fzl](https://github.com/amirhossein-fzl) in https://github.com/milwad-dev/laravel-validate/pull/100
+* [1.x] Improvment even number rule performance by [@amirhossein-fzl](https://github.com/amirhossein-fzl) in https://github.com/milwad-dev/laravel-validate/pull/101
+* [1.x] Improve even odd rules by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/102
+* [1.x] Add `ValidCountry` - +40 Rules by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/103
+* [1.x] Support Laravel 12 by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/104
+
+### New Contributors
+
+* [@amirhossein-fzl](https://github.com/amirhossein-fzl) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/100
+
+**Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.8.3...v1.9.0
+
 ## v1.8.3 - 2025-02-07
 
 ### What's Changed
@@ -82,7 +98,6 @@
 - Add FUNDING by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/66
 - [1.x] Add validate phone number methods for Langs by [@milwad-dev](https://github.com/milwad-dev) in https://github.com/milwad-dev/laravel-validate/pull/53
 ### New Contributors
-
 - [@Claudye](https://github.com/Claudye) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/49
 - [@mcyumustutan](https://github.com/mcyumustutan) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/52
 - [@c0nst4ntin](https://github.com/c0nst4ntin) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/57
