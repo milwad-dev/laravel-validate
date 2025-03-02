@@ -1,5 +1,6 @@
 <?php
 
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator\CMPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\DEPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ENPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ESPhoneValidator;
@@ -26,6 +27,7 @@ return [
      * You can add custom country phone validator.
      */
     'phone-country' => [
+        'CM' => CMPhoneValidator::class, // Cameroon
         'DE' => DEPhoneValidator::class, // Germany
         'EN' => ENPhoneValidator::class, // England
         'ES' => ESPhoneValidator::class, // Spain
