@@ -1,3 +1,15 @@
+## v1.9.1 - 2025-03-03
+
+### What's Changed
+
+* [1.x] Add validation for `Cameroon` phone numbers by [@fredchess](https://github.com/fredchess) in https://github.com/milwad-dev/laravel-validate/pull/105
+
+### New Contributors
+
+* [@fredchess](https://github.com/fredchess) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/105
+
+**Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.9.0...v1.9.1
+
 ## v1.9.0 - 2025-03-01
 
 ### What's Changed
@@ -103,5 +115,4 @@
 - [@c0nst4ntin](https://github.com/c0nst4ntin) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/57
 - [@hungthai1401](https://github.com/hungthai1401) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/61
 - [@alisalehi0930](https://github.com/alisalehi0930) made their first contribution in https://github.com/milwad-dev/laravel-validate/pull/65
-
 **Full Changelog**: https://github.com/milwad-dev/laravel-validate/compare/v1.7.1...v1.7.2
