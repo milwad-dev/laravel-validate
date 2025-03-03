@@ -28,20 +28,21 @@ return [
 <a name="support-countries-phone-number"></a>
 ## Support Countries Phone Number
 
-✅ IRAN <br>
-✅ ENGLAND <br>
-✅ NIGER <br>
-✅ SAUDI_ARABIA <br>
-✅ GERMANY <br>
-✅ GREECE <br>
-✅ SPAIN <br>
-✅ FRANCE <br>
-✅ INDIA <br>
-✅ INDONESIA <br>
-✅ ITALY <br>
-✅ JAPAN <br>
-✅ KOREAN <br>
-✅ RUSSIA <br>
-✅ SWEDEN <br>
-✅ TURKEY <br>
-✅ CHINA <br>
+- ✅ IRAN
+- ✅ ENGLAND
+- ✅ NIGER
+- ✅ SAUDI_ARABIA
+- ✅ GERMANY
+- ✅ GREECE
+- ✅ SPAIN
+- ✅ FRANCE
+- ✅ INDIA
+- ✅ INDONESIA
+- ✅ ITALY
+- ✅ JAPAN
+- ✅ KOREAN
+- ✅ RUSSIA
+- ✅ SWEDEN
+- ✅ TURKEY
+- ✅ CHINA
+- ✅ CAMEROON
