@@ -12,8 +12,8 @@
 
 ***
 The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation logic. <br>
-You can validate data more easily, Laravel validate has lots of rule classes for validation. <br>
-This package supports localization and can be used for most of the language. <br>
+You can validate data more easily, `Laravel Validate` has lots of rule classes for validation. <br>
+This package supports localization and can be used for most of the languages. <br>
 (If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
 # Requirements
@@ -52,13 +52,13 @@ If you want to publish a lang file for a custom validation message you can run t
 php artisan vendor:publish --tag="validate-lang-{$lang}"
 ```
 
-You can replace `$lang` with your lang name, for example:
+You can replace `$lang` with your language name, for example:
 
 ```shell
 php artisan vendor:publish --tag="validate-lang-en"
 ```
 
-If you don't know about langs name you can see [Support Languages](#support-languages) section.
+You can see the [Support Languages](#support-languages) section if you don't know the language's name.
 
 # Configurations
 
