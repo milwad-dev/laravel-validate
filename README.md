@@ -30,7 +30,7 @@ This package supports localization and can be used for most of the languages. <b
 | 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
 | 1.7    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
 | 1.8    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.9    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: |
+| 1.9    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 # Installation
 
