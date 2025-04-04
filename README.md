@@ -11,7 +11,8 @@
 [![Check Imports](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml/badge.svg?branch=1.x)](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml)
 
 ***
-The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation logic. <br>
+The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation
+logic. <br>
 You can validate data more easily, `Laravel Validate` has lots of rule classes for validation. <br>
 This package supports localization and can be used for most of the languages. <br>
 (If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
@@ -19,16 +20,17 @@ This package supports localization and can be used for most of the languages. <b
 # Requirements
 
 ***
+
 - ```PHP >= 8.0```
 - ```Laravel >= 9.0```
 
-
-| GitHub | L6                 | L7                 | L8                 | L9                 | L10                | L11                |
-|--------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 1.5    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
-| 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.7    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
-| 1.8    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| GitHub | L6                 | L7                 | L8                 | L9                 | L10                | L11                | L12                |
+|--------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 1.5    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
+| 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 1.7    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 1.8    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
+| 1.9    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 # Installation
 
@@ -76,6 +78,7 @@ If `using_container` is set to true, you might have rules like this:
 ```php
 'phone_number' => 'required|ValidPhone',
 ```
+
 And `ValidPhone` would be a class that is resolved via the service container to check the validity of the phone number.
 
 # Usage
@@ -135,8 +138,8 @@ return [
 | 39 | [ValidUuid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-uuid.md)                                      | Validate uuid for ex (123e4567-e89b-12d3-a456-426655440000)                                                                                                                                       |
 | 40 | [ValidVatId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-vatid.md)                                    | Validate european VAT ID ex (EL123456789123)                                                                                                                                                      |
 
-
 <a name="support-languages"></a>
+
 # Support Languages
 
 If a language is not supported, you can make <a href="https://github.com/milwad-dev/laravel-validate/issues/new/choose">issue</a> to add it. <br>
@@ -146,6 +149,7 @@ Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls
 - [x] Azerbaijani (az)
 - [x] Bangla (bn)
 - [x] Catalan (ca)
+- [x] Dutch (nl)
 - [x] German (de)
 - [x] Greek (el)
 - [x] English (en)
@@ -172,7 +176,8 @@ If you need to add a custom phone number validator for a specific country, follo
 
 ### 1. Create Your Custom Validator Class
 
-First, you need to create a custom validator class that implements the `Milwad\LaravelValidate\Utils\CountryPhoneValidator` contract. This contract ensures that your custom validator adheres to the required structure and functionality.
+First, you need to create a custom validator class that implements the `Milwad\LaravelValidate\Utils\CountryPhoneValidator` contract. This contract
+ensures that your custom validator adheres to the required structure and functionality.
 
 ```php
 namespace App\Validators;
@@ -220,7 +225,8 @@ return [
 
 # License
 
-* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel over more than 9 and has been released under the MIT License.
+* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel over more than 9 and
+  has been released under the MIT License.
 
 # Contributing
 
