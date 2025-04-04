@@ -65,7 +65,7 @@ class ValidPhoneNumberTest extends TestCase
             'phone_se' => [new ValidPhoneNumber(Country::SWEDEN)],
             'phone_tr' => [new ValidPhoneNumber(Country::TURKEY)],
             'phone_ch' => [new ValidPhoneNumber(Country::CHINA)],
-            'phone_cm' => [new ValidPhoneNumber(Country::CAMEROON)]
+            'phone_cm' => [new ValidPhoneNumber(Country::CAMEROON)],
         ];
         $data = [
             'phone_ir' => '09125555555',
@@ -85,7 +85,7 @@ class ValidPhoneNumberTest extends TestCase
             'phone_se' => '+46701234567',
             'phone_tr' => '+905551234567',
             'phone_ch' => '+8613812345678',
-            'phone_cm' => '+237691234564'
+            'phone_cm' => '+237691234564',
         ];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
