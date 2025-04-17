@@ -40,4 +40,5 @@ return [
     'url' => ':attribute kein gültiger.',
     'username' => ':attribute kein gültiger.',
     'uuid' => ':attribute kein gültiger.',
+    'landline-number' => ':attribute kein gültiger.',
 ];
