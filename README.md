@@ -137,6 +137,7 @@ return [
 | 38 | [ValidUsername](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-username.md)                              | Validate username for ex (milwad)                                                                                                                                                                 |
 | 39 | [ValidUuid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-uuid.md)                                      | Validate uuid for ex (123e4567-e89b-12d3-a456-426655440000)                                                                                                                                       |
 | 40 | [ValidVatId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-vatid.md)                                    | Validate european VAT ID ex (EL123456789123)                                                                                                                                                      |
+| 41 | [ValidLandlineNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-landline-number.md)                 | Validate landline number                                                                                                                                                                          |
 
 <a name="support-languages"></a>
 
