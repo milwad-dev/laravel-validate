@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+use Milwad\LaravelValidate\Utils\CountryLandlineCallback;
 use Milwad\LaravelValidate\Utils\CountryPhoneCallback;
 
 class LaravelValidateServiceProvider extends ServiceProvider
@@ -63,6 +64,12 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         foreach ($countries as $code => $country) {
             CountryPhoneCallback::addValidator($code, $country);
+        }
+
+        $landlineCountries = config('laravel-validate.landline-country', []);
+
+        foreach ($landlineCountries as $code => $country) {
+            CountryLandlineCallback::addValidator($code, $country);
         }
 
         // Register rules in container

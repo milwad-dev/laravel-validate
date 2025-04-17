@@ -18,6 +18,8 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SAPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SEPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\TRPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ZHPhoneValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\IRLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\DELandlineValidator;
 
 return [
     /*
@@ -45,6 +47,17 @@ return [
         'SE' => SEPhoneValidator::class, // Sweden
         'TR' => TRPhoneValidator::class, // Turkey
         'ZH' => ZHPhoneValidator::class, // China
+    ],
+
+    /*
+     * Mapping of country codes to their respective landline number validator classes.
+     * Each validator enforces country-specific landline number formatting and validation rules.
+     *
+     * You can add custom country landline validator.
+     */
+    'landline-country' => [
+        'DE' => DELandlineValidator::class, // Germany
+        'IR' => IRLandlineValidator::class, // Iran
     ],
 
     /*
