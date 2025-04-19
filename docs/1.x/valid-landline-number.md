@@ -29,5 +29,20 @@ return [
 ## Support Countries Landline Number
 
 - ✅ IRAN
+- ✅ ENGLAND
+- ✅ NIGER
+- ✅ SAUDI_ARABIA
 - ✅ GERMANY
-
+- ✅ GREECE
+- ✅ SPAIN
+- ✅ FRANCE
+- ✅ INDIA
+- ✅ INDONESIA
+- ✅ ITALY
+- ✅ JAPAN
+- ✅ KOREAN
+- ✅ RUSSIA
+- ✅ SWEDEN
+- ✅ TURKEY
+- ✅ CHINA
+- ✅ CAMEROON
