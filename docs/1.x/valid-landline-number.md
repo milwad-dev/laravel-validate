@@ -6,18 +6,18 @@ If you want to validate the landline number, you can use the `ValidLandlineNumbe
 use Milwad\LaravelValidate\Rules\ValidLandlineNumber;
 
 return [
-    'landline-number' => ['required', new ValidLandlineNumber()], // landline-number => 09120000000
+    'landline-number' => ['required', new ValidLandlineNumber()], // landline-number => +98212223343
 ];
 ```
 
-Also `ValidLandlineNumber` have the ability to validate landline number with specific country code:
+Also, `ValidLandlineNumber` can validate landline numbers with a specific country code:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidLandlineNumber;
 use Milwad\LaravelValidate\Utils\Country;
 
 return [
-    'landline-number' => ['required', new ValidLandlineNumber(Country::GERMANY)], // landline-number => 09120000000
+    'landline-number' => ['required', new ValidLandlineNumber(Country::GERMANY)], // landline-number => +49301234567
 ];
 ```
 
