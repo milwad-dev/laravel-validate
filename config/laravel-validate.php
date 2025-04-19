@@ -18,8 +18,25 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SAPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SEPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\TRPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ZHPhoneValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\IRLandlineValidator;
+
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\CMLandlineValidator;
 use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\DELandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ENLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ESLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\FRLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\GRLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\IDLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\INLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\IRLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ITLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\JALandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\KOLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\NELandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\RULandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\SALandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\SELandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\TRLandlineValidator;
+use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ZHLandlineValidator;
 
 return [
     /*
@@ -56,8 +73,24 @@ return [
      * You can add custom country landline validator.
      */
     'landline-country' => [
+        'CM' => CMLandlineValidator::class, // Cameroon
         'DE' => DELandlineValidator::class, // Germany
+        'EN' => ENLandlineValidator::class, // England
+        'ES' => ESLandlineValidator::class, // Spain
+        'FR' => FRLandlineValidator::class, // France
+        'GR' => GRLandlineValidator::class, // Greece
+        'ID' => IDLandlineValidator::class, // Indonesia
+        'IN' => INLandlineValidator::class, // India
         'IR' => IRLandlineValidator::class, // Iran
+        'IT' => ITLandlineValidator::class, // Italy
+        'JA' => JALandlineValidator::class, // Japan
+        'KO' => KOLandlineValidator::class, // South Korea
+        'NE' => NELandlineValidator::class, // Netherlands
+        'RU' => RULandlineValidator::class, // Russia
+        'SA' => SALandlineValidator::class, // Saudi Arabia
+        'SE' => SELandlineValidator::class, // Sweden
+        'TR' => TRLandlineValidator::class, // Turkey
+        'ZH' => ZHLandlineValidator::class, // China
     ],
 
     /*
