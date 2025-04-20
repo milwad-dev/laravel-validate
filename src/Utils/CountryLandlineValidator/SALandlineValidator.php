@@ -9,6 +9,6 @@ class SALandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+966|00966)[\s\-]?1\d{7}|01\d{7})$/', $value);
+        return preg_match('/^((?:[+?0?0?966]+)(?:\s?\d{2})(?:\s?\d{7}))$/', $value);
     }
 }
