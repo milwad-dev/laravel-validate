@@ -1,5 +1,23 @@
 <?php
 
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\CMLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\DELandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\ENLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\ESLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\FRLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\GRLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\IDLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\INLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\IRLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\ITLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\JALandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\KOLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\NELandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\RULandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\SALandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\SELandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\TRLandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\ZHLandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\CMPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\DEPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ENPhoneValidator;
@@ -18,25 +36,6 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SAPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SEPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\TRPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ZHPhoneValidator;
-
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\CMLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\DELandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ENLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ESLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\FRLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\GRLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\IDLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\INLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\IRLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ITLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\JALandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\KOLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\NELandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\RULandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\SALandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\SELandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\TRLandlineValidator;
-use \Milwad\LaravelValidate\Utils\CountryLandlineValidator\ZHLandlineValidator;
 
 return [
     /*
