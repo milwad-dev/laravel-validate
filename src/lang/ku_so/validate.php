@@ -40,4 +40,6 @@ return [
     'url' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'username' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'uuid' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'landline-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'iran-plate' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
 ];

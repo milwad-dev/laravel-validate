@@ -40,4 +40,6 @@ return [
     'url' => 'Το :attribute δεν είναι έγκυρο.',
     'username' => 'Το :attribute δεν είναι έγκυρο.',
     'uuid' => 'Το :attribute δεν είναι έγκυρο.',
+    'landline-number' => 'Το :attribute δεν είναι έγκυρο.',
+    'iran-plate' => 'Το :attribute δεν είναι έγκυρο.',
 ];

@@ -40,4 +40,6 @@ return [
     'url' => ':attribute유효하지 않습니다.',
     'username' => ':attribute유효하지 않습니다.',
     'uuid' => ':attribute유효하지 않습니다.',
+    'landline-number' => ':attribute유효하지 않습니다.',
+    'iran-plate' => ':attribute유효하지 않습니다.',
 ];

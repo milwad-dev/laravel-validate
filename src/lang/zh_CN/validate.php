@@ -40,4 +40,6 @@ return [
     'url' => ':attribute无效.',
     'username' => ':attribute无效.',
     'uuid' => ':attribute无效.',
+    'landline-number' => ':attribute无效.',
+    'iran-plate' => ':attribute无效.',
 ];

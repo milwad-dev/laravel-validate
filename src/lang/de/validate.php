@@ -41,4 +41,5 @@ return [
     'username' => ':attribute kein gültiger.',
     'uuid' => ':attribute kein gültiger.',
     'landline-number' => ':attribute kein gültiger.',
+    'iran-plate' => ':attribute kein gültiger.',
 ];

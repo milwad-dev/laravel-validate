@@ -40,4 +40,6 @@ return [
     'url' => ':attribute غير صالح.',
     'username' => ':attribute غير صالح.',
     'uuid' => ':attribute غير صالح.',
+    'landline-number' => ':attribute غير صالح.',
+    'iran-plate' => ':attribute غير صالح.',
 ];

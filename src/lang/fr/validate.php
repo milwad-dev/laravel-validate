@@ -40,4 +40,6 @@ return [
     'url' => ":attribute n'est pas valide.",
     'username' => ":attribute n'est pas valide.",
     'uuid' => ":attribute n'est pas valide.",
+    'landline-number' => ":attribute n'est pas valide.",
+    'iran-plate' => ":attribute n'est pas valide.",
 ];

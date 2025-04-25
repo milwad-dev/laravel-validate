@@ -40,4 +40,6 @@ return [
     'url' => ':attribute বৈধ নয়.',
     'username' => ':attribute বৈধ নয়.',
     'uuid' => ':attribute বৈধ নয়.',
+    'landline-number' => ':attribute বৈধ নয়.',
+    'iran-plate' => ':attribute বৈধ নয়.',
 ];
