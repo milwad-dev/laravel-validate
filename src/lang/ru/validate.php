@@ -40,4 +40,6 @@ return [
     'url' => ':attribute не действует.',
     'username' => ':attribute не действует.',
     'uuid' => ':attribute не действует.',
+    'landline-number' => ':attribute не действует.',
+    'iran-plate' => ':attribute не действует.',
 ];

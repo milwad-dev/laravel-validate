@@ -40,4 +40,6 @@ return [
     'url' => 'Невалидна вредност :attribute',
     'username' => 'Невалидна вредност :attribute',
     'uuid' => 'Невалидна вредност :attribute',
+    'landline-number' => 'Невалидна вредност :attribute',
+    'iran-plate' => 'Невалидна вредност :attribute',
 ];

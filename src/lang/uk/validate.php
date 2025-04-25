@@ -40,4 +40,6 @@ return [
     'url' => ':attribute не є дійсним.',
     'username' => ':attribute не є дійсним.',
     'uuid' => ':attribute не є дійсним.',
+    'landline-number' => ':attribute не є дійсним.',
+    'iran-plate' => ':attribute не є дійсним.',
 ];

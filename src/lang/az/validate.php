@@ -40,4 +40,6 @@ return [
     'url' => ':attribute doğru deyil.',
     'username' => ':attribute doğru deyil.',
     'uuid' => ':attribute doğru deyil.',
+    'landline-number' => ':attribute doğru deyil.',
+    'iran-plate' => ':attribute doğru deyil.',
 ];

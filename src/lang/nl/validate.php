@@ -40,4 +40,6 @@ return [
     'url' => 'De :attribute is niet geldig.',
     'username' => 'De :attribute is niet geldig.',
     'uuid' => 'De :attribute is niet geldig.',
+    'landline-number' => 'De :attribute is niet geldig.',
+    'iran-plate' => 'De :attribute is niet geldig.',
 ];

@@ -40,4 +40,6 @@ return [
     'url' => ':attributeमान्य नहीं है।.',
     'username' => ':attributeमान्य नहीं है।.',
     'uuid' => ':attributeमान्य नहीं है।.',
+    'landline-number' => ':attributeमान्य नहीं है।.',
+    'iran-plate' => ':attributeमान्य नहीं है।.',
 ];

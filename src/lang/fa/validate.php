@@ -41,4 +41,5 @@ return [
     'username' => 'مقدار :attribute صحیح نمی باشد.',
     'uuid' => 'مقدار :attribute صحیح نمی باشد.',
     'landline-number' => 'مقدار :attribute صحیح نمی باشد.',
+    'iran-plate' => 'مقدار :attribute صحیح نمی باشد.',
 ];

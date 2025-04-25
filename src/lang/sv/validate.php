@@ -40,4 +40,6 @@ return [
     'url' => 'Värdet :attribute är inte korrekt.',
     'username' => 'Värdet :attribute är inte korrekt.',
     'uuid' => 'Värdet :attribute är inte korrekt.',
+    'landline-number' => 'Värdet :attribute är inte korrekt.',
+    'iran-plate' => 'Värdet :attribute är inte korrekt.',
 ];

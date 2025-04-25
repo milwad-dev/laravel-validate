@@ -40,4 +40,6 @@ return [
     'url' => ':attribute no és vàlid.',
     'username' => ':attribute no és vàlid.',
     'uuid' => ':attribute no és vàlid.',
+    'landline-number' => ':attribute no és vàlid.',
+    'iran-plate' => ':attribute no és vàlid.',
 ];
