@@ -9,6 +9,6 @@ class IRPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(\+98|0)?9\d{9}$/', $value);
+        return preg_match('/^(\+98|98|0098|0)?9\d{9}$/', $value);
     }
 }
