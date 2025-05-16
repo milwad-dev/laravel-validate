@@ -9,12 +9,13 @@
 [![Passed Tests](https://github.com/milwad-dev/laravel-validate/actions/workflows/run-tests.yml/badge.svg)](https://github.com/milwad-dev/laravel-validate/actions/workflows/run-tests.yml)
 [![Quality Score](https://img.shields.io/scrutinizer/g/milwad-dev/laravel-validate.svg?style=flat-square)](https://scrutinizer-ci.com/g/milwad-dev/laravel-validate)
 [![Check Imports](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml/badge.svg?branch=1.x)](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/milwad-dev/laravel-validate)
 
 ***
 The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation
 logic. <br>
-You can validate data more easily, `Laravel Validate` has lots of rule classes for validation. <br>
-This package supports localization and can be used for most of the languages. <br>
+You can validate data more easily. The `Laravel Validate` has lots of rule classes for validation. <br>
+This package supports localization and can be used for most languages. <br>
 (If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
 # Requirements
