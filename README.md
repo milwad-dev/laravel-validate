@@ -18,6 +18,8 @@ You can validate data more easily. The `Laravel Validate` has lots of rule class
 This package supports localization and can be used for most languages. <br>
 (If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
+[AI Documentation](https://deepwiki.com/milwad-dev/laravel-validate)
+
 # Requirements
 
 ***
@@ -43,13 +45,13 @@ composer require milwad/laravel-validate
 
 # Publish
 
-If you want to publish config file, you can run below command on your terminal:
+If you want to publish a config file, you can run the following command on your terminal:
 
 ```shell
 php artisan vendor:publish --tag="laravel-validate-config"
 ```
 
-If you want to publish a lang file for a custom validation message you can run this command in the terminal:
+If you want to publish a lang file for a custom validation message, you can run this command in the terminal:
 
 ```shell
 php artisan vendor:publish --tag="validate-lang-{$lang}"
@@ -65,7 +67,7 @@ You can see the [Support Languages](#support-languages) section if you don't kno
 
 # Configurations
 
-If you may use rules with string like `ValidPhone`, you need to change the config option to `true`:
+If you may use rules with a string like `ValidPhone`, you need to change the config option to `true`:
 
 ```php
 /*
