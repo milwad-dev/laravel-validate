@@ -18,7 +18,7 @@ The `Laravel-Validate` package enhanced Laravel validation capabilities with cus
 logic. <br>
 You can validate data more easily. The `Laravel Validate` has lots of rule classes for validation. <br>
 This package supports localization and can be used for most languages. <br>
-(If some language didn't support, you can <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
+(If some language didn't support, you can create <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language)
 
 [AI Documentation](https://deepwiki.com/milwad-dev/laravel-validate)
 
