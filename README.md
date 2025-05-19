@@ -11,6 +11,8 @@
 [![Check Imports](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml/badge.svg?branch=1.x)](https://github.com/milwad-dev/laravel-validate/actions/workflows/imports.yml)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/milwad-dev/laravel-validate)
 
+# Introduction
+
 ***
 The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation
 logic. <br>
