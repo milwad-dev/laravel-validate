@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidIpAddressIPV4;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidIpAddressIPV4Test extends TestCase
 {
-    /**
-     * Test ipv4 address is valid.
-     */
-    public function test_ipv4_address_is_valid()
-    {
-        $rules = ['ipv4_address' => [new ValidIpAddressIPV4]];
-        $data = ['ipv4_address' => '129.144.50.56'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidIpAddressIPV4::class;
 
-    /**
-     * Test ipv4 address is not valid.
-     */
-    public function test_ipv4_address_is_not_valid()
-    {
-        $rules = ['ipv4_address' => [new ValidIpAddressIPV4]];
-        $data = ['ipv4_address' => '123456789'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '129.144.50.56';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '123456789';
 }

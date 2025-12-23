@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidIpAddressIPV6;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidIpAddressIPV6Test extends TestCase
 {
-    /**
-     * Test ipv6 address is valid.
-     */
-    public function test_ipv6_address_is_valid()
-    {
-        $rules = ['ipv6_address' => [new ValidIpAddressIPV6]];
-        $data = ['ipv6_address' => '2001:db8:3333:4444:5555:6666:7777:8888'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidIpAddressIPV6::class;
 
-    /**
-     * Test ipv6 address is not valid.
-     */
-    public function test_ipv6_address_is_not_valid()
-    {
-        $rules = ['ipv6_address' => [new ValidIpAddressIPV6]];
-        $data = ['ipv6_address' => '12345671213145131212'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '2001:db8:3333:4444:5555:6666:7777:8888';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '12345671213145131212';
 }

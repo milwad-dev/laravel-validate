@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidDiscordUsername;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidDiscordUsernameTest extends TestCase
 {
-    /**
-     * Test discord username is valid.
-     */
-    public function test_discord_username_is_valid()
-    {
-        $rules = ['discord_username' => [new ValidDiscordUsername]];
-        $data = ['discord_username' => 'Milwad#2134'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidDiscordUsername::class;
 
-    /**
-     * Test discord username is not valid.
-     */
-    public function test_discord_username_is_not_valid()
-    {
-        $rules = ['discord_username' => [new ValidDiscordUsername]];
-        $data = ['discord_username' => '#2134'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'Milwad#2134';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '#2134';
 }

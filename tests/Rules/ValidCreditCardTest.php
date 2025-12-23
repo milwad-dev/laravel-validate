@@ -4,30 +4,17 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidCreditCard;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidCreditCardTest extends TestCase
 {
-    /**
-     * Test credit card number is valid.
-     */
-    public function test_credit_card_is_valid()
-    {
-        $rules = ['credit_card' => [new ValidCreditCard]];
-        $data = ['credit_card' => '4111111111111111']; // A sample valid credit card number
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidCreditCard::class;
 
-    /**
-     * Test credit card number is not valid.
-     */
-    public function test_credit_card_is_not_valid()
-    {
-        $rules = ['credit_card' => [new ValidCreditCard]];
-        $data = ['credit_card' => '1234567812345678']; // A sample invalid credit card number
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    // A sample valid credit card number
+    private string $validData = '4111111111111111';
 
-        $this->assertFalse($passes);
-    }
+    // A sample invalid credit card number
+    private string $invalidData = '1234567812345678';
 }

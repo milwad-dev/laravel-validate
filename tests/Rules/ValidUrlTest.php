@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidUrl;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidUrlTest extends TestCase
 {
-    /**
-     * Test url is valid.
-     */
-    public function test_url_is_valid()
-    {
-        $rules = ['url' => [new ValidUrl]];
-        $data = ['url' => 'https://github.com/milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidUrl::class;
 
-    /**
-     * Test url is not valid.
-     */
-    public function test_url_is_nor_valid()
-    {
-        $rules = ['url' => [new ValidUrl]];
-        $data = ['url' => 'milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'https://github.com/milwad-dev';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'milwad-dev';
 }

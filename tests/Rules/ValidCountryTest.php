@@ -15,9 +15,10 @@ class ValidCountryTest extends TestCase
         $rules = ['country' => [new ValidCountry]];
 
         foreach (config('laravel-validate.countries', []) as $country) {
-            $data = ['country' => $country];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
-            $this->assertTrue($passes);
+            $this->assertValidationPasses(
+                data: ['country' => $country],
+                rules: $rules
+            );
         }
     }
 
@@ -29,9 +30,10 @@ class ValidCountryTest extends TestCase
         $rules = ['country' => [new ValidCountry(true)]];
 
         foreach (array_keys(config('laravel-validate.countries', [])) as $country) {
-            $data = ['country' => $country];
-            $passes = $this->app['validator']->make($data, $rules)->passes();
-            $this->assertTrue($passes);
+            $this->assertValidationPasses(
+                data: ['country' => $country],
+                rules: $rules
+            );
         }
     }
 
@@ -40,10 +42,9 @@ class ValidCountryTest extends TestCase
      */
     public function test_country_is_not_valid()
     {
-        $rules = ['country' => [new ValidCountry]];
-        $data = ['country' => 'Unknown'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
-        $this->assertFalse($passes);
+        $this->assertValidationFails(
+            data: ['country' => 'Unknown'],
+            rules: ['country' => [new ValidCountry]]
+        );
     }
 }

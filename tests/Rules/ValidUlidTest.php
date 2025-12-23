@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidUlid;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidUlidTest extends TestCase
 {
-    /**
-     * Test ulid is valid.
-     */
-    public function test_ulid_is_valid()
-    {
-        $rules = ['ulid' => [new ValidUlid]];
-        $data = ['ulid' => '01ARZ3NDEKTSV4RRFFQ69G5FAV'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidUlid::class;
 
-    /**
-     * Test ulid is not valid.
-     */
-    public function test_ulid_is_not_valid()
-    {
-        $rules = ['ulid' => [new ValidUlid]];
-        $data = ['ulid' => '01ARZ3NDEKTSV4RRFFQ69G5FA'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '01ARZ3NDEKTSV4RRFFQ69G5FAV';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '01ARZ3NDEKTSV4RRFFQ69G5FA';
 }

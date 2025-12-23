@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidKebabCase;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidKebabCaseTest extends TestCase
 {
-    /**
-     * Test kebab case is valid.
-     */
-    public function test_kebab_case_is_valid()
-    {
-        $rules = ['kebab-case' => [new ValidKebabCase]];
-        $data = ['kebab-case' => 'milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidKebabCase::class;
 
-    /**
-     * Test kebab case is not valid.
-     */
-    public function test_kebab_case_is_not_valid()
-    {
-        $rules = ['kebab-case' => [new ValidKebabCase]];
-        $data = ['kebab-case' => 'milwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'milwad-dev';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'milwadDev';
 }

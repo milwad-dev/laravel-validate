@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidCartNumberIran;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidCartNumberIranTest extends TestCase
 {
-    /**
-     * Test cart number iran is valid.
-     */
-    public function test_cart_number_iran_is_valid()
-    {
-        $rules = ['cart_number_iran' => [new ValidCartNumberIran]];
-        $data = ['cart_number_iran' => '6280231331655562'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidCartNumberIran::class;
 
-    /**
-     * Test cart number iran is invalid.
-     */
-    public function test_cart_number_iran_is_invalid()
-    {
-        $rules = ['cart_number_iran' => [new ValidCartNumberIran]];
-        $data = ['cart_number_iran' => '1234123412341234'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '6280231331655562';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '1234123412341234';
 }

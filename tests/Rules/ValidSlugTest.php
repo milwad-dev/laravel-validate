@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidSlug;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidSlugTest extends TestCase
 {
-    /**
-     * Test slug is valid.
-     */
-    public function test_slug_is_valid()
-    {
-        $rules = ['slug' => [new ValidSlug]];
-        $data = ['slug' => 'milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidSlug::class;
 
-    /**
-     * Test slug is not valid.
-     */
-    public function test_slug_is_not_valid()
-    {
-        $rules = ['slug' => [new ValidSlug]];
-        $data = ['slug' => 'milwad_dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'milwad-dev';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'milwad_dev';
 }

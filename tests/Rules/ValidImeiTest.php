@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidImei;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidImeiTest extends TestCase
 {
-    /**
-     * Test imei is valid.
-     */
-    public function test_imei_is_valid()
-    {
-        $rules = ['imei' => [new ValidImei]];
-        $data = ['imei' => '354809104295874'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidImei::class;
 
-    /**
-     * Test imei is not valid.
-     */
-    public function test_imei_is_not_valid()
-    {
-        $rules = ['imei' => [new ValidImei]];
-        $data = ['imei' => '80484080484'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '354809104295874';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '80484080484';
 }

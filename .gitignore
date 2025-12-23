@@ -4,4 +4,5 @@ composer.lock
 .phpunit.result.cache
 phpunit.xml
 coverage
-.phpunit.cache
+/.phpunit.cache
+

@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidStrongPassword;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidStrongPasswordTest extends TestCase
 {
-    /**
-     * Test password is strong.
-     */
-    public function test_password_is_strong()
-    {
-        $rules = ['strong_password' => [new ValidStrongPassword]];
-        $data = ['strong_password' => 'Milwad123!'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidStrongPassword::class;
 
-    /**
-     * Test password is not strong.
-     */
-    public function test_password_is_not_strong()
-    {
-        $rules = ['strong_password' => [new ValidStrongPassword]];
-        $data = ['strong_password' => 'Milwad123'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'Milwad123!';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'Milwad123';
 }

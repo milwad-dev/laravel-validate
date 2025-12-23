@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidPort;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidPortTest extends TestCase
 {
-    /**
-     * Test port is valid.
-     */
-    public function test_port_is_valid()
-    {
-        $rules = ['port' => [new ValidPort]];
-        $data = ['port' => '8080'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidPort::class;
 
-    /**
-     * Test port is not valid.
-     */
-    public function test_port_is_not_valid()
-    {
-        $rules = ['port' => [new ValidPort]];
-        $data = ['port' => '158754'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '8080';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '158754';
 }

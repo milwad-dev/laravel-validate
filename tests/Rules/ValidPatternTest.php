@@ -4,30 +4,20 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidPattern;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidPatternTest extends TestCase
 {
-    /**
-     * Test pattern is valid.
-     */
-    public function test_pattern_is_valid()
+    use RuleTestTrait;
+
+    private string $key = 'numbers';
+
+    private string $validData = '4444-4444-4444';
+
+    private string $invalidData = '44444-4444-44444';
+
+    protected function setRules(): array
     {
-        $rules = ['numbers' => [new ValidPattern(4)]];
-        $data = ['numbers' => '4444-4444-4444'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
-        $this->assertTrue($passes);
-    }
-
-    /**
-     * Test pattern is not valid.
-     */
-    public function test_pattern_is_not_valid()
-    {
-        $rules = ['numbers' => [new ValidPattern(4)]];
-        $data = ['numbers' => '44444-4444-44444'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
-
-        $this->assertFalse($passes);
+        return [$this->key => [new ValidPattern(4)]];
     }
 }

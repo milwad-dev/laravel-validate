@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidIranPostalCode;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidIranPostalCodeTest extends TestCase
 {
-    /**
-     * Test postal code is valid.
-     */
-    public function test_postal_code_is_valid()
-    {
-        $rules = ['postal_code' => [new ValidIranPostalCode]];
-        $data = ['postal_code' => '3354355599'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidIranPostalCode::class;
 
-    /**
-     * Test postal code is not valid.
-     */
-    public function test_postal_code_is_not_valid()
-    {
-        $rules = ['postal_code' => [new ValidIranPostalCode]];
-        $data = ['postal_code' => '1111111111'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '3354355599';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '1111111111';
 }

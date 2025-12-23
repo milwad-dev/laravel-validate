@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidBitcoinAddress;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidBitcoinAddressTest extends TestCase
 {
-    /**
-     * Test bitcoin address is valid.
-     */
-    public function test_bitcoin_address_is_valid()
-    {
-        $rules = ['bitcoin_address' => [new ValidBitcoinAddress]];
-        $data = ['bitcoin_address' => '1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidBitcoinAddress::class;
 
-    /**
-     * Test bitcoin address is not valid.
-     */
-    public function test_bitcoin_address_is_not_valid()
-    {
-        $rules = ['bitcoin_address' => [new ValidBitcoinAddress]];
-        $data = ['bitcoin_address' => 'loremipsum'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'loremipsum';
 }

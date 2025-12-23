@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidHtmlTag;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidHtmlTagTest extends TestCase
 {
-    /**
-     * Test html tag is valid.
-     */
-    public function test_html_tag_is_valid()
-    {
-        $rules = ['html_tag' => [new ValidHtmlTag]];
-        $data = ['html_tag' => '<h1></h1>'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidHtmlTag::class;
 
-    /**
-     * Test html tag is not valid.
-     */
-    public function test_html_tag_is_not_valid()
-    {
-        $rules = ['html_tag' => [new ValidHtmlTag]];
-        $data = ['html_tag' => 'milwad-dev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '<h1></h1>';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'milwad-dev';
 }

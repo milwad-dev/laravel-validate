@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidCapitalCharWithNumber;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidCapitalCharWithNumberTest extends TestCase
 {
-    /**
-     * Test capital char with number is valid.
-     */
-    public function test_capital_char_with_number_is_valid()
-    {
-        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber]];
-        $data = ['capital_char_with_number' => 'MILWAD-84'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidCapitalCharWithNumber::class;
 
-    /**
-     * Test capital char with number is not valid.
-     */
-    public function test_capital_char_with_number_is_not_valid()
-    {
-        $rules = ['capital_char_with_number' => [new ValidCapitalCharWithNumber]];
-        $data = ['capital_char_with_number' => 'Milwad-84'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'MILWAD-84';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'Milwad-84';
 }

@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidDomain;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidDomainTest extends TestCase
 {
-    /**
-     * Test domain is valid.
-     */
-    public function test_domain_is_valid()
-    {
-        $rules = ['domain' => [new ValidDomain]];
-        $data = ['domain' => 'github.com'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidDomain::class;
 
-    /**
-     * Test domain is not valid.
-     */
-    public function test_domain_is_not_valid()
-    {
-        $rules = ['domain' => [new ValidDomain]];
-        $data = ['domain' => 'github/com'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'github.com';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'github/com';
 }

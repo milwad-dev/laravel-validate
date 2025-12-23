@@ -2,17 +2,17 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
-use Milwad\LaravelValidate\Rules\ValidUsername;
+use Milwad\LaravelValidate\Rules\ValidDuplicate;
 use Milwad\LaravelValidate\Tests\TestCase;
 use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
-class ValidUsernameTest extends TestCase
+class ValidDuplicateStringTest extends TestCase
 {
     use RuleTestTrait;
 
-    private string $rules = ValidUsername::class;
+    private string $rules = ValidDuplicate::class;
 
     private string $validData = 'milwad';
 
-    private string $invalidData = 'milwad!@!';
+    private string $invalidData = 'millwad';
 }

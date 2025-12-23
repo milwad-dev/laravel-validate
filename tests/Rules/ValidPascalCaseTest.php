@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidPascalCase;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidPascalCaseTest extends TestCase
 {
-    /**
-     * Test pascal-case is valid.
-     */
-    public function test_pascal_case_is_valid()
-    {
-        $rules = ['pascal-case' => [new ValidPascalCase]];
-        $data = ['pascal-case' => 'MilwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidPascalCase::class;
 
-    /**
-     * Test pascal-case is not valid.
-     */
-    public function test_pascal_case_is_not_valid()
-    {
-        $rules = ['pascal-case' => [new ValidPascalCase]];
-        $data = ['pascal-case' => 'milwadDev'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'MilwadDev';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'milwadDev';
 }

@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidCarNumber;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidCarNumberTest extends TestCase
 {
-    /**
-     * Test car number is valid.
-     */
-    public function test_car_number_is_valid()
-    {
-        $rules = ['car_number' => [new ValidCarNumber]];
-        $data = ['car_number' => 'KA01AB1234'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidCarNumber::class;
 
-    /**
-     * Test car number is not valid.
-     */
-    public function test_car_number_is_not_valid()
-    {
-        $rules = ['car_number' => [new ValidCarNumber]];
-        $data = ['car_number' => '854128'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = 'KA01AB1234';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = '854128';
 }

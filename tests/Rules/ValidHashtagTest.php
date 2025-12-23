@@ -4,30 +4,15 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidHashtag;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Tests\Traits\RuleTestTrait;
 
 class ValidHashtagTest extends TestCase
 {
-    /**
-     * Test text has hashtag.
-     */
-    public function test_text_has_hashtag()
-    {
-        $rules = ['hashtag' => [new ValidHashtag]];
-        $data = ['hashtag' => '#laravel'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    use RuleTestTrait;
 
-        $this->assertTrue($passes);
-    }
+    private string $rules = ValidHashtag::class;
 
-    /**
-     * Test text has no hashtag.
-     */
-    public function test_text_has_no_hashtag()
-    {
-        $rules = ['hashtag' => [new ValidHashtag]];
-        $data = ['hashtag' => 'laravel'];
-        $passes = $this->app['validator']->make($data, $rules)->passes();
+    private string $validData = '#laravel';
 
-        $this->assertFalse($passes);
-    }
+    private string $invalidData = 'laravel';
 }
