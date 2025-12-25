@@ -44,8 +44,13 @@ jobs:
                     - laravel: 11.*
                       php: 8.0
 
-                    - laravel: 10.*
-                      php: 8.0
+                    - laravel: 11.*
+                      php: 8.2
+                      dependency-version: prefer-lowest
+
+                    - laravel: 11.*
+                      php: 8.3
+                      dependency-version: prefer-lowest
 
                     - laravel: 10.*
                       php: 8.0
