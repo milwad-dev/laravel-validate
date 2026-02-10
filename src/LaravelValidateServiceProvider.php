@@ -21,7 +21,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
             $this->publishConfigFile();
         }
 
-        $this->loadTranslationsFrom(__DIR__.'/lang', 'validation');
+        $this->loadTranslationsFrom(dirname(__DIR__).'/lang', 'validation');
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');
     }
 
@@ -30,7 +30,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
      */
     protected function publishLangFiles(): void
     {
-        $langs = File::directories(__DIR__.'/lang');
+        $langs = File::directories(dirname(__DIR__).'/lang');
 
         foreach ($langs as $lang) {
             $lang = Str::after($lang, 'lang');
@@ -38,7 +38,7 @@ class LaravelValidateServiceProvider extends ServiceProvider
             $lang = Str::replace('/', '', $lang);
 
             $this->publishes([
-                __DIR__."/lang/$lang" => lang_path($lang),
+                dirname(__DIR__)."/lang/$lang" => lang_path($lang),
             ], "validate-lang-$lang");
         }
     }
