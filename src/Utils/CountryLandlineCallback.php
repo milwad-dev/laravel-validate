@@ -2,7 +2,6 @@
 
 namespace Milwad\LaravelValidate\Utils;
 
-use Milwad\LaravelValidate\Utils\CountryLandlineValidator\CountryLandlineValidator;
 use RuntimeException;
 
 class CountryLandlineCallback

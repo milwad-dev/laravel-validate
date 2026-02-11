@@ -2,7 +2,6 @@
 
 namespace Milwad\LaravelValidate\Utils;
 
-use Milwad\LaravelValidate\Utils\CountryPhoneValidator\CountryPhoneValidator;
 use RuntimeException;
 
 class CountryPhoneCallback

@@ -2,6 +2,8 @@
 
 namespace Milwad\LaravelValidate\Utils\CountryLandlineValidator;
 
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator;
+
 class KOLandlineValidator implements CountryLandlineValidator
 {
     /**

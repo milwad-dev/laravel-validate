@@ -1,6 +1,6 @@
 <?php
 
-namespace Milwad\LaravelValidate\Utils\CountryPhoneValidator;
+namespace Milwad\LaravelValidate\Utils;
 
 interface CountryPhoneValidator
 {

@@ -2,6 +2,8 @@
 
 namespace Milwad\LaravelValidate\Utils\CountryPhoneValidator;
 
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator;
+
 class ENPhoneValidator implements CountryPhoneValidator
 {
     /**

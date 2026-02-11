@@ -1,6 +1,6 @@
 <?php
 
-namespace Milwad\LaravelValidate\Utils\CountryLandlineValidator;
+namespace Milwad\LaravelValidate\Utils;
 
 interface CountryLandlineValidator
 {
