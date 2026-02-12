@@ -12,7 +12,7 @@ class LaravelValidateServiceProviderTest extends TestCase
      */
     public function test_all_lang_folders_publish_successfully()
     {
-        $langs = File::directories(realpath(__DIR__.'/../src/lang'));
+        $langs = File::directories(realpath(__DIR__.'/../lang'));
 
         foreach ($langs as $lang) {
             $lang = Str::after($lang, 'lang');
