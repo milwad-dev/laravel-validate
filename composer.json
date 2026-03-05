@@ -1,62 +1,62 @@
 {
-  "name": "milwad/laravel-validate",
-  "description": "The Laravel-Validate package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation logic.",
-  "keywords": [
-    "milwad",
-    "laravel",
-    "framework",
-    "validation",
-    "laravel validate package",
-    "laravel package",
-    "larave-validation",
-    "laravel-validate",
-    "validate",
-    "regex"
-  ],
-  "homepage": "https://github.com/milwad-dev/laravel-validate",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-      {
-          "name": "Milwad Khosravi",
-          "email": "milwad.dev@gmail.com",
-          "homepage": "https://github.com/milwad-dev",
-          "role": "Author"
-      }
-  ],
-  "require": {
-    "php": "^8.0",
-    "laravel/framework": "9.*|10.*|11.*|12.*",
-    "ext-bcmath": "*",
-    "ext-ctype": "*"
-  },
-  "require-dev": {
-    "imanghafoori/php-imports-analyzer": "1.0.*",
-    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
-    "phpunit/phpunit": "^9.0|^10.0|^11.0"
-  },
-  "autoload": {
-    "psr-4": {
-        "Milwad\\LaravelValidate\\": "src/"
+    "name": "milwad/laravel-validate",
+    "description": "The Laravel-Validate package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation logic.",
+    "keywords": [
+        "milwad",
+        "laravel",
+        "framework",
+        "validation",
+        "laravel validate package",
+        "laravel package",
+        "larave-validation",
+        "laravel-validate",
+        "validate",
+        "regex"
+    ],
+    "homepage": "https://github.com/milwad-dev/laravel-validate",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milwad Khosravi",
+            "email": "milwad.dev@gmail.com",
+            "homepage": "https://github.com/milwad-dev",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "9.*|10.*|11.*|12.*|^13.0",
+        "ext-bcmath": "*",
+        "ext-ctype": "*"
+    },
+    "require-dev": {
+        "imanghafoori/php-imports-analyzer": "1.0.*",
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^9.0|^10.0|^11.0|^12.5.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Milwad\\LaravelValidate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Milwad\\LaravelValidate\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milwad\\LaravelValidate\\LaravelValidateServiceProvider"
+            ]
+        }
     }
-  },
-  "autoload-dev": {
-      "psr-4": {
-          "Milwad\\LaravelValidate\\Tests\\": "tests"
-      }
-  },
-  "config": {
-     "sort-packages": true
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit",
-    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-  },
-  "extra": {
-     "laravel": {
-         "providers": [
-             "Milwad\\LaravelValidate\\LaravelValidateServiceProvider"
-         ]
-     }
-  }
 }
