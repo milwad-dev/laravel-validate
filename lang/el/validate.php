@@ -24,6 +24,8 @@ return [
     'jalali_date' => 'Το :attribute δεν είναι έγκυρο.',
     'jwt' => 'Το :attribute δεν είναι έγκυρο.',
     'kebab-case' => 'Το :attribute δεν είναι έγκυρο.',
+    'latitude' => 'Το :attribute δεν είναι έγκυρο.',
+    'longitude' => 'Το :attribute δεν είναι έγκυρο.',
     'name-days-week' => 'Το :attribute δεν είναι έγκυρο.',
     'national-card' => 'Το :attribute δεν είναι έγκυρο.',
     'odd-number' => 'Το :attribute δεν είναι έγκυρο.',
