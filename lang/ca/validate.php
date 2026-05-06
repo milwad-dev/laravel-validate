@@ -24,6 +24,8 @@ return [
     'jalali_date' => ':attribute no és vàlid.',
     'jwt' => ':attribute no és vàlid.',
     'kebab-case' => ':attribute no és vàlid.',
+    'latitude' => ':attribute no és vàlid.',
+    'longitude' => ':attribute no és vàlid.',
     'name-days-week' => ':attribute no és vàlid.',
     'national-card' => ':attribute no és vàlid.',
     'odd-number' => ':attribute no és vàlid.',
