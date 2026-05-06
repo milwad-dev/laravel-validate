@@ -24,6 +24,8 @@ return [
     'jalali_date' => ':attribute kein gültiger.',
     'jwt' => ':attribute kein gültiger.',
     'kebab-case' => ':attribute kein gültiger.',
+    'latitude' => ':attribute kein gültiger.',
+    'longitude' => ':attribute kein gültiger.',
     'name-days-week' => ':attribute kein gültiger.',
     'national-card' => ':attribute kein gültiger.',
     'odd-number' => ':attribute kein gültiger.',
