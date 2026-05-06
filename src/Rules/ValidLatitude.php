@@ -11,7 +11,11 @@ class ValidLatitude implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return base64_encode(base64_decode($value, true)) === $value;
+        if (! is_float($value)) {
+            return false;
+        }
+
+        return $value < -90 || $value > 90;
     }
 
     /**
