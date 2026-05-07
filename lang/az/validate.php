@@ -24,6 +24,8 @@ return [
     'jalali_date' => ':attribute doğru deyil.',
     'jwt' => ':attribute doğru deyil.',
     'kebab-case' => ':attribute doğru deyil.',
+    'latitude' => ':attribute doğru deyil.',
+    'longitude' => ':attribute doğru deyil.',
     'name-days-week' => ':attribute doğru deyil.',
     'national-card' => ':attribute doğru deyil.',
     'odd-number' => ':attribute doğru deyil.',

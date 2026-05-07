@@ -24,6 +24,8 @@ return [
     'jalali_date' => ':attribute বৈধ নয়.',
     'jwt' => ':attribute বৈধ নয়.',
     'kebab-case' => ':attribute বৈধ নয়.',
+    'latitude' => ':attribute বৈধ নয়.',
+    'longitude' => ':attribute বৈধ নয়.',
     'name-days-week' => ':attribute বৈধ নয়.',
     'national-card' => ':attribute বৈধ নয়.',
     'odd-number' => ':attribute বৈধ নয়.',

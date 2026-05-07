@@ -24,6 +24,8 @@ return [
     'jalali_date' => 'The :attribute is not valid.',
     'jwt' => 'The :attribute is not valid.',
     'kebab-case' => 'The :attribute is not valid.',
+    'latitude' => 'The :attribute is not valid.',
+    'longitude' => 'The :attribute is not valid.',
     'name-days-week' => 'The :attribute is not valid.',
     'national-card' => 'The :attribute is not valid.',
     'odd-number' => 'The :attribute is not valid.',

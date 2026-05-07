@@ -24,6 +24,8 @@ return [
     'jalali_date' => ':attribute غير صالح.',
     'jwt' => ':attribute غير صالح.',
     'kebab-case' => ':attribute غير صالح.',
+    'latitude' => ':attribute غير صالح.',
+    'longitude' => ':attribute غير صالح.',
     'name-days-week' => ':attribute غير صالح.',
     'national-card' => ':attribute غير صالح.',
     'odd-number' => ':attribute غير صالح.',
