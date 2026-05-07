@@ -11,11 +11,13 @@ class ValidLatitude implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        if (! is_float($value)) {
+        if (! is_numeric($value)) {
             return false;
         }
 
-        return $value < -90 || $value > 90;
+        $value = (float) $value;
+
+        return $value >= -90 && $value <= 90;
     }
 
     /**
