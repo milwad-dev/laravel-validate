@@ -11,11 +11,13 @@ class ValidLongitude implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        if (! is_float($value)) {
+        if (! is_numeric($value)) {
             return false;
         }
 
-        return $value < -180 || $value > 180;
+        $value = (float) $value;
+
+        return $value >= -180 && $value <= 180;
     }
 
     /**
