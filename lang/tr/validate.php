@@ -26,6 +26,7 @@ return [
     'kebab-case' => ':attribute doğru değil.',
     'name-days-week' => ':attribute doğru değil.',
     'national-card' => ':attribute doğru değil.',
+    'no-html' => ':attribute doğru değil.',
     'odd-number' => ':attribute doğru değil.',
     'pascal-case' => ':attribute doğru değil.',
     'pattern' => ':attribute doğru değil.',

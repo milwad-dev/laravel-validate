@@ -28,6 +28,7 @@ return [
     'longitude' => 'Το :attribute δεν είναι έγκυρο.',
     'name-days-week' => 'Το :attribute δεν είναι έγκυρο.',
     'national-card' => 'Το :attribute δεν είναι έγκυρο.',
+    'no-html' => 'Το :attribute δεν είναι έγκυρο.',
     'odd-number' => 'Το :attribute δεν είναι έγκυρο.',
     'pascal-case' => 'Το :attribute δεν είναι έγκυρο.',
     'pattern' => 'Το :attribute δεν είναι έγκυρο.',

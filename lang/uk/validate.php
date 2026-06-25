@@ -26,6 +26,7 @@ return [
     'kebab-case' => ':attribute не є дійсним.',
     'name-days-week' => ':attribute не є дійсним.',
     'national-card' => ':attribute не є дійсним.',
+    'no-html' => ':attribute не є дійсним.',
     'odd-number' => ':attribute не є дійсним.',
     'pascal-case' => ':attribute не є дійсним.',
     'pattern' => ':attribute не є дійсним.',

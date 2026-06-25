@@ -26,6 +26,7 @@ return [
     'kebab-case' => ':attribute не действует.',
     'name-days-week' => ':attribute не действует.',
     'national-card' => ':attribute не действует.',
+    'no-html' => ':attribute не действует.',
     'odd-number' => ':attribute не действует.',
     'pascal-case' => ':attribute не действует.',
     'pattern' => ':attribute не действует.',

@@ -26,6 +26,7 @@ return [
     'kebab-case' => ':attribute有効じゃない。',
     'name-days-week' => ':attribute有効じゃない。',
     'national-card' => ':attribute有効じゃない。',
+    'no-html' => ':attribute有効じゃない。',
     'odd-number' => ':attribute有効じゃない。',
     'pascal-case' => ':attribute有効じゃない。',
     'pattern' => ':attribute有効じゃない。',

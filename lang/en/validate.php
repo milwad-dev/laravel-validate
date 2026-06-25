@@ -28,6 +28,7 @@ return [
     'longitude' => 'The :attribute is not valid.',
     'name-days-week' => 'The :attribute is not valid.',
     'national-card' => 'The :attribute is not valid.',
+    'no-html' => 'The :attribute is not valid.',
     'odd-number' => 'The :attribute is not valid.',
     'pascal-case' => 'The :attribute is not valid.',
     'pattern' => 'The :attribute is not valid.',

@@ -28,6 +28,7 @@ return [
     'longitude' => ':attribute doğru deyil.',
     'name-days-week' => ':attribute doğru deyil.',
     'national-card' => ':attribute doğru deyil.',
+    'no-html' => ':attribute doğru deyil.',
     'odd-number' => ':attribute doğru deyil.',
     'pascal-case' => ':attribute doğru deyil.',
     'pattern' => ':attribute doğru deyil.',

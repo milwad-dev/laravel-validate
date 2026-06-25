@@ -26,6 +26,7 @@ return [
     'kebab-case' => ':attribute유효하지 않습니다.',
     'name-days-week' => ':attribute유효하지 않습니다.',
     'national-card' => ':attribute유효하지 않습니다.',
+    'no-html' => ':attribute유효하지 않습니다.',
     'odd-number' => ':attribute유효하지 않습니다.',
     'pascal-case' => ':attribute유효하지 않습니다.',
     'pattern' => ':attribute유효하지 않습니다.',

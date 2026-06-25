@@ -26,6 +26,7 @@ return [
     'kebab-case' => ':Attribute tidak valid.',
     'name-days-week' => ':Attribute tidak valid.',
     'national-card' => ':Attribute tidak valid.',
+    'no-html' => ':Attribute tidak valid.',
     'odd-number' => ':Attribute tidak valid.',
     'pascal-case' => ':Attribute tidak valid.',
     'pattern' => ':Attribute tidak valid.',
