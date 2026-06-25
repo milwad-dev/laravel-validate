@@ -26,6 +26,7 @@ return [
     'kebab-case' => ":attribute n'est pas valide.",
     'name-days-week' => ":attribute n'est pas valide.",
     'national-card' => ":attribute n'est pas valide.",
+    'no-html' => ":attribute n'est pas valide.",
     'odd-number' => ":attribute n'est pas valide.",
     'pascal-case' => ":attribute n'est pas valide.",
     'pattern' => ":attribute n'est pas valide.",

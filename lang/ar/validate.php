@@ -28,6 +28,7 @@ return [
     'longitude' => ':attribute غير صالح.',
     'name-days-week' => ':attribute غير صالح.',
     'national-card' => ':attribute غير صالح.',
+    'no-html' => ':attribute غير صالح.',
     'odd-number' => ':attribute غير صالح.',
     'pascal-case' => ':attribute غير صالح.',
     'pattern' => ':attribute غير صالح.',

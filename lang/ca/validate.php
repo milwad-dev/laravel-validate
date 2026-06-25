@@ -28,6 +28,7 @@ return [
     'longitude' => ':attribute no és vàlid.',
     'name-days-week' => ':attribute no és vàlid.',
     'national-card' => ':attribute no és vàlid.',
+    'no-html' => ':attribute no és vàlid.',
     'odd-number' => ':attribute no és vàlid.',
     'pascal-case' => ':attribute no és vàlid.',
     'pattern' => ':attribute no és vàlid.',

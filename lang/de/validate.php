@@ -28,6 +28,7 @@ return [
     'longitude' => ':attribute kein gültiger.',
     'name-days-week' => ':attribute kein gültiger.',
     'national-card' => ':attribute kein gültiger.',
+    'no-html' => ':attribute kein gültiger.',
     'odd-number' => ':attribute kein gültiger.',
     'pascal-case' => ':attribute kein gültiger.',
     'pattern' => ':attribute kein gültiger.',
