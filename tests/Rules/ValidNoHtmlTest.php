@@ -28,7 +28,7 @@ class ValidNoHtmlTest extends TestCase
         $data = ['no_html' => '&lt;script&gt;alert("Milwad Khosravi")&lt;/script&gt;'];
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
-        $this->assertTrue($passes);
+        $this->assertFalse($passes);
     }
 
     /**
