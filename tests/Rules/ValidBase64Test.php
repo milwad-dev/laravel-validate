@@ -5,7 +5,7 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 use Milwad\LaravelValidate\Rules\ValidBase64;
 use Milwad\LaravelValidate\Tests\TestCase;
 
-class Valid64Test extends TestCase
+class ValidBase64Test extends TestCase
 {
     /**
      * Test base64 is valid.
