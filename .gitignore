@@ -7,3 +7,4 @@ coverage
 # PHPUnit
 /.phpunit.cache
 .phpunit.result.cache
+.DS_Store
