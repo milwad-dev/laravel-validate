@@ -250,7 +250,7 @@ If you've found a security bug, please email [milwad.dev@gmail.com](mailto:milwa
 
 # Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=milwad-dev/laravel-validate&type=Date)](https://star-history.com/#milwad-dev/laravel-validate&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=milwad-dev/laravel-validate&type=Date)](https://star-history.dera.page/#milwad-dev/laravel-validate&Date)
 
 # Donate
 
