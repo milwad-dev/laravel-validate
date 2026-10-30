@@ -25,15 +25,15 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "laravel/framework": "10.*|11.*|12.*|^13.0",
+        "php": "^8.2",
+        "laravel/framework": "11.*|12.*|^13.0",
         "ext-bcmath": "*",
         "ext-ctype": "*"
     },
     "require-dev": {
         "imanghafoori/php-imports-analyzer": "1.0.*",
-        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
-        "phpunit/phpunit": "^9.0|^10.0|^11.0|^12.5.12"
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.0|^11.0|^12.5.12"
     },
     "autoload": {
         "psr-4": {
