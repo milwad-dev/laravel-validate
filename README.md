@@ -23,6 +23,12 @@ This package supports localization and can be used for most languages. <br>
 
 [AI Documentation](https://deepwiki.com/milwad-dev/laravel-validate)
 
+# Related Packages
+
+***
+
+- [Laravel Validate Filament](https://github.com/milwad-dev/laravel-validate-filament) — brings `Laravel-Validate`'s custom rules to Filament forms as chainable field methods.
+
 # Requirements
 
 ***
