@@ -14,7 +14,6 @@
 
 # Introduction
 
-***
 The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation
 logic. <br>
 You can validate data more easily. The `Laravel Validate` has lots of rule classes for validation. <br>
@@ -25,13 +24,9 @@ This package supports localization and can be used for most languages. <br>
 
 # Related Packages
 
-***
-
 - [Laravel Validate Filament](https://github.com/milwad-dev/laravel-validate-filament) — brings `Laravel-Validate`'s custom rules to Filament forms as chainable field methods.
 
 # Requirements
-
-***
 
 - ```PHP >= 8.2```
 - ```Laravel >= 11.0```
