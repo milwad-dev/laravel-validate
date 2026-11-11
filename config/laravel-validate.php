@@ -36,6 +36,7 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SAPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SEPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\TRPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ZHPhoneValidator;
+use Milwad\LaravelValidate\Utils\GrammaticalNumber\GermanChecker;
 
 return [
     /*
@@ -90,6 +91,23 @@ return [
         'SE' => SELandlineValidator::class, // Sweden
         'TR' => TRLandlineValidator::class, // Turkey
         'ZH' => ZHLandlineValidator::class, // China
+    ],
+
+    /*
+     * The locale that the `ValidSingular` and `ValidPlural` rules use when no locale is passed to the rule.
+     *
+     * If the value is null, the default locale of your application (`app.locale`) will be used.
+     */
+    'grammatical-number-locale' => null,
+
+    /*
+     * Mapping of locales to their respective singular & plural checker classes.
+     * Locales that are not listed here are checked with the rules of `doctrine/inflector`, if it supports them.
+     *
+     * You can add custom checker, it must implement `GrammaticalNumberChecker`.
+     */
+    'grammatical-number' => [
+        'de' => GermanChecker::class, // German (requires `cijic/phpmorphy`)
     ],
 
     /*
