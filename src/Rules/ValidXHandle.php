@@ -13,7 +13,7 @@ class ValidXHandle implements Rule
 
     /**
      * @param  bool|array  $allowAtSign  Accept a leading "@".
-     *                                  An array is accepted for string rules, e.g. 'ValidXHandle:at'.
+     *                                   An array is accepted for string rules, e.g. 'ValidXHandle:at'.
      */
     public function __construct(bool|array $allowAtSign = false)
     {
