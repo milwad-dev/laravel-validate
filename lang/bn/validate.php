@@ -33,6 +33,7 @@ return [
     'name-days-week' => ':attribute বৈধ নয়.',
     'national-card' => ':attribute বৈধ নয়.',
     'no-html' => ':attribute বৈধ নয়.',
+    'no-emoji' => ':attribute বৈধ নয়.',
     'odd-number' => ':attribute বৈধ নয়.',
     'pascal-case' => ':attribute বৈধ নয়.',
     'pattern' => ':attribute বৈধ নয়.',
@@ -48,5 +49,8 @@ return [
     'ulid' => ':attribute বৈধ নয়.',
     'url' => ':attribute বৈধ নয়.',
     'username' => ':attribute বৈধ নয়.',
+    'github-username' => ':attribute বৈধ নয়.',
+    'instagram-handle' => ':attribute বৈধ নয়.',
+    'x-handle' => ':attribute বৈধ নয়.',
     'uuid' => ':attribute বৈধ নয়.',
 ];

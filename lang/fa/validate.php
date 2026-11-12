@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'مقدار :attribute صحیح نمی باشد.',
     'national-card' => 'مقدار :attribute صحیح نمی باشد.',
     'no-html' => 'مقدار :attribute صحیح نمی باشد.',
+    'no-emoji' => 'مقدار :attribute صحیح نمی باشد.',
     'odd-number' => 'مقدار :attribute صحیح نمی باشد.',
     'pascal-case' => 'مقدار :attribute صحیح نمی باشد.',
     'pattern' => 'مقدار :attribute صحیح نمی باشد.',
@@ -46,6 +47,9 @@ return [
     'ulid' => 'مقدار :attribute صحیح نمی باشد.',
     'url' => 'مقدار :attribute صحیح نمی باشد.',
     'username' => 'مقدار :attribute صحیح نمی باشد.',
+    'github-username' => 'مقدار :attribute صحیح نمی باشد.',
+    'instagram-handle' => 'مقدار :attribute صحیح نمی باشد.',
+    'x-handle' => 'مقدار :attribute صحیح نمی باشد.',
     'uuid' => 'مقدار :attribute صحیح نمی باشد.',
     'landline-number' => 'مقدار :attribute صحیح نمی باشد.',
 ];

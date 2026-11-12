@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'De :attribute is niet geldig.',
     'national-card' => 'De :attribute is niet geldig.',
     'no-html' => 'De :attribute is niet geldig.',
+    'no-emoji' => 'De :attribute is niet geldig.',
     'odd-number' => 'De :attribute is niet geldig.',
     'pascal-case' => 'De :attribute is niet geldig.',
     'pattern' => 'De :attribute is niet geldig.',
@@ -46,5 +47,8 @@ return [
     'ulid' => 'De :attribute is niet geldig.',
     'url' => 'De :attribute is niet geldig.',
     'username' => 'De :attribute is niet geldig.',
+    'github-username' => 'De :attribute is niet geldig.',
+    'instagram-handle' => 'De :attribute is niet geldig.',
+    'x-handle' => 'De :attribute is niet geldig.',
     'uuid' => 'De :attribute is niet geldig.',
 ];

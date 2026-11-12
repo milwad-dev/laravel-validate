@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'Невалидна вредност :attribute',
     'national-card' => 'Невалидна вредност :attribute',
     'no-html' => 'Невалидна вредност :attribute',
+    'no-emoji' => 'Невалидна вредност :attribute',
     'odd-number' => 'Невалидна вредност :attribute',
     'pascal-case' => 'Невалидна вредност :attribute',
     'pattern' => 'Невалидна вредност :attribute',
@@ -46,5 +47,8 @@ return [
     'ulid' => 'Невалидна вредност :attribute',
     'url' => 'Невалидна вредност :attribute',
     'username' => 'Невалидна вредност :attribute',
+    'github-username' => 'Невалидна вредност :attribute',
+    'instagram-handle' => 'Невалидна вредност :attribute',
+    'x-handle' => 'Невалидна вредност :attribute',
     'uuid' => 'Невалидна вредност :attribute',
 ];

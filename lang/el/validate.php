@@ -33,6 +33,7 @@ return [
     'name-days-week' => 'Το :attribute δεν είναι έγκυρο.',
     'national-card' => 'Το :attribute δεν είναι έγκυρο.',
     'no-html' => 'Το :attribute δεν είναι έγκυρο.',
+    'no-emoji' => 'Το :attribute δεν είναι έγκυρο.',
     'odd-number' => 'Το :attribute δεν είναι έγκυρο.',
     'pascal-case' => 'Το :attribute δεν είναι έγκυρο.',
     'pattern' => 'Το :attribute δεν είναι έγκυρο.',
@@ -48,5 +49,8 @@ return [
     'ulid' => 'Το :attribute δεν είναι έγκυρο.',
     'url' => 'Το :attribute δεν είναι έγκυρο.',
     'username' => 'Το :attribute δεν είναι έγκυρο.',
+    'github-username' => 'Το :attribute δεν είναι έγκυρο.',
+    'instagram-handle' => 'Το :attribute δεν είναι έγκυρο.',
+    'x-handle' => 'Το :attribute δεν είναι έγκυρο.',
     'uuid' => 'Το :attribute δεν είναι έγκυρο.',
 ];

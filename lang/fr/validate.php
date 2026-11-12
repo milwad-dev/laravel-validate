@@ -31,6 +31,7 @@ return [
     'name-days-week' => ":attribute n'est pas valide.",
     'national-card' => ":attribute n'est pas valide.",
     'no-html' => ":attribute n'est pas valide.",
+    'no-emoji' => ":attribute n'est pas valide.",
     'odd-number' => ":attribute n'est pas valide.",
     'pascal-case' => ":attribute n'est pas valide.",
     'pattern' => ":attribute n'est pas valide.",
@@ -46,5 +47,8 @@ return [
     'ulid' => ":attribute n'est pas valide.",
     'url' => ":attribute n'est pas valide.",
     'username' => ":attribute n'est pas valide.",
+    'github-username' => ":attribute n'est pas valide.",
+    'instagram-handle' => ":attribute n'est pas valide.",
+    'x-handle' => ":attribute n'est pas valide.",
     'uuid' => ":attribute n'est pas valide.",
 ];

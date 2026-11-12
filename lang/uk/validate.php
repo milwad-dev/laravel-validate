@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute не є дійсним.',
     'national-card' => ':attribute не є дійсним.',
     'no-html' => ':attribute не є дійсним.',
+    'no-emoji' => ':attribute не є дійсним.',
     'odd-number' => ':attribute не є дійсним.',
     'pascal-case' => ':attribute не є дійсним.',
     'pattern' => ':attribute не є дійсним.',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':attribute не є дійсним.',
     'url' => ':attribute не є дійсним.',
     'username' => ':attribute не є дійсним.',
+    'github-username' => ':attribute не є дійсним.',
+    'instagram-handle' => ':attribute не є дійсним.',
+    'x-handle' => ':attribute не є дійсним.',
     'uuid' => ':attribute не є дійсним.',
 ];

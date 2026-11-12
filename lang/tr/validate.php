@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute doğru değil.',
     'national-card' => ':attribute doğru değil.',
     'no-html' => ':attribute doğru değil.',
+    'no-emoji' => ':attribute doğru değil.',
     'odd-number' => ':attribute doğru değil.',
     'pascal-case' => ':attribute doğru değil.',
     'pattern' => ':attribute doğru değil.',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':attribute doğru değil.',
     'url' => ':attribute doğru değil.',
     'username' => ':attribute doğru değil.',
+    'github-username' => ':attribute doğru değil.',
+    'instagram-handle' => ':attribute doğru değil.',
+    'x-handle' => ':attribute doğru değil.',
     'uuid' => ':attribute doğru değil.',
 ];

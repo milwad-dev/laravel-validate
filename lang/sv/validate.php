@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'Värdet :attribute är inte korrekt.',
     'national-card' => 'Värdet :attribute är inte korrekt.',
     'no-html' => 'Värdet :attribute är inte korrekt.',
+    'no-emoji' => 'Värdet :attribute är inte korrekt.',
     'odd-number' => 'Värdet :attribute är inte korrekt.',
     'pascal-case' => 'Värdet :attribute är inte korrekt.',
     'pattern' => 'Värdet :attribute är inte korrekt.',
@@ -46,5 +47,8 @@ return [
     'ulid' => 'Värdet :attribute är inte korrekt.',
     'url' => 'Värdet :attribute är inte korrekt.',
     'username' => 'Värdet :attribute är inte korrekt.',
+    'github-username' => 'Värdet :attribute är inte korrekt.',
+    'instagram-handle' => 'Värdet :attribute är inte korrekt.',
+    'x-handle' => 'Värdet :attribute är inte korrekt.',
     'uuid' => 'Värdet :attribute är inte korrekt.',
 ];

@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute වලංගු නොවේ.',
     'national-card' => ':attribute වලංගු නොවේ.',
     'no-html' => ':attribute වලංගු නොවේ.',
+    'no-emoji' => ':attribute වලංගු නොවේ.',
     'odd-number' => ':attribute වලංගු නොවේ.',
     'pascal-case' => ':attribute වලංගු නොවේ.',
     'pattern' => ':attribute වලංගු නොවේ.',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':attribute වලංගු නොවේ.',
     'url' => ':attribute වලංගු නොවේ.',
     'username' => ':attribute වලංගු නොවේ.',
+    'github-username' => ':attribute වලංගු නොවේ.',
+    'instagram-handle' => ':attribute වලංගු නොවේ.',
+    'x-handle' => ':attribute වලංගු නොවේ.',
     'uuid' => ':attribute වලංගු නොවේ.',
 ];

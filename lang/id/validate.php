@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':Attribute tidak valid.',
     'national-card' => ':Attribute tidak valid.',
     'no-html' => ':Attribute tidak valid.',
+    'no-emoji' => ':Attribute tidak valid.',
     'odd-number' => ':Attribute tidak valid.',
     'pascal-case' => ':Attribute tidak valid.',
     'pattern' => ':Attribute tidak valid.',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':Attribute tidak valid.',
     'url' => ':Attribute tidak valid.',
     'username' => ':Attribute tidak valid.',
+    'github-username' => ':Attribute tidak valid.',
+    'instagram-handle' => ':Attribute tidak valid.',
+    'x-handle' => ':Attribute tidak valid.',
     'uuid' => ':Attribute tidak valid.',
 ];

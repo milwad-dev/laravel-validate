@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'national-card' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'no-html' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'no-emoji' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'odd-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'pascal-case' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'pattern' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
@@ -46,5 +47,8 @@ return [
     'ulid' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'url' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'username' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'github-username' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'instagram-handle' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'x-handle' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'uuid' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
 ];

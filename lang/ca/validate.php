@@ -33,6 +33,7 @@ return [
     'name-days-week' => ':attribute no és vàlid.',
     'national-card' => ':attribute no és vàlid.',
     'no-html' => ':attribute no és vàlid.',
+    'no-emoji' => ':attribute no és vàlid.',
     'odd-number' => ':attribute no és vàlid.',
     'pascal-case' => ':attribute no és vàlid.',
     'pattern' => ':attribute no és vàlid.',
@@ -48,5 +49,8 @@ return [
     'ulid' => ':attribute no és vàlid.',
     'url' => ':attribute no és vàlid.',
     'username' => ':attribute no és vàlid.',
+    'github-username' => ':attribute no és vàlid.',
+    'instagram-handle' => ':attribute no és vàlid.',
+    'x-handle' => ':attribute no és vàlid.',
     'uuid' => ':attribute no és vàlid.',
 ];

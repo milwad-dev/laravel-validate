@@ -33,6 +33,7 @@ return [
     'name-days-week' => ':attribute kein gültiger.',
     'national-card' => ':attribute kein gültiger.',
     'no-html' => ':attribute kein gültiger.',
+    'no-emoji' => ':attribute kein gültiger.',
     'odd-number' => ':attribute kein gültiger.',
     'pascal-case' => ':attribute kein gültiger.',
     'pattern' => ':attribute kein gültiger.',
@@ -48,6 +49,9 @@ return [
     'ulid' => ':attribute kein gültiger.',
     'url' => ':attribute kein gültiger.',
     'username' => ':attribute kein gültiger.',
+    'github-username' => ':attribute kein gültiger.',
+    'instagram-handle' => ':attribute kein gültiger.',
+    'x-handle' => ':attribute kein gültiger.',
     'uuid' => ':attribute kein gültiger.',
     'landline-number' => ':attribute kein gültiger.',
 ];

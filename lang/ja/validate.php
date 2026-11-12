@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute有効じゃない。',
     'national-card' => ':attribute有効じゃない。',
     'no-html' => ':attribute有効じゃない。',
+    'no-emoji' => ':attribute有効じゃない。',
     'odd-number' => ':attribute有効じゃない。',
     'pascal-case' => ':attribute有効じゃない。',
     'pattern' => ':attribute有効じゃない。',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':attribute有効じゃない。',
     'url' => ':attribute有効じゃない。',
     'username' => ':attribute有効じゃない。',
+    'github-username' => ':attribute有効じゃない。',
+    'instagram-handle' => ':attribute有効じゃない。',
+    'x-handle' => ':attribute有効じゃない。',
     'uuid' => ':attribute有効じゃない。',
 ];

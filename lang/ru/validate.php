@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute не действует.',
     'national-card' => ':attribute не действует.',
     'no-html' => ':attribute не действует.',
+    'no-emoji' => ':attribute не действует.',
     'odd-number' => ':attribute не действует.',
     'pascal-case' => ':attribute не действует.',
     'pattern' => ':attribute не действует.',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':attribute не действует.',
     'url' => ':attribute не действует.',
     'username' => ':attribute не действует.',
+    'github-username' => ':attribute не действует.',
+    'instagram-handle' => ':attribute не действует.',
+    'x-handle' => ':attribute не действует.',
     'uuid' => ':attribute не действует.',
 ];

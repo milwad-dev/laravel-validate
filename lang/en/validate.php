@@ -33,6 +33,7 @@ return [
     'name-days-week' => 'The :attribute is not valid.',
     'national-card' => 'The :attribute is not valid.',
     'no-html' => 'The :attribute is not valid.',
+    'no-emoji' => 'The :attribute is not valid.',
     'odd-number' => 'The :attribute is not valid.',
     'pascal-case' => 'The :attribute is not valid.',
     'pattern' => 'The :attribute is not valid.',
@@ -48,5 +49,8 @@ return [
     'ulid' => 'The :attribute is not valid.',
     'url' => 'The :attribute is not valid.',
     'username' => 'The :attribute is not valid.',
+    'github-username' => 'The :attribute is not valid.',
+    'instagram-handle' => 'The :attribute is not valid.',
+    'x-handle' => 'The :attribute is not valid.',
     'uuid' => 'The :attribute is not valid.',
 ];

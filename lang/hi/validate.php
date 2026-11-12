@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attributeमान्य नहीं है।.',
     'national-card' => ':attributeमान्य नहीं है।.',
     'no-html' => ':attributeमान्य नहीं है।.',
+    'no-emoji' => ':attributeमान्य नहीं है।.',
     'odd-number' => ':attributeमान्य नहीं है।.',
     'pascal-case' => ':attributeमान्य नहीं है।.',
     'pattern' => ':attributeमान्य नहीं है।.',
@@ -46,5 +47,8 @@ return [
     'ulid' => ':attributeमान्य नहीं है।.',
     'url' => ':attributeमान्य नहीं है।.',
     'username' => ':attributeमान्य नहीं है।.',
+    'github-username' => ':attributeमान्य नहीं है।.',
+    'instagram-handle' => ':attributeमान्य नहीं है।.',
+    'x-handle' => ':attributeमान्य नहीं है।.',
     'uuid' => ':attributeमान्य नहीं है।.',
 ];

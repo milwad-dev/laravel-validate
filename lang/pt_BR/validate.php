@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'O :attribute não é válido.',
     'national-card' => 'O :attribute não é válido.',
     'no-html' => 'O :attribute não é válido.',
+    'no-emoji' => 'O :attribute não é válido.',
     'odd-number' => 'O :attribute não é válido.',
     'pascal-case' => 'O :attribute não é válido.',
     'pattern' => 'O :attribute não é válido.',
@@ -46,5 +47,8 @@ return [
     'ulid' => 'O :attribute não é válido.',
     'url' => 'O :attribute não é válido.',
     'username' => 'O :attribute não é válido.',
+    'github-username' => 'O :attribute não é válido.',
+    'instagram-handle' => 'O :attribute não é válido.',
+    'x-handle' => 'O :attribute não é válido.',
     'uuid' => 'O :attribute não é válido.',
 ];
