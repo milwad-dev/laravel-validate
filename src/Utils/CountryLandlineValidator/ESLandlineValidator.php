@@ -9,6 +9,6 @@ class ESLandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+34|0034)?\s?[89]\d{8})$/', $value);
+        return preg_match('/^(?:(?:\+34|0034)?\s?[89]\d{8})$/D', $value);
     }
 }

@@ -9,6 +9,6 @@ class ZHPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:\+86)?1[3-9]\d{9}$/', $value);
+        return preg_match('/^(?:\+86)?1[3-9]\d{9}$/D', $value);
     }
 }

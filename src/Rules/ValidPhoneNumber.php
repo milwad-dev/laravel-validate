@@ -20,7 +20,7 @@ class ValidPhoneNumber implements Rule
             return collect($passes)->some(fn ($passe) => $passe);
         }
 
-        return preg_match('/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/', $value);
+        return preg_match('/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/D', $value);
     }
 
     /**

@@ -11,7 +11,7 @@ class ValidDomain implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/', $value);
+        return preg_match('/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/D', $value);
     }
 
     /**

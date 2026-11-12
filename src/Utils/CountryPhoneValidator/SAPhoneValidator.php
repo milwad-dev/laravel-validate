@@ -9,6 +9,6 @@ class SAPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^((\+966)|0)?5\d{8}$/', $value);
+        return preg_match('/^((\+966)|0)?5\d{8}$/D', $value);
     }
 }

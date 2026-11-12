@@ -9,6 +9,6 @@ class NELandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+227|00227)[\s\-]?(20|21|25|27)\d{6}|(20|21|25|27)\d{6})$/', $value);
+        return preg_match('/^(?:(?:\+227|00227)[\s\-]?(20|21|25|27)\d{6}|(20|21|25|27)\d{6})$/D', $value);
     }
 }

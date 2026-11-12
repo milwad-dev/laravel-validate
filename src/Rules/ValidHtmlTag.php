@@ -11,7 +11,7 @@ class ValidHtmlTag implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^<([a-z1-6]+)([^<]+)*(?:>(.*)<\/\1>| *\/>)$/', $value);
+        return preg_match('/^<([a-z1-6]+)([^<]+)*(?:>(.*)<\/\1>| *\/>)$/D', $value);
     }
 
     /**

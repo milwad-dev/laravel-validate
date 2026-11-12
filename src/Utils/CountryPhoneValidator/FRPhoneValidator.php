@@ -9,6 +9,6 @@ class FRPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:\+33|0033|0)(?:[1-9](?:\d{2}){4}|[67]\d{8})$/', $value);
+        return preg_match('/^(?:\+33|0033|0)(?:[1-9](?:\d{2}){4}|[67]\d{8})$/D', $value);
     }
 }

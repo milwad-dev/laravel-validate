@@ -11,7 +11,7 @@ class ValidSnakeCase implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^(?:\p{Ll}+_)*\p{Ll}+$/u', $value);
+        return preg_match('/^(?:\p{Ll}+_)*\p{Ll}+$/uD', $value);
     }
 
     /**

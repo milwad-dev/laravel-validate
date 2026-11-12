@@ -9,6 +9,6 @@ class IDPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:\+62|0)(?:\d{2,3}\s?){1,2}\d{4,8}$/', $value);
+        return preg_match('/^(?:\+62|0)(?:\d{2,3}\s?){1,2}\d{4,8}$/D', $value);
     }
 }

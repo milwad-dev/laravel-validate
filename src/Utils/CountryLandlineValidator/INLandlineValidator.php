@@ -9,6 +9,6 @@ class INLandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+91|0091)[\s\-]?0?[1-6]\d{1,4}\d{6,8}|0[1-6]\d{1,4}\d{6,8})$/', $value);
+        return preg_match('/^(?:(?:\+91|0091)[\s\-]?0?[1-6]\d{1,4}\d{6,8}|0[1-6]\d{1,4}\d{6,8})$/D', $value);
     }
 }

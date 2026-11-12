@@ -11,7 +11,7 @@ class ValidDiscordUsername implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^.{3,32}#[0-9]{4}$/', $value);
+        return preg_match('/^.{3,32}#[0-9]{4}$/D', $value);
     }
 
     /**

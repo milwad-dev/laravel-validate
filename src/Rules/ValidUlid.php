@@ -11,7 +11,7 @@ class ValidUlid implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/[0-7][0-9A-HJKMNP-TV-Z]{25}/', $value);
+        return preg_match('/^[0-7][0-9A-HJKMNP-TV-Z]{25}$/D', $value);
     }
 
     /**

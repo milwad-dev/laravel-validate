@@ -11,11 +11,11 @@ class ValidNationalCard implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        if (! preg_match('/^\d{10}$/', $value)) {
+        if (! preg_match('/^\d{10}$/D', $value)) {
             return false;
         }
 
-        if (preg_match('/^(.)\1*$/u', $value)) {
+        if (preg_match('/^(.)\1*$/uD', $value)) {
             return false;
         }
 

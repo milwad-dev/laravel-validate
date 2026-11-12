@@ -9,6 +9,6 @@ class ESPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/', $value);
+        return preg_match('/^(?:\+34|0034|34)?[6789]\d{8}$/D', $value);
     }
 }

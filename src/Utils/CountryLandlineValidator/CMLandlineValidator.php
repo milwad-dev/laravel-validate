@@ -9,6 +9,6 @@ class CMLandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+237|00237)[\s-]?2\d{8}|2\d{8})$/', $value);
+        return preg_match('/^(?:(?:\+237|00237)[\s-]?2\d{8}|2\d{8})$/D', $value);
     }
 }

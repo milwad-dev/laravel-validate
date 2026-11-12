@@ -11,7 +11,7 @@ class ValidUsername implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^[a-z0-9_-]{3,15}$/', $value);
+        return preg_match('/^[a-z0-9_-]{3,15}$/D', $value);
     }
 
     /**

@@ -11,7 +11,7 @@ class ValidCamelCase implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^(?:\p{Lu}?\p{Ll}+)(?:\p{Lu}\p{Ll}+)*$/u', $value);
+        return preg_match('/^(?:\p{Lu}?\p{Ll}+)(?:\p{Lu}\p{Ll}+)*$/uD', $value);
     }
 
     /**

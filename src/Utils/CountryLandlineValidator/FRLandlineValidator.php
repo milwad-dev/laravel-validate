@@ -9,6 +9,6 @@ class FRLandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+33|0033)\s?[1-5]\d{8}|0[1-5]\d{8})$/', $value);
+        return preg_match('/^(?:(?:\+33|0033)\s?[1-5]\d{8}|0[1-5]\d{8})$/D', $value);
     }
 }

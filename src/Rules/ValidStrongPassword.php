@@ -11,7 +11,7 @@ class ValidStrongPassword implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{6,}$/', $value);
+        return preg_match('/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{6,}$/D', $value);
     }
 
     /**

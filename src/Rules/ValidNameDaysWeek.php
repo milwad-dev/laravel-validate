@@ -11,7 +11,7 @@ class ValidNameDaysWeek implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^(?:sun(?:day)?|mon(?:day)?|tue(?:sday)?|wed(?:nesday)?|thu(?:rsday)?|fri(?:day)?|sat(?:urday)?)$/i', $value);
+        return preg_match('/^(?:sun(?:day)?|mon(?:day)?|tue(?:sday)?|wed(?:nesday)?|thu(?:rsday)?|fri(?:day)?|sat(?:urday)?)$/iD', $value);
     }
 
     /**

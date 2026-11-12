@@ -11,7 +11,7 @@ class ValidCarNumber implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$/', $value);
+        return preg_match('/^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$/D', $value);
     }
 
     /**

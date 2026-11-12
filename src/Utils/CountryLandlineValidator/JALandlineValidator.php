@@ -9,6 +9,6 @@ class JALandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+81|0081)[\s\-]?0?[1-9]\d{1,3}\d{4,6}|0[1-9]\d{1,3}\d{4,6})$/', $value);
+        return preg_match('/^(?:(?:\+81|0081)[\s\-]?0?[1-9]\d{1,3}\d{4,6}|0[1-9]\d{1,3}\d{4,6})$/D', $value);
     }
 }

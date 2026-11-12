@@ -9,6 +9,6 @@ class GRPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/', $value);
+        return preg_match('/^\+30[2-9]\d{2}\d{3}\d{4}$/D', $value);
     }
 }

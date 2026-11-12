@@ -9,6 +9,6 @@ class ITPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^\+39\d{8,10}$/', $value);
+        return preg_match('/^\+39\d{8,10}$/D', $value);
     }
 }

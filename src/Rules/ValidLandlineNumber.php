@@ -20,7 +20,7 @@ class ValidLandlineNumber implements Rule
             return collect($passes)->some(fn ($passe) => $passe);
         }
 
-        return preg_match('/^(?:\+|00)(?:[1-9]\d{0,2})(?:[ .\-]?\(?\d+\)?)+$/', $value);
+        return preg_match('/^(?:\+|00)(?:[1-9]\d{0,2})(?:[ .\-]?\(?\d+\)?)+$/D', $value);
     }
 
     /**

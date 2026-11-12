@@ -9,6 +9,6 @@ class TRLandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+90|0090)[\s\-]?2\d{9}|0?2\d{9})$/', $value);
+        return preg_match('/^(?:(?:\+90|0090)[\s\-]?2\d{9}|0?2\d{9})$/D', $value);
     }
 }

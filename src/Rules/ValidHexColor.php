@@ -11,7 +11,7 @@ class ValidHexColor implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^#?(?:[a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/', $value);
+        return preg_match('/^#?(?:[a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/D', $value);
     }
 
     /**

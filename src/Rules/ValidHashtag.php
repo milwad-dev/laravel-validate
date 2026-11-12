@@ -11,7 +11,7 @@ class ValidHashtag implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^#[^ !@#$%^&*(),.?":{}|<>]*$/', $value);
+        return preg_match('/^#[^ !@#$%^&*(),.?":{}|<>]*$/D', $value);
     }
 
     /**

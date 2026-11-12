@@ -11,7 +11,7 @@ class ValidPascalCase implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^[A-Z][a-z]+(?:[A-Z][a-z]+)*$/', $value);
+        return preg_match('/^[A-Z][a-z]+(?:[A-Z][a-z]+)*$/D', $value);
     }
 
     /**

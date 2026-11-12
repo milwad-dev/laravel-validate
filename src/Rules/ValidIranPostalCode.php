@@ -11,7 +11,7 @@ class ValidIranPostalCode implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return preg_match('/^(?!(\d)\1{3})[13-9]{4}[1346-9][013-9]{5}$/', $value);
+        return preg_match('/^(?!(\d)\1{3})[13-9]{4}[1346-9][013-9]{5}$/D', $value);
     }
 
     /**
