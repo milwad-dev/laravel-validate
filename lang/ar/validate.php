@@ -9,6 +9,7 @@ return [
     'car-number' => ':attribute غير صالح.',
     'cart-number-iran' => ':attribute غير صالح.',
     'country' => ':attribute غير صالح.',
+    'country-code' => ':attribute غير صالح.',
     'credit-card' => ':attribute غير صالح.',
     'discord-username' => ':attribute غير صالح.',
     'domain' => ':attribute غير صالح.',

@@ -7,7 +7,7 @@ class Keccak
     /**
      * Round constants (big-endian hex).
      */
-    private const array ROUND_CONSTANTS = [
+    private const ROUND_CONSTANTS = [
         '0000000000000001', '0000000000008082', '800000000000808a', '8000000080008000',
         '000000000000808b', '0000000080000001', '8000000080008081', '8000000000008009',
         '000000000000008a', '0000000000000088', '0000000080008009', '000000008000000a',
@@ -19,7 +19,7 @@ class Keccak
     /**
      * Rotation offsets, indexed by x + 5y.
      */
-    private const array ROTATIONS = [
+    private const ROTATIONS = [
         0, 1, 62, 28, 27,
         36, 44, 6, 55, 20,
         3, 10, 43, 25, 39,
@@ -30,7 +30,7 @@ class Keccak
     /**
      * Rate in bytes for Keccak-256 (1600 - 2 * 256 bits).
      */
-    private const int RATE = 136;
+    private const RATE = 136;
 
     private static ?array $roundConstants = null;
 

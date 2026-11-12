@@ -9,6 +9,7 @@ return [
     'car-number' => 'O :attribute não é válido.',
     'cart-number-iran' => 'O :attribute não é válido.',
     'country' => 'O :attribute não é válido.',
+    'country-code' => 'O :attribute não é válido.',
     'credit-card' => 'O :attribute não é válido.',
     'discord-username' => 'O :attribute não é válido.',
     'domain' => 'O :attribute não é válido.',

@@ -9,6 +9,7 @@ return [
     'car-number' => 'De :attribute is niet geldig.',
     'cart-number-iran' => 'De :attribute is niet geldig.',
     'country' => 'De :attribute is niet geldig.',
+    'country-code' => 'De :attribute is niet geldig.',
     'credit-card' => 'De :attribute is niet geldig.',
     'discord-username' => 'De :attribute is niet geldig.',
     'domain' => 'De :attribute is niet geldig.',

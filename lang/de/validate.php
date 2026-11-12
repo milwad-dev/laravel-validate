@@ -9,6 +9,7 @@ return [
     'car-number' => ':attribute kein gültiger.',
     'cart-number-iran' => ':attribute kein gültiger.',
     'country' => ':attribute kein gültiger.',
+    'country-code' => ':attribute kein gültiger.',
     'credit-card' => ':attribute kein gültiger.',
     'discord-username' => ':attribute kein gültiger.',
     'domain' => ':attribute kein gültiger.',

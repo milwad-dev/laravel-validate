@@ -9,6 +9,7 @@ return [
     'car-number' => ':attribute не є дійсним.',
     'cart-number-iran' => ':attribute не є дійсним.',
     'country' => ':attribute не є дійсним.',
+    'country-code' => ':attribute не є дійсним.',
     'credit-card' => ':attribute не є дійсним.',
     'discord-username' => ':attribute не є дійсним.',
     'domain' => ':attribute не є дійсним.',

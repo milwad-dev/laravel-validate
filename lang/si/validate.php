@@ -9,6 +9,7 @@ return [
     'car-number' => ':attribute වලංගු නොවේ.',
     'cart-number-iran' => ':attribute වලංගු නොවේ.',
     'country' => ':attribute වලංගු නොවේ.',
+    'country-code' => ':attribute වලංගු නොවේ.',
     'credit-card' => ':attribute වලංගු නොවේ.',
     'discord-username' => ':attribute වලංගු නොවේ.',
     'domain' => ':attribute වලංගු නොවේ.',
