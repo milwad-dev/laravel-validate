@@ -58,7 +58,7 @@ return [
         'IT' => ITPhoneValidator::class, // Italy
         'JA' => JAPhoneValidator::class, // Japan
         'KO' => KOPhoneValidator::class, // South Korea
-        'NE' => NEPhoneValidator::class, // Netherlands
+        'NE' => NEPhoneValidator::class, // Niger
         'RU' => RUPhoneValidator::class, // Russia
         'SA' => SAPhoneValidator::class, // Saudi Arabia
         'SE' => SEPhoneValidator::class, // Sweden
@@ -85,7 +85,7 @@ return [
         'IT' => ITLandlineValidator::class, // Italy
         'JA' => JALandlineValidator::class, // Japan
         'KO' => KOLandlineValidator::class, // South Korea
-        'NE' => NELandlineValidator::class, // Netherlands
+        'NE' => NELandlineValidator::class, // Niger
         'RU' => RULandlineValidator::class, // Russia
         'SA' => SALandlineValidator::class, // Saudi Arabia
         'SE' => SELandlineValidator::class, // Sweden

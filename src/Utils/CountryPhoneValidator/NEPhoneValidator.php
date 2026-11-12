@@ -5,7 +5,7 @@ namespace Milwad\LaravelValidate\Utils\CountryPhoneValidator;
 class NEPhoneValidator implements CountryPhoneValidator
 {
     /**
-     * Validate Nigeria phone numbers.
+     * Validate Niger phone numbers.
      */
     public function validate($value): bool
     {
