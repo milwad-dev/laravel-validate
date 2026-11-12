@@ -26,14 +26,19 @@
     ],
     "require": {
         "php": "^8.2",
+        "doctrine/inflector": "^2.0",
         "laravel/framework": "11.*|12.*|^13.0",
         "ext-bcmath": "*",
         "ext-ctype": "*"
     },
     "require-dev": {
+        "cijic/phpmorphy": "^0.3.6",
         "imanghafoori/php-imports-analyzer": "1.0.*",
         "orchestra/testbench": "^9.0|^10.0|^11.0",
         "phpunit/phpunit": "^10.0|^11.0|^12.5.12"
+    },
+    "suggest": {
+        "cijic/phpmorphy": "Required to validate German words with the ValidSingular and ValidPlural rules (^0.3.6)."
     },
     "autoload": {
         "psr-4": {

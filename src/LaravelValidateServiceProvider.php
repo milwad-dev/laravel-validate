@@ -23,6 +23,10 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         $this->loadTranslationsFrom(dirname(__DIR__).'/lang', 'validation');
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');
+
+        if (config('laravel-validate.grammatical-number-locale') === null) {
+            config(['laravel-validate.grammatical-number-locale' => config('app.locale')]);
+        }
     }
 
     /**
