@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'Värdet :attribute är inte korrekt.',
     'national-card' => 'Värdet :attribute är inte korrekt.',
     'no-html' => 'Värdet :attribute är inte korrekt.',
+    'no-emoji' => 'Värdet :attribute är inte korrekt.',
     'odd-number' => 'Värdet :attribute är inte korrekt.',
     'pascal-case' => 'Värdet :attribute är inte korrekt.',
     'pattern' => 'Värdet :attribute är inte korrekt.',

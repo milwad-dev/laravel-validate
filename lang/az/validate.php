@@ -33,6 +33,7 @@ return [
     'name-days-week' => ':attribute doğru deyil.',
     'national-card' => ':attribute doğru deyil.',
     'no-html' => ':attribute doğru deyil.',
+    'no-emoji' => ':attribute doğru deyil.',
     'odd-number' => ':attribute doğru deyil.',
     'pascal-case' => ':attribute doğru deyil.',
     'pattern' => ':attribute doğru deyil.',

@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attributeमान्य नहीं है।.',
     'national-card' => ':attributeमान्य नहीं है।.',
     'no-html' => ':attributeमान्य नहीं है।.',
+    'no-emoji' => ':attributeमान्य नहीं है।.',
     'odd-number' => ':attributeमान्य नहीं है।.',
     'pascal-case' => ':attributeमान्य नहीं है।.',
     'pattern' => ':attributeमान्य नहीं है।.',

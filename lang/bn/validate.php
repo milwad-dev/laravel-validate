@@ -33,6 +33,7 @@ return [
     'name-days-week' => ':attribute বৈধ নয়.',
     'national-card' => ':attribute বৈধ নয়.',
     'no-html' => ':attribute বৈধ নয়.',
+    'no-emoji' => ':attribute বৈধ নয়.',
     'odd-number' => ':attribute বৈধ নয়.',
     'pascal-case' => ':attribute বৈধ নয়.',
     'pattern' => ':attribute বৈধ নয়.',

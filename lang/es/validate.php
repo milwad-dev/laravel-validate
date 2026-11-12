@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute no es válido.',
     'national-card' => ':attribute no es válido.',
     'no-html' => ':attribute no es válido.',
+    'no-emoji' => ':attribute no es válido.',
     'odd-number' => ':attribute no es válido.',
     'pascal-case' => ':attribute no es válido.',
     'pattern' => ':attribute no es válido.',

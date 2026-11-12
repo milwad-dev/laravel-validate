@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'مقدار :attribute صحیح نمی باشد.',
     'national-card' => 'مقدار :attribute صحیح نمی باشد.',
     'no-html' => 'مقدار :attribute صحیح نمی باشد.',
+    'no-emoji' => 'مقدار :attribute صحیح نمی باشد.',
     'odd-number' => 'مقدار :attribute صحیح نمی باشد.',
     'pascal-case' => 'مقدار :attribute صحیح نمی باشد.',
     'pattern' => 'مقدار :attribute صحیح نمی باشد.',

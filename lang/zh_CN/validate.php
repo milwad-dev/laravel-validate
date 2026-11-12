@@ -31,6 +31,7 @@ return [
     'name-days-week' => ':attribute无效.',
     'national-card' => ':attribute无效.',
     'no-html' => ':attribute无效.',
+    'no-emoji' => ':attribute无效.',
     'odd-number' => ':attribute无效.',
     'pascal-case' => ':attribute无效.',
     'pattern' => ':attribute无效.',

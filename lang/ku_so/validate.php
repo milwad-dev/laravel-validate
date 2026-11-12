@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'national-card' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'no-html' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'no-emoji' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'odd-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'pascal-case' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'pattern' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',

@@ -31,6 +31,7 @@ return [
     'name-days-week' => 'Невалидна вредност :attribute',
     'national-card' => 'Невалидна вредност :attribute',
     'no-html' => 'Невалидна вредност :attribute',
+    'no-emoji' => 'Невалидна вредност :attribute',
     'odd-number' => 'Невалидна вредност :attribute',
     'pascal-case' => 'Невалидна вредност :attribute',
     'pattern' => 'Невалидна вредност :attribute',
