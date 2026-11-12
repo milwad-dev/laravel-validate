@@ -49,5 +49,8 @@ return [
     'ulid' => ':attribute غير صالح.',
     'url' => ':attribute غير صالح.',
     'username' => ':attribute غير صالح.',
+    'github-username' => ':attribute غير صالح.',
+    'instagram-handle' => ':attribute غير صالح.',
+    'x-handle' => ':attribute غير صالح.',
     'uuid' => ':attribute غير صالح.',
 ];

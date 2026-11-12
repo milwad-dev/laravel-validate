@@ -47,5 +47,8 @@ return [
     'ulid' => 'De :attribute is niet geldig.',
     'url' => 'De :attribute is niet geldig.',
     'username' => 'De :attribute is niet geldig.',
+    'github-username' => 'De :attribute is niet geldig.',
+    'instagram-handle' => 'De :attribute is niet geldig.',
+    'x-handle' => 'De :attribute is niet geldig.',
     'uuid' => 'De :attribute is niet geldig.',
 ];

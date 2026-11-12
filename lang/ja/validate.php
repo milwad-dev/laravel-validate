@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute有効じゃない。',
     'url' => ':attribute有効じゃない。',
     'username' => ':attribute有効じゃない。',
+    'github-username' => ':attribute有効じゃない。',
+    'instagram-handle' => ':attribute有効じゃない。',
+    'x-handle' => ':attribute有効じゃない。',
     'uuid' => ':attribute有効じゃない。',
 ];

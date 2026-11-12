@@ -47,5 +47,8 @@ return [
     'ulid' => ":attribute n'est pas valide.",
     'url' => ":attribute n'est pas valide.",
     'username' => ":attribute n'est pas valide.",
+    'github-username' => ":attribute n'est pas valide.",
+    'instagram-handle' => ":attribute n'est pas valide.",
+    'x-handle' => ":attribute n'est pas valide.",
     'uuid' => ":attribute n'est pas valide.",
 ];

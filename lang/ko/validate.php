@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute유효하지 않습니다.',
     'url' => ':attribute유효하지 않습니다.',
     'username' => ':attribute유효하지 않습니다.',
+    'github-username' => ':attribute유효하지 않습니다.',
+    'instagram-handle' => ':attribute유효하지 않습니다.',
+    'x-handle' => ':attribute유효하지 않습니다.',
     'uuid' => ':attribute유효하지 않습니다.',
 ];

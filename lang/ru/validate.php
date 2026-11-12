@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute не действует.',
     'url' => ':attribute не действует.',
     'username' => ':attribute не действует.',
+    'github-username' => ':attribute не действует.',
+    'instagram-handle' => ':attribute не действует.',
+    'x-handle' => ':attribute не действует.',
     'uuid' => ':attribute не действует.',
 ];

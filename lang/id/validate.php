@@ -47,5 +47,8 @@ return [
     'ulid' => ':Attribute tidak valid.',
     'url' => ':Attribute tidak valid.',
     'username' => ':Attribute tidak valid.',
+    'github-username' => ':Attribute tidak valid.',
+    'instagram-handle' => ':Attribute tidak valid.',
+    'x-handle' => ':Attribute tidak valid.',
     'uuid' => ':Attribute tidak valid.',
 ];

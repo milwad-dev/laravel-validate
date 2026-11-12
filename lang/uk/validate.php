@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute не є дійсним.',
     'url' => ':attribute не є дійсним.',
     'username' => ':attribute не є дійсним.',
+    'github-username' => ':attribute не є дійсним.',
+    'instagram-handle' => ':attribute не є дійсним.',
+    'x-handle' => ':attribute не є дійсним.',
     'uuid' => ':attribute не є дійсним.',
 ];

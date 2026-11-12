@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute无效.',
     'url' => ':attribute无效.',
     'username' => ':attribute无效.',
+    'github-username' => ':attribute无效.',
+    'instagram-handle' => ':attribute无效.',
+    'x-handle' => ':attribute无效.',
     'uuid' => ':attribute无效.',
 ];

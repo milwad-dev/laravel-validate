@@ -47,5 +47,8 @@ return [
     'ulid' => 'Värdet :attribute är inte korrekt.',
     'url' => 'Värdet :attribute är inte korrekt.',
     'username' => 'Värdet :attribute är inte korrekt.',
+    'github-username' => 'Värdet :attribute är inte korrekt.',
+    'instagram-handle' => 'Värdet :attribute är inte korrekt.',
+    'x-handle' => 'Värdet :attribute är inte korrekt.',
     'uuid' => 'Värdet :attribute är inte korrekt.',
 ];

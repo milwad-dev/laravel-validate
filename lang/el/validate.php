@@ -49,5 +49,8 @@ return [
     'ulid' => 'Το :attribute δεν είναι έγκυρο.',
     'url' => 'Το :attribute δεν είναι έγκυρο.',
     'username' => 'Το :attribute δεν είναι έγκυρο.',
+    'github-username' => 'Το :attribute δεν είναι έγκυρο.',
+    'instagram-handle' => 'Το :attribute δεν είναι έγκυρο.',
+    'x-handle' => 'Το :attribute δεν είναι έγκυρο.',
     'uuid' => 'Το :attribute δεν είναι έγκυρο.',
 ];

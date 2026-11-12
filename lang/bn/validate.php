@@ -49,5 +49,8 @@ return [
     'ulid' => ':attribute বৈধ নয়.',
     'url' => ':attribute বৈধ নয়.',
     'username' => ':attribute বৈধ নয়.',
+    'github-username' => ':attribute বৈধ নয়.',
+    'instagram-handle' => ':attribute বৈধ নয়.',
+    'x-handle' => ':attribute বৈধ নয়.',
     'uuid' => ':attribute বৈধ নয়.',
 ];

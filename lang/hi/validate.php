@@ -47,5 +47,8 @@ return [
     'ulid' => ':attributeमान्य नहीं है।.',
     'url' => ':attributeमान्य नहीं है।.',
     'username' => ':attributeमान्य नहीं है।.',
+    'github-username' => ':attributeमान्य नहीं है।.',
+    'instagram-handle' => ':attributeमान्य नहीं है।.',
+    'x-handle' => ':attributeमान्य नहीं है।.',
     'uuid' => ':attributeमान्य नहीं है।.',
 ];

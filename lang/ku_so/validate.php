@@ -47,5 +47,8 @@ return [
     'ulid' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'url' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'username' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'github-username' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'instagram-handle' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'x-handle' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'uuid' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
 ];

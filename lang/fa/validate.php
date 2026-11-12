@@ -47,6 +47,9 @@ return [
     'ulid' => 'مقدار :attribute صحیح نمی باشد.',
     'url' => 'مقدار :attribute صحیح نمی باشد.',
     'username' => 'مقدار :attribute صحیح نمی باشد.',
+    'github-username' => 'مقدار :attribute صحیح نمی باشد.',
+    'instagram-handle' => 'مقدار :attribute صحیح نمی باشد.',
+    'x-handle' => 'مقدار :attribute صحیح نمی باشد.',
     'uuid' => 'مقدار :attribute صحیح نمی باشد.',
     'landline-number' => 'مقدار :attribute صحیح نمی باشد.',
 ];

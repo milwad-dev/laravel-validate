@@ -49,6 +49,9 @@ return [
     'ulid' => ':attribute kein gültiger.',
     'url' => ':attribute kein gültiger.',
     'username' => ':attribute kein gültiger.',
+    'github-username' => ':attribute kein gültiger.',
+    'instagram-handle' => ':attribute kein gültiger.',
+    'x-handle' => ':attribute kein gültiger.',
     'uuid' => ':attribute kein gültiger.',
     'landline-number' => ':attribute kein gültiger.',
 ];

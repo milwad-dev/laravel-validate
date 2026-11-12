@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute doğru değil.',
     'url' => ':attribute doğru değil.',
     'username' => ':attribute doğru değil.',
+    'github-username' => ':attribute doğru değil.',
+    'instagram-handle' => ':attribute doğru değil.',
+    'x-handle' => ':attribute doğru değil.',
     'uuid' => ':attribute doğru değil.',
 ];

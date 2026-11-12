@@ -47,5 +47,8 @@ return [
     'ulid' => 'Невалидна вредност :attribute',
     'url' => 'Невалидна вредност :attribute',
     'username' => 'Невалидна вредност :attribute',
+    'github-username' => 'Невалидна вредност :attribute',
+    'instagram-handle' => 'Невалидна вредност :attribute',
+    'x-handle' => 'Невалидна вредност :attribute',
     'uuid' => 'Невалидна вредност :attribute',
 ];

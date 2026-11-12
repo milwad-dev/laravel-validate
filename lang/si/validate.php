@@ -47,5 +47,8 @@ return [
     'ulid' => ':attribute වලංගු නොවේ.',
     'url' => ':attribute වලංගු නොවේ.',
     'username' => ':attribute වලංගු නොවේ.',
+    'github-username' => ':attribute වලංගු නොවේ.',
+    'instagram-handle' => ':attribute වලංගු නොවේ.',
+    'x-handle' => ':attribute වලංගු නොවේ.',
     'uuid' => ':attribute වලංගු නොවේ.',
 ];
