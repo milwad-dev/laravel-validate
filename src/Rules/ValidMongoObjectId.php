@@ -3,6 +3,7 @@
 namespace Milwad\LaravelValidate\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
+use MongoDB\BSON\ObjectId;
 
 class ValidMongoObjectId implements Rule
 {
@@ -11,7 +12,7 @@ class ValidMongoObjectId implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        if ($value instanceof \MongoDB\BSON\ObjectId) {
+        if ($value instanceof ObjectId) {
             return true;
         }
 
