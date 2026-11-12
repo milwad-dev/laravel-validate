@@ -12,96 +12,106 @@
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/milwad-dev/laravel-validate)
 [![MadeWithLaravel.com shield](https://madewithlaravel.com/storage/repo-shields/4333-shield.svg)](https://madewithlaravel.com/p/laravel-validate/shield-link)
 
-# Introduction
+**Laravel Validate** adds 45+ ready-to-use validation rules to Laravel: phone and landline numbers per country, IBAN, credit cards, crypto addresses, slugs, case styles, JWTs, ULIDs, strong passwords and more. Every rule ships with translated error messages in 25 languages.
 
-The `Laravel-Validate` package enhanced Laravel validation capabilities with custom rules and methods for simplified and efficient validation
-logic. <br>
-You can validate data more easily. The `Laravel Validate` has lots of rule classes for validation. <br>
-This package supports localization and can be used for most languages. <br>
-(If some language didn't support, you can create <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> for new language or write custom for yourself)
+```php
+use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
+use Milwad\LaravelValidate\Rules\ValidStrongPassword;
+use Milwad\LaravelValidate\Utils\Country;
 
-[AI Documentation](https://deepwiki.com/milwad-dev/laravel-validate)
+$request->validate([
+    'phone'    => ['required', new ValidPhoneNumber(Country::GERMANY)],
+    'password' => ['required', new ValidStrongPassword()],
+]);
+```
 
-# Related Packages
+## Table of Contents
 
-- [Laravel Validate Filament](https://github.com/milwad-dev/laravel-validate-filament) — brings `Laravel-Validate`'s custom rules to Filament forms as chainable field methods.
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Rules](#available-rules)
+- [Configuration](#configuration)
+  - [String-based rules (`using_container`)](#string-based-rules-using_container)
+  - [Custom phone & landline validators](#custom-phone--landline-validators)
+  - [Singular & plural rules](#singular--plural-rules)
+- [Localization](#localization)
+- [Related Packages](#related-packages)
+- [Contributing](#contributing)
+- [Security](#security)
+- [License](#license)
+- [Support the Project](#support-the-project)
 
-# Requirements
+## Requirements
 
-- ```PHP >= 8.2```
-- ```Laravel >= 11.0```
+- PHP **8.2** or higher
+- Laravel **11**, **12** or **13**
+- PHP extensions: `bcmath`, `ctype`
 
-| GitHub | L6                 | L7                 | L8                 | L9                 | L10                | L11                | L12                | L13                |
-|--------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 1.5    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| 1.6    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
-| 1.7    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
-| 1.8    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
-| 1.9    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 2.0    | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+Older Laravel versions are supported by older releases:
 
-# Installation
+| Version | L6                 | L7                 | L8                 | L9                 | L10                | L11                | L12                | L13                |
+|---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 1.5     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| 1.6     | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
+| 1.7     | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
+| 1.8     | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 1.9     | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
+| 2.0     | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-You can install the package with Composer.
+## Installation
+
+Install the package with Composer:
 
 ```bash
 composer require milwad/laravel-validate
 ```
 
-# Publish
+The service provider is registered automatically through Laravel package discovery.
 
-If you want to publish a config file, you can run the following command on your terminal:
+Optionally, publish the config file:
 
-```shell
+```bash
 php artisan vendor:publish --tag="laravel-validate-config"
 ```
 
-If you want to publish a lang file for a custom validation message, you can run this command in the terminal:
+## Usage
 
-```shell
-php artisan vendor:publish --tag="validate-lang-{$lang}"
-```
-
-You can replace `$lang` with your language name, for example:
-
-```shell
-php artisan vendor:publish --tag="validate-lang-en"
-```
-
-You can see the [Support Languages](#support-languages) section if you don't know the language's name.
-
-# Configurations
-
-If you may use rules with a string like `ValidPhone`, you need to change the config option to `true`:
-
-```php
-/*
- * If you want to use rules like 'required|ValidPhone' in your validations, you can change it to true.
- */
-'using_container' => false,
-```
-
-If `using_container` is set to true, you might have rules like this:
-
-```php
-'phone_number' => 'required|ValidPhone',
-```
-
-And `ValidPhone` would be a class that is resolved via the service container to check the validity of the phone number.
-
-# Usage
-
-You can use `Laravel-Validate Rules` very simply. You can use the `new` keyword before the rule name.
+Every rule is a plain Laravel rule object. Create it with `new` and add it to your rules array, in a controller, a Form Request or `Validator::make()`:
 
 ```php
 use Milwad\LaravelValidate\Rules\ValidPhoneNumber;
+use Milwad\LaravelValidate\Rules\ValidSlug;
+
+class StorePostRequest extends FormRequest
+{
+    public function rules(): array
+    {
+        return [
+            'slug'  => ['required', new ValidSlug()],
+            'phone' => ['nullable', new ValidPhoneNumber()],
+        ];
+    }
+}
+```
+
+Some rules take arguments, for example a country code for phone and landline numbers or a locale for singular/plural words:
+
+```php
+use Milwad\LaravelValidate\Rules\ValidLandlineNumber;
+use Milwad\LaravelValidate\Rules\ValidPlural;
+use Milwad\LaravelValidate\Utils\Country;
 
 return [
-    'phone' => ['required', new ValidPhoneNumber()],
+    'office_phone' => [new ValidLandlineNumber(Country::IRAN)],
+    'collection'   => [new ValidPlural('en')],
 ];
 ```
 
-# Rules
+Click any rule in the table below to see its full documentation and options.
+
+## Available Rules
+
 | #  | Rule name                                                                                                                        | Usage                                                                 |
 |----|----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | 1  | [ValidBase64](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-base64.md)                                  | Validate base64 for ex (bWlsd2Fk)                                     |
@@ -151,114 +161,138 @@ return [
 | 45 | [ValidUuid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-uuid.md)                                      | Validate UUID for ex (123e4567-e89b-12d3-a456-426655440000)           |
 | 46 | [ValidVatId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-vatid.md)                                    | Validate VAT ID (EU format)                                           |
 
-<a name="support-languages"></a>
+## Configuration
 
-# Support Languages
+After publishing, the config file lives at `config/laravel-validate.php`.
 
-If a language is not supported, you can make <a href="https://github.com/milwad-dev/laravel-validate/issues/new/choose">issue</a> to add it. <br>
-Also, you can make <a href="https://github.com/milwad-dev/laravel-validate/pulls">PR</a> to add it.
+### String-based rules (`using_container`)
 
-- [x] Arabic (ar)
-- [x] Azerbaijani (az)
-- [x] Bangla (bn)
-- [x] Catalan (ca)
-- [x] Dutch (nl)
-- [x] German (de)
-- [x] Greek (el)
-- [x] English (en)
-- [x] Spanish (es)
-- [x] Persian (fa)
-- [x] French (fr)
-- [x] Hindi (hi)
-- [x] Indonesian (id)
-- [x] Italian (It)
-- [x] Japanese (ja)
-- [x] Korean (ko)
-- [x] Kurdish Sorani (ku_so)
-- [x] Português Brasil (pt_BR)
-- [x] Russian (ru)
-- [x] Sinhala (si)
-- [x] Swedish (sv)
-- [x] Turkish (tr)
-- [x] Ukrainian (uk)
-- [x] Chinese (zh_CN)
+By default, rules are used as objects. If you prefer Laravel's string syntax, enable `using_container`:
 
-# Adding Custom Phone Country Validator
+```php
+'using_container' => true,
+```
 
-If you need to add a custom phone number validator for a specific country, follow the steps below.
+Every rule is then registered under its class name, so you can write:
 
-### 1. Create Your Custom Validator Class
+```php
+'phone_number' => 'required|ValidPhoneNumber',
+```
 
-First, you need to create a custom validator class that implements the `Milwad\LaravelValidate\Utils\CountryPhoneValidator` contract. This contract
-ensures that your custom validator adheres to the required structure and functionality.
+### Custom phone & landline validators
+
+`ValidPhoneNumber` and `ValidLandlineNumber` accept a country code. The built-in codes are listed under `phone-country` and `landline-country` in the config file. You can add your own country, or replace an existing one.
+
+**1. Create a validator class** that implements the matching interface:
 
 ```php
 namespace App\Validators;
 
-use Milwad\LaravelValidate\Utils\CountryPhoneValidator;
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator\CountryPhoneValidator;
 
-class CustomPhoneValidator implements CountryPhoneValidator
+class XYPhoneValidator implements CountryPhoneValidator
 {
-    /**
-     * Validate the phone number for the custom country.
-     */
-    public function validate(string $phoneNumber): bool
+    public function validate($value): bool
     {
-        // Implement the phone number validation logic for your country
-        // Example: Check if the phone number matches a specific pattern
-        return preg_match('/^\+1234\d{10}$/', $phoneNumber);
+        return (bool) preg_match('/^\+1234\d{10}$/', $value);
     }
 }
 ```
 
-### 2. Add the Validator to the Configuration File
+For landline numbers, implement `Milwad\LaravelValidate\Utils\CountryLandlineValidator\CountryLandlineValidator` instead.
 
-Once you've created the custom validator class, add it to the configuration file (`config/laravel-validate.php`) under the `'phone-country'` array.
-
-For example, if you're adding a validator for the country `XY`:
+**2. Register it** in `config/laravel-validate.php`:
 
 ```php
 'phone-country' => [
     // Existing validators...
-    'XY' => \App\Validators\CustomPhoneValidator::class, // Custom country
+    'XY' => \App\Validators\XYPhoneValidator::class,
 ],
 ```
 
-This tells the system to use your custom validator for phone numbers from country `XY`.
-
-### 3. Validation Usage
-
-Once your custom validator is set up, you can use it in your application like any other validator:
+**3. Use it:**
 
 ```php
 return [
-    'phone_ir' => [new ValidPhoneNumber('XY')],
+    'phone' => [new ValidPhoneNumber('XY')],
 ];
 ```
 
-# License
+### Singular & plural rules
 
-* This package is created and modified by <a href="https://github.com/milwad-dev" target="_blank">Milwad Khosravi</a> for Laravel over more than 9 and
-  has been released under the MIT License.
+`ValidSingular` and `ValidPlural` use the locale passed to the rule. If you pass none, they use `grammatical-number-locale` from the config, and if that is `null`, your app's `app.locale`.
 
-# Contributing
+Most languages are checked with [`doctrine/inflector`](https://github.com/doctrine/inflector). German needs an extra package:
 
-This project exists thanks to all the people who contribute. [CONTRIBUTING](https://github.com/milwad-dev/laravel-validate/graphs/contributors)
+```bash
+composer require cijic/phpmorphy
+```
 
-<a href="https://github.com/milwad-dev/laravel-validate/graphs/contributors"><img src="https://opencollective.com/laravel-validate/contributors.svg?width=890&button=false" /></a>
+To support another language, add a class that implements `Milwad\LaravelValidate\Utils\GrammaticalNumber\GrammaticalNumberChecker` to the `grammatical-number` config array.
 
-# Security
+<a name="support-languages"></a>
 
-If you've found a security bug, please email [milwad.dev@gmail.com](mailto:milwad.dev@gmail.com) instead of using the issue tracker.
+## Localization
 
-# Star History
+Error messages are translated into these languages:
+
+| Language            | Code    | Language            | Code    |
+|---------------------|---------|---------------------|---------|
+| Arabic              | `ar`    | Japanese            | `ja`    |
+| Azerbaijani         | `az`    | Korean              | `ko`    |
+| Bangla              | `bn`    | Kurdish (Sorani)    | `ku_so` |
+| Catalan             | `ca`    | Macedonian          | `mk`    |
+| Chinese             | `zh_CN` | Persian             | `fa`    |
+| Dutch               | `nl`    | Portuguese (Brazil) | `pt_BR` |
+| English             | `en`    | Russian             | `ru`    |
+| French              | `fr`    | Sinhala             | `si`    |
+| German              | `de`    | Spanish             | `es`    |
+| Greek               | `el`    | Swedish             | `sv`    |
+| Hindi               | `hi`    | Turkish             | `tr`    |
+| Indonesian          | `id`    | Ukrainian           | `uk`    |
+| Italian             | `It`    |                     |         |
+
+To customize the messages, publish the language file into your app's `lang` directory:
+
+```bash
+php artisan vendor:publish --tag="validate-lang-en"
+```
+
+Replace `en` with any code from the table above.
+
+Is your language missing? [Open an issue](https://github.com/milwad-dev/laravel-validate/issues/new/choose) or send a [pull request](https://github.com/milwad-dev/laravel-validate/pulls) that adds it.
+
+## Related Packages
+
+- [Laravel Validate Filament](https://github.com/milwad-dev/laravel-validate-filament): brings these rules to Filament forms as chainable field methods.
+
+## Contributing
+
+Contributions are welcome: new rules, country validators, translations and bug fixes. Run the test suite before you open a pull request:
+
+```bash
+composer test
+```
+
+This project exists thanks to all the people who [contribute](https://github.com/milwad-dev/laravel-validate/graphs/contributors).
+
+<a href="https://github.com/milwad-dev/laravel-validate/graphs/contributors"><img src="https://opencollective.com/laravel-validate/contributors.svg?width=890&button=false" alt="Contributors" /></a>
+
+## Security
+
+If you find a security issue, please email [milwad.dev@gmail.com](mailto:milwad.dev@gmail.com) instead of using the issue tracker.
+
+## License
+
+Laravel Validate is created by [Milwad Khosravi](https://github.com/milwad-dev) and released under the [MIT License](LICENSE).
+
+## Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=milwad-dev/laravel-validate&type=Date)](https://star-history.dera.page/#milwad-dev/laravel-validate&Date)
 
-# Donate
+## Support the Project
 
-If this package is helpful for you, you can buy a coffee for me :) ❤️
+If this package helps you, you can buy me a coffee ❤️
 
-- Iraninan Gateway: https://daramet.com/milwad_khosravi
-- Paypal Gateway: SOON
-- MetaMask Wallet: `0xf208a562c5a93DEf8450b656c3dbc1d0a53BDE58`
+- Iranian gateway: https://daramet.com/milwad_khosravi
+- MetaMask wallet: `0xf208a562c5a93DEf8450b656c3dbc1d0a53BDE58`
