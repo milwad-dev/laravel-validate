@@ -25,6 +25,7 @@ return [
     'ipv6' => 'Невалидна вредност :attribute',
     'jalali_date' => 'Невалидна вредност :attribute',
     'jwt' => 'Невалидна вредност :attribute',
+    'mongo-object-id' => 'Невалидна вредност :attribute',
     'kebab-case' => 'Невалидна вредност :attribute',
     'name-days-week' => 'Невалидна вредност :attribute',
     'national-card' => 'Невалидна вредност :attribute',

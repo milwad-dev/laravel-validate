@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute не действует.',
     'jalali_date' => ':attribute не действует.',
     'jwt' => ':attribute не действует.',
+    'mongo-object-id' => ':attribute не действует.',
     'kebab-case' => ':attribute не действует.',
     'name-days-week' => ':attribute не действует.',
     'national-card' => ':attribute не действует.',

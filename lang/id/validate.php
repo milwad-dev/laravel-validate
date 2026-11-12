@@ -25,6 +25,7 @@ return [
     'ipv6' => ':Attribute tidak valid.',
     'jalali_date' => ':Attribute tidak valid.',
     'jwt' => ':Attribute tidak valid.',
+    'mongo-object-id' => ':Attribute tidak valid.',
     'kebab-case' => ':Attribute tidak valid.',
     'name-days-week' => ':Attribute tidak valid.',
     'national-card' => ':Attribute tidak valid.',

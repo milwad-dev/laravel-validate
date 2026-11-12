@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute有効じゃない。',
     'jalali_date' => ':attribute有効じゃない。',
     'jwt' => ':attribute有効じゃない。',
+    'mongo-object-id' => ':attribute有効じゃない。',
     'kebab-case' => ':attribute有効じゃない。',
     'name-days-week' => ':attribute有効じゃない。',
     'national-card' => ':attribute有効じゃない。',

@@ -143,25 +143,26 @@ Click any rule in the table below to see its full documentation and options.
 | 27 | [ValidLandlineNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-landline-number.md)                 | Validate landline number                                              |
 | 28 | [ValidLatitude](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-latitude.md)                              | Validate latitude for ex (50.1109)                                    |
 | 29 | [ValidLongitude](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-longitude.md)                            | Validate longitude for ex (51.377225156511855)                        |
-| 30 | [ValidNameDaysWeek](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-name-days-week.md)                    | Validate day of week (monday)                                         |
-| 31 | [ValidNationalCard](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-national-card.md)                     | Validate national card for ex (015016437)                             |
-| 32 | [ValidNoHtml](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-no-html.md)                                 | Validate string without HTML                                          |
-| 33 | [ValidOddNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-odd-number.md)                           | Validate number is odd for ex (4321)                                  |
-| 34 | [ValidPascalCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-pascal-case.md)                         | Validate PascalCase for ex (MilwadDev)                                |
-| 35 | [ValidPattern](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-pattern.md)                                | Validate custom pattern                                               |
-| 36 | [ValidPhoneNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-phone-number.md)                       | Validate phone number for ex (09366000000)                            |
-| 37 | [ValidPlural](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-plural.md)                                  | Validate plural word for ex (cameras)                                 |
-| 38 | [ValidPort](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-port.md)                                      | Validate port value for ex (8080)                                     |
-| 39 | [ValidSingular](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-singular.md)                              | Validate singular word for ex (camera)                                |
-| 40 | [ValidSlashEndOfString](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-slash-end-of-string.md)           | Validate string ending with slash (milwad/)                           |
-| 41 | [ValidSlug](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-slug.md)                                      | Validate slug for ex (milwad-dev)                                     |
-| 42 | [ValidSnakeCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-snake-case.md)                           | Validate snake_case for ex (milwad_dev)                               |
-| 43 | [ValidStrongPassword](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-strong-password.md)                 | Validate password for ex (Milwad123!)                                 |
-| 44 | [ValidUlid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-ulid.md)                                      | Validate ULID                                                         |
-| 45 | [ValidUrl](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-url.md)                                        | Validate URL for ex (https://www.google.com)                          |
-| 46 | [ValidUsername](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-username.md)                              | Validate username for ex (milwad)                                     |
-| 47 | [ValidUuid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-uuid.md)                                      | Validate UUID for ex (123e4567-e89b-12d3-a456-426655440000)           |
-| 48 | [ValidVatId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-vatid.md)                                    | Validate VAT ID (EU format)                                           |
+| 30 | [ValidMongoObjectId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-mongo-object-id.md)                   | Validate MongoDB ObjectId for ex (507f1f77bcf86cd799439011)           |
+| 31 | [ValidNameDaysWeek](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-name-days-week.md)                    | Validate day of week (monday)                                         |
+| 32 | [ValidNationalCard](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-national-card.md)                     | Validate national card for ex (015016437)                             |
+| 33 | [ValidNoHtml](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-no-html.md)                                 | Validate string without HTML                                          |
+| 34 | [ValidOddNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-odd-number.md)                           | Validate number is odd for ex (4321)                                  |
+| 35 | [ValidPascalCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-pascal-case.md)                         | Validate PascalCase for ex (MilwadDev)                                |
+| 36 | [ValidPattern](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-pattern.md)                                | Validate custom pattern                                               |
+| 37 | [ValidPhoneNumber](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-phone-number.md)                       | Validate phone number for ex (09366000000)                            |
+| 38 | [ValidPlural](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-plural.md)                                  | Validate plural word for ex (cameras)                                 |
+| 39 | [ValidPort](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-port.md)                                      | Validate port value for ex (8080)                                     |
+| 40 | [ValidSingular](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-singular.md)                              | Validate singular word for ex (camera)                                |
+| 41 | [ValidSlashEndOfString](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-slash-end-of-string.md)           | Validate string ending with slash (milwad/)                           |
+| 42 | [ValidSlug](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-slug.md)                                      | Validate slug for ex (milwad-dev)                                     |
+| 43 | [ValidSnakeCase](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-snake-case.md)                           | Validate snake_case for ex (milwad_dev)                               |
+| 44 | [ValidStrongPassword](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-strong-password.md)                 | Validate password for ex (Milwad123!)                                 |
+| 45 | [ValidUlid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-ulid.md)                                      | Validate ULID                                                         |
+| 46 | [ValidUrl](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-url.md)                                        | Validate URL for ex (https://www.google.com)                          |
+| 47 | [ValidUsername](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-username.md)                              | Validate username for ex (milwad)                                     |
+| 48 | [ValidUuid](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-uuid.md)                                      | Validate UUID for ex (123e4567-e89b-12d3-a456-426655440000)           |
+| 49 | [ValidVatId](https://github.com/milwad-dev/laravel-validate/blob/1.x/docs/1.x/valid-vatid.md)                                    | Validate VAT ID (EU format)                                           |
 
 ## Configuration
 

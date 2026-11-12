@@ -28,6 +28,7 @@ return [
     'kebab-case' => ':attribute kein gültiger.',
     'latitude' => ':attribute kein gültiger.',
     'longitude' => ':attribute kein gültiger.',
+    'mongo-object-id' => ':attribute kein gültiger.',
     'name-days-week' => ':attribute kein gültiger.',
     'national-card' => ':attribute kein gültiger.',
     'no-html' => ':attribute kein gültiger.',

@@ -25,6 +25,7 @@ return [
     'ipv6' => ":attribute n'est pas valide.",
     'jalali_date' => ":attribute n'est pas valide.",
     'jwt' => ":attribute n'est pas valide.",
+    'mongo-object-id' => ":attribute n'est pas valide.",
     'kebab-case' => ":attribute n'est pas valide.",
     'name-days-week' => ":attribute n'est pas valide.",
     'national-card' => ":attribute n'est pas valide.",

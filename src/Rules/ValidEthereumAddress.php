@@ -26,7 +26,7 @@ class ValidEthereumAddress implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        if (! is_string($value) || ! preg_match('/^0x[0-9a-fA-F]{40}$/', $value)) {
+        if (! is_string($value) || ! preg_match('/^0x[0-9a-fA-F]{40}$/D', $value)) {
             return false;
         }
 

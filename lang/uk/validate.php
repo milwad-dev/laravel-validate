@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute не є дійсним.',
     'jalali_date' => ':attribute не є дійсним.',
     'jwt' => ':attribute не є дійсним.',
+    'mongo-object-id' => ':attribute не є дійсним.',
     'kebab-case' => ':attribute не є дійсним.',
     'name-days-week' => ':attribute не є дійсним.',
     'national-card' => ':attribute не є дійсним.',

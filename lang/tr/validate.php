@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute doğru değil.',
     'jalali_date' => ':attribute doğru değil.',
     'jwt' => ':attribute doğru değil.',
+    'mongo-object-id' => ':attribute doğru değil.',
     'kebab-case' => ':attribute doğru değil.',
     'name-days-week' => ':attribute doğru değil.',
     'national-card' => ':attribute doğru değil.',

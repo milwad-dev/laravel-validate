@@ -9,6 +9,6 @@ class NLLandlineValidator implements CountryLandlineValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+31|0031)[\s\-]?|0)(?=[1-57]|8[58])(?:\d{2}[\s\-]?\d{7}|\d{3}[\s\-]?\d{6})$/', $value);
+        return preg_match('/^(?:(?:\+31|0031)[\s\-]?|0)(?=[1-57]|8[58])(?:\d{2}[\s\-]?\d{7}|\d{3}[\s\-]?\d{6})$/D', $value);
     }
 }

@@ -9,6 +9,6 @@ class NLPhoneValidator implements CountryPhoneValidator
      */
     public function validate($value): bool
     {
-        return preg_match('/^(?:(?:\+31|0031)[\s\-]?|0)6[\s\-]?\d{8}$/', $value);
+        return preg_match('/^(?:(?:\+31|0031)[\s\-]?|0)6[\s\-]?\d{8}$/D', $value);
     }
 }

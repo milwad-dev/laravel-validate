@@ -28,6 +28,7 @@ return [
     'kebab-case' => ':attribute doğru deyil.',
     'latitude' => ':attribute doğru deyil.',
     'longitude' => ':attribute doğru deyil.',
+    'mongo-object-id' => ':attribute doğru deyil.',
     'name-days-week' => ':attribute doğru deyil.',
     'national-card' => ':attribute doğru deyil.',
     'no-html' => ':attribute doğru deyil.',

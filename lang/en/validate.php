@@ -28,6 +28,7 @@ return [
     'kebab-case' => 'The :attribute is not valid.',
     'latitude' => 'The :attribute is not valid.',
     'longitude' => 'The :attribute is not valid.',
+    'mongo-object-id' => 'The :attribute is not valid.',
     'name-days-week' => 'The :attribute is not valid.',
     'national-card' => 'The :attribute is not valid.',
     'no-html' => 'The :attribute is not valid.',

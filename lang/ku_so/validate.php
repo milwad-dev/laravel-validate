@@ -25,6 +25,7 @@ return [
     'ipv6' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'jalali_date' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'jwt' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'mongo-object-id' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'kebab-case' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'name-days-week' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'national-card' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',

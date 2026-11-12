@@ -100,7 +100,7 @@ class ValidPhoneNumberTest extends TestCase
     public function test_netherlands_phone_numbers()
     {
         $valid = ['0612345678', '06 12345678', '+31612345678', '+31 612345678', '0031612345678'];
-        $invalid = ['0201234567', '061234567', '06123456789', '+31201234567', '612345678', '+3106123456789'];
+        $invalid = ['0201234567', '061234567', '06123456789', '+31201234567', '612345678', '+3106123456789', "0612345678\n"];
 
         foreach ($valid as $number) {
             $this->assertTrue(

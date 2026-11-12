@@ -25,6 +25,7 @@ return [
     'ipv6' => 'Värdet :attribute är inte korrekt.',
     'jalali_date' => 'Värdet :attribute är inte korrekt.',
     'jwt' => 'Värdet :attribute är inte korrekt.',
+    'mongo-object-id' => 'Värdet :attribute är inte korrekt.',
     'kebab-case' => 'Värdet :attribute är inte korrekt.',
     'name-days-week' => 'Värdet :attribute är inte korrekt.',
     'national-card' => 'Värdet :attribute är inte korrekt.',

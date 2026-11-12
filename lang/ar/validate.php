@@ -28,6 +28,7 @@ return [
     'kebab-case' => ':attribute غير صالح.',
     'latitude' => ':attribute غير صالح.',
     'longitude' => ':attribute غير صالح.',
+    'mongo-object-id' => ':attribute غير صالح.',
     'name-days-week' => ':attribute غير صالح.',
     'national-card' => ':attribute غير صالح.',
     'no-html' => ':attribute غير صالح.',

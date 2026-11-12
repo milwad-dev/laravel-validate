@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute වලංගු නොවේ.',
     'jalali_date' => ':attribute වලංගු නොවේ.',
     'jwt' => ':attribute වලංගු නොවේ.',
+    'mongo-object-id' => ':attribute වලංගු නොවේ.',
     'kebab-case' => ':attribute වලංගු නොවේ.',
     'name-days-week' => ':attribute වලංගු නොවේ.',
     'national-card' => ':attribute වලංගු නොවේ.',

@@ -28,6 +28,7 @@ return [
     'kebab-case' => ':attribute no és vàlid.',
     'latitude' => ':attribute no és vàlid.',
     'longitude' => ':attribute no és vàlid.',
+    'mongo-object-id' => ':attribute no és vàlid.',
     'name-days-week' => ':attribute no és vàlid.',
     'national-card' => ':attribute no és vàlid.',
     'no-html' => ':attribute no és vàlid.',

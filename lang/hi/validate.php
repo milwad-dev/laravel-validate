@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attributeमान्य नहीं है।.',
     'jalali_date' => ':attributeमान्य नहीं है।.',
     'jwt' => ':attributeमान्य नहीं है।.',
+    'mongo-object-id' => ':attributeमान्य नहीं है।.',
     'kebab-case' => ':attributeमान्य नहीं है।.',
     'name-days-week' => ':attributeमान्य नहीं है।.',
     'national-card' => ':attributeमान्य नहीं है।.',

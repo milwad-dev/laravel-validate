@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute유효하지 않습니다.',
     'jalali_date' => ':attribute유효하지 않습니다.',
     'jwt' => ':attribute유효하지 않습니다.',
+    'mongo-object-id' => ':attribute유효하지 않습니다.',
     'kebab-case' => ':attribute유효하지 않습니다.',
     'name-days-week' => ':attribute유효하지 않습니다.',
     'national-card' => ':attribute유효하지 않습니다.',

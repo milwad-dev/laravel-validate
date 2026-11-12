@@ -25,6 +25,7 @@ return [
     'ipv6' => ':attribute无效.',
     'jalali_date' => ':attribute无效.',
     'jwt' => ':attribute无效.',
+    'mongo-object-id' => ':attribute无效.',
     'kebab-case' => ':attribute无效.',
     'name-days-week' => ':attribute无效.',
     'national-card' => ':attribute无效.',

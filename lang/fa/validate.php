@@ -25,6 +25,7 @@ return [
     'ipv6' => 'مقدار :attribute صحیح نمی باشد.',
     'jalali_date' => 'مقدار :attribute صحیح نمی باشد.',
     'jwt' => 'مقدار :attribute صحیح نمی باشد.',
+    'mongo-object-id' => 'مقدار :attribute صحیح نمی باشد.',
     'kebab-case' => 'مقدار :attribute صحیح نمی باشد.',
     'name-days-week' => 'مقدار :attribute صحیح نمی باشد.',
     'national-card' => 'مقدار :attribute صحیح نمی باشد.',

@@ -25,6 +25,7 @@ return [
     'ipv6' => 'De :attribute is niet geldig.',
     'jalali_date' => 'De :attribute is niet geldig.',
     'jwt' => 'De :attribute is niet geldig.',
+    'mongo-object-id' => 'De :attribute is niet geldig.',
     'kebab-case' => 'De :attribute is niet geldig.',
     'name-days-week' => 'De :attribute is niet geldig.',
     'national-card' => 'De :attribute is niet geldig.',
