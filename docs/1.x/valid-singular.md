@@ -12,7 +12,7 @@ return [
 
 For a phrase or a hyphenated word, the last word is checked (`payment method`, `LED-Panel`).
 
-The rule only rejects a word when it is known to be plural. Words that have the same singular and plural form (`sheep`), words that are unknown and values in a language that is not supported will pass.
+The rule only rejects a word when it is recognized as plural. Words that have the same singular and plural form (`sheep`) and values in a language that is not supported will pass. For German, words that are not in the dictionary will also pass.
 
 ## Locale
 

@@ -4,6 +4,7 @@ namespace Milwad\LaravelValidate\Tests\Rules;
 
 use Milwad\LaravelValidate\Rules\ValidPlural;
 use Milwad\LaravelValidate\Tests\TestCase;
+use Milwad\LaravelValidate\Utils\GrammaticalNumber\GermanChecker;
 
 class ValidPluralTest extends TestCase
 {
@@ -89,6 +90,8 @@ class ValidPluralTest extends TestCase
      */
     public function test_german_plural_is_valid(): void
     {
+        $this->skipWithoutGermanDictionary();
+
         $words = [
             'Blitze', 'Kameras', 'Objektive', 'Häuser', 'Bücher', 'Straßen', 'Eltern',
             // Same singular and plural form
@@ -109,6 +112,8 @@ class ValidPluralTest extends TestCase
      */
     public function test_german_plural_is_not_valid(): void
     {
+        $this->skipWithoutGermanDictionary();
+
         $words = [
             'Blitz', 'Kamera', 'Objektiv', 'Haus', 'Buch', 'Straße', 'Zubehör',
             // Compound words
@@ -117,6 +122,16 @@ class ValidPluralTest extends TestCase
 
         foreach ($words as $word) {
             $this->assertFalse($this->passes($word, 'de'), $word);
+        }
+    }
+
+    /**
+     * Skip the test when the German dictionary (cijic/phpmorphy) is not installed.
+     */
+    protected function skipWithoutGermanDictionary(): void
+    {
+        if (! GermanChecker::isAvailable()) {
+            $this->markTestSkipped('cijic/phpmorphy is not installed.');
         }
     }
 

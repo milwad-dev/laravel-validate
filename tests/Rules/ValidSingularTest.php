@@ -111,6 +111,8 @@ class ValidSingularTest extends TestCase
      */
     public function test_german_singular_is_valid(): void
     {
+        $this->skipWithoutGermanDictionary();
+
         $words = [
             'Blitz', 'Kamera', 'Objektiv', 'Haus', 'Buch', 'Straße', 'Zubehör',
             // Same singular and plural form
@@ -132,6 +134,8 @@ class ValidSingularTest extends TestCase
      */
     public function test_german_singular_is_not_valid(): void
     {
+        $this->skipWithoutGermanDictionary();
+
         $words = [
             'Blitze', 'Kameras', 'Objektive', 'Häuser', 'Bücher', 'Straßen', 'Eltern',
             // Compound words
@@ -175,6 +179,16 @@ class ValidSingularTest extends TestCase
         config(['laravel-validate.grammatical-number.nl' => self::class]);
 
         $this->passes('boek', 'nl');
+    }
+
+    /**
+     * Skip the test when the German dictionary (cijic/phpmorphy) is not installed.
+     */
+    protected function skipWithoutGermanDictionary(): void
+    {
+        if (! GermanChecker::isAvailable()) {
+            $this->markTestSkipped('cijic/phpmorphy is not installed.');
+        }
     }
 
     /**

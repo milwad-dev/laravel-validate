@@ -12,7 +12,7 @@ return [
 
 For a phrase or a hyphenated word, the last word is checked (`payment methods`, `LED-Panels`).
 
-The rule only rejects a word when it is known to be singular. Words that have the same singular and plural form (`sheep`), words that are unknown and values in a language that is not supported will pass.
+The rule only rejects a word when it is recognized as singular. Words that have the same singular and plural form (`sheep`) and values in a language that is not supported will pass. Languages that are checked by spelling rules (for ex English) treat every word that does not look plural as singular, so a made-up word like `xyzzy` will fail. For German, words that are not in the dictionary will pass.
 
 Also `ValidPlural` have the ability to validate a word with a specific locale:
 

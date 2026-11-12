@@ -23,6 +23,10 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         $this->loadTranslationsFrom(dirname(__DIR__).'/lang', 'validation');
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-validate.php', 'laravel-validate');
+
+        if (config('laravel-validate.grammatical-number-locale') === null) {
+            config(['laravel-validate.grammatical-number-locale' => config('app.locale')]);
+        }
     }
 
     /**
@@ -70,12 +74,6 @@ class LaravelValidateServiceProvider extends ServiceProvider
 
         foreach ($landlineCountries as $code => $country) {
             CountryLandlineCallback::addValidator($code, $country);
-        }
-
-        // Remember the default locale of the application for the singular & plural rules,
-        // because the locale of the request can be changed later.
-        if (config('laravel-validate.grammatical-number-locale') === null) {
-            config(['laravel-validate.grammatical-number-locale' => config('app.locale')]);
         }
 
         // Register rules in container
