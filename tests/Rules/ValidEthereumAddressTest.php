@@ -2,6 +2,7 @@
 
 namespace Milwad\LaravelValidate\Tests\Rules;
 
+use Milwad\LaravelValidate\LaravelValidateServiceProvider;
 use Milwad\LaravelValidate\Rules\ValidEthereumAddress;
 use Milwad\LaravelValidate\Tests\TestCase;
 
@@ -67,7 +68,7 @@ class ValidEthereumAddressTest extends TestCase
     public function test_ethereum_address_as_string_rule()
     {
         config(['laravel-validate.using_container' => true]);
-        (new \Milwad\LaravelValidate\LaravelValidateServiceProvider($this->app))->boot();
+        (new LaravelValidateServiceProvider($this->app))->boot();
 
         $lower = '0x5aaeb6053f3e94c9b9a09f33669435e7ef1beaed';
 
