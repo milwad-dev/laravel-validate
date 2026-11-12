@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute বৈধ নয়.',
     'bitcoin-address' => ':attribute বৈধ নয়.',
+    'ethereum-address' => ':attribute বৈধ নয়.',
     'camel-case' => ':attribute বৈধ নয়.',
     'capital-char-with-number' => ':attribute বৈধ নয়.',
     'car-number' => ':attribute বৈধ নয়.',

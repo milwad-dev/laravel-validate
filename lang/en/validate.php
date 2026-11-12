@@ -3,6 +3,7 @@
 return [
     'base64' => 'The :attribute is not valid.',
     'bitcoin-address' => 'The :attribute is not valid.',
+    'ethereum-address' => 'The :attribute is not valid.',
     'camel-case' => 'The :attribute is not valid.',
     'capital-char-with-number' => 'The :attribute is not valid.',
     'car-number' => 'The :attribute is not valid.',

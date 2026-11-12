@@ -3,6 +3,7 @@
 return [
     'base64' => 'Το :attribute δεν είναι έγκυρο.',
     'bitcoin-address' => 'Το :attribute δεν είναι έγκυρο.',
+    'ethereum-address' => 'Το :attribute δεν είναι έγκυρο.',
     'camel-case' => 'Το :attribute δεν είναι έγκυρο.',
     'capital-char-with-number' => 'Το :attribute δεν είναι έγκυρο.',
     'car-number' => 'Το :attribute δεν είναι έγκυρο.',

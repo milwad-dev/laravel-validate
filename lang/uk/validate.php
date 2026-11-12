@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute не є дійсним.',
     'bitcoin-address' => ':attribute не є дійсним.',
+    'ethereum-address' => ':attribute не є дійсним.',
     'camel-case' => ':attribute не є дійсним.',
     'capital-char-with-number' => ':attribute не є дійсним.',
     'car-number' => ':attribute не є дійсним.',

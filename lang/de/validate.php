@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute kein gültiger.',
     'bitcoin-address' => ':attribute kein gültiger.',
+    'ethereum-address' => ':attribute kein gültiger.',
     'camel-case' => ':attribute kein gültiger.',
     'capital-char-with-number' => ':attribute kein gültiger.',
     'car-number' => ':attribute kein gültiger.',

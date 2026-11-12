@@ -3,6 +3,7 @@
 return [
     'base64' => 'De :attribute is niet geldig.',
     'bitcoin-address' => 'De :attribute is niet geldig.',
+    'ethereum-address' => 'De :attribute is niet geldig.',
     'camel-case' => 'De :attribute is niet geldig.',
     'capital-char-with-number' => 'De :attribute is niet geldig.',
     'car-number' => 'De :attribute is niet geldig.',

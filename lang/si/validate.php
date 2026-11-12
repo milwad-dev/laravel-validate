@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute වලංගු නොවේ.',
     'bitcoin-address' => ':attribute වලංගු නොවේ.',
+    'ethereum-address' => ':attribute වලංගු නොවේ.',
     'camel-case' => ':attribute වලංගු නොවේ.',
     'capital-char-with-number' => ':attribute වලංගු නොවේ.',
     'car-number' => ':attribute වලංගු නොවේ.',

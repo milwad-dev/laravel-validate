@@ -3,6 +3,7 @@
 return [
     'base64' => 'O :attribute não é válido.',
     'bitcoin-address' => 'O :attribute não é válido.',
+    'ethereum-address' => 'O :attribute não é válido.',
     'camel-case' => 'O :attribute não é válido.',
     'capital-char-with-number' => 'O :attribute não é válido.',
     'car-number' => 'O :attribute não é válido.',

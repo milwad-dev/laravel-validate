@@ -3,6 +3,7 @@
 return [
     'base64' => 'Värdet :attribute är inte korrekt.',
     'bitcoin-address' => 'Värdet :attribute är inte korrekt.',
+    'ethereum-address' => 'Värdet :attribute är inte korrekt.',
     'camel-case' => 'Värdet :attribute är inte korrekt.',
     'capital-char-with-number' => 'Värdet :attribute är inte korrekt.',
     'car-number' => 'Värdet :attribute är inte korrekt.',

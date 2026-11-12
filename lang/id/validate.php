@@ -3,6 +3,7 @@
 return [
     'base64' => ':Attribute tidak valid.',
     'bitcoin-address' => ':Attribute tidak valid.',
+    'ethereum-address' => ':Attribute tidak valid.',
     'camel-case' => ':Attribute tidak valid.',
     'capital-char-with-number' => ':Attribute tidak valid.',
     'car-number' => ':Attribute tidak valid.',

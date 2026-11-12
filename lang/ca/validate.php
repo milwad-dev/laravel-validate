@@ -3,6 +3,7 @@
 return [
     'base64' => ':attribute no és vàlid.',
     'bitcoin-address' => ':attribute no és vàlid.',
+    'ethereum-address' => ':attribute no és vàlid.',
     'camel-case' => ':attribute no és vàlid.',
     'capital-char-with-number' => ':attribute no és vàlid.',
     'car-number' => ':attribute no és vàlid.',

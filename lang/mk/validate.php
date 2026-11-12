@@ -3,6 +3,7 @@
 return [
     'base64' => 'Невалидна вредност :attribute',
     'bitcoin-address' => 'Невалидна вредност :attribute',
+    'ethereum-address' => 'Невалидна вредност :attribute',
     'camel-case' => 'Невалидна вредност :attribute',
     'capital-char-with-number' => 'Невалидна вредност :attribute',
     'car-number' => 'Невалидна вредност :attribute',

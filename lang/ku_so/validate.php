@@ -3,6 +3,7 @@
 return [
     'base64' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'bitcoin-address' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'ethereum-address' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'camel-case' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'capital-char-with-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'car-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
