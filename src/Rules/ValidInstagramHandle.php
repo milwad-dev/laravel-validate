@@ -13,7 +13,7 @@ class ValidInstagramHandle implements Rule
 
     /**
      * @param  bool|array  $allowAtSign  Accept a leading "@".
-     *                                  An array is accepted for string rules, e.g. 'ValidInstagramHandle:at'.
+     *                                   An array is accepted for string rules, e.g. 'ValidInstagramHandle:at'.
      */
     public function __construct(bool|array $allowAtSign = false)
     {
