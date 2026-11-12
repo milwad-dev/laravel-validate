@@ -54,6 +54,7 @@ class ValidLandlineNumberTest extends TestCase
             'landline_ir' => [new ValidLandlineNumber(Country::IRAN)],
             'landline_en' => [new ValidLandlineNumber(Country::ENGLAND)],
             'landline_ne' => [new ValidLandlineNumber(Country::NIGER)],
+            'landline_nl' => [new ValidLandlineNumber(Country::NETHERLANDS)],
             'landline_sa' => [new ValidLandlineNumber(Country::SAUDI_ARABIA)],
             'landline_de' => [new ValidLandlineNumber(Country::GERMANY)],
             'landline_gr' => [new ValidLandlineNumber(Country::GREECE)],
@@ -74,6 +75,7 @@ class ValidLandlineNumberTest extends TestCase
             'landline_ir' => '02155555555',       // Iran - Tehran landline
             'landline_en' => '+442071234567',     // UK - London landline
             'landline_ne' => '+22720301234',      // Niger - Niamey landline
+            'landline_nl' => '+31201234567',      // Netherlands - Amsterdam landline
             'landline_sa' => '+966512345678',     // Saudi Arabia - Riyadh landline
             'landline_de' => '+493012345678',     // Germany - Berlin landline
             'landline_gr' => '+302112345678',     // Greece - Athens landline
@@ -93,6 +95,29 @@ class ValidLandlineNumberTest extends TestCase
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
+    }
+
+    /**
+     * Test Netherlands landline numbers.
+     */
+    public function test_netherlands_landline_numbers()
+    {
+        $valid = ['0201234567', '020-1234567', '020 1234567', '0111-123456', '+31201234567', '+31 20 1234567', '0031201234567', '0851234567'];
+        $invalid = ['0612345678', '+31612345678', '0900123456', '0801234567', '020123456', '02012345678', '201234567'];
+
+        foreach ($valid as $number) {
+            $this->assertTrue(
+                $this->app['validator']->make(['landline' => $number], ['landline' => [new ValidLandlineNumber(Country::NETHERLANDS)]])->passes(),
+                "Expected '$number' to be a valid Netherlands landline number."
+            );
+        }
+
+        foreach ($invalid as $number) {
+            $this->assertFalse(
+                $this->app['validator']->make(['landline' => $number], ['landline' => [new ValidLandlineNumber(Country::NETHERLANDS)]])->passes(),
+                "Expected '$number' to be an invalid Netherlands landline number."
+            );
+        }
     }
 
     /**

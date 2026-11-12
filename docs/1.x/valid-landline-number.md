@@ -31,6 +31,7 @@ return [
 - ✅ IRAN
 - ✅ ENGLAND
 - ✅ NIGER
+- ✅ NETHERLANDS
 - ✅ SAUDI_ARABIA
 - ✅ GERMANY
 - ✅ GREECE

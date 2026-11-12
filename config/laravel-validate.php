@@ -13,6 +13,7 @@ use Milwad\LaravelValidate\Utils\CountryLandlineValidator\ITLandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryLandlineValidator\JALandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryLandlineValidator\KOLandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryLandlineValidator\NELandlineValidator;
+use Milwad\LaravelValidate\Utils\CountryLandlineValidator\NLLandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryLandlineValidator\RULandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryLandlineValidator\SALandlineValidator;
 use Milwad\LaravelValidate\Utils\CountryLandlineValidator\SELandlineValidator;
@@ -31,6 +32,7 @@ use Milwad\LaravelValidate\Utils\CountryPhoneValidator\ITPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\JAPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\KOPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\NEPhoneValidator;
+use Milwad\LaravelValidate\Utils\CountryPhoneValidator\NLPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\RUPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SAPhoneValidator;
 use Milwad\LaravelValidate\Utils\CountryPhoneValidator\SEPhoneValidator;
@@ -59,6 +61,7 @@ return [
         'JA' => JAPhoneValidator::class, // Japan
         'KO' => KOPhoneValidator::class, // South Korea
         'NE' => NEPhoneValidator::class, // Niger
+        'NL' => NLPhoneValidator::class, // Netherlands
         'RU' => RUPhoneValidator::class, // Russia
         'SA' => SAPhoneValidator::class, // Saudi Arabia
         'SE' => SEPhoneValidator::class, // Sweden
@@ -86,6 +89,7 @@ return [
         'JA' => JALandlineValidator::class, // Japan
         'KO' => KOLandlineValidator::class, // South Korea
         'NE' => NELandlineValidator::class, // Niger
+        'NL' => NLLandlineValidator::class, // Netherlands
         'RU' => RULandlineValidator::class, // Russia
         'SA' => SALandlineValidator::class, // Saudi Arabia
         'SE' => SELandlineValidator::class, // Sweden

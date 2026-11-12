@@ -51,6 +51,7 @@ class ValidPhoneNumberTest extends TestCase
             'phone_ir' => [new ValidPhoneNumber(Country::IRAN)],
             'phone_en' => [new ValidPhoneNumber(Country::ENGLAND)],
             'phone_ne' => [new ValidPhoneNumber(Country::NIGER)],
+            'phone_nl' => [new ValidPhoneNumber(Country::NETHERLANDS)],
             'phone_sa' => [new ValidPhoneNumber(Country::SAUDI_ARABIA)],
             'phone_de' => [new ValidPhoneNumber(Country::GERMANY)],
             'phone_gr' => [new ValidPhoneNumber(Country::GREECE)],
@@ -71,6 +72,7 @@ class ValidPhoneNumberTest extends TestCase
             'phone_ir' => '09125555555',
             'phone_en' => '+447975777666',
             'phone_ne' => '+22799123456',
+            'phone_nl' => '+31612345678',
             'phone_sa' => '+966541234567',
             'phone_de' => '+4915123456789',
             'phone_gr' => '+302101234567',
@@ -90,6 +92,29 @@ class ValidPhoneNumberTest extends TestCase
         $passes = $this->app['validator']->make($data, $rules)->passes();
 
         $this->assertTrue($passes);
+    }
+
+    /**
+     * Test Netherlands phone numbers.
+     */
+    public function test_netherlands_phone_numbers()
+    {
+        $valid = ['0612345678', '06 12345678', '+31612345678', '+31 612345678', '0031612345678'];
+        $invalid = ['0201234567', '061234567', '06123456789', '+31201234567', '612345678', '+3106123456789'];
+
+        foreach ($valid as $number) {
+            $this->assertTrue(
+                $this->app['validator']->make(['phone' => $number], ['phone' => [new ValidPhoneNumber(Country::NETHERLANDS)]])->passes(),
+                "Expected '$number' to be a valid Netherlands phone number."
+            );
+        }
+
+        foreach ($invalid as $number) {
+            $this->assertFalse(
+                $this->app['validator']->make(['phone' => $number], ['phone' => [new ValidPhoneNumber(Country::NETHERLANDS)]])->passes(),
+                "Expected '$number' to be an invalid Netherlands phone number."
+            );
+        }
     }
 
     /**
