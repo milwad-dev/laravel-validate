@@ -65,9 +65,13 @@ class ValidNoEmojiTest extends TestCase
     }
 
     /**
-     * Test the built-in ranges agree with PCRE's Emoji_Presentation property, where it is supported.
+     * Test the built-in ranges cover every emoji PCRE knows about, where `\p{Emoji_Presentation}` is supported.
+     *
+     * The rule's ranges are from Unicode 17. PCRE may ship an older Unicode version that doesn't know
+     * the newest emoji yet, so this only checks one way: anything PCRE calls an emoji must be rejected.
+     * (Unicode only ever adds emoji, so this holds for any PCRE that is not newer than Unicode 17.)
      */
-    public function test_ranges_match_emoji_presentation_property()
+    public function test_ranges_cover_emoji_presentation_property()
     {
         if (@preg_match('/\p{Emoji_Presentation}/u', '') === false) {
             $this->markTestSkipped('This PCRE version does not support \p{Emoji_Presentation}.');
@@ -75,13 +79,26 @@ class ValidNoEmojiTest extends TestCase
 
         $rule = new ValidNoEmoji;
 
-        foreach ([0x2600, 0x2700, 0x1F000, 0x1F300, 0x1F600, 0x1F900, 0x1FA00] as $blockStart) {
+        foreach ([0x2300, 0x2600, 0x2700, 0x2B00, 0x1F000, 0x1F100, 0x1F200, 0x1F300, 0x1F400, 0x1F500, 0x1F600, 0x1F900, 0x1FA00] as $blockStart) {
             for ($cp = $blockStart; $cp < $blockStart + 0x100; $cp++) {
                 $char = mb_chr($cp, 'UTF-8');
-                $isEmoji = preg_match('/\p{Emoji_Presentation}/u', $char) === 1;
 
-                $this->assertSame(! $isEmoji, $rule->passes('text', $char), sprintf('Mismatch at U+%04X', $cp));
+                if (preg_match('/\p{Emoji_Presentation}/u', $char) === 1) {
+                    $this->assertFalse($rule->passes('text', $char), sprintf('U+%04X is an emoji but was not rejected', $cp));
+                }
             }
+        }
+    }
+
+    /**
+     * Test emoji added in recent Unicode versions are rejected, whatever PCRE version is installed.
+     */
+    public function test_recent_emoji_are_not_valid()
+    {
+        $rule = new ValidNoEmoji;
+
+        foreach ([0x1FAE9, 0x1FAC6, 0x1F6D8, 0x1FA8E] as $cp) {
+            $this->assertFalse($rule->passes('text', mb_chr($cp, 'UTF-8')), sprintf('U+%04X should be rejected', $cp));
         }
     }
 
