@@ -18,6 +18,7 @@ return [
     'even-number' => 'Невалидна вредност :attribute',
     'hashtag' => 'Невалидна вредност :attribute',
     'hex-color' => 'Невалидна вредност :attribute',
+    'css-color' => 'Невалидна вредност :attribute',
     'html-tag' => 'Невалидна вредност :attribute',
     'iban' => 'Невалидна вредност :attribute',
     'imei' => 'Невалидна вредност :attribute',

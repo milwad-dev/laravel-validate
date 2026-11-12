@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute වලංගු නොවේ.',
     'hashtag' => ':attribute වලංගු නොවේ.',
     'hex-color' => ':attribute වලංගු නොවේ.',
+    'css-color' => ':attribute වලංගු නොවේ.',
     'html-tag' => ':attribute වලංගු නොවේ.',
     'iban' => ':attribute වලංගු නොවේ.',
     'imei' => ':attribute වලංගු නොවේ.',

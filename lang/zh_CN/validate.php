@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute无效.',
     'hashtag' => ':attribute无效.',
     'hex-color' => ':attribute无效.',
+    'css-color' => ':attribute无效.',
     'html-tag' => ':attribute无效.',
     'iban' => ':attribute无效.',
     'imei' => ':attribute无效.',

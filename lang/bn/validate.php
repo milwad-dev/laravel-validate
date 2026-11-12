@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute বৈধ নয়.',
     'hashtag' => ':attribute বৈধ নয়.',
     'hex-color' => ':attribute বৈধ নয়.',
+    'css-color' => ':attribute বৈধ নয়.',
     'html-tag' => ':attribute বৈধ নয়.',
     'iban' => ':attribute বৈধ নয়.',
     'imei' => ':attribute বৈধ নয়.',

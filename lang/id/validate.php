@@ -18,6 +18,7 @@ return [
     'even-number' => ':Attribute tidak valid.',
     'hashtag' => ':Attribute tidak valid.',
     'hex-color' => ':Attribute tidak valid.',
+    'css-color' => ':Attribute tidak valid.',
     'html-tag' => ':Attribute tidak valid.',
     'iban' => ':Attribute tidak valid.',
     'imei' => ':Attribute tidak valid.',

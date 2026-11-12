@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute no es válido.',
     'hashtag' => ':attribute no es válido.',
     'hex-color' => ':attribute no es válido.',
+    'css-color' => ':attribute no es válido.',
     'html-tag' => ':attribute no es válido.',
     'iban' => ':attribute no es válido.',
     'imei' => ':attribute no es válido.',

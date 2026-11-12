@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute не є дійсним.',
     'hashtag' => ':attribute не є дійсним.',
     'hex-color' => ':attribute не є дійсним.',
+    'css-color' => ':attribute не є дійсним.',
     'html-tag' => ':attribute не є дійсним.',
     'iban' => ':attribute не є дійсним.',
     'imei' => ':attribute не є дійсним.',

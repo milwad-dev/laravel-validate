@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute غير صالح.',
     'hashtag' => ':attribute غير صالح.',
     'hex-color' => ':attribute غير صالح.',
+    'css-color' => ':attribute غير صالح.',
     'html-tag' => ':attribute غير صالح.',
     'iban' => ':attribute غير صالح.',
     'imei' => ':attribute غير صالح.',

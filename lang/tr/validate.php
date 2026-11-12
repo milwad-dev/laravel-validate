@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute doğru değil.',
     'hashtag' => ':attribute doğru değil.',
     'hex-color' => ':attribute doğru değil.',
+    'css-color' => ':attribute doğru değil.',
     'html-tag' => ':attribute doğru değil.',
     'iban' => ':attribute doğru değil.',
     'imei' => ':attribute doğru değil.',

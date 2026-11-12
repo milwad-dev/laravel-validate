@@ -18,6 +18,7 @@ return [
     'even-number' => 'De :attribute is niet geldig.',
     'hashtag' => 'De :attribute is niet geldig.',
     'hex-color' => 'De :attribute is niet geldig.',
+    'css-color' => 'De :attribute is niet geldig.',
     'html-tag' => 'De :attribute is niet geldig.',
     'iban' => 'De :attribute is niet geldig.',
     'imei' => 'De :attribute is niet geldig.',

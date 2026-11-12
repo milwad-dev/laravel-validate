@@ -18,6 +18,7 @@ return [
     'even-number' => 'Värdet :attribute är inte korrekt.',
     'hashtag' => 'Värdet :attribute är inte korrekt.',
     'hex-color' => 'Värdet :attribute är inte korrekt.',
+    'css-color' => 'Värdet :attribute är inte korrekt.',
     'html-tag' => 'Värdet :attribute är inte korrekt.',
     'iban' => 'Värdet :attribute är inte korrekt.',
     'imei' => 'Värdet :attribute är inte korrekt.',

@@ -18,6 +18,7 @@ return [
     'even-number' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'hashtag' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'hex-color' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
+    'css-color' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'html-tag' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'iban' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',
     'imei' => 'ئەو :attribute هەڵبژێردراوە نادروستە.',

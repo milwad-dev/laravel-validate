@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute не действует.',
     'hashtag' => ':attribute не действует.',
     'hex-color' => ':attribute не действует.',
+    'css-color' => ':attribute не действует.',
     'html-tag' => ':attribute не действует.',
     'iban' => ':attribute не действует.',
     'imei' => ':attribute не действует.',

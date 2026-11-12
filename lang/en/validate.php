@@ -18,6 +18,7 @@ return [
     'even-number' => 'The :attribute is not valid.',
     'hashtag' => 'The :attribute is not valid.',
     'hex-color' => 'The :attribute is not valid.',
+    'css-color' => 'The :attribute is not valid.',
     'html-tag' => 'The :attribute is not valid.',
     'iban' => 'The :attribute is not valid.',
     'imei' => 'The :attribute is not valid.',

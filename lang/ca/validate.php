@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute no és vàlid.',
     'hashtag' => ':attribute no és vàlid.',
     'hex-color' => ':attribute no és vàlid.',
+    'css-color' => ':attribute no és vàlid.',
     'html-tag' => ':attribute no és vàlid.',
     'iban' => ':attribute no és vàlid.',
     'imei' => ':attribute no és vàlid.',

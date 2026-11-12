@@ -18,6 +18,7 @@ return [
     'even-number' => 'مقدار :attribute صحیح نمی باشد.',
     'hashtag' => 'مقدار :attribute صحیح نمی باشد.',
     'hex-color' => 'مقدار :attribute صحیح نمی باشد.',
+    'css-color' => 'مقدار :attribute صحیح نمی باشد.',
     'html-tag' => 'مقدار :attribute صحیح نمی باشد.',
     'iban' => 'مقدار :attribute صحیح نمی باشد.',
     'imei' => 'مقدار :attribute صحیح نمی باشد.',

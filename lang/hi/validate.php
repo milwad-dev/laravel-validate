@@ -18,6 +18,7 @@ return [
     'even-number' => ':attributeमान्य नहीं है।.',
     'hashtag' => ':attributeमान्य नहीं है।.',
     'hex-color' => ':attributeमान्य नहीं है।.',
+    'css-color' => ':attributeमान्य नहीं है।.',
     'html-tag' => ':attributeमान्य नहीं है।.',
     'iban' => ':attributeमान्य नहीं है।.',
     'imei' => ':attributeमान्य नहीं है।.',

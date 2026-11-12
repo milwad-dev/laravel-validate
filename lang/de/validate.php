@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute kein gültiger.',
     'hashtag' => ':attribute kein gültiger.',
     'hex-color' => ':attribute kein gültiger.',
+    'css-color' => ':attribute kein gültiger.',
     'html-tag' => ':attribute kein gültiger.',
     'iban' => ':attribute kein gültiger.',
     'imei' => ':attribute kein gültiger.',

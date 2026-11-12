@@ -18,6 +18,7 @@ return [
     'even-number' => ':attribute유효하지 않습니다.',
     'hashtag' => ':attribute유효하지 않습니다.',
     'hex-color' => ':attribute유효하지 않습니다.',
+    'css-color' => ':attribute유효하지 않습니다.',
     'html-tag' => ':attribute유효하지 않습니다.',
     'iban' => ':attribute유효하지 않습니다.',
     'imei' => ':attribute유효하지 않습니다.',
